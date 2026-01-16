@@ -303,6 +303,6 @@ Pour toute question, suggestion ou problème :
 
 **🚀 Prêt à réussir votre certification AWS Cloud Practitioner ?**
 
-[Commencer l'entraînement maintenant →](https://arouna-sidibe.github.io/aws-ccp-practice/)
+[Commencer l'entraînement maintenant →](https://github.com/Arouna-SIDIBE/aws-ccp-practice)
 
 *Bonne chance pour votre préparation ! ☁️🎯*
