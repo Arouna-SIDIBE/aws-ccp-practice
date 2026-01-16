@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examens AWS CCP - AWS CCP Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span>AWS CCP Practice</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="tests.html" class="active"><i class="fas fa-file-alt"></i> Examens</a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <h1>Examens Pratiques AWS CCP</h1>
+        <p>Sélectionnez un examen pour commencer votre préparation</p>
+
+        <div class="exam-grid" id="examsGrid">
+            <!-- Les examens seront chargés dynamiquement -->
+        </div>
+
+        <div id="testHistory"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AWS CCP Practice</h3>
+                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tests.html">Examens</a></li>
+                    <li><a href="challenge.html">Challenge</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@awsccppractice.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Charger la liste des examens
+        document.addEventListener('DOMContentLoaded', function () {
+            const examsGrid = document.getElementById('examsGrid');
+
+            if (examsGrid && exams) {
+                let html = '';
+
+                exams.forEach(exam => {
+                    html += `
+                        <div class="exam-card">
+                            <h3>${exam.name}</h3>
+                            <p>${exam.description}</p>
+                            <div class="exam-info">
+                                <span><i class="fas fa-question-circle"></i> ${exam.questionCount} questions</span>
+                                <span><i class="fas fa-clock"></i> ${exam.duration} minutes</span>
+                            </div>
+                            <button class="start-exam-btn" onclick="startExam(${exam.id})">
+                                <i class="fas fa-play"></i> Commencer l'examen
+                            </button>
+                        </div>
+                    `;
+                });
+
+                // Ajouter le challenge
+                html += `
+                    <div class="exam-card" style="border: 2px solid var(--primary-color);">
+                        <h3><i class="fas fa-trophy"></i> Challenge Aléatoire</h3>
+                        <p>Test de 65 questions sélectionnées aléatoirement parmi tous les examens</p>
+                        <div class="exam-info">
+                            <span><i class="fas fa-question-circle"></i> 65 questions</span>
+                            <span><i class="fas fa-clock"></i> 110 minutes</span>
+                        </div>
+                        <button class="start-exam-btn" onclick="startChallenge()" style="background-color: var(--primary-color);">
+                            <i class="fas fa-bolt"></i> Démarrer le Challenge
+                        </button>
+                    </div>
+                `;
+
+                examsGrid.innerHTML = html;
+            }
+        });
+    </script>
+</body>
+
+</html>
