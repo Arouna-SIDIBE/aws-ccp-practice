@@ -9,27 +9,22 @@ let timeSpent = 0;
 // Utiliser allExams si disponible, sinon utiliser un tableau vide
 let exams = typeof allExams !== 'undefined' ? allExams : [];
 
-
-// Fonction pour sauvegarder l'état du test (à appeler régulièrement)
-function autoSaveProgress() {
+// Fonction pour sauvegarder l'état du test
+function saveProgress() {
     if (!currentTest) return;
     
     const progress = {
         examId: currentTest.id,
         startTime: testStartTime,
         questionIndex: currentQuestionIndex,
-        answers: userAnswers
+        answers: userAnswers,
+        timeSpent: timeSpent
     };
     
     localStorage.setItem('currentTest', JSON.stringify(progress));
 }
 
-// Modifier la fonction saveProgress pour inclure l'auto-sauvegarde
-function saveProgress() {
-    autoSaveProgress();
-}
-
-// Modifier la fonction startExam pour NE PAS rediriger ici
+// Fonction pour démarrer un examen
 function startExam(examId) {
     const exam = exams.find(e => e.id === examId);
     if (!exam) {
@@ -44,13 +39,13 @@ function startExam(examId) {
     testStartTime = Date.now();
     
     // Sauvegarder l'état du test
-    autoSaveProgress();
+    saveProgress();
     
     // Rediriger vers la page de test
     window.location.href = 'test.html';
 }
 
-// Modifier la fonction startChallenge pour NE PAS rediriger ici
+// Fonction pour démarrer un challenge
 function startChallenge() {
     // Collecter toutes les questions de tous les examens
     let allQuestions = [];
@@ -86,7 +81,7 @@ function startChallenge() {
     testStartTime = Date.now();
     
     // Sauvegarder l'état du challenge
-    autoSaveProgress();
+    saveProgress();
     
     // Rediriger vers la page de test
     window.location.href = 'test.html';
@@ -108,13 +103,21 @@ function formatTime(seconds) {
 }
 
 function startTimer() {
-    testStartTime = Date.now();
+    if (testStartTime) {
+        // Si le test était en pause, calculer le temps déjà écoulé
+        timeSpent = Math.floor((Date.now() - testStartTime) / 1000);
+    } else {
+        testStartTime = Date.now();
+        timeSpent = 0;
+    }
+    
     timerInterval = setInterval(updateTimer, 1000);
 }
 
 function stopTimer() {
     if (timerInterval) {
         clearInterval(timerInterval);
+        timerInterval = null;
     }
     if (testStartTime) {
         timeSpent = Math.floor((Date.now() - testStartTime) / 1000);
@@ -124,86 +127,14 @@ function stopTimer() {
 function updateTimer() {
     if (!testStartTime) return;
     
-    const elapsed = Math.floor((Date.now() - testStartTime) / 1000);
+    timeSpent = Math.floor((Date.now() - testStartTime) / 1000);
     const timerElement = document.getElementById('timer');
     if (timerElement) {
-        timerElement.textContent = formatTime(elapsed);
+        timerElement.textContent = formatTime(timeSpent);
     }
 }
 
 // Fonctions de gestion des tests
-function startExam(examId) {
-    const exam = exams.find(e => e.id === examId);
-    if (!exam) {
-        alert("Examen non trouvé");
-        return;
-    }
-    
-    currentTest = exam;
-    currentQuestionIndex = 0;
-    userAnswers = {};
-    timeSpent = 0;
-    
-    // Sauvegarder l'état du test
-    localStorage.setItem('currentTest', JSON.stringify({
-        examId,
-        startTime: Date.now(),
-        questionIndex: 0,
-        answers: {}
-    }));
-    
-    // Rediriger vers la page de test
-    window.location.href = 'test.html';
-}
-
-function startChallenge() {
-    // Collecter toutes les questions de tous les examens
-    let allQuestions = [];
-    exams.forEach(exam => {
-        if (exam.questions && exam.questions.length > 0) {
-            allQuestions = allQuestions.concat(exam.questions);
-        }
-    });
-    
-    if (allQuestions.length < 65) {
-        alert("Pas assez de questions disponibles pour le challenge");
-        return;
-    }
-    
-    // Mélanger les questions
-    for (let i = allQuestions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
-    }
-    
-    // Sélectionner 65 questions
-    const challengeQuestions = allQuestions.slice(0, 65);
-    
-    currentTest = {
-        id: 'challenge',
-        name: 'Challenge Aléatoire',
-        description: '65 questions sélectionnées aléatoirement',
-        questionCount: 65,
-        duration: 110,
-        questions: challengeQuestions
-    };
-    
-    currentQuestionIndex = 0;
-    userAnswers = {};
-    timeSpent = 0;
-    
-    // Sauvegarder l'état du challenge
-    localStorage.setItem('currentTest', JSON.stringify({
-        examId: 'challenge',
-        startTime: Date.now(),
-        questionIndex: 0,
-        answers: {}
-    }));
-    
-    // Rediriger vers la page de test
-    window.location.href = 'test.html';
-}
-
 function displayQuestion(index) {
     if (!currentTest || !currentTest.questions || !currentTest.questions[index]) return;
     
@@ -252,11 +183,6 @@ function displayQuestion(index) {
     
     // Mettre à jour les boutons de navigation
     updateNavigationButtons();
-    
-    // Mettre à jour la grille de navigation
-    if (typeof generateQuestionGrid === 'function') {
-        generateQuestionGrid();
-    }
 }
 
 function selectOption(questionIndex, optionLetter) {
@@ -293,6 +219,7 @@ function nextQuestion() {
     if (currentQuestionIndex < currentTest.questionCount - 1) {
         currentQuestionIndex++;
         displayQuestion(currentQuestionIndex);
+        saveProgress();
     }
 }
 
@@ -300,20 +227,8 @@ function prevQuestion() {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         displayQuestion(currentQuestionIndex);
+        saveProgress();
     }
-}
-
-function saveProgress() {
-    if (!currentTest) return;
-    
-    const progress = {
-        examId: currentTest.id,
-        questionIndex: currentQuestionIndex,
-        answers: userAnswers,
-        timeSpent: testStartTime ? Math.floor((Date.now() - testStartTime) / 1000) : 0
-    };
-    
-    localStorage.setItem('testProgress', JSON.stringify(progress));
 }
 
 function updateProgress() {
@@ -361,11 +276,10 @@ function updateNavigationButtons() {
     
     if (nextBtn) {
         nextBtn.disabled = currentQuestionIndex === currentTest.questionCount - 1;
-        nextBtn.style.display = currentQuestionIndex === currentTest.questionCount - 1 ? 'none' : 'block';
     }
     
     if (submitBtn) {
-        submitBtn.style.display = currentQuestionIndex === currentTest.questionCount - 1 ? 'block' : 'none';
+        submitBtn.style.display = 'block';
     }
 }
 
@@ -388,12 +302,37 @@ function submitTest() {
         
         if (isCorrect) correct++;
         
+        // Récupérer le texte des réponses de l'utilisateur
+        let userAnswerText = [];
+        if (userAnswer.length > 0) {
+            userAnswer.forEach(letter => {
+                const option = question.options.find(opt => opt.letter === letter);
+                if (option) {
+                    userAnswerText.push(`${letter}. ${option.text}`);
+                }
+            });
+        }
+        
+        // Récupérer le texte des réponses correctes
+        let correctAnswerText = [];
+        if (correctAnswer.length > 0) {
+            correctAnswer.forEach(letter => {
+                const option = question.options.find(opt => opt.letter === letter);
+                if (option) {
+                    correctAnswerText.push(`${letter}. ${option.text}`);
+                }
+            });
+        }
+        
         results.push({
             question: question.text,
             userAnswer: userAnswer.join(', '),
+            userAnswerText: userAnswerText.join(' | '),
             correctAnswer: correctAnswer.join(', '),
+            correctAnswerText: correctAnswerText.join(' | '),
             isCorrect,
-            explanation: question.explanation || "Pas d'explication disponible"
+            explanation: question.explanation || "Pas d'explication disponible",
+            options: question.options // On stocke aussi les options pour l'affichage
         });
     });
     
@@ -408,7 +347,8 @@ function submitTest() {
         correctAnswers: correct,
         totalQuestions: currentTest.questionCount,
         timeSpent: formatTime(timeSpent),
-        results
+        results,
+        questions: currentTest.questions // On stocke toutes les questions pour l'affichage des résultats
     };
     
     // Sauvegarder dans l'historique
@@ -418,7 +358,6 @@ function submitTest() {
     
     // Nettoyer le test en cours
     localStorage.removeItem('currentTest');
-    localStorage.removeItem('testProgress');
     
     // Rediriger vers la page de résultats
     localStorage.setItem('lastTestResult', JSON.stringify(testResult));
@@ -445,7 +384,7 @@ function displayResults() {
     }
     
     const scorePercentage = result.score;
-    const passed = scorePercentage >= 70; // 70% pour réussir l'examen AWS CCP
+    const passed = scorePercentage >= 70;
     
     if (container) {
         container.innerHTML = `
@@ -505,6 +444,7 @@ function displayResults() {
     }
 }
 
+// Fonction pour générer les détails des résultats (AMÉLIORÉE)
 function generateResultsDetails(results) {
     if (!results || !Array.isArray(results)) return '<p>Aucun détail disponible</p>';
     
@@ -513,25 +453,48 @@ function generateResultsDetails(results) {
     results.forEach((item, index) => {
         const itemClass = item.isCorrect ? 'review-item correct' : 'review-item incorrect';
         const icon = item.isCorrect ? '✓' : '✗';
+        const statusText = item.isCorrect ? 'Correcte' : 'Incorrecte';
         
         html += `
             <div class="${itemClass}">
                 <div class="review-header">
                     <span class="review-status">${icon} Question ${index + 1}</span>
-                    <span class="review-score">${item.isCorrect ? 'Correcte' : 'Incorrecte'}</span>
+                    <span class="review-score">${statusText}</span>
                 </div>
+                
                 <div class="review-question">${item.question}</div>
-                <div class="review-answers">
-                    <div class="review-answer">
-                        <strong>Votre réponse:</strong> ${item.userAnswer || 'Non répondue'}
+                
+                <div class="review-answers-grid">
+                    <div class="review-answer user-answer">
+                        <div class="answer-header">
+                            <i class="fas fa-user-circle"></i>
+                            <strong>Votre réponse:</strong>
+                        </div>
+                        <div class="answer-content">
+                            ${item.userAnswerText ? formatAnswerText(item.userAnswerText) : '<em>Non répondue</em>'}
+                        </div>
                     </div>
-                    <div class="review-answer">
-                        <strong>Réponse correcte:</strong> ${item.correctAnswer}
+                    
+                    <div class="review-answer correct-answer">
+                        <div class="answer-header">
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Réponse correcte:</strong>
+                        </div>
+                        <div class="answer-content">
+                            ${formatAnswerText(item.correctAnswerText)}
+                        </div>
                     </div>
                 </div>
+                
                 ${item.explanation ? `
                     <div class="review-explanation">
-                        <strong>Explication:</strong> ${item.explanation}
+                        <div class="explanation-header">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Explication:</strong>
+                        </div>
+                        <div class="explanation-content">
+                            ${item.explanation}
+                        </div>
                     </div>
                 ` : ''}
             </div>
@@ -542,15 +505,34 @@ function generateResultsDetails(results) {
     return html;
 }
 
+// Fonction utilitaire pour formater le texte des réponses
+function formatAnswerText(answerText) {
+    if (!answerText) return '';
+    
+    // Séparer les réponses multiples par " | "
+    const answers = answerText.split(' | ');
+    
+    if (answers.length === 1) {
+        return `<div class="single-answer">${answers[0]}</div>`;
+    } else {
+        let html = '<ul class="multiple-answers">';
+        answers.forEach(answer => {
+            html += `<li>${answer}</li>`;
+        });
+        html += '</ul>';
+        return html;
+    }
+}
+
 function getRecommendations(score) {
     if (score >= 90) {
-        return "Excellent travail ! Vous êtes prêt pour l'examen officiel. Continuez à pratiquer pour maintenir vos compétences.";
+        return "Excellent travail ! Vous êtes prêt pour l'examen officiel. Concentrez-vous sur la révision des quelques questions manquées.";
     } else if (score >= 70) {
-        return "Bon score ! Revoyez les questions que vous avez manquées et pratiquez encore un peu avant de passer l'examen officiel.";
+        return "Bon score ! Revoyez attentivement les questions que vous avez manquées et refaites des tests de pratique.";
     } else if (score >= 50) {
-        return "Continuez à pratiquer ! Concentrez-vous sur les domaines où vous avez des difficultés et refaites les examens.";
+        return "Continuez à pratiquer ! Étudiez les explications des réponses et concentrez-vous sur les domaines où vous avez des difficultés.";
     } else {
-        return "Prenez le temps d'étudier les concepts de base d'AWS. Utilisez les explications pour comprendre vos erreurs.";
+        return "Prenez le temps d'étudier les concepts de base d'AWS. Revenez aux fondamentaux et utilisez les explications pour comprendre vos erreurs.";
     }
 }
 
@@ -566,11 +548,12 @@ function toggleReview() {
 }
 
 function retryTest() {
-    if (currentTest) {
-        if (currentTest.id === 'challenge') {
+    const result = JSON.parse(localStorage.getItem('lastTestResult'));
+    if (result) {
+        if (result.examId === 'challenge') {
             startChallenge();
         } else {
-            startExam(currentTest.id);
+            startExam(parseInt(result.examId));
         }
     } else {
         window.location.href = 'tests.html';
@@ -605,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname.split('/').pop();
     
     if (currentPage === 'test.html') {
-        // Récupérer l'état du test depuis le localStorage
+        // Restaurer le test
         const savedTest = localStorage.getItem('currentTest');
         
         if (savedTest) {
@@ -613,15 +596,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const examId = testData.examId;
             
             if (examId === 'challenge') {
-                // Reconstruire le challenge
+                // Pour le challenge, recréer avec les mêmes règles
                 let allQuestions = [];
-                exams.forEach(exam => {
+                allExams.forEach(exam => {
                     if (exam.questions && exam.questions.length > 0) {
                         allQuestions = allQuestions.concat(exam.questions);
                     }
                 });
                 
-                // Mélanger et prendre 65 questions
+                // Mélanger de la même manière
                 for (let i = allQuestions.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
@@ -636,43 +619,35 @@ document.addEventListener('DOMContentLoaded', function() {
                     questions: allQuestions.slice(0, 65)
                 };
             } else {
-                // Charger l'examen spécifique
-                const exam = exams.find(e => e.id === parseInt(examId));
+                const exam = allExams.find(e => e.id === parseInt(examId));
                 if (exam) {
                     currentTest = exam;
                 }
             }
             
             if (currentTest) {
-                // Restaurer les réponses si elles existent
-                if (testData.answers) {
-                    userAnswers = testData.answers;
-                }
-                
-                // Restaurer l'index de la question
                 currentQuestionIndex = testData.questionIndex || 0;
+                userAnswers = testData.answers || {};
+                testStartTime = testData.startTime || Date.now();
                 
-                // Afficher la question actuelle
                 displayQuestion(currentQuestionIndex);
                 
-                // Mettre à jour le titre
                 const testTitle = document.getElementById('testTitle');
                 const examName = document.getElementById('examName');
                 if (testTitle) testTitle.textContent = currentTest.name;
                 if (examName) examName.textContent = currentTest.name;
                 
-                // Démarrer le chronomètre
                 startTimer();
+            } else {
+                window.location.href = 'tests.html';
             }
         } else {
-            // Pas de test en cours, rediriger vers la page des examens
             window.location.href = 'tests.html';
         }
     } else if (currentPage === 'results.html') {
         displayResults();
     }
     
-    // Charger l'historique des tests
     loadTestHistory();
 });
 

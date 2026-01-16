@@ -1,10 +1,14 @@
-// Structure de données pour les examens
+// Structure de données pour les examens AWS CCP
 // Ce fichier est généré automatiquement par convert.js
+// Date de génération: 2026-01-16
+// Nombre d'examens: 23
+// Nombre total de questions: 1142
+
 const allExams = [
   {
     "id": 1,
-    "name": "Practice Exam 1",
-    "description": "Practice Exam 1 - 50 questions",
+    "name": "Examen Pratique 1",
+    "description": "Examen Pratique 1 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -32,7 +36,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Management Console.."
       },
       {
         "id": "1_2",
@@ -58,7 +62,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Adding more EC2 instances of the same size to handle an increase in traffic.."
       },
       {
         "id": "1_3",
@@ -84,7 +88,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS CloudTrail.."
       },
       {
         "id": "1_4",
@@ -110,7 +114,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Automatically provisioning new resources to meet demand.."
       },
       {
         "id": "1_5",
@@ -136,7 +140,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Responsibilities vary depending on the services used.."
       },
       {
         "id": "1_6",
@@ -162,7 +166,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. All accounts can receive the hourly cost benefit of the Reserved Instances.."
       },
       {
         "id": "1_7",
@@ -188,7 +192,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Deploy the application across multiple Regions and Availability Zones.."
       },
       {
         "id": "1_8",
@@ -214,7 +218,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Built-in computing capabilities that allow customers to process data locally.."
       },
       {
         "id": "1_9",
@@ -240,7 +244,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Support Concierge.."
       },
       {
         "id": "1_10",
@@ -266,7 +270,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Deploying new Amazon EC2 instances in a Region located in the US.."
       },
       {
         "id": "1_11",
@@ -292,7 +296,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. IAM user groups.."
       },
       {
         "id": "1_12",
@@ -318,7 +322,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Database Migration Service.."
       },
       {
         "id": "1_13",
@@ -344,7 +348,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Implement elasticity.."
       },
       {
         "id": "1_14",
@@ -370,7 +374,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Increasing speed and agility.."
       },
       {
         "id": "1_15",
@@ -396,7 +400,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Reduces inter-dependencies so that failures do not impact other components of the application.."
       },
       {
         "id": "1_16",
@@ -422,7 +426,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Cost & Usage Reports.."
       },
       {
         "id": "1_17",
@@ -448,7 +452,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Each AWS account gets volume discounts.."
       },
       {
         "id": "1_18",
@@ -475,7 +479,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Create EBS snapshots., C. Ensure that EBS data is encrypted at rest.."
       },
       {
         "id": "1_19",
@@ -501,7 +505,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. By automatically provisioning the required AWS resources based on changes in demand.."
       },
       {
         "id": "1_20",
@@ -528,7 +532,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Setup a CloudWatch billing alarm that triggers an SNS notification when the threshold is exceeded., C. Configure the AWS Budgets Service to alert the company when the threshold is exceeded.."
       },
       {
         "id": "1_21",
@@ -554,7 +558,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Edge Locations.."
       },
       {
         "id": "1_22",
@@ -580,7 +584,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. You should grant your users only the permissions they need when they need them and nothing more.."
       },
       {
         "id": "1_23",
@@ -606,7 +610,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Networking as a Service (NaaS).."
       },
       {
         "id": "1_24",
@@ -632,7 +636,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon S3 Glacier Deep Archive.."
       },
       {
         "id": "1_25",
@@ -658,7 +662,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Route 53.."
       },
       {
         "id": "1_26",
@@ -685,7 +689,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS Shield., D. AWS WAF.."
       },
       {
         "id": "1_27",
@@ -711,7 +715,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon ElastiCache.."
       },
       {
         "id": "1_28",
@@ -737,7 +741,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. On-demand instances.."
       },
       {
         "id": "1_29",
@@ -763,7 +767,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Spot Instances.."
       },
       {
         "id": "1_30",
@@ -789,7 +793,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon CloudFront.."
       },
       {
         "id": "1_31",
@@ -815,7 +819,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Artifact.."
       },
       {
         "id": "1_32",
@@ -842,7 +846,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Amazon DynamoDB., C. Amazon Elastic MapReduce.."
       },
       {
         "id": "1_33",
@@ -868,7 +872,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon DynamoDB.."
       },
       {
         "id": "1_34",
@@ -894,7 +898,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Technical Account Manager (TAM).."
       },
       {
         "id": "1_35",
@@ -920,7 +924,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. By using AWS Cost Explorer.."
       },
       {
         "id": "1_36",
@@ -946,7 +950,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Access keys.."
       },
       {
         "id": "1_37",
@@ -972,7 +976,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Contact the AWS Abuse team.."
       },
       {
         "id": "1_38",
@@ -999,7 +1003,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Patch Management., D. Configuration Management.."
       },
       {
         "id": "1_39",
@@ -1026,7 +1030,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. ELB., B. Auto Scaling.."
       },
       {
         "id": "1_40",
@@ -1052,7 +1056,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon CloudFront.."
       },
       {
         "id": "1_41",
@@ -1078,7 +1082,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Aurora.."
       },
       {
         "id": "1_42",
@@ -1104,7 +1108,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS CloudFormation.."
       },
       {
         "id": "1_43",
@@ -1130,7 +1134,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Configuring infrastructure devices.."
       },
       {
         "id": "1_44",
@@ -1156,7 +1160,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Detailed troubleshooting guidance to address AWS events impacting your resources.."
       },
       {
         "id": "1_45",
@@ -1182,7 +1186,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon CloudWatch.."
       },
       {
         "id": "1_46",
@@ -1208,7 +1212,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Trusted Advisor.."
       },
       {
         "id": "1_47",
@@ -1235,7 +1239,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Amazon S3 can run any type of application or backend system., D. Amazon S3 can be scaled manually to store and retrieve any amount of data from anywhere.."
       },
       {
         "id": "1_48",
@@ -1261,7 +1265,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Setting password complexity rules.."
       },
       {
         "id": "1_49",
@@ -1287,7 +1291,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Quick Start reference deployments.."
       },
       {
         "id": "1_50",
@@ -1313,14 +1317,14 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Convertible RI.."
       }
     ]
   },
   {
     "id": 2,
-    "name": "Practice Exam 2",
-    "description": "Practice Exam 2 - 50 questions",
+    "name": "Examen Pratique 2",
+    "description": "Examen Pratique 2 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -1348,7 +1352,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Organizations.."
       },
       {
         "id": "2_2",
@@ -1374,7 +1378,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon S3.."
       },
       {
         "id": "2_3",
@@ -1400,7 +1404,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Auto Scaling.."
       },
       {
         "id": "2_4",
@@ -1426,7 +1430,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon S3 Intelligent-Tiering.."
       },
       {
         "id": "2_5",
@@ -1452,7 +1456,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon DynamoDB.."
       },
       {
         "id": "2_6",
@@ -1478,7 +1482,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. You have to pay a start-up fee when launching a new instance for the first time.."
       },
       {
         "id": "2_7",
@@ -1505,7 +1509,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. AWS Trusted Advisor., B. Amazon Inspector.."
       },
       {
         "id": "2_8",
@@ -1531,7 +1535,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS MFA.."
       },
       {
         "id": "2_9",
@@ -1557,7 +1561,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Infrastructure Event Management.."
       },
       {
         "id": "2_10",
@@ -1583,7 +1587,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon RDS.."
       },
       {
         "id": "2_11",
@@ -1609,7 +1613,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Automate wherever possible to make architectural (© ) experimentation easier.."
       },
       {
         "id": "2_12",
@@ -1635,7 +1639,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Penetration testing can be performed by the customer on their own instances without prior authorization from AWS.."
       },
       {
         "id": "2_13",
@@ -1661,7 +1665,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon SQS.."
       },
       {
         "id": "2_14",
@@ -1688,7 +1692,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Availability Zones., C. Elastic Load Balancing.."
       },
       {
         "id": "2_15",
@@ -1714,7 +1718,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon VPC.."
       },
       {
         "id": "2_16",
@@ -1740,7 +1744,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Protecting the confidentiality of data in transit in Amazon S3.."
       },
       {
         "id": "2_17",
@@ -1766,7 +1770,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EC2.."
       },
       {
         "id": "2_18",
@@ -1792,7 +1796,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon S3.."
       },
       {
         "id": "2_19",
@@ -1818,7 +1822,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Access Keys.."
       },
       {
         "id": "2_20",
@@ -1844,7 +1848,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. In-memory caching for read-heavy applications.."
       },
       {
         "id": "2_21",
@@ -1870,7 +1874,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Organizations.."
       },
       {
         "id": "2_22",
@@ -1896,7 +1900,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Dedicated Hosts.."
       },
       {
         "id": "2_23",
@@ -1922,7 +1926,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Reduced Capital Expenditure (CapEx).."
       },
       {
         "id": "2_24",
@@ -1948,7 +1952,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Automate wherever possible.."
       },
       {
         "id": "2_25",
@@ -1974,7 +1978,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Direct Connect.."
       },
       {
         "id": "2_26",
@@ -2000,7 +2004,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Virtual Private Cloud.."
       },
       {
         "id": "2_27",
@@ -2026,7 +2030,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS WAF.."
       },
       {
         "id": "2_28",
@@ -2052,7 +2056,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon EMR.."
       },
       {
         "id": "2_29",
@@ -2078,7 +2082,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Creating hypervisors.."
       },
       {
         "id": "2_30",
@@ -2104,7 +2108,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon EC2.."
       },
       {
         "id": "2_31",
@@ -2130,7 +2134,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. A user name and password.."
       },
       {
         "id": "2_32",
@@ -2156,7 +2160,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AMI.."
       },
       {
         "id": "2_33",
@@ -2183,7 +2187,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Eliminating Single Points of Failure (SPOFs)., C. Distributed infrastructure.."
       },
       {
         "id": "2_34",
@@ -2209,7 +2213,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Hardware patching.."
       },
       {
         "id": "2_35",
@@ -2235,7 +2239,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. The ability to monitor systems and improve supporting processes and procedures.."
       },
       {
         "id": "2_36",
@@ -2261,7 +2265,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency.."
       },
       {
         "id": "2_37",
@@ -2287,7 +2291,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS CloudTrail.."
       },
       {
         "id": "2_38",
@@ -2313,7 +2317,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon ECS.."
       },
       {
         "id": "2_39",
@@ -2339,7 +2343,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. CloudTrail.."
       },
       {
         "id": "2_40",
@@ -2365,7 +2369,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Use the right combination of storage classes based on different use cases.."
       },
       {
         "id": "2_41",
@@ -2392,7 +2396,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Amazon EC2 Auto Scaling., C. Elastic Load Balancer.."
       },
       {
         "id": "2_42",
@@ -2418,7 +2422,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Enabling Amazon EC2 Auto Scaling for all of your workloads.."
       },
       {
         "id": "2_43",
@@ -2444,7 +2448,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. S3 Transfer Acceleration.."
       },
       {
         "id": "2_44",
@@ -2470,7 +2474,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Security Groups.."
       },
       {
         "id": "2_45",
@@ -2496,7 +2500,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Global accelerator.."
       },
       {
         "id": "2_46",
@@ -2523,7 +2527,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Building the relational database schema., C. Managing the database settings.."
       },
       {
         "id": "2_47",
@@ -2549,7 +2553,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon RDS.."
       },
       {
         "id": "2_48",
@@ -2575,7 +2579,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. APN Consulting Partners.."
       },
       {
         "id": "2_49",
@@ -2601,7 +2605,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Lambda.."
       },
       {
         "id": "2_50",
@@ -2627,14 +2631,14 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. She has properly built a fault tolerant system.."
       }
     ]
   },
   {
     "id": 3,
-    "name": "Practice Exam 3",
-    "description": "Practice Exam 3 - 50 questions",
+    "name": "Examen Pratique 3",
+    "description": "Examen Pratique 3 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -2663,7 +2667,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Amazon EFS., C. Amazon EBS.."
       },
       {
         "id": "3_2",
@@ -2689,7 +2693,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Simple Queue Service.."
       },
       {
         "id": "3_3",
@@ -2715,7 +2719,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Save when you reserve.."
       },
       {
         "id": "3_4",
@@ -2741,7 +2745,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Right-size before and after migration.."
       },
       {
         "id": "3_5",
@@ -2767,7 +2771,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon EBS.."
       },
       {
         "id": "3_6",
@@ -2793,7 +2797,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS X-Ray.."
       },
       {
         "id": "3_7",
@@ -2819,7 +2823,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Simple Storage Service.."
       },
       {
         "id": "3_8",
@@ -2846,7 +2850,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Multi-AZ Deployment., D. Read Replicas.."
       },
       {
         "id": "3_9",
@@ -2872,7 +2876,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Create a CDN using CloudFront, so that content is cached at Edge Locations close to and in Asia.."
       },
       {
         "id": "3_10",
@@ -2898,7 +2902,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Identity and Access Management.."
       },
       {
         "id": "3_11",
@@ -2924,7 +2928,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. IaaS.."
       },
       {
         "id": "3_12",
@@ -2950,7 +2954,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Decouple the components of the application so that they run independently.."
       },
       {
         "id": "3_13",
@@ -2976,7 +2980,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon S3.."
       },
       {
         "id": "3_14",
@@ -3003,7 +3007,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Active archives., C. Long-term analytic data.."
       },
       {
         "id": "3_15",
@@ -3029,7 +3033,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. A PaaS solution to automate application deployment.."
       },
       {
         "id": "3_16",
@@ -3055,7 +3059,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Inspector.."
       },
       {
         "id": "3_17",
@@ -3081,7 +3085,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Environmental controls.."
       },
       {
         "id": "3_18",
@@ -3089,11 +3093,11 @@ const allExams = [
         "options": [
           {
             "letter": "A",
-            "text": "Reserved instances     - No Upfront."
+            "text": "Reserved instances - No Upfront."
           },
           {
             "letter": "B",
-            "text": "Reserved instances     - Partial Upfront."
+            "text": "Reserved instances - Partial Upfront."
           },
           {
             "letter": "C",
@@ -3107,7 +3111,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Reserved instances - Partial Upfront.."
       },
       {
         "id": "3_19",
@@ -3133,7 +3137,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Global reach.."
       },
       {
         "id": "3_20",
@@ -3159,7 +3163,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EC2.."
       },
       {
         "id": "3_21",
@@ -3185,7 +3189,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Deploy AWS resources to another AWS Region and implement an Active-Active disaster recovery strategy.."
       },
       {
         "id": "3_22",
@@ -3212,7 +3216,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. You can contact AWS support to increase the service limits., D. You can use the AWS Trusted Advisor to monitor your service limits.."
       },
       {
         "id": "3_23",
@@ -3238,7 +3242,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS CLI.."
       },
       {
         "id": "3_24",
@@ -3264,7 +3268,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Direct Connect.."
       },
       {
         "id": "3_25",
@@ -3290,7 +3294,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Application Load Balancer.."
       },
       {
         "id": "3_26",
@@ -3316,7 +3320,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Aurora.."
       },
       {
         "id": "3_27",
@@ -3342,7 +3346,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Security Groups.."
       },
       {
         "id": "3_28",
@@ -3368,7 +3372,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Redshift.."
       },
       {
         "id": "3_29",
@@ -3394,7 +3398,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Physical hardware.."
       },
       {
         "id": "3_30",
@@ -3420,7 +3424,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. EC2 instances will be billed on one second increments, with a minimum of one minute.."
       },
       {
         "id": "3_31",
@@ -3447,7 +3451,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Instance type., B. The Availability Zone where the instance is provisioned.."
       },
       {
         "id": "3_32",
@@ -3473,7 +3477,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. By creating an AMI from the old instance and launching a new instance from it.."
       },
       {
         "id": "3_33",
@@ -3499,7 +3503,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Service Control Policies (SCPs).."
       },
       {
         "id": "3_34",
@@ -3525,7 +3529,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS allows you to provision resources in minutes.."
       },
       {
         "id": "3_35",
@@ -3552,7 +3556,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Lower administrative burden., C. Resizable compute capacity.."
       },
       {
         "id": "3_36",
@@ -3578,7 +3582,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Site-to-Site VPN.."
       },
       {
         "id": "3_37",
@@ -3604,7 +3608,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Business Support.."
       },
       {
         "id": "3_38",
@@ -3630,7 +3634,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Network Access Control Lists (NACLs).."
       },
       {
         "id": "3_39",
@@ -3656,7 +3660,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Spot Instances.."
       },
       {
         "id": "3_40",
@@ -3682,7 +3686,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Service Health Dashboard.."
       },
       {
         "id": "3_41",
@@ -3708,7 +3712,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Software Development Kit.."
       },
       {
         "id": "3_42",
@@ -3734,7 +3738,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Route 53.."
       },
       {
         "id": "3_43",
@@ -3761,7 +3765,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS CloudFormation., D. AWS Elastic Beanstalk.."
       },
       {
         "id": "3_44",
@@ -3787,7 +3791,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Trusted Advisor.."
       },
       {
         "id": "3_45",
@@ -3813,7 +3817,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Transit Gateway.."
       },
       {
         "id": "3_46",
@@ -3840,7 +3844,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Reserved instances require at least a one-year pricing commitment., D. Reserved instances provide a significant discount compared to on-demand instances.."
       },
       {
         "id": "3_47",
@@ -3866,7 +3870,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Multiple Availability Zones allows you to build resilient and highly available architectures.."
       },
       {
         "id": "3_48",
@@ -3882,17 +3886,17 @@ const allExams = [
           },
           {
             "letter": "C",
-            "text": "Reserved Instances     - All Upfront."
+            "text": "Reserved Instances - All Upfront."
           },
           {
             "letter": "D",
-            "text": "Reserved Instances     - No Upfront."
+            "text": "Reserved Instances - No Upfront."
           }
         ],
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. On-Demand Instances.."
       },
       {
         "id": "3_49",
@@ -3918,7 +3922,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Increases the availability of your application.."
       },
       {
         "id": "3_50",
@@ -3944,14 +3948,14 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS destroys the old devices in accordance with industry-standard practices.."
       }
     ]
   },
   {
     "id": 4,
-    "name": "Practice Exam 4",
-    "description": "Practice Exam 4 - 50 questions",
+    "name": "Examen Pratique 4",
+    "description": "Examen Pratique 4 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -3980,7 +3984,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Amazon Route 53., B. AWS ACM.."
       },
       {
         "id": "4_2",
@@ -4007,7 +4011,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Amazon S3., C. AWS Lambda.."
       },
       {
         "id": "4_3",
@@ -4034,7 +4038,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Capacity management., D. Operating system maintenance.."
       },
       {
         "id": "4_4",
@@ -4060,7 +4064,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. By ensuring that only healthy targets receive traffic.."
       },
       {
         "id": "4_5",
@@ -4086,7 +4090,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Dedicated instances.."
       },
       {
         "id": "4_6",
@@ -4112,7 +4116,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Snowmobile.."
       },
       {
         "id": "4_7",
@@ -4138,7 +4142,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon S3 Glacier.."
       },
       {
         "id": "4_8",
@@ -4164,7 +4168,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS IAM.."
       },
       {
         "id": "4_9",
@@ -4190,7 +4194,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Enterprise Support.."
       },
       {
         "id": "4_10",
@@ -4216,7 +4220,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CloudTrail.."
       },
       {
         "id": "4_11",
@@ -4243,7 +4247,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Allows customers to deliver new solutions faster., C. Lowers operational complexity.."
       },
       {
         "id": "4_12",
@@ -4270,7 +4274,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Hosting static websites., D. A media store for the CloudFront service.."
       },
       {
         "id": "4_13",
@@ -4296,7 +4300,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Rotate them regularly.."
       },
       {
         "id": "4_14",
@@ -4322,7 +4326,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. MFA.."
       },
       {
         "id": "4_15",
@@ -4348,7 +4352,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. It allows for programmatic management of AWS resources.."
       },
       {
         "id": "4_16",
@@ -4374,7 +4378,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon EBS.."
       },
       {
         "id": "4_17",
@@ -4400,7 +4404,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Customers can use the AWS Budgets service to track the reserved instances usage and set up alert notifications when their utilization drops below the threshold that they define.."
       },
       {
         "id": "4_18",
@@ -4426,7 +4430,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Aurora.."
       },
       {
         "id": "4_19",
@@ -4452,7 +4456,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It simplifies organizing and governing commonly deployed IT services.."
       },
       {
         "id": "4_20",
@@ -4479,7 +4483,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Patching the database software., D. Operating system maintenance.."
       },
       {
         "id": "4_21",
@@ -4505,7 +4509,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Application Discovery Service.."
       },
       {
         "id": "4_22",
@@ -4531,7 +4535,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Cost & Usage Report.."
       },
       {
         "id": "4_23",
@@ -4557,7 +4561,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. An AWS Region is a geographical location with a collection of Availability Zones.."
       },
       {
         "id": "4_24",
@@ -4583,7 +4587,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. CloudTrail logs.."
       },
       {
         "id": "4_25",
@@ -4610,7 +4614,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. The number of reads and writes per second., D. The nature of the queries.."
       },
       {
         "id": "4_26",
@@ -4636,7 +4640,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Quickly identify resources that belong to a specific project.."
       },
       {
         "id": "4_27",
@@ -4662,7 +4666,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Controls that the customer and AWS collaborate together upon to secure the infrastructure.."
       },
       {
         "id": "4_28",
@@ -4689,7 +4693,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Build multi-region architectures to better serve global customers., D. Use serverless architectures.."
       },
       {
         "id": "4_29",
@@ -4715,7 +4719,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Protecting sensitive data.."
       },
       {
         "id": "4_30",
@@ -4741,7 +4745,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Elastic resources.."
       },
       {
         "id": "4_31",
@@ -4767,7 +4771,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Inspector.."
       },
       {
         "id": "4_32",
@@ -4793,7 +4797,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon EC2 is considered a Serverless Web Service.."
       },
       {
         "id": "4_33",
@@ -4819,7 +4823,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Lambda.."
       },
       {
         "id": "4_34",
@@ -4845,7 +4849,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EC2 Instances.."
       },
       {
         "id": "4_35",
@@ -4871,7 +4875,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CAF.."
       },
       {
         "id": "4_36",
@@ -4897,7 +4901,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS TCO Calculator.."
       },
       {
         "id": "4_37",
@@ -4923,7 +4927,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Using AWS CloudFormation to manage infrastructure as code.."
       },
       {
         "id": "4_38",
@@ -4949,7 +4953,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Using AWS, they can reduce time-to-market by focusing on business activities rather than on building and managing data centers.."
       },
       {
         "id": "4_39",
@@ -4976,7 +4980,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Automatically scales to meet required throughput capacity., D. Offers extremely low (single-digit millisecond) latency.."
       },
       {
         "id": "4_40",
@@ -5003,7 +5007,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Versioning., C. Permissions.."
       },
       {
         "id": "4_41",
@@ -5030,7 +5034,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. AWS Partners., C. AWS Professional Services.."
       },
       {
         "id": "4_42",
@@ -5056,7 +5060,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Deleting unused AutoScaling launch configuration.."
       },
       {
         "id": "4_43",
@@ -5082,7 +5086,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Cost Explorer.."
       },
       {
         "id": "4_44",
@@ -5108,7 +5112,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Data center operations.."
       },
       {
         "id": "4_45",
@@ -5134,7 +5138,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Simple Notification Service (Amazon SNS).."
       },
       {
         "id": "4_46",
@@ -5160,7 +5164,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CloudFormation.."
       },
       {
         "id": "4_47",
@@ -5186,7 +5190,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Per-second instance billing.."
       },
       {
         "id": "4_48",
@@ -5212,7 +5216,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Professional Services.."
       },
       {
         "id": "4_49",
@@ -5238,7 +5242,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS KMS.."
       },
       {
         "id": "4_50",
@@ -5264,14 +5268,14 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Artifact.."
       }
     ]
   },
   {
     "id": 5,
-    "name": "Practice Exam 5",
-    "description": "Practice Exam 5 - 50 questions",
+    "name": "Examen Pratique 5",
+    "description": "Examen Pratique 5 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -5299,7 +5303,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Fault Tolerance.."
       },
       {
         "id": "5_2",
@@ -5325,7 +5329,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. All up-front reservation.."
       },
       {
         "id": "5_3",
@@ -5352,7 +5356,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Access control., C. Data encryption.."
       },
       {
         "id": "5_4",
@@ -5378,7 +5382,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": ": - Pricing is per instance-hour consumed for each instance, from the time an instance is launched until it is terminated or stopped. - Each partial instance-hour consumed will be billed per-second for Linux, Windows, Windows with SQL Enterprise, Windows with SQL Standard, and Windows with SQL Web Instances, and as a full hour for all other instance types."
       },
       {
         "id": "5_5",
@@ -5404,7 +5408,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Support API.."
       },
       {
         "id": "5_6",
@@ -5431,7 +5435,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. AWS CLI., C. AWS SDKs.."
       },
       {
         "id": "5_7",
@@ -5458,7 +5462,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. IAM Roles., D. IAM Users.."
       },
       {
         "id": "5_8",
@@ -5484,7 +5488,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Read Replicas.."
       },
       {
         "id": "5_9",
@@ -5510,7 +5514,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Using Security Bulletins.."
       },
       {
         "id": "5_10",
@@ -5536,7 +5540,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. IAM Roles.."
       },
       {
         "id": "5_11",
@@ -5562,7 +5566,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Application Load Balancer (ALB).."
       },
       {
         "id": "5_12",
@@ -5588,7 +5592,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Use code to provision and operate your AWS infrastructure.."
       },
       {
         "id": "5_13",
@@ -5614,7 +5618,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Require Multi-Factor Authentication (MFA) for all IAM User access.."
       },
       {
         "id": "5_14",
@@ -5640,7 +5644,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon S3.."
       },
       {
         "id": "5_15",
@@ -5667,7 +5671,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Data sovereignty., C. Cost.."
       },
       {
         "id": "5_16",
@@ -5693,7 +5697,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon ElastiCache.."
       },
       {
         "id": "5_17",
@@ -5719,7 +5723,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Auto Scaling Groups scales EC2 instances in multiple Availability Zones to increase application availability and fault tolerance.."
       },
       {
         "id": "5_18",
@@ -5745,7 +5749,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS continues to lower the cost of cloud computing for its customers.."
       },
       {
         "id": "5_19",
@@ -5771,7 +5775,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Building a schema for an application.."
       },
       {
         "id": "5_20",
@@ -5797,7 +5801,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. U2F Security Key.."
       },
       {
         "id": "5_21",
@@ -5823,7 +5827,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Elastic Beanstalk.."
       },
       {
         "id": "5_22",
@@ -5850,7 +5854,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Number of security groups., D. Number of Hosted Zones.."
       },
       {
         "id": "5_23",
@@ -5876,7 +5880,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Storage Gateway.."
       },
       {
         "id": "5_24",
@@ -5902,7 +5906,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Simple Storage Service.."
       },
       {
         "id": "5_25",
@@ -5928,7 +5932,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. There is a non-explicit deny to all new users.."
       },
       {
         "id": "5_26",
@@ -5954,7 +5958,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS CloudTrail.."
       },
       {
         "id": "5_27",
@@ -5980,7 +5984,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Cloud Directory allows the organization of hierarchies of data across multiple dimensions.."
       },
       {
         "id": "5_28",
@@ -6006,7 +6010,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. One hour.."
       },
       {
         "id": "5_29",
@@ -6032,7 +6036,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Deploy the application to at least two Availability Zones.."
       },
       {
         "id": "5_30",
@@ -6059,7 +6063,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Labor and IT costs., B. Cooling and power consumption.."
       },
       {
         "id": "5_31",
@@ -6085,7 +6089,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Enterprise Support.."
       },
       {
         "id": "5_32",
@@ -6112,7 +6116,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. AWS Lambda., C. Amazon DynamoDB.."
       },
       {
         "id": "5_33",
@@ -6138,7 +6142,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS ACM.."
       },
       {
         "id": "5_34",
@@ -6164,7 +6168,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS OpsWorks.."
       },
       {
         "id": "5_35",
@@ -6190,7 +6194,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon S3.."
       },
       {
         "id": "5_36",
@@ -6216,7 +6220,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon CloudWatch.."
       },
       {
         "id": "5_37",
@@ -6242,7 +6246,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Reserved Instances.."
       },
       {
         "id": "5_38",
@@ -6268,7 +6272,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Create an IAM user and attach a policy with Amazon DynamoDB access permissions.."
       },
       {
         "id": "5_39",
@@ -6294,7 +6298,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Use temporary security credentials (IAM roles) instead of long-term access keys.."
       },
       {
         "id": "5_40",
@@ -6320,7 +6324,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Use existing third-party software licenses on AWS.."
       },
       {
         "id": "5_41",
@@ -6346,7 +6350,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon SQS.."
       },
       {
         "id": "5_42",
@@ -6373,7 +6377,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. AWS CLI., C. AWS Identity and Access Management (IAM).."
       },
       {
         "id": "5_43",
@@ -6399,7 +6403,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Running EC2 instances in parallel.."
       },
       {
         "id": "5_44",
@@ -6425,7 +6429,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Pricing Calculator.."
       },
       {
         "id": "5_45",
@@ -6451,7 +6455,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Open an investigation and delete any potentially compromised IAM users.."
       },
       {
         "id": "5_46",
@@ -6477,7 +6481,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Loosely coupling.."
       },
       {
         "id": "5_47",
@@ -6503,7 +6507,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Elastic File System.."
       },
       {
         "id": "5_48",
@@ -6529,7 +6533,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Make synchronous replication of your data possible.."
       },
       {
         "id": "5_49",
@@ -6555,7 +6559,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Lambda natively supports a number of programming languages such as Node.js, Python, and Java.."
       },
       {
         "id": "5_50",
@@ -6582,14 +6586,14 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Facilitates tracking of user requests to identify application issues., C. Helps improve application performance.."
       }
     ]
   },
   {
     "id": 6,
-    "name": "Practice Exam 6",
-    "description": "Practice Exam 6 - 50 questions",
+    "name": "Examen Pratique 6",
+    "description": "Examen Pratique 6 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -6617,7 +6621,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. An AWS Availability Zone is an isolated location within an AWS Region, however edge locations are located in multiple cities worldwide.."
       },
       {
         "id": "6_2",
@@ -6644,7 +6648,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. 24x7 access to customer service., C. Access to the Infrastructure Event Management (IEM) feature for additional fee.."
       },
       {
         "id": "6_3",
@@ -6670,7 +6674,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Cognito.."
       },
       {
         "id": "6_4",
@@ -6696,7 +6700,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS CloudFormation.."
       },
       {
         "id": "6_5",
@@ -6722,7 +6726,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Eliminates the need to guess on infrastructure capacity needs.."
       },
       {
         "id": "6_6",
@@ -6749,7 +6753,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Amazon Elastic Compute Cloud., C. Amazon RDS.."
       },
       {
         "id": "6_7",
@@ -6775,7 +6779,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Route 53.."
       },
       {
         "id": "6_8",
@@ -6801,7 +6805,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon Rekognition.."
       },
       {
         "id": "6_9",
@@ -6827,7 +6831,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Neptune.."
       },
       {
         "id": "6_10",
@@ -6839,7 +6843,7 @@ const allExams = [
           },
           {
             "letter": "B",
-            "text": "EC2 Reserved Instances     - No Upfront."
+            "text": "EC2 Reserved Instances - No Upfront."
           },
           {
             "letter": "C",
@@ -6847,13 +6851,13 @@ const allExams = [
           },
           {
             "letter": "D",
-            "text": "EC2 Reserved Instances     - All Upfront."
+            "text": "EC2 Reserved Instances - All Upfront."
           }
         ],
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. EC2 Spot Instances.."
       },
       {
         "id": "6_11",
@@ -6879,7 +6883,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS account owner.."
       },
       {
         "id": "6_12",
@@ -6905,7 +6909,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Server Migration Service.."
       },
       {
         "id": "6_13",
@@ -6932,7 +6936,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. It automates the provisioning and updating of your infrastructure in a safe and controlled manner., D. It allows you to model your entire infrastructure in just a text file.."
       },
       {
         "id": "6_14",
@@ -6958,7 +6962,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Hybrid.."
       },
       {
         "id": "6_15",
@@ -6984,7 +6988,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. CloudEndure Disaster Recovery.."
       },
       {
         "id": "6_16",
@@ -7010,7 +7014,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. S3 Standard.."
       },
       {
         "id": "6_17",
@@ -7036,7 +7040,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. In another Region.."
       },
       {
         "id": "6_18",
@@ -7062,7 +7066,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. You should regularly patch the operating system and applications on your EC2 instances.."
       },
       {
         "id": "6_19",
@@ -7088,7 +7092,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Highly accurate cost forecasts for up to 12 months ahead.."
       },
       {
         "id": "6_20",
@@ -7114,7 +7118,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. RDS Multi-AZ.."
       },
       {
         "id": "6_21",
@@ -7140,7 +7144,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Stopping the instances.."
       },
       {
         "id": "6_22",
@@ -7166,7 +7170,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Delete root user access keys if you do not need them.."
       },
       {
         "id": "6_23",
@@ -7193,7 +7197,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. The size of volumes provisioned per month., C. The amount of data you have stored in snapshots.."
       },
       {
         "id": "6_24",
@@ -7219,7 +7223,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Apply the Principle of Least Privilege.."
       },
       {
         "id": "6_25",
@@ -7246,7 +7250,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Compute charges., D. Data Transfer Out charges.."
       },
       {
         "id": "6_26",
@@ -7272,7 +7276,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. A user who chooses to buy Reserved, Standard, All upfront instances.."
       },
       {
         "id": "6_27",
@@ -7298,7 +7302,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. The ability to pay upfront to get lower hourly costs.."
       },
       {
         "id": "6_28",
@@ -7324,7 +7328,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It means that AWS will continuously lower costs as it grows.."
       },
       {
         "id": "6_29",
@@ -7350,7 +7354,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Auto Scaling.."
       },
       {
         "id": "6_30",
@@ -7376,7 +7380,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Customers have complete control over their Amazon VPC virtual networking environment.."
       },
       {
         "id": "6_31",
@@ -7402,7 +7406,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS TCO Calculator.."
       },
       {
         "id": "6_32",
@@ -7429,7 +7433,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS Config., D. AWS Trusted Advisor.."
       },
       {
         "id": "6_33",
@@ -7455,7 +7459,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS OpsWorks.."
       },
       {
         "id": "6_34",
@@ -7481,7 +7485,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CodeDeploy.."
       },
       {
         "id": "6_35",
@@ -7507,7 +7511,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon RDS.."
       },
       {
         "id": "6_36",
@@ -7533,7 +7537,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Testing your network to find security vulnerabilities that an attacker could exploit.."
       },
       {
         "id": "6_37",
@@ -7560,7 +7564,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Enables you to analyze and process extremely large amounts of data in a timely manner., D. Enables you to easily run and scale Apache Spark, Hadoop,and other Big Data frameworks.."
       },
       {
         "id": "6_38",
@@ -7586,7 +7590,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. At a minimum, upgrade to Business support plan.."
       },
       {
         "id": "6_39",
@@ -7612,7 +7616,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Elastic Beanstalk.."
       },
       {
         "id": "6_40",
@@ -7638,7 +7642,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. With AWS, you replace large capital expenses with low variable payments.."
       },
       {
         "id": "6_41",
@@ -7665,7 +7669,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Database setup., C. Management of the operating system.."
       },
       {
         "id": "6_42",
@@ -7691,7 +7695,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Using tags to group resources.."
       },
       {
         "id": "6_43",
@@ -7717,7 +7721,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Direct Connect.."
       },
       {
         "id": "6_44",
@@ -7743,7 +7747,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It allows integration of on-premises IT environments with Cloud Storage.."
       },
       {
         "id": "6_45",
@@ -7769,7 +7773,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon S3 Standard-Infrequent Access.."
       },
       {
         "id": "6_46",
@@ -7795,7 +7799,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Global Accelerator.."
       },
       {
         "id": "6_47",
@@ -7821,7 +7825,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. With the Server-based Architectures, compute resources continue to run all the time but with serverless architecture, compute resources are only used when code is being executed.."
       },
       {
         "id": "6_48",
@@ -7848,7 +7852,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. DNS configuration and management., D. Manages global application traffic through a variety of routing types.."
       },
       {
         "id": "6_49",
@@ -7874,7 +7878,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Snowball.."
       },
       {
         "id": "6_50",
@@ -7900,14 +7904,14 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon ElastiCache for Redis.."
       }
     ]
   },
   {
     "id": 7,
-    "name": "Practice Exam 7",
-    "description": "Practice Exam 7 - 50 questions",
+    "name": "Examen Pratique 7",
+    "description": "Examen Pratique 7 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -7936,7 +7940,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Enable S3 Encryption., D. Encrypt the data prior to uploading it.."
       },
       {
         "id": "7_2",
@@ -7962,7 +7966,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS CodeBuild.."
       },
       {
         "id": "7_3",
@@ -7988,7 +7992,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. The storage class used for the objects stored.."
       },
       {
         "id": "7_4",
@@ -8014,7 +8018,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Increases application availability by caching at the edge.."
       },
       {
         "id": "7_5",
@@ -8040,7 +8044,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Connect.."
       },
       {
         "id": "7_6",
@@ -8066,7 +8070,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Using the AWS Cost & Usage Report.."
       },
       {
         "id": "7_7",
@@ -8092,7 +8096,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Convertible.."
       },
       {
         "id": "7_8",
@@ -8118,7 +8122,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Artifact.."
       },
       {
         "id": "7_9",
@@ -8144,7 +8148,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Resource Groups.."
       },
       {
         "id": "7_10",
@@ -8170,7 +8174,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon CloudWatch.."
       },
       {
         "id": "7_11",
@@ -8196,7 +8200,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS X-Ray.."
       },
       {
         "id": "7_12",
@@ -8223,7 +8227,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. AWS Fargate., C. AWS Lambda.."
       },
       {
         "id": "7_13",
@@ -8249,7 +8253,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Use EC2 Dedicated Hosts.."
       },
       {
         "id": "7_14",
@@ -8275,7 +8279,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Architecture Optimization.."
       },
       {
         "id": "7_15",
@@ -8301,7 +8305,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. RDS.."
       },
       {
         "id": "7_16",
@@ -8327,7 +8331,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. IAM Policy.."
       },
       {
         "id": "7_17",
@@ -8353,7 +8357,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS allows customers to launch and terminate EC2 instances based on demand.."
       },
       {
         "id": "7_18",
@@ -8379,7 +8383,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Teradata.."
       },
       {
         "id": "7_19",
@@ -8405,7 +8409,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS DMS.."
       },
       {
         "id": "7_20",
@@ -8431,7 +8435,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Run WordPress on an Amazon Lightsail instance.."
       },
       {
         "id": "7_21",
@@ -8457,7 +8461,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS KMS.."
       },
       {
         "id": "7_22",
@@ -8483,7 +8487,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon EC2.."
       },
       {
         "id": "7_23",
@@ -8509,7 +8513,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Auto Scaling.."
       },
       {
         "id": "7_24",
@@ -8535,7 +8539,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS IAM.."
       },
       {
         "id": "7_25",
@@ -8562,7 +8566,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Loose coupling over tight coupling., D. Disposable resources instead of fixed servers.."
       },
       {
         "id": "7_26",
@@ -8588,7 +8592,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. IAM Credential Report.."
       },
       {
         "id": "7_27",
@@ -8614,7 +8618,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CloudHSM.."
       },
       {
         "id": "7_28",
@@ -8640,7 +8644,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Deploy the application in multiple Availability Zones in multiple AWS regions.."
       },
       {
         "id": "7_29",
@@ -8667,7 +8671,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. S3., C. DynamoDB.."
       },
       {
         "id": "7_30",
@@ -8694,7 +8698,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Number of Requests., B. Traffic Distribution.."
       },
       {
         "id": "7_31",
@@ -8720,7 +8724,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Acceptable Use Policy.."
       },
       {
         "id": "7_32",
@@ -8747,7 +8751,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS Bulletins., D. AWS Security Blog.."
       },
       {
         "id": "7_33",
@@ -8773,7 +8777,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. By enabling S3 Versioning.."
       },
       {
         "id": "7_34",
@@ -8799,7 +8803,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Securing regions and edge locations.."
       },
       {
         "id": "7_35",
@@ -8825,7 +8829,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Basic & Developer Support.."
       },
       {
         "id": "7_36",
@@ -8851,7 +8855,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Lambda can be called directly from any mobile app.."
       },
       {
         "id": "7_37",
@@ -8877,7 +8881,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS has many common assurance certifications such as ISO 9001 and HIPAA.."
       },
       {
         "id": "7_38",
@@ -8903,7 +8907,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS.."
       },
       {
         "id": "7_39",
@@ -8929,7 +8933,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Elastic Transcoder.."
       },
       {
         "id": "7_40",
@@ -8955,7 +8959,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Control access to AWS services.."
       },
       {
         "id": "7_41",
@@ -8981,7 +8985,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Redshift.."
       },
       {
         "id": "7_42",
@@ -9007,7 +9011,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Marketplace.."
       },
       {
         "id": "7_43",
@@ -9033,7 +9037,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS CodeCommit.."
       },
       {
         "id": "7_44",
@@ -9059,7 +9063,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon Route 53.."
       },
       {
         "id": "7_45",
@@ -9085,7 +9089,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Federation.."
       },
       {
         "id": "7_46",
@@ -9112,11 +9116,11 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Data center security controls., D. Environmental controls.."
       },
       {
         "id": "7_47",
-        "text": "What can you access by visiting the URL: <http://status.aws.amazon.com>?",
+        "text": "What can you access by visiting the URL: ?",
         "options": [
           {
             "letter": "A",
@@ -9138,7 +9142,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Service Health Dashboard.."
       },
       {
         "id": "7_48",
@@ -9164,7 +9168,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Store media assets in the region closest to your end users.."
       },
       {
         "id": "7_49",
@@ -9191,7 +9195,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Use IAM roles to grant temporary access instead of long-term credentials., D. Enable real-time traceability.."
       },
       {
         "id": "7_50",
@@ -9217,14 +9221,14 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Apply cost allocation tags to segment AWS costs by different e projects and departments.."
       }
     ]
   },
   {
     "id": 8,
-    "name": "Practice Exam 8",
-    "description": "Practice Exam 8 - 50 questions",
+    "name": "Examen Pratique 8",
+    "description": "Examen Pratique 8 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -9252,7 +9256,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Controls what IP address ranges can connect to your database instance.."
       },
       {
         "id": "8_2",
@@ -9278,7 +9282,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. EC2 launch type.."
       },
       {
         "id": "8_3",
@@ -9304,7 +9308,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Add the accounts to an AWS Organization and use Consolidated Billing.."
       },
       {
         "id": "8_4",
@@ -9330,7 +9334,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Security Groups and Network ACLs.."
       },
       {
         "id": "8_5",
@@ -9357,7 +9361,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Access to the full set of Trusted Advisor checks., D. AWS Support API.."
       },
       {
         "id": "8_6",
@@ -9383,7 +9387,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Elastic Beanstalk.."
       },
       {
         "id": "8_7",
@@ -9409,7 +9413,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS customers are responsible for patching any database software running on Amazon EC2.."
       },
       {
         "id": "8_8",
@@ -9435,7 +9439,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Improves Fault-Tolerance.."
       },
       {
         "id": "8_9",
@@ -9462,7 +9466,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. With the AWS pay-as-you-go pricing model, you don't have to pay any upfront fee., C. You only pay for the individual services that you need with no long-term contracts.."
       },
       {
         "id": "8_10",
@@ -9488,7 +9492,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Control Tower.."
       },
       {
         "id": "8_11",
@@ -9514,7 +9518,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Use CloudWatch Alarms to monitor the CPU and alert when the CPU usage is >= 60%.."
       },
       {
         "id": "8_12",
@@ -9540,7 +9544,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon EBS.."
       },
       {
         "id": "8_13",
@@ -9566,7 +9570,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon CloudWatch.."
       },
       {
         "id": "8_14",
@@ -9592,7 +9596,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Number of requests to your functions.."
       },
       {
         "id": "8_15",
@@ -9619,7 +9623,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. An IAM user is uniquely associated with only one person, however a role is intended to be assumable by anyone who needs it., B. An IAM user has permanent credentials associated with it, however a role has temporary credentials associated with it.."
       },
       {
         "id": "8_16",
@@ -9646,7 +9650,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Deleting unnecessary snapshots., D. Changing the type of the volume.."
       },
       {
         "id": "8_17",
@@ -9672,7 +9676,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Continuously monitors AWS infrastructure and helps detect threats such as attacker reconnaissance or account compromise.."
       },
       {
         "id": "8_18",
@@ -9698,7 +9702,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon RDS.."
       },
       {
         "id": "8_19",
@@ -9724,7 +9728,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Tagging.."
       },
       {
         "id": "8_20",
@@ -9750,7 +9754,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Glacier does not provide immediate retrieval of data.."
       },
       {
         "id": "8_21",
@@ -9776,7 +9780,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Batch.."
       },
       {
         "id": "8_22",
@@ -9802,7 +9806,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Deploy your application across multiple Availability Zones.."
       },
       {
         "id": "8_23",
@@ -9828,7 +9832,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Enterprise.."
       },
       {
         "id": "8_24",
@@ -9855,7 +9859,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. IAM user., D. AWS account root user.."
       },
       {
         "id": "8_25",
@@ -9881,7 +9885,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. It allows individual application components or services to be modified without affecting other components.."
       },
       {
         "id": "8_26",
@@ -9907,7 +9911,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon Elastic File System.."
       },
       {
         "id": "8_27",
@@ -9933,7 +9937,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Cloud.."
       },
       {
         "id": "8_28",
@@ -9959,7 +9963,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Provides flexible pricing options that suit most customer needs.."
       },
       {
         "id": "8_29",
@@ -9985,7 +9989,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Durability.."
       },
       {
         "id": "8_30",
@@ -10011,7 +10015,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. On-Demand Instances.."
       },
       {
         "id": "8_31",
@@ -10037,7 +10041,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon CloudFront.."
       },
       {
         "id": "8_32",
@@ -10063,7 +10067,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS KMS.."
       },
       {
         "id": "8_33",
@@ -10089,7 +10093,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Rotate all access keys.."
       },
       {
         "id": "8_34",
@@ -10116,7 +10120,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Provide an in-memory data storage service., C. Improve web application performance.."
       },
       {
         "id": "8_35",
@@ -10142,7 +10146,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Use Amazon EC2 Auto Scaling.."
       },
       {
         "id": "8_36",
@@ -10168,7 +10172,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. They remove the need to buy “safety net” capacity to handle periodic traffic spikes.."
       },
       {
         "id": "8_37",
@@ -10194,7 +10198,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. It is a distinct location within a region that is insulated from « failures in other Availability Zones.."
       },
       {
         "id": "8_38",
@@ -10220,7 +10224,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Regions.."
       },
       {
         "id": "8_39",
@@ -10247,7 +10251,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Ensure that AWS services are configured properly to meet all PCI DSS standards., C. Restrict any access to cardholder data and create a policy that addresses information security for all personnel.."
       },
       {
         "id": "8_40",
@@ -10273,7 +10277,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Virtually unlimited storage.."
       },
       {
         "id": "8_41",
@@ -10299,7 +10303,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Performance Efficiency.."
       },
       {
         "id": "8_42",
@@ -10325,7 +10329,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon CloudFront.."
       },
       {
         "id": "8_43",
@@ -10351,7 +10355,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Request and wait for approval from AWS support, and then conduct testing.."
       },
       {
         "id": "8_44",
@@ -10377,7 +10381,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Cost and Usage report.."
       },
       {
         "id": "8_45",
@@ -10403,7 +10407,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Availability Zones.."
       },
       {
         "id": "8_46",
@@ -10429,7 +10433,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. A minimum of two.."
       },
       {
         "id": "8_47",
@@ -10455,7 +10459,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Global infrastructure.."
       },
       {
         "id": "8_48",
@@ -10481,7 +10485,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon EC2.."
       },
       {
         "id": "8_49",
@@ -10507,7 +10511,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Ensure that the application is designed to accommodate failure of any single component.."
       },
       {
         "id": "8_50",
@@ -10534,14 +10538,14 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Elasticity., D. Pay-as-you-go pricing.."
       }
     ]
   },
   {
     "id": 9,
-    "name": "Practice Exam 9",
-    "description": "Practice Exam 9 - 50 questions",
+    "name": "Examen Pratique 9",
+    "description": "Examen Pratique 9 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -10569,7 +10573,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Quick Start reference deployments.."
       },
       {
         "id": "9_2",
@@ -10595,7 +10599,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. It simplifies relational database administration tasks.."
       },
       {
         "id": "9_3",
@@ -10621,7 +10625,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon EC2.."
       },
       {
         "id": "9_4",
@@ -10647,7 +10651,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Launch the instances across multiple Availability Zones in a single AWS Region.."
       },
       {
         "id": "9_5",
@@ -10673,7 +10677,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Identity and Access Management (IAM) policies.."
       },
       {
         "id": "9_6",
@@ -10700,7 +10704,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS VPN., D. Amazon Direct Connect.."
       },
       {
         "id": "9_7",
@@ -10726,7 +10730,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon CloudWatch.."
       },
       {
         "id": "9_8",
@@ -10752,7 +10756,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Updating Amazon EC2 host firmware.."
       },
       {
         "id": "9_9",
@@ -10778,7 +10782,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Accessing forums, blogs, and whitepapers.."
       },
       {
         "id": "9_10",
@@ -10804,7 +10808,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon Simple Storage Service (Amazon S3).."
       },
       {
         "id": "9_11",
@@ -10830,7 +10834,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Edge location management.."
       },
       {
         "id": "9_12",
@@ -10857,7 +10861,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. Performance efficiency., C. Security.."
       },
       {
         "id": "9_13",
@@ -10883,7 +10887,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Trusted Advisor.."
       },
       {
         "id": "9_14",
@@ -10909,7 +10913,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Implement loose coupling.."
       },
       {
         "id": "9_15",
@@ -10935,7 +10939,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Implement elasticity.."
       },
       {
         "id": "9_16",
@@ -10961,7 +10965,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Use AWS Systems Manager to automate database patching according to a schedule.."
       },
       {
         "id": "9_17",
@@ -10987,7 +10991,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Software Development Kit.."
       },
       {
         "id": "9_18",
@@ -11013,7 +11017,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Elastic computing.."
       },
       {
         "id": "9_19",
@@ -11039,7 +11043,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Ability to focus on revenue-generating activities.."
       },
       {
         "id": "9_20",
@@ -11066,7 +11070,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Fault Tolerance., D. Performance.."
       },
       {
         "id": "9_21",
@@ -11092,7 +11096,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. A metrics repository with customizable notification thresholds and channels.."
       },
       {
         "id": "9_22",
@@ -11119,7 +11123,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Encrypting data on the client-side., D. Configuring Network Access Control Lists (ACL).."
       },
       {
         "id": "9_23",
@@ -11145,7 +11149,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Patch management.."
       },
       {
         "id": "9_24",
@@ -11171,7 +11175,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Billing and Cost Management.."
       },
       {
         "id": "9_25",
@@ -11197,7 +11201,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Periodic price reductions as the result of Amazon’s operational efficiencies.."
       },
       {
         "id": "9_26",
@@ -11223,7 +11227,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Consolidated billing.."
       },
       {
         "id": "9_27",
@@ -11249,7 +11253,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Storage Gateway.."
       },
       {
         "id": "9_28",
@@ -11275,7 +11279,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Elastic Load Balancing.."
       },
       {
         "id": "9_29",
@@ -11301,7 +11305,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon S3.."
       },
       {
         "id": "9_30",
@@ -11327,7 +11331,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Availability Zones.."
       },
       {
         "id": "9_31",
@@ -11353,7 +11357,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS WAF.."
       },
       {
         "id": "9_32",
@@ -11379,7 +11383,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Loosely couple components.."
       },
       {
         "id": "9_33",
@@ -11405,7 +11409,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS CloudTrail.."
       },
       {
         "id": "9_34",
@@ -11431,7 +11435,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Artifact.."
       },
       {
         "id": "9_35",
@@ -11458,7 +11462,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Reduced Total Cost of Ownership (TCO)., C. Reduced operational expenditure ( opex ).."
       },
       {
         "id": "9_36",
@@ -11484,7 +11488,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon S3.."
       },
       {
         "id": "9_37",
@@ -11511,7 +11515,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Companies can deploy applications in multiple AWS Regions to reduce latency., C. Amazon CloudFront has multiple edge locations around the world to reduce latency.."
       },
       {
         "id": "9_38",
@@ -11538,7 +11542,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Availability Zones., D. Regions.."
       },
       {
         "id": "9_39",
@@ -11564,7 +11568,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Data encryption.."
       },
       {
         "id": "9_40",
@@ -11590,7 +11594,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Create an AWS Organization from the payer account and invite the other accounts to join.."
       },
       {
         "id": "9_41",
@@ -11616,7 +11620,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Data center security.."
       },
       {
         "id": "9_42",
@@ -11639,8 +11643,10 @@ const allExams = [
             "text": "They do not require the customer to optimize instance type or size selections."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Managed Services takes care of all of your patching and backup activities to help keep your resources current and secure. When updates or patches are released by OS vendors, AWS Managed Services applies them in a timely and consistent manner to minimize the impact on your business - Critical security patches are applied immediately, while others are applied based on the patch schedule you request. Backups of Stacks are automated using Amazon Elastic Block Store (EBS) and RDS snapshots, and can be restored in the event of a failure or outage, ensuring business continuity."
       },
       {
         "id": "9_43",
@@ -11667,7 +11673,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Amazon Route 53., B. Virtual Private Gateway.."
       },
       {
         "id": "9_44",
@@ -11693,7 +11699,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. It distributes incoming application traffic across one or more Amazon EC2 instances.."
       },
       {
         "id": "9_45",
@@ -11719,7 +11725,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon DynamoDB.."
       },
       {
         "id": "9_46",
@@ -11745,7 +11751,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Artifact.."
       },
       {
         "id": "9_47",
@@ -11772,7 +11778,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. Amazon Route 53., D. Amazon CloudFront.."
       },
       {
         "id": "9_48",
@@ -11798,7 +11804,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Apply an IAM policy to an IAM group.."
       },
       {
         "id": "9_49",
@@ -11824,7 +11830,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Use multiple Availability Zones.."
       },
       {
         "id": "9_50",
@@ -11850,14 +11856,14 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Organizations.."
       }
     ]
   },
   {
     "id": 10,
-    "name": "Practice Exam 10",
-    "description": "Practice Exam 10 - 50 questions",
+    "name": "Examen Pratique 10",
+    "description": "Examen Pratique 10 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -11885,7 +11891,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS CloudFormation.."
       },
       {
         "id": "10_2",
@@ -11911,7 +11917,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Three-year, All Upfront, Standard RI pricing.."
       },
       {
         "id": "10_3",
@@ -11937,7 +11943,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Real-time monitoring.."
       },
       {
         "id": "10_4",
@@ -11963,7 +11969,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Lambda.."
       },
       {
         "id": "10_5",
@@ -11989,7 +11995,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Lambda.."
       },
       {
         "id": "10_6",
@@ -12015,7 +12021,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Patching Amazon EC2 instances."
       },
       {
         "id": "10_7",
@@ -12041,7 +12047,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It is shared between AWS and the customer.."
       },
       {
         "id": "10_8",
@@ -12067,7 +12073,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Macie.."
       },
       {
         "id": "10_9",
@@ -12093,7 +12099,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Pay-as-you-go.."
       },
       {
         "id": "10_10",
@@ -12120,7 +12126,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Ensuring that application data is encrypted at rest., C. Ensuring that users have received security training in the use of AWS services.."
       },
       {
         "id": "10_11",
@@ -12146,7 +12152,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Use the consolidated billing feature from AWS Organizations.."
       },
       {
         "id": "10_12",
@@ -12172,7 +12178,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. All Upfront Reserved Instances for a 3 year term.."
       },
       {
         "id": "10_13",
@@ -12198,7 +12204,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon RDS.."
       },
       {
         "id": "10_14",
@@ -12224,7 +12230,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Config.."
       },
       {
         "id": "10_15",
@@ -12250,7 +12256,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Use loosely coupled components.."
       },
       {
         "id": "10_16",
@@ -12277,7 +12283,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. 24/7 assistance by way of live chat or a telephone call., C. An unlimited number of cases and contacts.."
       },
       {
         "id": "10_17",
@@ -12303,7 +12309,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Route 53.."
       },
       {
         "id": "10_18",
@@ -12329,7 +12335,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Dedicated Hosts.."
       },
       {
         "id": "10_19",
@@ -12355,7 +12361,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Convertible RIs.."
       },
       {
         "id": "10_20",
@@ -12381,7 +12387,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon ElastiCache.."
       },
       {
         "id": "10_21",
@@ -12408,7 +12414,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. For non-production applications., D. For fault-tolerant flexible applications.."
       },
       {
         "id": "10_22",
@@ -12436,7 +12442,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: B, C, D"
+        "explanation": "La réponse correcte est les options B. Cost allocation tags., C. AWS Simple Monthly Calculator., D. AWS Total Cost of Ownership (TCO) Calculator.."
       },
       {
         "id": "10_23",
@@ -12462,7 +12468,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon EC2 Auto Scaling.."
       },
       {
         "id": "10_24",
@@ -12488,7 +12494,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Enterprise.."
       },
       {
         "id": "10_25",
@@ -12514,7 +12520,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Make programmatic calls to AWS from AWS APIs.."
       },
       {
         "id": "10_26",
@@ -12540,7 +12546,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon Athena.."
       },
       {
         "id": "10_27",
@@ -12566,7 +12572,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It provides the ability to programmatically provision existing resources.."
       },
       {
         "id": "10_28",
@@ -12592,7 +12598,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS CloudTrail.."
       },
       {
         "id": "10_29",
@@ -12618,7 +12624,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. An object store.."
       },
       {
         "id": "10_30",
@@ -12644,7 +12650,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Total Cost of Ownership (TCO) Calculator.."
       },
       {
         "id": "10_31",
@@ -12670,7 +12676,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Lambda.."
       },
       {
         "id": "10_32",
@@ -12696,7 +12702,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Cost allocation tags.."
       },
       {
         "id": "10_33",
@@ -12722,7 +12728,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Trusted Advisor.."
       },
       {
         "id": "10_34",
@@ -12748,7 +12754,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Hybrid architecture.."
       },
       {
         "id": "10_35",
@@ -12774,7 +12780,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Auto Scaling.."
       },
       {
         "id": "10_36",
@@ -12800,7 +12806,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon DynamoDB.."
       },
       {
         "id": "10_37",
@@ -12826,7 +12832,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Regions contain Availability Zones.."
       },
       {
         "id": "10_38",
@@ -12852,7 +12858,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Using many instances in parallel.."
       },
       {
         "id": "10_39",
@@ -12879,7 +12885,7 @@ const allExams = [
           "A",
           "B"
         ],
-        "explanation": "Réponse correcte: A, B"
+        "explanation": "La réponse correcte est les options A. Amazon EC2., B. Amazon Relational Database Service (Amazon RDS).."
       },
       {
         "id": "10_40",
@@ -12905,7 +12911,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Access keys.."
       },
       {
         "id": "10_41",
@@ -12931,7 +12937,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Implementing controls to route application traffic.."
       },
       {
         "id": "10_42",
@@ -12957,7 +12963,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Enterprise.."
       },
       {
         "id": "10_43",
@@ -12983,7 +12989,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Rekognition provides automatic detection of objects appearing in pictures.."
       },
       {
         "id": "10_44",
@@ -13009,7 +13015,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon AutoScaling.."
       },
       {
         "id": "10_45",
@@ -13035,7 +13041,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS manages the maintenance of the operating system.."
       },
       {
         "id": "10_46",
@@ -13061,7 +13067,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Focusing on decoupling components by isolating them and ensuring individual components can function when other components.."
       },
       {
         "id": "10_47",
@@ -13087,7 +13093,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Partner Network Consulting Partners.."
       },
       {
         "id": "10_48",
@@ -13113,7 +13119,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Amazon S3.."
       },
       {
         "id": "10_49",
@@ -13139,7 +13145,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Design for failure.."
       },
       {
         "id": "10_50",
@@ -13165,14 +13171,14 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Organizations.."
       }
     ]
   },
   {
     "id": 11,
-    "name": "Practice Exam 11",
-    "description": "Practice Exam 11 - 50 questions",
+    "name": "Examen Pratique 11",
+    "description": "Examen Pratique 11 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -13200,7 +13206,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. By minimizing large capital expenditures.."
       },
       {
         "id": "11_2",
@@ -13226,7 +13232,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Online Tech Talks.."
       },
       {
         "id": "11_3",
@@ -13252,7 +13258,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Multi-Factor Authentication (AWS MFA).."
       },
       {
         "id": "11_4",
@@ -13279,7 +13285,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. Security Groups., D. Subnets.."
       },
       {
         "id": "11_5",
@@ -13305,7 +13311,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Physical security.."
       },
       {
         "id": "11_6",
@@ -13332,7 +13338,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. The ability to receive one bill for multiple accounts., D. Potential volume discounts, as usage in all accounts is combined.."
       },
       {
         "id": "11_7",
@@ -13359,7 +13365,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Patching databases software., C. Backing up databases.."
       },
       {
         "id": "11_8",
@@ -13385,7 +13391,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Begin deploying resources in the second Region.."
       },
       {
         "id": "11_9",
@@ -13411,7 +13417,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. They are capable of handling constant changes in network traffic patterns.."
       },
       {
         "id": "11_10",
@@ -13437,7 +13443,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Business.."
       },
       {
         "id": "11_11",
@@ -13463,7 +13469,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon S3.."
       },
       {
         "id": "11_12",
@@ -13489,7 +13495,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Professional Services.."
       },
       {
         "id": "11_13",
@@ -13515,7 +13521,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Business.."
       },
       {
         "id": "11_14",
@@ -13541,7 +13547,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Config.."
       },
       {
         "id": "11_15",
@@ -13568,7 +13574,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. It provides a list of cost optimization recommendations based on current AWS usage., C. It detects potential security vulnerabilities caused by permissions settings on account resources.."
       },
       {
         "id": "11_16",
@@ -13594,7 +13600,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon RDS.."
       },
       {
         "id": "11_17",
@@ -13620,7 +13626,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. IAM user.."
       },
       {
         "id": "11_18",
@@ -13646,7 +13652,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Ensuring that data is encrypted at rest.."
       },
       {
         "id": "11_19",
@@ -13672,7 +13678,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EFS.."
       },
       {
         "id": "11_20",
@@ -13699,7 +13705,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. An access key ID., C. A secret access key.."
       },
       {
         "id": "11_21",
@@ -13725,7 +13731,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Awareness.."
       },
       {
         "id": "11_22",
@@ -13751,7 +13757,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon EC2 instance store.."
       },
       {
         "id": "11_23",
@@ -13777,7 +13783,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Volume pricing qualification.."
       },
       {
         "id": "11_24",
@@ -13803,7 +13809,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Step Functions, Amazon DynamoDB, Amazon SNS.."
       },
       {
         "id": "11_25",
@@ -13829,7 +13835,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Dedicated Hosts.."
       },
       {
         "id": "11_26",
@@ -13855,7 +13861,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Grant least privilege access to IAM users.."
       },
       {
         "id": "11_27",
@@ -13881,7 +13887,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS CloudFormation.."
       },
       {
         "id": "11_28",
@@ -13907,7 +13913,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. The application will have higher availability because it can withstand a service disruption in one Availability Zone.."
       },
       {
         "id": "11_29",
@@ -13933,7 +13939,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Amazon Aurora.."
       },
       {
         "id": "11_30",
@@ -13959,7 +13965,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Implement loose coupling.."
       },
       {
         "id": "11_31",
@@ -13985,7 +13991,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Concierge team.."
       },
       {
         "id": "11_32",
@@ -14011,7 +14017,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Moving from upfront capital expense (capex) to variable operational expense ( opex ).."
       },
       {
         "id": "11_33",
@@ -14037,7 +14043,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Dedicated Hosts."
       },
       {
         "id": "11_34",
@@ -14063,7 +14069,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Glacier.."
       },
       {
         "id": "11_35",
@@ -14089,7 +14095,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Business.."
       },
       {
         "id": "11_36",
@@ -14115,7 +14121,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Spot Instances.."
       },
       {
         "id": "11_37",
@@ -14141,7 +14147,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon S3.."
       },
       {
         "id": "11_38",
@@ -14168,7 +14174,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Delivering content closer to users., D. Reducing traffic on the server by caching responses.."
       },
       {
         "id": "11_39",
@@ -14194,7 +14200,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Total Cost of Ownership (TCO) Calculator.."
       },
       {
         "id": "11_40",
@@ -14220,7 +14226,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Personal Health Dashboard.."
       },
       {
         "id": "11_41",
@@ -14246,7 +14252,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. It allows the business to focus on business activities.."
       },
       {
         "id": "11_42",
@@ -14272,7 +14278,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Discussion Forums.."
       },
       {
         "id": "11_43",
@@ -14298,7 +14304,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Deploy applications across multiple AWS Regions.."
       },
       {
         "id": "11_44",
@@ -14324,7 +14330,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Ensuring Amazon EBS volumes are backed up.."
       },
       {
         "id": "11_45",
@@ -14350,7 +14356,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. A company has a number of infrequent, interruptible jobs that are currently using On-Demand Instances.."
       },
       {
         "id": "11_46",
@@ -14377,7 +14383,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Reduced latency to users., C. Data sovereignty compliance.."
       },
       {
         "id": "11_47",
@@ -14403,7 +14409,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Personal Health Dashboard.."
       },
       {
         "id": "11_48",
@@ -14429,7 +14435,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Multi-site active-active.."
       },
       {
         "id": "11_49",
@@ -14455,7 +14461,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS CodeCommit.."
       },
       {
         "id": "11_50",
@@ -14482,14 +14488,14 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Enable Multi-Factor Authentication (MFA), D. Configure a strong password policy."
       }
     ]
   },
   {
     "id": 12,
-    "name": "Practice Exam 12",
-    "description": "Practice Exam 12 - 42 questions",
+    "name": "Examen Pratique 12",
+    "description": "Examen Pratique 12 - 42 questions",
     "questionCount": 42,
     "duration": 90,
     "questions": [
@@ -14517,7 +14523,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Availability Zone."
       },
       {
         "id": "12_2",
@@ -14543,7 +14549,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Paying only for time used.."
       },
       {
         "id": "12_3",
@@ -14570,7 +14576,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. AWS Professional Services., D. AWS Partner Network (APN).."
       },
       {
         "id": "12_4",
@@ -14596,7 +14602,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Help lower latency and improve performance for users.."
       },
       {
         "id": "12_5",
@@ -14623,7 +14629,7 @@ const allExams = [
           "A",
           "C"
         ],
-        "explanation": "Réponse correcte: A, C"
+        "explanation": "La réponse correcte est les options A. Command line interface., C. Software Development Kits.."
       },
       {
         "id": "12_6",
@@ -14649,7 +14655,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. No long-term contract is required.."
       },
       {
         "id": "12_7",
@@ -14675,7 +14681,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EC2 Reserved Instances.."
       },
       {
         "id": "12_8",
@@ -14701,7 +14707,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Config.."
       },
       {
         "id": "12_9",
@@ -14727,7 +14733,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Global reach.."
       },
       {
         "id": "12_10",
@@ -14753,7 +14759,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. By using AWS Organizations consolidated billing.."
       },
       {
         "id": "12_11",
@@ -14780,7 +14786,7 @@ const allExams = [
           "C",
           "D"
         ],
-        "explanation": "Réponse correcte: C, D"
+        "explanation": "La réponse correcte est les options C. AWS makes it easy to architect for high availability., D. AWS can easily accommodate application demand changes.."
       },
       {
         "id": "12_12",
@@ -14806,7 +14812,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon EC2.."
       },
       {
         "id": "12_13",
@@ -14832,7 +14838,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Using Multi-Factor Authentication (MFA).."
       },
       {
         "id": "12_14",
@@ -14858,7 +14864,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Storage Gateway."
       },
       {
         "id": "12_15",
@@ -14884,7 +14890,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS Marketplace.."
       },
       {
         "id": "12_16",
@@ -14910,7 +14916,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. AWS Regions.."
       },
       {
         "id": "12_17",
@@ -14936,7 +14942,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Spot Instances.."
       },
       {
         "id": "12_18",
@@ -14963,7 +14969,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC, D. Connect the company’s on-premises data center to AWS using AWS Direct Connect."
       },
       {
         "id": "12_19",
@@ -14989,7 +14995,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Run AWS Trusted Advisor and review the findings.."
       },
       {
         "id": "12_20",
@@ -15016,7 +15022,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. AWS Trusted Advisor security checks., C. Data encryption.."
       },
       {
         "id": "12_21",
@@ -15043,7 +15049,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. AWS WAF., D. Amazon CloudFront.."
       },
       {
         "id": "12_22",
@@ -15069,7 +15075,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Amazon Machine Image.."
       },
       {
         "id": "12_23",
@@ -15095,7 +15101,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Implement elasticity.."
       },
       {
         "id": "12_24",
@@ -15121,7 +15127,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Elasticity of the AWS Cloud.."
       },
       {
         "id": "12_25",
@@ -15147,7 +15153,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. AWS security and compliance documents.."
       },
       {
         "id": "12_26",
@@ -15173,7 +15179,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Lower variable costs and lower upfront costs.."
       },
       {
         "id": "12_27",
@@ -15199,7 +15205,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon CloudFront.."
       },
       {
         "id": "12_28",
@@ -15225,7 +15231,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. They automatically add or replace instances across multiple Availability Zones when the application needs it.."
       },
       {
         "id": "12_29",
@@ -15251,7 +15257,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Identity and Access Management (IAM) policies.."
       },
       {
         "id": "12_30",
@@ -15277,7 +15283,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Simple Monthly Calculator.."
       },
       {
         "id": "12_31",
@@ -15303,7 +15309,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. AWS Artifact.."
       },
       {
         "id": "12_32",
@@ -15329,7 +15335,7 @@ const allExams = [
         "correctAnswers": [
           "C"
         ],
-        "explanation": "Réponse correcte: C"
+        "explanation": "La réponse correcte est l'option C. Securing the Amazon EC2 hypervisor.."
       },
       {
         "id": "12_33",
@@ -15355,7 +15361,7 @@ const allExams = [
         "correctAnswers": [
           "B"
         ],
-        "explanation": "Réponse correcte: B"
+        "explanation": "La réponse correcte est l'option B. Patching of operating systems.."
       },
       {
         "id": "12_34",
@@ -15381,7 +15387,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon Redshift.."
       },
       {
         "id": "12_35",
@@ -15408,7 +15414,7 @@ const allExams = [
           "B",
           "D"
         ],
-        "explanation": "Réponse correcte: B, D"
+        "explanation": "La réponse correcte est les options B. AWS Direct Connect., D. AWS Storage Gateway.."
       },
       {
         "id": "12_36",
@@ -15435,7 +15441,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. No need to guess capacity requirements., C. Increased speed to market.."
       },
       {
         "id": "12_37",
@@ -15461,7 +15467,7 @@ const allExams = [
         "correctAnswers": [
           "A"
         ],
-        "explanation": "Réponse correcte: A"
+        "explanation": "La réponse correcte est l'option A. Users do not have to wait for infrastructure provisioning.."
       },
       {
         "id": "12_38",
@@ -15488,7 +15494,7 @@ const allExams = [
           "B",
           "C"
         ],
-        "explanation": "Réponse correcte: B, C"
+        "explanation": "La réponse correcte est les options B. AWS OpsWorks., C. AWS CodeDeploy.."
       },
       {
         "id": "12_39",
@@ -15514,7 +15520,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Decreased acquisition time for new compute resources.."
       },
       {
         "id": "12_40",
@@ -15540,7 +15546,7 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. AWS Shield.."
       },
       {
         "id": "12_41",
@@ -15567,7 +15573,7 @@ const allExams = [
           "A",
           "D"
         ],
-        "explanation": "Réponse correcte: A, D"
+        "explanation": "La réponse correcte est les options A. The ability to receive one bill for multiple accounts., D. Potential volume discounts, as usage in all accounts is combined.."
       },
       {
         "id": "12_42",
@@ -15593,14 +15599,14 @@ const allExams = [
         "correctAnswers": [
           "D"
         ],
-        "explanation": "Réponse correcte: D"
+        "explanation": "La réponse correcte est l'option D. Amazon EC2 with Amazon Elastic Block Store (Amazon EBS).."
       }
     ]
   },
   {
     "id": 13,
-    "name": "Practice Exam 13",
-    "description": "Practice Exam 13 - 50 questions",
+    "name": "Examen Pratique 13",
+    "description": "Examen Pratique 13 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -15625,8 +15631,10 @@ const allExams = [
             "text": "AWS Marketplace"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_2",
@@ -15649,8 +15657,10 @@ const allExams = [
             "text": "Amazon EBS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/s3/faqs/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_3",
@@ -15673,12 +15683,14 @@ const allExams = [
             "text": "AWS Account Managers"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/professional-services/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_4",
-        "text": "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. <br/>Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
+        "text": "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
         "options": [
           {
             "letter": "A",
@@ -15697,8 +15709,10 @@ const allExams = [
             "text": "AWS Service Catalog"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Partner Network Consulting Partners."
       },
       {
         "id": "13_5",
@@ -15721,8 +15735,10 @@ const allExams = [
             "text": "Implement elasticity."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Design for failure.."
       },
       {
         "id": "13_6",
@@ -15745,8 +15761,10 @@ const allExams = [
             "text": "Amazon Redshift"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/sql/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_7",
@@ -15769,8 +15787,10 @@ const allExams = [
             "text": "Detailed billing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS Trusted Advisor."
       },
       {
         "id": "13_8",
@@ -15793,8 +15813,10 @@ const allExams = [
             "text": "On-Demand Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_9",
@@ -15817,8 +15839,10 @@ const allExams = [
             "text": "Pay-as-you-go pricing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Elasticity."
       },
       {
         "id": "13_10",
@@ -15841,8 +15865,10 @@ const allExams = [
             "text": "AWS Health"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/cloudtrail/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_11",
@@ -15865,8 +15891,10 @@ const allExams = [
             "text": "A network file system"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. An object store."
       },
       {
         "id": "13_12",
@@ -15889,8 +15917,10 @@ const allExams = [
             "text": "Auto Scaling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - - You can also use CloudWatch in hybrid cloud architectures by using the CloudWatch Agent or API to monitor your on-premises resources."
       },
       {
         "id": "13_13",
@@ -15913,12 +15943,14 @@ const allExams = [
             "text": "Software development"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://media.amazonwebservices.com/AWS_TCO_Web_Applications.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_14",
-        "text": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. <br/> Which service should the company use?",
+        "text": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. Which service should the company use?",
         "options": [
           {
             "letter": "A",
@@ -15937,8 +15969,10 @@ const allExams = [
             "text": "Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Amazon EC2 with Amazon Elastic Block Store (Amazon EBS)."
       },
       {
         "id": "13_15",
@@ -15961,8 +15995,10 @@ const allExams = [
             "text": "Edge locations contain regions."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/global-infrastructure/regions_az/#Region_Maps_and_Edge_Networks>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_16",
@@ -15985,8 +16021,10 @@ const allExams = [
             "text": "AWS Total Cost of Ownership (TCO) Calculator"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/estimating-aws-resource-costs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_17",
@@ -16009,8 +16047,10 @@ const allExams = [
             "text": "Potential volume discounts, as usage in all accounts is combined"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_18",
@@ -16033,8 +16073,10 @@ const allExams = [
             "text": "Three-year, No Upfront, Convertible RI pricing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_19",
@@ -16057,8 +16099,10 @@ const allExams = [
             "text": "lower variable costs and lower upfront costs."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/introduction-to-aws-cloud-economics-final.pdf> (10)"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": (10)."
       },
       {
         "id": "13_20",
@@ -16081,8 +16125,10 @@ const allExams = [
             "text": "refresh data changes daily."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. help lower latency and improve performance for users.."
       },
       {
         "id": "13_21",
@@ -16105,8 +16151,10 @@ const allExams = [
             "text": "Security Groups"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/security/how-to-restrict-amazon-s3-bucket-access-to-a-specific-iam-role/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_22",
@@ -16129,8 +16177,10 @@ const allExams = [
             "text": "Attending AWS classes at a local university"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Accessing forums, blogs, and whitepapers."
       },
       {
         "id": "13_23",
@@ -16153,8 +16203,10 @@ const allExams = [
             "text": "Standard RIs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/reserved-instances/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_24",
@@ -16177,8 +16229,10 @@ const allExams = [
             "text": "Encryption"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Elastic computing."
       },
       {
         "id": "13_25",
@@ -16201,8 +16255,10 @@ const allExams = [
             "text": "AWS Direct Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/elasticloadbalancing/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_26",
@@ -16225,8 +16281,10 @@ const allExams = [
             "text": "AWS Certificate Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/soc-faqs/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_27",
@@ -16249,8 +16307,10 @@ const allExams = [
             "text": "Configuring Network Access Control Lists (ACL)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_28",
@@ -16273,8 +16333,10 @@ const allExams = [
             "text": "Use a monolithic application that handles all operations."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Ensure that the application is designed to accommodate failure of any single component.."
       },
       {
         "id": "13_29",
@@ -16297,8 +16359,10 @@ const allExams = [
             "text": "Use frequently coupled components."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_30",
@@ -16321,8 +16385,10 @@ const allExams = [
             "text": "Using Multi-Factor Authentication (MFA)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Using Multi-Factor Authentication (MFA)."
       },
       {
         "id": "13_31",
@@ -16345,8 +16411,10 @@ const allExams = [
             "text": "Amazon Redshift"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Amazon RDS."
       },
       {
         "id": "13_32",
@@ -16369,12 +16437,14 @@ const allExams = [
             "text": "It enabled users to dynamically adjust CPU and RAM resources."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - In the main RDS page though, Lower administrative burden is listed as part of the benefits. -."
       },
       {
         "id": "13_33",
-        "text": "A customer needs to run a MySQL database that easily scales.<br/>Which AWS service should they use?",
+        "text": "A customer needs to run a MySQL database that easily scales.\nWhich AWS service should they use?",
         "options": [
           {
             "letter": "A",
@@ -16393,8 +16463,10 @@ const allExams = [
             "text": "Amazon ElastiCache"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/rds/aurora/serverless/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_34",
@@ -16417,8 +16489,10 @@ const allExams = [
             "text": "Private networking"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_35",
@@ -16441,8 +16515,10 @@ const allExams = [
             "text": "Awareness and training"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_36",
@@ -16465,8 +16541,10 @@ const allExams = [
             "text": "A minimum of four or more"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. A minimum of two."
       },
       {
         "id": "13_37",
@@ -16489,8 +16567,10 @@ const allExams = [
             "text": "it allows the business to leave servers unpatched."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. it allows the business to focus on business activities.."
       },
       {
         "id": "13_38",
@@ -16513,8 +16593,10 @@ const allExams = [
             "text": "Amazon EC2 Instance Store"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Amazon S3."
       },
       {
         "id": "13_39",
@@ -16537,8 +16619,10 @@ const allExams = [
             "text": "SSH keys"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_40",
@@ -16561,8 +16645,10 @@ const allExams = [
             "text": "Amazon S3"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/dynamodb/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_41",
@@ -16585,8 +16671,10 @@ const allExams = [
             "text": "Decreased acquisition time for new compute resources"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/enterprise-strategy/risk-is-lack-of-agility/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_42",
@@ -16609,8 +16697,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/organizations/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_43",
@@ -16633,8 +16723,10 @@ const allExams = [
             "text": "Using a large GPU instance type"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/solutions/case-studies/encoding/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_44",
@@ -16657,8 +16749,10 @@ const allExams = [
             "text": "AWS CloudTrail Logs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Physical security."
       },
       {
         "id": "13_45",
@@ -16681,8 +16775,10 @@ const allExams = [
             "text": "High availability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Global Reach will support an international company using Cloud-Front."
       },
       {
         "id": "13_46",
@@ -16705,12 +16801,14 @@ const allExams = [
             "text": "Patching network infrastructure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_47",
-        "text": "A customer is using multiple AWS accounts with separate billing. <br/>How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
+        "text": "A customer is using multiple AWS accounts with separate billing. How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
         "options": [
           {
             "letter": "A",
@@ -16729,8 +16827,10 @@ const allExams = [
             "text": "Sign up for the AWS Enterprise support plan to get volume discounts."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/answers/account-management/aws-multi-account-billing-strategy/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_48",
@@ -16753,8 +16853,10 @@ const allExams = [
             "text": "Real-time monitoring"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Real-time monitoring."
       },
       {
         "id": "13_49",
@@ -16777,12 +16879,14 @@ const allExams = [
             "text": "Amazon Lightsail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/tutorials/get-a-domain/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "13_50",
-        "text": "A customer is deploying a new application and needs to choose an AWS Region. <br/>Which of the following factors could influence the customer's decision? (Select TWO.)",
+        "text": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Select TWO.)",
         "options": [
           {
             "letter": "A",
@@ -16801,15 +16905,17 @@ const allExams = [
             "text": "Cooling costs in hotter climates"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Reduced latency to users."
       }
     ]
   },
   {
     "id": 14,
-    "name": "Practice Exam 14",
-    "description": "Practice Exam 14 - 50 questions",
+    "name": "Examen Pratique 14",
+    "description": "Examen Pratique 14 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -16834,8 +16940,10 @@ const allExams = [
             "text": "Amazon Simple Storage Service (Amazon S3)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/projects/host-static-website/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_2",
@@ -16858,8 +16966,10 @@ const allExams = [
             "text": "Spot Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/spot/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_3",
@@ -16882,8 +16992,10 @@ const allExams = [
             "text": "Environmental risk management"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Data encryption."
       },
       {
         "id": "14_4",
@@ -16906,12 +17018,14 @@ const allExams = [
             "text": "Amazon DynamoDB"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Amazon EC2."
       },
       {
         "id": "14_5",
-        "text": "A company is looking for a scalable data warehouse solution. <br/> Which of the following AWS solutions would meet the company's needs?",
+        "text": "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the company's needs?",
         "options": [
           {
             "letter": "A",
@@ -16930,8 +17044,10 @@ const allExams = [
             "text": "Amazon Redshift"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/redshift/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_6",
@@ -16954,8 +17070,10 @@ const allExams = [
             "text": "It automatically adjusts the number of Amazon EC2 instances to support incoming traffic."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/elasticloadbalancing/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_7",
@@ -16978,8 +17096,10 @@ const allExams = [
             "text": "Software-as-a-service"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Command line interface."
       },
       {
         "id": "14_8",
@@ -17002,8 +17122,10 @@ const allExams = [
             "text": "pay-as-you-go pricing."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. global infrastructure.."
       },
       {
         "id": "14_9",
@@ -17026,12 +17148,14 @@ const allExams = [
             "text": "Amazon Glacier"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "14_10",
-        "text": "Web servers running on Amazon EC2 access a legacy application running in a corporate data center. <br/> What term would describe this model?",
+        "text": "Web servers running on Amazon EC2 access a legacy application running in a corporate data center. What term would describe this model?",
         "options": [
           {
             "letter": "A",
@@ -17050,8 +17174,10 @@ const allExams = [
             "text": "Infrastructure as a service"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/enterprise/hybrid/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_11",
@@ -17074,8 +17200,10 @@ const allExams = [
             "text": "They do not require the customer to optimize instance type or size selections."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Managed Services takes care of all of your patching and backup activities to help keep your resources current and secure. When updates or patches are released by OS vendors, AWS Managed Services applies them in a timely and consistent manner to minimize the impact on your business - Critical security patches are applied immediately, while others are applied based on the patch schedule you request. Backups of Stacks are automated using Amazon Elastic Block Store (EBS) and RDS snapshots, and can be restored in the event of a failure or outage, ensuring business continuity."
       },
       {
         "id": "14_12",
@@ -17098,8 +17226,10 @@ const allExams = [
             "text": "Amazon S3"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/what-is-cloud-object-storage/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_13",
@@ -17122,8 +17252,10 @@ const allExams = [
             "text": "IAM policy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Access keys are long-term credentials for an IAM user or the AWS account root user. - You can use access keys to sign programmatic requests to the AWS CLI or API (directly or using the AWS SDK). - For more information, see Signing AWS API Requests in the Amazon Web Services General Reference."
       },
       {
         "id": "14_14",
@@ -17146,8 +17278,10 @@ const allExams = [
             "text": "Automated penetration testing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Penetration testing is not correct, because it can be done by customers on their own resources."
       },
       {
         "id": "14_15",
@@ -17170,8 +17304,10 @@ const allExams = [
             "text": "Amazon RDS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. - It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. - It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need. Reference:."
       },
       {
         "id": "14_16",
@@ -17194,8 +17330,10 @@ const allExams = [
             "text": "Amazon EFS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. - It is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth. - Amazon EFS is designed to provide the throughput, IOPS, and low latency needed for Linux workloads. - Throughput and IOPS scale as a file system grows and can burst to higher throughput levels for short periods of time to support the unpredictable performance needs of file workloads. - For the most demanding workloads, Amazon EFS can support performance over 10 GB/sec and up to 500,000 IOPS."
       },
       {
         "id": "14_17",
@@ -17218,8 +17356,10 @@ const allExams = [
             "text": "Implement elasticity"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - \"Provisioning for peaks\" is a characteristic of a traditional computing environment, per the AWS Best Practices: \"you provision capacity based on an estimate of a theoretical maximum peak.\" -."
       },
       {
         "id": "14_18",
@@ -17242,8 +17382,10 @@ const allExams = [
             "text": "AWS EBS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon S3 Glacier is a secure, durable, and low-cost storage class of S3 for data archiving and long-term backup. Customers can store large or small amounts of data for as little as $0.004 per gigabyte per month. - The S3 Glacier storage class is ideal for archives where data is regularly retrieved and some of the data may be needed in minutes. - Amazon RDS is a relational database service that hosts databases. It helps you create and manage databases. - Amazon Snowball is a petabyte-scale data transfer service that provides cost efficient data transfer to AWS from tamper proof physical devices. Similarly, Elastic block storage offers persistent block storage volumes for EC2 instances. Reference:."
       },
       {
         "id": "14_19",
@@ -17266,8 +17408,10 @@ const allExams = [
             "text": "Updating operating systems"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Compliance enables customers to establish and operate in an AWS security control environment The shared responsibility model is part of AWS Compliance - The Security of the cloud is managed by Amazon AWS provider - The Security in the cloud is responsibility of the customer - The customer is responsible for their information and data, their secure transmission, integrity, and encryption Also, the customer is responsible for managing, support, patching and control of the guest operating system and AWS services provided like EC2 - AWS customers retain control and ownership of their data - The AWS network provides significant protection against traditional network security issues and the customer can implement further protection Reference:."
       },
       {
         "id": "14_20",
@@ -17290,8 +17434,10 @@ const allExams = [
             "text": "Amazon CloudSearch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Marketplace is a digital catalog with thousands of software listings from independent software vendors that make it easy to find, test, buy, and deploy software that runs on AWS. Reference:."
       },
       {
         "id": "14_21",
@@ -17314,8 +17460,10 @@ const allExams = [
             "text": "Choice of specific cloud hardware vendors."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Developer and IT staff productivity accounted for nearly 30% of overall financial benefits. - The remaining benefits were driven by the flexibility and agility of Amazon cloud infrastructure services, which make it easier to trial new business models, support revenue-generating applications, and provide more reliable services to end users. Reference:."
       },
       {
         "id": "14_22",
@@ -17338,8 +17486,10 @@ const allExams = [
             "text": "No Upfront Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Use Dedicated Hosts to launch Amazon EC2 instances on physical servers that are dedicated for your use. - Dedicated Hosts give you additional visibility and control over how instances are placed on a physical server, and you can reliably use the same physical server over time. - As a result, Dedicated Hosts enable you to use your existing server-bound software licenses like Windows Server and address corporate compliance and regulatory requirements."
       },
       {
         "id": "14_23",
@@ -17362,8 +17512,10 @@ const allExams = [
             "text": "AWS CloudFormation"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. - CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. - This file serves as the single source of truth for your cloud environment. Reference:."
       },
       {
         "id": "14_24",
@@ -17386,8 +17538,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. - Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. - With Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines. - This enables you to simplify compliance auditing, security analysis, change management, and operational troubleshooting. Reference:."
       },
       {
         "id": "14_25",
@@ -17410,8 +17564,10 @@ const allExams = [
             "text": "A rule repository of a web application firewall with automated vulnerability prevention features."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon CloudWatch is basically a metrics repository. - An AWS service -- such as Amazon EC2 -- puts metrics into the repository, and you retrieve statistics based on those metrics. - If you put your own custom metrics into the repository, you can retrieve statistics on these metrics as well. Reference: cloudwatch_architecture.html."
       },
       {
         "id": "14_26",
@@ -17434,8 +17590,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - use the consolidated billing feature in AWS Organizations to consolidate billing and payment for multiple AWS accounts or multiple Amazon Internet Services Pvt. Ltd (AISPL) accounts. - Every organization in AWS Organizations has a master account that pays the charges of all the member accounts. - Consolidated billing has the following benefits: - One bill You get one bill for multiple accounts. - Easy tracking You can track the charges across multiple accounts and download the combined cost and usage data. - Combined usage You can combine the usage across all accounts in the organization to share the volume pricing discounts and Reserved Instance discounts. This can result in a lower charge for your project, department, or company than with individual standalone accounts. For more information, see Volume Discounts. - No extra fee Consolidated billing is offered at no additional cost."
       },
       {
         "id": "14_27",
@@ -17458,8 +17616,10 @@ const allExams = [
             "text": "AWS Batch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "14_28",
@@ -17482,8 +17642,10 @@ const allExams = [
             "text": "Convertible Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - In the new model, the Spot prices are more predictable, updated less frequently, and are determined by supply and demand for Amazon EC2 spare capacity, not bid prices. Reference:."
       },
       {
         "id": "14_29",
@@ -17506,8 +17668,10 @@ const allExams = [
             "text": "Rely on individual components."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Implement loose coupling.."
       },
       {
         "id": "14_30",
@@ -17530,8 +17694,10 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "14_31",
@@ -17554,8 +17720,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Artifact is your go-to, central resource for compliance-related information that matters to you. - It provides on-demand access to AWS's security and compliance reports and select online agreements. - The AWS SOC 2 report is particularly helpful for completing questionnaires because it provides a comprehensive description of the implementation and operating effectiveness of AWS security controls. - Another useful document is the Executive Briefing within the AWS FedRAMP Partner Package. Reference:."
       },
       {
         "id": "14_32",
@@ -17578,8 +17746,10 @@ const allExams = [
             "text": "Amazon CloudWatch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Personal Health Dashboard."
       },
       {
         "id": "14_33",
@@ -17602,8 +17772,10 @@ const allExams = [
             "text": "Eliminates the need for tagging"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - If you have multiple standalone accounts, your charges might decrease if you add the accounts to an organization. - AWS combines usage from all accounts in the organization to qualify you for volume pricing discounts. Reference:."
       },
       {
         "id": "14_34",
@@ -17626,8 +17798,10 @@ const allExams = [
             "text": "Request and wait for approval from AWS support, and then conduct testing."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS customers are welcome to carry out security assessments or penetration tests against their AWS infrastructure without prior approval for 8 services. Reference:."
       },
       {
         "id": "14_35",
@@ -17650,8 +17824,10 @@ const allExams = [
             "text": "Amazon AppStream 2.0"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - To use Amazon EC2, you simply: - Select a pre-configured, templated Amazon Machine Image (AMI) to get up and running immediately. Or create an AMI containing your applications, libraries, data, and associated configuration settings. - Configure security and network access on your Amazon EC2 instance. - Choose which instance type(s) you want, then start, terminate, and monitor as many instances of your AMI as needed, using the web service APIs or the variety of management tools provided. - Determine whether you want to run in multiple locations, utilize static IP endpoints, or attach persistent block storage to your instances. - Pay only for the resources that you actually consume, like instance-hours or data transfer. Reference:."
       },
       {
         "id": "14_36",
@@ -17674,8 +17850,10 @@ const allExams = [
             "text": "Apply an IAM policy to an Amazon Cognito user pool."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Instead of defining permissions for individual IAM users, it's usually more convenient to create groups that relate to job functions (administrators, developers, accounting, etc.). - Next, define the relevant permissions for each group. Finally, assign IAM users to those groups. All the users in an IAM group inherit the permissions assigned to the group. - That way, you can make changes for everyone in a group in just one place. As people move around in your company, you can simply change what IAM group their IAM user belongs to. Reference:."
       },
       {
         "id": "14_37",
@@ -17698,8 +17876,10 @@ const allExams = [
             "text": "AWS Billing dashboard"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - The Cost & Usage Report is your one-stop-shop for accessing the most granular data about your AWS costs and usage. - You can also load your cost and usage information into Amazon Athena, Amazon Redshift, AWS QuickSight, or a tool of your choice. Reference:."
       },
       {
         "id": "14_38",
@@ -17722,8 +17902,10 @@ const allExams = [
             "text": "Amazon EC2 Auto Scaling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS CloudFormation."
       },
       {
         "id": "14_39",
@@ -17746,8 +17928,10 @@ const allExams = [
             "text": "Implement vertical scaling."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Loose coupling between services can also be done through asynchronous integration. It involves one component that generates events and another that consumes them. - The two components do not integrate through direct point-to-point interaction, but usually through an intermediate durable storage layer. - This approach decouples the two components and introduces additional resiliency. - So, for example, if a process that is reading messages from the queue fails, messages can still be added to the queue to be processed when the system recovers. Reference:."
       },
       {
         "id": "14_40",
@@ -17770,8 +17954,10 @@ const allExams = [
             "text": "Enable Amazon CloudFront."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - If you decided to create service accounts (that is, accounts used for programmatic access by applications running outside of the AWS environment) and generate access keys for them, you should create a dedicated service account for each use case. - This will allow you to restrict the associated policy to only the permissions needed for the particular use case, limiting the blast radius if the credentials are compromised. - For example, if a monitoring tool and a release management tool both require access to your AWS environment, create two separate service accounts with two separate policies that define the minimum set of permissions for each tool. Reference:."
       },
       {
         "id": "14_41",
@@ -17794,8 +17980,10 @@ const allExams = [
             "text": "Amazon Elastic Block Storage (Amazon EBS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases. - These include moving tape backups to the cloud, reducing on-premises storage with cloud-backed file shares, providing low latency access to data in AWS for on- premises applications, as well as various migration, archiving, processing, and disaster recovery use cases. Reference:."
       },
       {
         "id": "14_42",
@@ -17818,8 +18006,10 @@ const allExams = [
             "text": "AWS Fargate"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The customer is responsible for managing, support, patching and control of the guest operating system and AWS services provided like EC2. Reference:."
       },
       {
         "id": "14_43",
@@ -17842,8 +18032,10 @@ const allExams = [
             "text": "Provision extra capacity."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Data Center resilience is practiced through Availability Zones across data centers that reduce the impact of failures. - Fault isolation improvement can be made to traditional horizontal scaling by sharding (a method of grouping instances into groups called shards, instead of sending the traffic from all users to every node like in the traditional IT structure.) Reference:."
       },
       {
         "id": "14_44",
@@ -17866,8 +18058,10 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The enterprise support plans supports technical account manager. Developer and business support plans are devoid of this facility. Reference:."
       },
       {
         "id": "14_45",
@@ -17890,8 +18084,10 @@ const allExams = [
             "text": "AWS manages the database type."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS manages the maintenance of the operating system.."
       },
       {
         "id": "14_46",
@@ -17914,8 +18110,10 @@ const allExams = [
             "text": "Amazon EC2 Instance Store"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - Amazon ElastiCache for Redis is a great choice for implementing a highly available, distributed, and secure in-memory cache to decrease access latency, increase throughput, and ease the load off your relational or NoSQL databases and applications. - ElastiCache can serve frequently requested items at sub- millisecond response times, and enables you to easily scale for higher loads without growing the costlier backend databases. - Database query results caching, persistent session caching, and full-page caching are all popular examples of caching with ElastiCache for Redis. Reference:."
       },
       {
         "id": "14_47",
@@ -17938,8 +18136,10 @@ const allExams = [
             "text": "Auditing physical data center assets"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Of course, Amazon is responsible for auditing physical data center assets and resources since it is the property of Amazon Inc. Customers have no access to physical sites, hence they are not responsible for maintaining physical data center assets."
       },
       {
         "id": "14_48",
@@ -17962,8 +18162,10 @@ const allExams = [
             "text": "AWS Forums"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Training and Certification builds your competence, confidence, and credibility through practical cloud skills that help you innovate and build your future. - Our content is built by experts at AWS and updated regularly so you're always learning the latest and keeping your cloud skills fresh. - Amazon offer both digital and classroom training including private on-site training. You can choose to learn online at your own pace or learn from an accredited AWS instructor. - Whether you're just starting out, building on existing IT skills, or sharpening your cloud knowledge, AWS Training and Certification can help you be more effective and do more in the cloud. Reference:."
       },
       {
         "id": "14_49",
@@ -17986,8 +18188,10 @@ const allExams = [
             "text": "Subnets"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. - You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. - You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications. - You can easily customize the network configuration for your Amazon VPC. - For example, you can create a public-facing subnet for your web servers that has access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access. - You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet. Reference:."
       },
       {
         "id": "14_50",
@@ -18010,15 +18214,17 @@ const allExams = [
             "text": "Put all invoices into one Amazon Simple Storage Service (Amazon S3) bucket, load data into Amazon Redshift, and then run a billing report."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 15,
-    "name": "Practice Exam 15",
-    "description": "Practice Exam 15 - 50 questions",
+    "name": "Examen Pratique 15",
+    "description": "Examen Pratique 15 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -18043,8 +18249,10 @@ const allExams = [
             "text": "Increased reliability in the underlying hardware of Amazon EC2 instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Periodic price reductions as the result of Amazon's operational efficiencies."
       },
       {
         "id": "15_2",
@@ -18067,8 +18275,10 @@ const allExams = [
             "text": "AWS CloudHSM"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS offers a solution that uses AWS CloudTrail to log account activity, Amazon Kinesis to compute and stream metrics in real-time, and Amazon DynamoDB to durably store the computed data. - Metrics are calculated for create, modify, and delete API calls for more than 60 supported AWS services. - The solution also features a dashboard that visualizes your account activity in real-time. Reference:."
       },
       {
         "id": "15_3",
@@ -18091,8 +18301,10 @@ const allExams = [
             "text": "Creating database schema"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Patching databases software."
       },
       {
         "id": "15_4",
@@ -18115,8 +18327,10 @@ const allExams = [
             "text": "A company has a number of infrequent, interruptible jobs that are currently using On-Demand Instances."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-leveraging-ec2-spot-instances/spot-instance-interruptions.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_5",
@@ -18139,8 +18353,10 @@ const allExams = [
             "text": "Amazon Virtual Private Cloud (Amazon VPC)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - This is to achieve High Availability for any web application (in this case SwiftCode) deployed in AWS. - The following features will be present: - High availability across multiple instances/multiple availability zones. - Auto Scaling of instances (scale up and scale down) based on number of requests coming in - Additional Security to the instances/database that are in production - No impact to end users during newer version of code deployment - No Impact during patching the instances."
       },
       {
         "id": "15_6",
@@ -18163,8 +18379,10 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_7",
@@ -18187,8 +18405,10 @@ const allExams = [
             "text": "AWS X-Ray"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - You can host a static website on Amazon Simple Storage Service (Amazon S3). On a static website, individual webpages include static content. - They might also contain client-side scripts. By contrast, a dynamic website relies on server-side processing, including server-side scripts such as PHP, JSP, or ASP.NET. Amazon S3 does not support server-side scripting. Reference:."
       },
       {
         "id": "15_8",
@@ -18211,8 +18431,10 @@ const allExams = [
             "text": "It automates the resource request process from a company's IT vendor list."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. It provides the ability to programmatically provision existing resources.."
       },
       {
         "id": "15_9",
@@ -18235,8 +18457,10 @@ const allExams = [
             "text": "Reducing traffic on the server by caching responses"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - CloudFront delivers your content through a worldwide network of data centers called edge locations. When a user requests content that you're serving with CloudFront, the user is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance. Reference:."
       },
       {
         "id": "15_10",
@@ -18259,8 +18483,10 @@ const allExams = [
             "text": "Security Groups"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - To allow users to perform S3 actions on the bucket from the VPC endpoints or IP addresses, you must explicitly grant those user-level permissions. - You can grant user-level permissions on either an AWS Identity and Access Management (IAM) policy or another statement in the bucket policy. Reference:."
       },
       {
         "id": "15_11",
@@ -18283,8 +18509,10 @@ const allExams = [
             "text": "Design for failure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_12",
@@ -18307,8 +18535,10 @@ const allExams = [
             "text": "Setting user password policies"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - In EC2, the AWS IaaS offering, everything from the hypervisor layer down is AWS's responsibility. - A customer's poorly coded applications, misconfigured operating systems, or insecure firewall settings will not affect the hypervisor, it will only affect the customer's virtual machines running on that hypervisor. Reference: - the-cloud/."
       },
       {
         "id": "15_13",
@@ -18331,12 +18561,14 @@ const allExams = [
             "text": "pre-paying for instances and paying a lower hourly rate."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - On-Demand Capacity Reservations are priced exactly the same as their equivalent (On-Demand) instance usage. - If a Capacity Reservation is fully utilized, you only pay for instance usage and nothing towards the Capacity Reservation - If a Capacity Reservation is partially utilized, you pay for the instance usage and for the unused portion of the Capacity Reservation. Reference:."
       },
       {
         "id": "15_14",
-        "text": "An administrator needs to rapidly deploy a popular IT solution and start using it immediately. <br/> Where can the administrator find assistance?",
+        "text": "An administrator needs to rapidly deploy a popular IT solution and start using it immediately. Where can the administrator find assistance?",
         "options": [
           {
             "letter": "A",
@@ -18355,8 +18587,10 @@ const allExams = [
             "text": "AWS Quick Start reference deployments"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Quick Starts are built by AWS solutions architects and partners to help you deploy popular technologies on AWS, based on AWS best practices for security and high availability. - These accelerators reduce hundreds of manual procedures into just a few steps, so you can build your production environment quickly and start using it immediately. Reference:."
       },
       {
         "id": "15_15",
@@ -18379,8 +18613,10 @@ const allExams = [
             "text": "AWS Mobile Hub"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS provides a set of fully managed services that you can use to build and run serverless applications. - Serverless applications don't require provisioning, maintaining, and administering servers for backend components such as compute, databases, storage, stream processing, message queueing, and more. - You also no longer need to worry about ensuring application fault tolerance and availability. - Instead, AWS handles all of these capabilities for you. Serverless platform includes: AWS lambda, Amazon S3, DynamoDB, API gateway, Amazon SNS, AWS step functions, Amazon kinesis and developing tools and services. Reference:."
       },
       {
         "id": "15_16",
@@ -18403,8 +18639,10 @@ const allExams = [
             "text": "Amazon Athena, Amazon Cognito, Amazon EC2"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS provides a set of fully managed services that you can use to build and run serverless applications. - Serverless applications don't require provisioning, maintaining, and administering servers for backend components such as compute, databases, storage, stream processing, message queueing, and more. You also no longer need to worry about ensuring application fault tolerance and availability. - Instead, AWS handles all of these capabilities for you. - Serverless platform includes: AWS lambda, Amazon S3, DynamoDB, API gateway, Amazon SNS, AWS step functions, Amazon kinesis and developing tools and services. Reference:."
       },
       {
         "id": "15_17",
@@ -18427,8 +18665,10 @@ const allExams = [
             "text": "Data center auditing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Shared Controls Controls which apply to both the infrastructure layer and customer layers, but in completely separate contexts or perspectives. - In a shared control, AWS provides the requirements for the infrastructure and the customer must provide their own control implementation within their use of AWS services. - Examples include: - Patch Management AWS is responsible for patching and fixing flaws within the infrastructure, but customers are responsible for patching their guest OS and applications. - Configuration Management AWS maintains the configuration of its infrastructure devices, but a customer is responsible for configuring their own guest operating systems, databases, and applications. - Awareness & Training AWS trains AWS employees, but a customer must train their own employees. - Customer Specific Controls which are solely the responsibility of the customer based on the application they are deploying within AWS services. - Service and Communications Protection or Zone Security which may require a customer to route or zone data within specific security environments. Reference:."
       },
       {
         "id": "15_18",
@@ -18451,8 +18691,10 @@ const allExams = [
             "text": "Reducing traffic on the server by caching responses"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - CloudFront delivers your content through a worldwide network of data centers called edge locations. - When a user requests content that you're serving with CloudFront, the user is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance. Reference:."
       },
       {
         "id": "15_19",
@@ -18475,8 +18717,10 @@ const allExams = [
             "text": "Auto Scaling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. - Using AWS Auto Scaling, it's easy to setup application scaling for multiple resources across multiple services in minutes. - The service provides a simple, powerful user interface that lets you build scaling plans for resources including Amazon EC2 instances and Spot Fleets, Amazon ECS tasks, Amazon DynamoDB tables and indexes, and Amazon Aurora Replicas. - AWS Auto Scaling makes scaling simple with recommendations that allow you to optimize performance, costs, or balance between them. - If you're already using Amazon EC2 Auto Scaling to dynamically scale your Amazon EC2 instances, you can now combine it with AWS Auto Scaling to scale additional resources for other AWS services. - With AWS Auto Scaling, your applications always have the right resources at the right time. Reference:."
       },
       {
         "id": "15_20",
@@ -18499,8 +18743,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_21",
@@ -18523,8 +18769,10 @@ const allExams = [
             "text": "AWS Certificate Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Artifact is your go-to, central resource for compliance-related information that matters to you. - It provides on-demand access to AWS' security and compliance reports and select online agreements. - Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls. - Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA). Reference:."
       },
       {
         "id": "15_22",
@@ -18547,8 +18795,10 @@ const allExams = [
             "text": "Ensuring that access to data centers is restricted"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_23",
@@ -18571,12 +18821,14 @@ const allExams = [
             "text": "Amazon ECS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Amazon EC2."
       },
       {
         "id": "15_24",
-        "text": "A company is migrating an application that is running non-interruptible workloads for a three-year time frame. <br/> Which pricing construct would provide the MOST cost-effective solution?",
+        "text": "A company is migrating an application that is running non-interruptible workloads for a three-year time frame. Which pricing construct would provide the MOST cost-effective solution?",
         "options": [
           {
             "letter": "A",
@@ -18595,8 +18847,10 @@ const allExams = [
             "text": "Amazon EC2 Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Amazon EC2 Reserved Instances."
       },
       {
         "id": "15_25",
@@ -18619,8 +18873,10 @@ const allExams = [
             "text": "deferred payment plans for startups."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. reduced Total Cost of Ownership (TCO).."
       },
       {
         "id": "15_26",
@@ -18643,8 +18899,10 @@ const allExams = [
             "text": "Development of an IAM password policy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Physical and environmental controls."
       },
       {
         "id": "15_27",
@@ -18667,12 +18925,15 @@ const allExams = [
             "text": "Amazon Direct Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A",
+          "D"
+        ],
+        "explanation": ": - AWS Direct Connect enables you to securely connect your AWS environment to your on-premises data center or office location over a standard 1 gigabit or 10 gigabit Ethernet fiber-optic connection. - AWS Direct Connect offers dedicated high speed, low latency connection, which bypasses internet service providers in your network path. - An AWS Direct Connect location provides access to Amazon Web Services in the region it is associated with, as well as access to other US regions. - AWS Direct Connect allows you to logically partition the fiber-optic connections into multiple logical connections called Virtual Local Area Networks (VLAN). - You can take advantage of these logical connections to improve security, differentiate traffic, and achieve compliance requirements. Reference:."
       },
       {
         "id": "15_28",
-        "text": "A company wants to reduce the physical compute footprint that developers use to run code. <br/> Which service would meet that need by enabling serverless architectures?",
+        "text": "A company wants to reduce the physical compute footprint that developers use to run code. Which service would meet that need by enabling serverless architectures?",
         "options": [
           {
             "letter": "A",
@@ -18691,8 +18952,10 @@ const allExams = [
             "text": "AWS CodeCommit"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Lambda is an integral part of coding on AWS. It reduces physical compute footprint by utilizing aws cloud services to run code."
       },
       {
         "id": "15_29",
@@ -18715,8 +18978,10 @@ const allExams = [
             "text": "AWS Infrastructure Event Management"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you. - While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources. Reference:."
       },
       {
         "id": "15_30",
@@ -18739,12 +19004,14 @@ const allExams = [
             "text": "Performance"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Like your customized cloud expert, AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories: cost optimization, performance, security, fault tolerance and service limits. Reference:."
       },
       {
         "id": "15_31",
-        "text": "Which of the following services falls under the responsibility of the customer to maintain operating system configuration, security patching, and networking?    - A. Amazon RDS",
+        "text": "Which of the following services falls under the responsibility of the customer to maintain operating system configuration, security patching, and networking? - A. Amazon RDS",
         "options": [
           {
             "letter": "B",
@@ -18759,12 +19026,14 @@ const allExams = [
             "text": "AWS Fargate"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The customer is responsible for managing, support, patching and control of the guest operating system and AWS services provided like EC2. Reference:."
       },
       {
         "id": "15_32",
-        "text": "A company will be moving from an on-premises data center to the AWS Cloud. <br/> What would be one financial difference after the move?",
+        "text": "A company will be moving from an on-premises data center to the AWS Cloud. What would be one financial difference after the move?",
         "options": [
           {
             "letter": "A",
@@ -18783,8 +19052,10 @@ const allExams = [
             "text": "Elimination of upfront capital expense (capex) and elimination of variable operational expense (opex)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Moving from upfront capital expense (capex) to variable operational expense (opex).."
       },
       {
         "id": "15_33",
@@ -18807,8 +19078,10 @@ const allExams = [
             "text": "AWS Cost and Usage report"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - You can use Cost explorer which is part of Cost and Usage report to forecast future costs of running an application. Reference:."
       },
       {
         "id": "15_34",
@@ -18831,8 +19104,10 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_35",
@@ -18855,8 +19130,10 @@ const allExams = [
             "text": "Client-side data"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Client-side data, application security is the sole responsibility of the customer. - Patch management is a shared responsibility. That leaves us with edge location management and since this out of the control of the customer, AWS is the one responsible for it. Reference:."
       },
       {
         "id": "15_36",
@@ -18879,8 +19156,10 @@ const allExams = [
             "text": "Access keys"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - An IAM group is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users. - For example, you could have a group called Admins and give that group the types of permissions that administrators typically need. Reference:."
       },
       {
         "id": "15_37",
@@ -18903,8 +19182,10 @@ const allExams = [
             "text": "Colocation"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The most celebrated benefit of AWS cloud is elasticity since you can expand the services when you experience more traffic. - Agile developments in AWS Cloud through strategies are day by day becoming more established within the enterprises across the world. - With so much improvement and call for optimization in the cloud, it is necessary that these strategies get established from the ground up within the organizations. - It is highly important as already enterprises have a lot of bequest, politics and hierarchies which act as barriers in their businesses. Reference:."
       },
       {
         "id": "15_38",
@@ -18927,8 +19208,10 @@ const allExams = [
             "text": "Amazon Rekognition"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Single sign-on only works when used on a computer that is joined to the AWS Directory Service directory. - It cannot be used on computers that are not joined to the directory. Reference:."
       },
       {
         "id": "15_39",
@@ -18951,8 +19234,10 @@ const allExams = [
             "text": "Availability Zones"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Each Region is completely independent. Each Availability Zone is isolated, but the Availability Zones in a Region are connected through low-latency links. - A Local Zone is an AWS infrastructure deployment that places select services closer to your end users. - A Local Zone is an extension of a Region that is in a different location from your Region. - It provides a high-bandwidth backbone to the AWS infrastructure and is ideal for latency-sensitive applications, for example machine learning. Reference:."
       },
       {
         "id": "15_40",
@@ -18975,8 +19260,10 @@ const allExams = [
             "text": "It ensures the use of compliance frameworks that are being used by other cloud providers."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d0.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Whitepaper.pdf>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_41",
@@ -18999,8 +19286,10 @@ const allExams = [
             "text": "AWS KMS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Artifact is your go-to, central resource for compliance-related information that matters to you. - It provides on-demand access to AWS' security and compliance reports and select online agreements. - Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls. - Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA). Reference:."
       },
       {
         "id": "15_42",
@@ -19023,8 +19312,10 @@ const allExams = [
             "text": "User and access management"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_43",
@@ -19047,8 +19338,10 @@ const allExams = [
             "text": "Physical servers"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/aws/the-new-aws-tco-calculator/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_44",
@@ -19071,8 +19364,10 @@ const allExams = [
             "text": "Replacing failed hard disk drives."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The hardware related jobs is the prime responsibility of AWS. VPC network access control lists is something a customer has to do himself to secure the applications. - Encrypting data in transit and at rest is a shared responsibility in which AWS plays a part. - All hardware related jobs have nothing to do with the customer. Reference:."
       },
       {
         "id": "15_45",
@@ -19095,8 +19390,10 @@ const allExams = [
             "text": "Using AWS compliance documents to accelerate the compliance process."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://wa.aws.amazon.com/wat.concept.elasticity.en.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "15_46",
@@ -19119,8 +19416,10 @@ const allExams = [
             "text": "When an instance should not be stopped."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - The key to understanding spot instances is to look at the way that cloud service providers such as Amazon Web Services (AWS) operate. - Cloud service providers invest in hardware resources and then release those resources (often on a per-hour basis) to subscribers. - One of the problems with this business model, however, is that at any given time, there are likely to be compute resources that are not being utilized. - These resources represent hardware capacity that AWS has paid for but are sitting idle, and not making AWS any money at the moment. - Rather than allowing these computing resources to go to waste, AWS offers them at a substantially discounted rate, with the understanding that if someone needs those resources for running a normal EC2 instance, that instance will take priority over spot instances that are using the hardware resources at a discounted rate. - In fact, spot instances will be stopped if the resources are needed elsewhere. Reference:."
       },
       {
         "id": "15_47",
@@ -19143,8 +19442,10 @@ const allExams = [
             "text": "Application developer time"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Power consumption of the data center."
       },
       {
         "id": "15_48",
@@ -19167,8 +19468,10 @@ const allExams = [
             "text": "Users pay based on the number of requests and consumed compute resources."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Lambda is charging its users by the number of requests for their functions and by the duration, which is the time the code needs to execute. - When code starts running in response to an event, AWS Lambda counts a request. - It will charge the total number of requests across all of the functions used. - Duration is calculated by the time when your code started executing until it returns or until it is terminated, rounded up near to 100ms. - The AWS Lambda pricing depends on the amount of memory that the user used to allocate to the function. Reference:."
       },
       {
         "id": "15_49",
@@ -19191,8 +19494,10 @@ const allExams = [
             "text": "Use Amazon CloudFront to protect the Amazon EC2 instance."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS Security Groups act like a firewall for your Amazon EC2 instances controlling both inbound and outbound traffic. - When you launch an instance on Amazon EC2, you need to assign it to a particular security group. - After that, you can set up ports and protocols, which remain open for users and computers over the internet. - AWS Security Groups are very flexible. You can use the default security group and still customize it according to your liking (although we don't recommend this practice because groups should be named according to their purpose.) Or you can create a security group that you want for your specific applications. - To do this, you can write the corresponding code or use the Amazon EC2 console to make the process easier. Reference:."
       },
       {
         "id": "15_50",
@@ -19215,15 +19520,17 @@ const allExams = [
             "text": "Multi-site active-active"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Backup and Restore: a simple, straightforward, cost-effective method that backs up and restores data as needed. - Keep in mind that because none of your data is on standby, this method, while cheap, can be quite time-consuming. - Pilot Light: This method keeps critical applications and data at the ready so that it can be quickly retrieved if needed. - Warm Standby: This method keeps a duplicate version of your business' core elements running on standby at all times, which makes for a little downtime and an almost seamless transition. - Multi-Site Solution: Also known as a Hot Standby, this method fully replicates your company's data/ applications between two or more active locations and splits your traffic/usage between them. - If a disaster strikes, everything is simply rerouted to the unaffected area, which means you'll suffer almost zero downtime. - However, by running two separate environments simultaneously, you will obviously incur much higher costs. Reference:."
       }
     ]
   },
   {
     "id": 16,
-    "name": "Practice Exam 16",
-    "description": "Practice Exam 16 - 50 questions",
+    "name": "Examen Pratique 16",
+    "description": "Examen Pratique 16 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -19248,8 +19555,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS TCO calculators allow you to estimate the cost savings when using AWS and provide a detailed set of reports that can be used in executive presentations. - The calculators also give you the option to modify assumptions that best meet your business needs. Reference:."
       },
       {
         "id": "16_2",
@@ -19272,12 +19581,14 @@ const allExams = [
             "text": "Amazon EC2 Instance Usage Report between AWS accounts"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The way that Reserved Instance discounts apply to accounts in an organization's consolidated billing family depends on whether Reserved Instance sharing is turned on or off for the account. - By default, Reserved Instance sharing for all accounts in an organization is turned on. - You can change this setting by Turning Off Reserved Instance Sharing for an account. - The capacity reservation for a Reserved Instance applies only to the account the Reserved Instance was purchased on, regardless of whether Reserved Instance sharing is turned on or off. Reference:."
       },
       {
         "id": "16_3",
-        "text": "A company has multiple AWS accounts and wants to simplify and consolidate its billing process. <br/>Which AWS service will achieve this?",
+        "text": "A company has multiple AWS accounts and wants to simplify and consolidate its billing process. Which AWS service will achieve this?",
         "options": [
           {
             "letter": "A",
@@ -19296,12 +19607,14 @@ const allExams = [
             "text": "AWS Budgets"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - You can use the consolidated billing feature in AWS Organizations to consolidate billing and payment for multiple AWS accounts or multiple Amazon Internet Services Pvt. Ltd (AISPL) accounts. - Every organization in AWS Organizations has a master (payer) account that pays the charges of all the member (linked) accounts. Reference:."
       },
       {
         "id": "16_4",
-        "text": "A company is designing an application hosted in a single AWS Region serving end-users spread across the world. The company wants to provide the end-users low latency access to the application data. <br/> Which of the following services will help fulfill this requirement?",
+        "text": "A company is designing an application hosted in a single AWS Region serving end-users spread across the world. The company wants to provide the end-users low latency access to the application data. Which of the following services will help fulfill this requirement?",
         "options": [
           {
             "letter": "A",
@@ -19320,8 +19633,10 @@ const allExams = [
             "text": "Amazon Simple Storage Service (Amazon S3) transfer acceleration"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Amazon CloudFront is a content delivery network (CDN) service that distributes data from multiple locations worldwide, providing low-latency access to end-users."
       },
       {
         "id": "16_5",
@@ -19344,8 +19659,10 @@ const allExams = [
             "text": "Platform as a service"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - The cloud allows you to trade capital expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. - Plus, the variable expenses are much lower than what you would pay to do it yourself because of the economies of scale. Reference:."
       },
       {
         "id": "16_6",
@@ -19368,8 +19685,10 @@ const allExams = [
             "text": "Users can gather asset metadata reliably with a few API calls."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS assets are centrally managed through an inventory management system that stores and tracks owner, location, status, maintenance, and descriptive information for AWS-owned assets. - Following procurement, assets are scanned and tracked, and assets undergoing maintenance are checked and monitored for ownership, status, and resolution. Reference:."
       },
       {
         "id": "16_7",
@@ -19392,8 +19711,10 @@ const allExams = [
             "text": "Provisioned IOPS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.amazonaws.cn/en_us/AmazonRDS/latest/UserGuide/rds-ug.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_8",
@@ -19416,8 +19737,10 @@ const allExams = [
             "text": "token access."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - When you create IAM policies, follow the standard security advice of granting least privilege, or granting only the permissions required to perform a task. - Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks. Reference:."
       },
       {
         "id": "16_9",
@@ -19440,8 +19763,10 @@ const allExams = [
             "text": "Use tags to associate each instance with a particular department."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Tags are key-value pairs that allow you to organize your AWS resources into groups. You can use tags to: - Visualize information about tagged resources in one place, in conjunction with Resource Groups. - View billing information using Cost Explorer and the AWS Cost and Usage report. - Send notifications about spending limits using AWS Budgets. - Use logical groupings of your resources that make sense for your infrastructure or business. - For example, you could organize your resources by: - Project - Cost center - Development environment - Application - Department Reference:."
       },
       {
         "id": "16_10",
@@ -19464,8 +19789,10 @@ const allExams = [
             "text": "Obtaining industry certifications and independent third-party attestations."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_11",
@@ -19488,8 +19815,10 @@ const allExams = [
             "text": "AWS Systems Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS offers premium services such as AWS Trusted Advisor, which provides real-time guidance to help you reduce cost, increase performance, and improve security. Reference:."
       },
       {
         "id": "16_12",
@@ -19512,8 +19841,10 @@ const allExams = [
             "text": "Amazon EC2 Auto Scaling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Support for monitoring the health of each service independently, as health checks are defined at the target group level and many CloudWatch metrics are reported at the target group level. - Attaching a target group to an Auto Scaling group enables you to scale each service dynamically based on demand. Reference:."
       },
       {
         "id": "16_13",
@@ -19536,8 +19867,10 @@ const allExams = [
             "text": "Facilities management"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - With the basic Cloud infrastructure secured and maintained by AWS, the responsibility for what goes into the cloud falls on you. This covers both client and server side encryption and network traffic protection, security of the operating system, network, and firewall configuration, followed by application security and identity and access management. - Firewall configuration remains the responsibility of the end user, which integrates at the platform and application management level. For example, RDS utilizes security groups, which you would be responsible for configuring and implementing. Reference:."
       },
       {
         "id": "16_14",
@@ -19560,8 +19893,10 @@ const allExams = [
             "text": "AWS Snowball Edge"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - The AWS Storage Gateway service enables hybrid cloud storage between on-premises environments and the AWS Cloud. - It seamlessly integrates on-premises enterprise applications and workflows with Amazon's block and object cloud storage services through industry standard storage protocols. - It provides low-latency performance by caching frequently accessed data on premises, while storing data securely and durably in Amazon cloud storage services. - It provides an optimized data transfer mechanism and bandwidth management, which tolerates unreliable networks and minimizes the amount of data being transferred. - It brings the security, manageability, durability, and scalability of AWS to existing enterprise environments through native integration with AWS encryption, identity management, monitoring, and storage services. Typical use cases include backup and archiving, disaster recovery, moving data to S3 for in-cloud workloads, and tiered storage. Reference:."
       },
       {
         "id": "16_15",
@@ -19584,8 +19919,10 @@ const allExams = [
             "text": "Updating the security group rules to block traffic to the vulnerable ports."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudacademy.com/blog/aws-shared-responsibility-model-security/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_16",
@@ -19608,8 +19945,10 @@ const allExams = [
             "text": "Use services, not servers."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon RDS Multi-AZ deployments provide enhanced availability and durability for Database (DB) Instances, making them a natural fit for production database workloads. - When you provision a Multi-AZ DB Instance, Amazon RDS automatically creates a primary DB Instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ). - Each AZ runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. - In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby (or to a read replica in the case of Amazon Aurora), so that you can resume database operations as soon as the failover is complete. - Since the endpoint for your DB Instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention. Reference:."
       },
       {
         "id": "16_17",
@@ -19632,8 +19971,10 @@ const allExams = [
             "text": "It is granting only the permissions required to perform a given task."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - When you create IAM policies, follow the standard security advice of granting least privilege, or granting only the permissions required to perform a task. - Determine what users (and roles) need to do and then craft policies that allow them to perform only those tasks. Reference:."
       },
       {
         "id": "16_18",
@@ -19656,12 +19997,14 @@ const allExams = [
             "text": "It allows companies to focus on their physical data center operations."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - IT systems should ideally be designed in a way that reduces inter-dependencies. - Your components need to be loosely coupled to avoid changes or failure in one of the components from affecting others. - Your infrastructure also needs to have well defined interfaces that allow the various components to interact with each other only through specific, technology-agnostic interfaces. - Modifying any underlying operations without affecting other components should be made possible. Reference:."
       },
       {
         "id": "16_19",
-        "text": "A director has been tasked with investigating hybrid cloud architecture. The company currently accesses AWS over the public internet.<br/>Which service will facilitate private hybrid connectivity?",
+        "text": "A director has been tasked with investigating hybrid cloud architecture. The company currently accesses AWS over the public internet.\nWhich service will facilitate private hybrid connectivity?",
         "options": [
           {
             "letter": "A",
@@ -19680,12 +20023,14 @@ const allExams = [
             "text": "AWS Web Application Firewall (AWS WAF)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon VPC provides multiple network connectivity options for you to leverage depending on your current network designs and requirements. - These connectivity options include leveraging either the internet or an AWS Direct Connect connection as the network backbone and terminating the connection into either AWS or user-managed network endpoints. - Additionally, with AWS, you can choose how network routing is delivered between Amazon VPC and your networks, leveraging either AWS or user-managed network equipment and routes. Reference: introduction.html."
       },
       {
         "id": "16_20",
-        "text": "A company's web application currently has tight dependencies on underlying components, so when one component fails the entire web application fails. <br> Applying which AWS Cloud design principle will address the current design issue?",
+        "text": "A company's web application currently has tight dependencies on underlying components, so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
         "options": [
           {
             "letter": "A",
@@ -19704,8 +20049,10 @@ const allExams = [
             "text": "Doubling EC2 computing resources to increase system fault tolerance."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Focusing on decoupling components by isolating them and ensuring individual components can function when other components fail.."
       },
       {
         "id": "16_21",
@@ -19728,8 +20075,10 @@ const allExams = [
             "text": "Configure a strong password policy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Your root account should always be protected by Multi-Factor Authentication (MFA). - This additional layer of security helps protect against unauthorized logins to your account by requiring two factors: something you know (a password) and something you have (for example, an MFA device). - AWS supports virtual and hardware MFA devices and U2F security keys. - Cognito can be used as an Identity Provider (IdP), where it stores and maintains users and credentials securely for your applications, or it can be integrated with OpenID Connect, SAML, and other popular web identity providers like Amazon.com. - Using Amazon Cognito, you can generate temporary access credentials for your clients to access AWS services, eliminating the need to store long-term credentials in client applications. Reference:."
       },
       {
         "id": "16_22",
@@ -19752,8 +20101,10 @@ const allExams = [
             "text": "AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - To improve control over your AWS environment, you can use AWS Organizations to create groups of accounts, and then attach policies to a group to ensure the correct policies are applied across the accounts without requiring custom scripts and manual processes. Reference:."
       },
       {
         "id": "16_23",
@@ -19776,8 +20127,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_24",
@@ -19800,8 +20153,10 @@ const allExams = [
             "text": "A security assessment of the applications deployed in the AWS Cloud"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - You can use AWS Artifact Reports to download AWS security and compliance documents, such as AWS ISO certifications, Payment Card Industry (PCI), and System and Organization Control (SOC) reports. Reference:."
       },
       {
         "id": "16_25",
@@ -19824,8 +20179,10 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_26",
@@ -19848,8 +20205,10 @@ const allExams = [
             "text": "Perform operations as code"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_27",
@@ -19872,8 +20231,10 @@ const allExams = [
             "text": "Amazon S3"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - When you stop or terminate an instance, every block of storage in the instance store is reset. - Therefore, your data cannot be accessed through the instance store of another instance. Reference:."
       },
       {
         "id": "16_28",
@@ -19896,8 +20257,10 @@ const allExams = [
             "text": "Users can avoid audits by using reports from AWS."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://data-flair.training/blogs/aws-advantages/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_29",
@@ -19920,8 +20283,10 @@ const allExams = [
             "text": "Amazon Aurora"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_30",
@@ -19944,8 +20309,10 @@ const allExams = [
             "text": "Design for failure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - There are six design principles for operational excellence in the cloud: - Perform operations as code - Annotate documentation - Make frequent, small, reversible changes - Refine operations procedures frequently - Anticipate failure - Learn from all operational failures Reference:."
       },
       {
         "id": "16_31",
@@ -19968,8 +20335,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tools/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_32",
@@ -19992,8 +20361,10 @@ const allExams = [
             "text": "Dedicated Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - With On-Demand instances, you pay for compute capacity by the hour or the second depending on which instances you run. - No longer-term commitments or upfront payments are needed. - You can increase or decrease your compute capacity depending on the demands of your application and only pay the specified per hourly rates for the instance you use. Reference:."
       },
       {
         "id": "16_33",
@@ -20016,8 +20387,10 @@ const allExams = [
             "text": "Amazon Aurora"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon Aurora is a relational database service that combines the speed and availability of high-end commercial databases with the simplicity and cost-effectiveness of open source databases. - The MySQL- compatible edition of Aurora delivers up to 5X the throughput of standard MySQL running on the same hardware, and enables existing MySQL applications and tools to run without requiring modification. - Amazon Aurora will automatically grow the size of your database volume as your database storage needs grow. - Your volume will grow in increments of 10 GB up to a maximum of 64 TB. You don't need to provision excess storage for your database to handle future growth. Reference:."
       },
       {
         "id": "16_34",
@@ -20040,8 +20413,10 @@ const allExams = [
             "text": "AWS Direct Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses. - Instances in either VPC can communicate with each other as if they are within the same network. - You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account. - The VPCs can be in different regions (also known as an inter-region VPC peering connection). Reference:."
       },
       {
         "id": "16_35",
@@ -20064,12 +20439,14 @@ const allExams = [
             "text": "AWS CodeCommit"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS CodeCommit is a version control service hosted by Amazon Web Services that you can use to privately store and manage assets (such as documents, source code, and binary files) in the cloud. Reference:."
       },
       {
         "id": "16_36",
-        "text": "A company is considering migrating its applications to AWS. The company wants to compare the cost of running the workload on-premises to running the equivalent workload on the AWS platform. <br/>Which tool can be used to perform this comparison?",
+        "text": "A company is considering migrating its applications to AWS. The company wants to compare the cost of running the workload on-premises to running the equivalent workload on the AWS platform. Which tool can be used to perform this comparison?",
         "options": [
           {
             "letter": "A",
@@ -20088,8 +20465,10 @@ const allExams = [
             "text": "Cost Explorer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - TCO calculator compare the cost of running your applications in an on-premises or colocation environment to AWS. Reference:."
       },
       {
         "id": "16_37",
@@ -20112,8 +20491,10 @@ const allExams = [
             "text": "AWS Snowmobile"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Snowmobile is an exabyte-scale data transfer service that can move extremely large amounts of data to AWS in a fast, secure, and cost-effective manner. - You can transfer up to 100PB per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck. - Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even a complete data center migration. - All data is encrypted with 256-bit encryption and you can manage your encryption keys with AWS Key Management Service (AWS KMS). - Snowmobile includes GPS tracking, alarm monitoring, 24/7 video surveillance and an optional escort security vehicle while in transit. Reference: - aws-snowmobile/."
       },
       {
         "id": "16_38",
@@ -20136,8 +20517,10 @@ const allExams = [
             "text": "Planned"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_39",
@@ -20160,8 +20543,10 @@ const allExams = [
             "text": "Cross-zone load balancers with public and private IPs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - Elastic Load Balancing supports the following types of load balancers: Application Load Balancers, Network Load Balancers, and Classic Load Balancers. - Amazon ECS services can use either type of load balancer. - Application Load Balancers are used to route HTTP/HTTPS (or Layer 7) traffic. - Network Load Balancers and Classic Load Balancers are used to route TCP (or Layer 4) traffic. Reference:."
       },
       {
         "id": "16_40",
@@ -20184,8 +20569,10 @@ const allExams = [
             "text": "AWS has no limits on the number of resources that can be created."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS offers you a pay-as-you-go approach for pricing for over 160 cloud services. - With AWS you pay only for the individual services you need, for as long as you use them, and without requiring long-term contracts or complex licensing. - AWS pricing is similar to how you pay for utilities like water and electricity. - You only pay for the services you consume, and once you stop using them, there are no additional costs or termination fees. Reference:."
       },
       {
         "id": "16_41",
@@ -20208,8 +20595,10 @@ const allExams = [
             "text": "A virtual private gateway over AWS Direct Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - You can deliver content and decrease end-user latency of your web application using Amazon CloudFront. - CloudFront speeds up content delivery by leveraging its global network of data centers, known as edge locations, to reduce delivery time by caching your content close to your end users. - CloudFront fetches your content from an origin, such as an Amazon S3 bucket, an Amazon EC2 instance, an Amazon Elastic Load Balancing load balancer or your own web server, when it's not already in an edge location. - CloudFront can be used to deliver your entire website or application, including dynamic, static, streaming, and interactive content. Reference:."
       },
       {
         "id": "16_42",
@@ -20232,8 +20621,10 @@ const allExams = [
             "text": "AWS Artifact"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Artifact is your go-to, central resource for compliance-related information that matters to you. - It provides on-demand access to AWS' security and compliance reports and select online agreements. - Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls. - Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA). Reference:."
       },
       {
         "id": "16_43",
@@ -20256,8 +20647,10 @@ const allExams = [
             "text": "Amazon Elastic Compute Cloud (Amazon EC2)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://severalnines.com/news/aws-users-prefer-self-managed-databases>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_44",
@@ -20280,8 +20673,10 @@ const allExams = [
             "text": "Access to a Solutions Architect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/enterprise/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_45",
@@ -20304,8 +20699,10 @@ const allExams = [
             "text": "Store application artifacts using AWS Artifact and replicate them across multiple AWS Regions."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - An AWS Region is a geographic location where AWS provides multiple, physically separated and isolated Availability Zones which are connected with low latency, high throughput, and highly redundant networking. Reference:."
       },
       {
         "id": "16_46",
@@ -20328,12 +20725,14 @@ const allExams = [
             "text": "It implements a fixed monthly computing budget."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - You can continue to optimize your spend and keep your development costs low by making sure you revisit your architecture often, to adjust to your startup growth. - Manage your cost further by leveraging different options such as S3 CloudFront for caching & offloading to reduce cost of EC2 computing, as well as Elastic Load Balancing which prepares you for massive scale, high reliability and uninterrupted growth. - Another way to keep costs down is to use AWS Identity and Access Management solutions (IAM) to manage governance of your cost drivers effectively and by the right teams. Reference:."
       },
       {
         "id": "16_47",
-        "text": "A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future. <br/> Which of the following is a characteristic of the AWS Cloud that would meet this specific need?",
+        "text": "A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future. Which of the following is a characteristic of the AWS Cloud that would meet this specific need?",
         "options": [
           {
             "letter": "A",
@@ -20352,8 +20751,10 @@ const allExams = [
             "text": "Agility"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Agile is a time boxed, iterative approach to software delivery that builds software incrementally from the start of the project, instead of trying to deliver it all at once near the end. Reference:."
       },
       {
         "id": "16_48",
@@ -20376,8 +20777,10 @@ const allExams = [
             "text": "Enterprise and Business Support"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_49",
@@ -20400,8 +20803,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/shield/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "16_50",
@@ -20424,15 +20829,17 @@ const allExams = [
             "text": "Data transfer costs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 17,
-    "name": "Practice Exam 17",
-    "description": "Practice Exam 17 - 50 questions",
+    "name": "Examen Pratique 17",
+    "description": "Examen Pratique 17 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -20457,8 +20864,10 @@ const allExams = [
             "text": "Amazon Rekognition uses Amazon Mechanical Turk to allow humans to bid on object detection jobs."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Rekognition Image is an image recognition service that detects objects, scenes, and faces; extracts text; recognizes celebrities; and identifies inappropriate content in images. - It also allows you to search and compare faces. - Rekognition Image is based on the same proven, highly scalable, deep learning technology developed by Amazon's computer vision scientists to analyze billions of images daily for Prime Photos. Reference:."
       },
       {
         "id": "17_2",
@@ -20481,8 +20890,10 @@ const allExams = [
             "text": "Operating system administration"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.awstcocalculator.com/Output/Load/f85bbf7e131446643911859504>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_3",
@@ -20505,8 +20916,10 @@ const allExams = [
             "text": "Managing the network infrastructure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudacademy.com/blog/aws-shared-responsibility-model-security/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_4",
@@ -20529,8 +20942,10 @@ const allExams = [
             "text": "AWS Budgets"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - To forecast your costs, use the AWS Cost Explorer. - Use cost allocation tags to divide your resources into groups, and then estimate the costs for each group. Reference:."
       },
       {
         "id": "17_5",
@@ -20553,8 +20968,10 @@ const allExams = [
             "text": "Amazon EC2 dashboard"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.cloudconformity.com/knowledge-base/aws/EC2/security-group-egress-any.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_6",
@@ -20577,8 +20994,10 @@ const allExams = [
             "text": "AWS CloudTrail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - You can monitor your estimated AWS charges by using Amazon CloudWatch. - When you enable the monitoring of estimated charges for your AWS account, the estimated charges are calculated and sent several times daily to CloudWatch as metric data. - Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges. - This data includes the estimated charges for every service in AWS that you use, in addition to the estimated overall total of your AWS charges. Reference:."
       },
       {
         "id": "17_7",
@@ -20601,8 +21020,10 @@ const allExams = [
             "text": "No Upfront Reserved Instances for a 3-year term"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/reserved-instances/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_8",
@@ -20625,8 +21046,10 @@ const allExams = [
             "text": "Configuring security settings on Amazon EC2 instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Media storage devices used to store customer data are classified by AWS as Critical and treated accordingly, as high impact, throughout their life-cycles. - AWS has exacting standards on how to install, service, and eventually destroy the devices when they are no longer useful. - When a storage device has reached the end of its useful life, AWS decommissions media using techniques detailed in NIST 800-88. - Media that stored customer data is not removed from AWS control until it has been securely decommissioned. Reference:."
       },
       {
         "id": "17_9",
@@ -20649,8 +21072,10 @@ const allExams = [
             "text": "AWS manages compliance needs."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS allows you to access as much or as little capacity as you need, and scale up or down as required with only a few minutes’ notice Reference:."
       },
       {
         "id": "17_10",
@@ -20673,8 +21098,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer- friendly environment. - CloudFront is integrated with AWS both physical locations that are directly connected to the AWS global infrastructure, as well as other AWS services. Reference:."
       },
       {
         "id": "17_11",
@@ -20697,12 +21124,14 @@ const allExams = [
             "text": "AWS CloudFormation"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - EBS -> automates deploying code and provisioning infrastructure - CloudFormation -> Use templates to deploy code and infrastructure."
       },
       {
         "id": "17_12",
-        "text": "A user wants guidance on possible savings when migrating from on-premises to AWS. <br/> Which tool is suitable for this scenario?",
+        "text": "A user wants guidance on possible savings when migrating from on-premises to AWS. Which tool is suitable for this scenario?",
         "options": [
           {
             "letter": "A",
@@ -20721,8 +21150,10 @@ const allExams = [
             "text": "AWS Well-Architected Tool"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - The TCO Calculator provides directional guidance on possible realized savings when deploying AWS. - This tool is built on an underlying calculation model, that generates a fair assessment of value that a customer may achieve given the data provided by the user. Reference:."
       },
       {
         "id": "17_13",
@@ -20745,8 +21176,10 @@ const allExams = [
             "text": "Test for moderate demand to ensure reliability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_14",
@@ -20769,8 +21202,10 @@ const allExams = [
             "text": "Delete AWS CloudTrail Resources."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/potential-account-compromise/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_15",
@@ -20793,8 +21228,10 @@ const allExams = [
             "text": "Deploying in any part of the world using AWS Regions"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/startups/high-availability-for-mere-mortals/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_16",
@@ -20817,12 +21254,14 @@ const allExams = [
             "text": "AWS Shield"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. - AWS Shield provides always-on detection and automatic inline mitigation's that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection. - There are two tiers of AWS Shield - Standard and Advanced. Reference:."
       },
       {
         "id": "17_17",
-        "text": "A company wants to monitor the CPU usage of its Amazon EC2 resources. <br/> Which AWS service should the company use?",
+        "text": "A company wants to monitor the CPU usage of its Amazon EC2 resources. Which AWS service should the company use?",
         "options": [
           {
             "letter": "A",
@@ -20841,8 +21280,10 @@ const allExams = [
             "text": "Amazon Simple Notification Service (Amazon SNS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - With Basic monitoring you get data on your cloudwatch metrics every 5 minutes. - Enabling detailed monitoring, you will get the data every one minute. - To check if detailed monitoring is enabled, on your EC2 Console, Select the instance, on the lower plane, Select Monitoring. Reference:."
       },
       {
         "id": "17_18",
@@ -20865,8 +21306,10 @@ const allExams = [
             "text": "An authentication credential associated with a multi-factor authentication (MFA) token"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. - Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. Reference:."
       },
       {
         "id": "17_19",
@@ -20889,8 +21332,10 @@ const allExams = [
             "text": "Customers can upgrade instances as new types become available."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ri-basics/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_20",
@@ -20913,8 +21358,10 @@ const allExams = [
             "text": "They are able to distribute incoming requests across a tier of web server instances."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - When the unhealthy Availability Zone returns to a healthy state, Auto Scaling automatically redistributes the application instances evenly across all of the designated Availability Zones. Reference:."
       },
       {
         "id": "17_21",
@@ -20937,12 +21384,14 @@ const allExams = [
             "text": "By using AWS Budgets"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The account that originally purchased the Reserved Instance receives the discount first. - If the purchasing account doesn't have any instances that match the terms of the Reserved Instance, the discount for the Reserved Instance is assigned to any matching usage on another account in the organization. Reference:."
       },
       {
         "id": "17_22",
-        "text": "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds. <br/> For how much time will the customer be billed?",
+        "text": "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds. For how much time will the customer be billed?",
         "options": [
           {
             "letter": "A",
@@ -20961,8 +21410,10 @@ const allExams = [
             "text": "4 hours"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-hour-billing/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_23",
@@ -20985,8 +21436,10 @@ const allExams = [
             "text": "Amazon Glacier"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_24",
@@ -21009,8 +21462,10 @@ const allExams = [
             "text": "AWS Glue"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS CloudFormation provides a common language for you to model and provision AWS and third party application resources in your cloud environment. - AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. - This gives you a single source of truth for your AWS and third party resources. Reference:."
       },
       {
         "id": "17_25",
@@ -21033,8 +21488,10 @@ const allExams = [
             "text": "AWS Storage Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/hybrid/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_26",
@@ -21057,8 +21514,10 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Direct Connect lets you establish a dedicated network connection between your network and one of the AWS Direct Connect locations. - Using industry standard 802.1q VLANs, this dedicated connection can be partitioned into multiple virtual interfaces. - This allows you to use the same connection to access public resources such as objects stored in Amazon S3 using public IP address space, and private resources such as Amazon EC2 instances running within an Amazon Virtual Private Cloud (VPC) using private IP space, while maintaining network separation between the public and private environments. - Virtual interfaces can be reconfigured at any time to meet your changing needs. Reference:."
       },
       {
         "id": "17_27",
@@ -21081,8 +21540,11 @@ const allExams = [
             "text": "Amazon RDS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.edureka.co/community/600/what-is-an-edge-location-in-aws>"
+        "correctAnswers": [
+          "A",
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_28",
@@ -21105,8 +21567,10 @@ const allExams = [
             "text": "Amazon API Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Amazon Virtual Private Cloud (Amazon VPC) is a logically isolated, private section of the AWS Cloud to launch resources in a virtual data center in the cloud. - Amazon VPC allows you to leverage multiple Availability Zones (AZ) within a region so that you can build greater fault tolerance within your workloads. - You have complete control. Reference:."
       },
       {
         "id": "17_29",
@@ -21129,8 +21593,10 @@ const allExams = [
             "text": "AWS Total Cost of Ownership (TCO) Calculator"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tco-calculator/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_30",
@@ -21153,8 +21619,10 @@ const allExams = [
             "text": "AWS Marketplace eliminates the need to upgrade to newer software versions."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/partners/aws-marketplace/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_31",
@@ -21177,8 +21645,10 @@ const allExams = [
             "text": "Use commercial database software."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Loosely coupled architectures reduce interdependencies, so that a change or failure in a component does not cascade to other components."
       },
       {
         "id": "17_32",
@@ -21201,8 +21671,10 @@ const allExams = [
             "text": "Physical security of data centers"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_33",
@@ -21225,8 +21697,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. - Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. - With Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines. - This enables you to simplify compliance auditing, security analysis, change management, and operational troubleshooting. Reference:."
       },
       {
         "id": "17_34",
@@ -21249,8 +21723,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS Trusted Advisor."
       },
       {
         "id": "17_35",
@@ -21273,8 +21749,10 @@ const allExams = [
             "text": "It is not part of the AWS shared responsibility model."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS maintains the configuration of its infrastructure devices, but a customer is responsible for configuring their own guest operating systems, databases, and applications. Reference:."
       },
       {
         "id": "17_36",
@@ -21297,8 +21775,10 @@ const allExams = [
             "text": "Amazon Pinpoint"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer- friendly environment. - CloudFront is integrated with AWS both physical locations that are directly connected to the AWS global infrastructure, as well as other AWS services. Reference:."
       },
       {
         "id": "17_37",
@@ -21321,12 +21801,14 @@ const allExams = [
             "text": "High availability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://wa.aws.amazon.com/wat.map.en.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_38",
-        "text": "A user is running an application on AWS and notices that one or more AWS-owned IP addresses is involved in a distributed denial-of-service (DDoS) attack. <br/> Who should the user contact FIRST about this situation?",
+        "text": "A user is running an application on AWS and notices that one or more AWS-owned IP addresses is involved in a distributed denial-of-service (DDoS) attack. Who should the user contact FIRST about this situation?",
         "options": [
           {
             "letter": "A",
@@ -21345,8 +21827,10 @@ const allExams = [
             "text": "AWS Abuse team"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/report-aws-abuse/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_39",
@@ -21369,8 +21853,10 @@ const allExams = [
             "text": "Users have access to free and unlimited storage."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. There are no upfront commitments.."
       },
       {
         "id": "17_40",
@@ -21393,8 +21879,10 @@ const allExams = [
             "text": "AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS Organizations helps you centrally govern your environment as you grow and scale your workloads on AWS. - Whether you are a growing startup or a large enterprise, Organizations helps you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts. Reference:."
       },
       {
         "id": "17_41",
@@ -21417,8 +21905,10 @@ const allExams = [
             "text": "It is another name for AWS Technical Account Managers who provide recommendations on cost optimization, performance, and security."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. - Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally. Reference:."
       },
       {
         "id": "17_42",
@@ -21441,8 +21931,10 @@ const allExams = [
             "text": "Consolidated billing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time. Reference:."
       },
       {
         "id": "17_43",
@@ -21465,8 +21957,10 @@ const allExams = [
             "text": "Amazon CloudWatch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Artifact is your go-to, central resource for compliance-related information that matters to you. - It provides on-demand access to AWS' security and compliance reports and select online agreements. - Reports available in AWS Artifact include our Service Organization Control (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls. - Agreements available in AWS Artifact include the Business Associate Addendum (BAA) and the Nondisclosure Agreement (NDA). Reference:."
       },
       {
         "id": "17_44",
@@ -21489,8 +21983,10 @@ const allExams = [
             "text": "Amazon Comprehend allows users to build applications that can respond to user requests in many languages."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": -."
       },
       {
         "id": "17_45",
@@ -21513,8 +22009,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. - At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time. Reference:."
       },
       {
         "id": "17_46",
@@ -21537,8 +22035,10 @@ const allExams = [
             "text": "Amazon API Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_47",
@@ -21561,8 +22061,10 @@ const allExams = [
             "text": "Durability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_48",
@@ -21585,8 +22087,10 @@ const allExams = [
             "text": "reduces operational expenditures."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.10thmagnitude.com/opex-vs-capex-the-real-cloud-computing-cost-advantage/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_49",
@@ -21609,8 +22113,10 @@ const allExams = [
             "text": "Firewall configuration"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudacademy.com/blog/aws-shared-responsibility-model-security/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "17_50",
@@ -21633,15 +22139,17 @@ const allExams = [
             "text": "Amazon Forecast"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - You can use the consolidated billing feature in AWS Organizations to consolidate billing and payment for multiple AWS accounts or multiple Amazon Internet Services Pvt. Ltd (AISPL) accounts. - Every organization in AWS Organizations has a master (payer) account that pays the charges of all the member (linked) accounts. Reference:."
       }
     ]
   },
   {
     "id": 18,
-    "name": "Practice Exam 18",
-    "description": "Practice Exam 18 - 50 questions",
+    "name": "Examen Pratique 18",
+    "description": "Examen Pratique 18 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -21666,8 +22174,10 @@ const allExams = [
             "text": "Global infrastructure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_2",
@@ -21690,8 +22200,10 @@ const allExams = [
             "text": "AWS Discussion Forums"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/faqs/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_3",
@@ -21714,8 +22226,10 @@ const allExams = [
             "text": "Encryption usage"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_4",
@@ -21738,8 +22252,10 @@ const allExams = [
             "text": "All upfront payment"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_5",
@@ -21762,12 +22278,14 @@ const allExams = [
             "text": "There will be decreased application latency that will improve the user experience."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_6",
-        "text": "A Cloud Practitioner is asked how to estimate the cost of using a new application on AWS. <br/> What is the MOST appropriate response?",
+        "text": "A Cloud Practitioner is asked how to estimate the cost of using a new application on AWS. What is the MOST appropriate response?",
         "options": [
           {
             "letter": "A",
@@ -21786,12 +22304,14 @@ const allExams = [
             "text": "Use Amazon AppStream 2.0 for real-time pricing analytics."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/estimating-aws-resource-costs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_7",
-        "text": "A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br/> What combination of actions will enable the company to accomplish this goal? (Choose two.)",
+        "text": "A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. What combination of actions will enable the company to accomplish this goal? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -21810,12 +22330,14 @@ const allExams = [
             "text": "Connect the company's on-premises data center to AWS using AWS Direct Connect."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/apn/amazon-vpc-for-on-premises-network-engineers-part-one/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_8",
-        "text": "A web application running on AWS has been spammed with malicious requests from a recurring set of IP addresses. <br/> Which AWS service can help secure the application and block the malicious traffic?",
+        "text": "A web application running on AWS has been spammed with malicious requests from a recurring set of IP addresses. Which AWS service can help secure the application and block the malicious traffic?",
         "options": [
           {
             "letter": "A",
@@ -21834,8 +22356,10 @@ const allExams = [
             "text": "AWS WAF"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - AWS WAF is a web application firewall that helps protect web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. - You can use AWS WAF to define customizable web security rules that control which traffic accesses your web applications. - If you use AWS Shield Advanced, you can use AWS WAF at no extra cost for those protected resources and can engage the DRT to create WAF rules. Reference:."
       },
       {
         "id": "18_9",
@@ -21858,12 +22382,14 @@ const allExams = [
             "text": "automate the infrastructure provisioning process."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://asperbrothers.com/blog/infrastructure-as-code-aws/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_10",
-        "text": "A company requires a dedicated network connection between its on-premises servers and the AWS Cloud. <br/> Which AWS service should be used?",
+        "text": "A company requires a dedicated network connection between its on-premises servers and the AWS Cloud. Which AWS service should be used?",
         "options": [
           {
             "letter": "A",
@@ -21882,8 +22408,10 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - You can use AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing you with a private, high bandwidth network connection between your network and your VPC. - With multiple virtual interfaces, you can even establish private connectivity to multiple VPCs while maintaining network isolation. Reference:."
       },
       {
         "id": "18_11",
@@ -21906,8 +22434,10 @@ const allExams = [
             "text": "Amazon Athena"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon Athena is defined as \"an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL.\" So, it's another SQL query engine for large data sets stored in S3. - This is very similar to other SQL query engines, such as Apache Drill. - But unlike Apache Drill, Athena is limited to data only from Amazon's own S3 storage service. However, Athena is able to query a variety of file formats, including, but not limited to CSV, Parquet, JSON, etc."
       },
       {
         "id": "18_12",
@@ -21930,8 +22460,10 @@ const allExams = [
             "text": "create reports for billing."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS CloudFormation provides a common language for you to model and provision AWS and third party application resources in your cloud environment. - AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. - This gives you a single source of truth for your AWS and third party resources. Reference:."
       },
       {
         "id": "18_13",
@@ -21954,12 +22486,14 @@ const allExams = [
             "text": "AWS Snowball"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.sisense.com/glossary/redshift-database/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_14",
-        "text": "A Cloud Practitioner must determine if any security groups in an AWS account have been provisioned to allow unrestricted access for specific ports. <br/> What is the SIMPLEST way to do this?",
+        "text": "A Cloud Practitioner must determine if any security groups in an AWS account have been provisioned to allow unrestricted access for specific ports. What is the SIMPLEST way to do this?",
         "options": [
           {
             "letter": "A",
@@ -21978,8 +22512,10 @@ const allExams = [
             "text": "In AWS Config, create a custom rule that invokes an AWS Lambda function to review rules for inbound access."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-security-groups.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_15",
@@ -22002,12 +22538,14 @@ const allExams = [
             "text": "AWS can easily accommodate application demand changes."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS makes it easy to architect for high availability.."
       },
       {
         "id": "18_16",
-        "text": "A user needs an automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities on those instances. <br/> Which AWS service will provide this assessment report?",
+        "text": "A user needs an automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities on those instances. Which AWS service will provide this assessment report?",
         "options": [
           {
             "letter": "A",
@@ -22026,8 +22564,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. - AmazonInspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices. - After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity. - These findings can be reviewed directly or as part of detailed assessment reports which are available via the Amazon Inspector console or API. Reference:."
       },
       {
         "id": "18_17",
@@ -22050,8 +22590,10 @@ const allExams = [
             "text": "Use Amazon CloudWatch to monitor the use of services."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/answers/account-management/aws-multi-account-billing-strategy/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_18",
@@ -22074,12 +22616,14 @@ const allExams = [
             "text": "AWS CodeDeploy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Service Catalog Delivery Partners are APN Consulting Partners who help create catalogs of IT services that are approved by the customer's organization for use on AWS. - With AWS Service Catalog, customers and partners can centrally manage commonly deployed IT services to help achieve consistent governance and meet compliance requirements while enabling users to self-provision approved services. Reference:."
       },
       {
         "id": "18_19",
-        "text": "A Cloud Practitioner needs to store data for 7 years to meet regulatory requirements. <br/> Which AWS service will meet this requirement at the LOWEST cost?",
+        "text": "A Cloud Practitioner needs to store data for 7 years to meet regulatory requirements. Which AWS service will meet this requirement at the LOWEST cost?",
         "options": [
           {
             "letter": "A",
@@ -22098,8 +22642,10 @@ const allExams = [
             "text": "Amazon S3 Glacier"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - S3 Glacier Deep Archive is Amazon S3's lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice in a year. - It is designed for customers --particularly those in highly-regulated industries, such as the Financial Services, Healthcare, and Public Sectors -- that retain data sets for 7-10 years or longer to meet regulatory compliance requirements. - S3 Glacier Deep Archive can also be used for backup and disaster recovery use cases, and is a cost-effective and easy-to-manage alternative to magnetic tape systems, whether they are on-premises libraries or off-premises services. Reference:."
       },
       {
         "id": "18_20",
@@ -22122,8 +22668,10 @@ const allExams = [
             "text": "Increased agility."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. User control of infrastructure.."
       },
       {
         "id": "18_21",
@@ -22146,8 +22694,10 @@ const allExams = [
             "text": "AWS Shield"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon Macie is a security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS. - Macie recognizes sensitive data such as personally identifiable information (PII) or intellectual property. - It provides you with dashboards and alerts that give visibility into how this data is being accessed or moved. Reference:."
       },
       {
         "id": "18_22",
@@ -22170,8 +22720,10 @@ const allExams = [
             "text": "It connects on-premises data storage to the AWS Cloud."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Moving data to the cloud is not quite as simple as flipping a switch. - For companies that have managed their own data centers or server rooms for decades, there are a few steps to consider --and it's not always wise to pull the plug on an internal infrastructure quite so quickly. - If a startup uses on-premise business servers and then experiences unexpected growth, abandoning those servers doesn't make sense (even if the long-term plan is to do exactly that). - AWS Storage Gateway is a way to bridge this gap for companies of any size. - It's a hybrid storage option that connects on-premise storage including age-old tape backup systems to the cloud in a way that also provides one console to access all storage configurations. Reference:."
       },
       {
         "id": "18_23",
@@ -22194,12 +22746,14 @@ const allExams = [
             "text": "Configure the application using multiple NAT gateways."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_24",
-        "text": "A system in the AWS Cloud is designed to withstand the failure of one or more components. <br/> What is this an example of?",
+        "text": "A system in the AWS Cloud is designed to withstand the failure of one or more components. What is this an example of?",
         "options": [
           {
             "letter": "A",
@@ -22218,12 +22772,14 @@ const allExams = [
             "text": "Agility"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://wa.aws.amazon.com/wat.question.REL_7.en.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_25",
-        "text": "A Cloud Practitioner needs a consistent and dedicated connection between AWS resources and an on-premises system. <br/> Which AWS service can fulfill this requirement?",
+        "text": "A Cloud Practitioner needs a consistent and dedicated connection between AWS resources and an on-premises system. Which AWS service can fulfill this requirement?",
         "options": [
           {
             "letter": "A",
@@ -22242,8 +22798,10 @@ const allExams = [
             "text": "AWS Data Pipeline"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - You can use AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing you with a private, high bandwidth network connection between your network and your VPC. - With multiple virtual interfaces, you can even establish private connectivity to multiple VPCs while maintaining network isolation. Reference:."
       },
       {
         "id": "18_26",
@@ -22266,8 +22824,10 @@ const allExams = [
             "text": "AWS shares responsibility with the relevant governing body."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - Security and Compliance is a shared responsibility between AWS and the customer. - This shared model can help relieve the customer's operational burden as AWS operates, manages and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the service operates. Reference:."
       },
       {
         "id": "18_27",
@@ -22290,8 +22850,10 @@ const allExams = [
             "text": "an API key."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. an access/secret key.."
       },
       {
         "id": "18_28",
@@ -22314,8 +22876,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/kms/latest/developerguide/services-ebs.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_29",
@@ -22338,8 +22902,10 @@ const allExams = [
             "text": "By the programming language that is used for the Lambda function."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/lambda/pricing/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_30",
@@ -22362,8 +22928,10 @@ const allExams = [
             "text": "There are more AWS Regions than edge locations."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. There are more edge locations than AWS Regions.."
       },
       {
         "id": "18_31",
@@ -22386,12 +22954,14 @@ const allExams = [
             "text": "Data encryption"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS Shield Standard provides protection for all AWS customers from common, most frequently occurring network and transport layer DDoS attacks that target your web site or application at no additional charge. Reference:."
       },
       {
         "id": "18_32",
-        "text": "A company wants to build its new application workloads in the AWS Cloud instead of using on-premises resources. <br/> What expense can be reduced using the AWS Cloud?",
+        "text": "A company wants to build its new application workloads in the AWS Cloud instead of using on-premises resources. What expense can be reduced using the AWS Cloud?",
         "options": [
           {
             "letter": "A",
@@ -22410,8 +22980,10 @@ const allExams = [
             "text": "Writing specific test cases for third-party applications."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/pricing/cost-optimization/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_33",
@@ -22434,8 +23006,10 @@ const allExams = [
             "text": "Purchase AWS security and compliance documents."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/marketplace>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_34",
@@ -22458,8 +23032,10 @@ const allExams = [
             "text": "Some resources run on-premises and some run in the AWS Cloud."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/hybrid/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_35",
@@ -22482,8 +23058,10 @@ const allExams = [
             "text": "AWS IAM"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/config/latest/developerguide/view-manage-resource.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_36",
@@ -22506,8 +23084,10 @@ const allExams = [
             "text": "By having AWS manage applications"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS helps you reduce Total Cost of Ownership (TCO) by reducing the need to invest in large capital expenditures and providing a pay-as-you-go model that empowers you to invest in the capacity you need and use it only when the business requires it. Reference:."
       },
       {
         "id": "18_37",
@@ -22530,8 +23110,10 @@ const allExams = [
             "text": "Ensuring Amazon EBS volumes are backed up"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/security/the-aws-shared-responsibility-model-and-gdpr/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_38",
@@ -22554,8 +23136,10 @@ const allExams = [
             "text": "Increased upfront capital expenditure"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://data-flair.training/blogs/aws-advantages/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_39",
@@ -22578,8 +23162,10 @@ const allExams = [
             "text": "The costs of third-party penetration testing."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tco-calculator/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_40",
@@ -22602,8 +23188,10 @@ const allExams = [
             "text": "AWS Cost Explorer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tco-calculator/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_41",
@@ -22626,8 +23214,10 @@ const allExams = [
             "text": "Physical security of hardware"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudacademy.com/blog/aws-shared-responsibility-model-security/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_42",
@@ -22650,8 +23240,10 @@ const allExams = [
             "text": "Using edge locations to put content closer to all users"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_43",
@@ -22674,8 +23266,10 @@ const allExams = [
             "text": "Users do not need to address security and compliance issues."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/Migration/aws-migration-whitepaper.pdf>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_44",
@@ -22698,8 +23292,10 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/mt/automate-account-creation-and-resource-provisioning-using-aws-service-catalog-aws-organizations-and-aws-lambda/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_45",
@@ -22722,8 +23318,10 @@ const allExams = [
             "text": "Enhanced monitoring"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Amazon RDS provides high availability and failover support for DB instances using Multi-AZ deployments. - Amazon RDS uses several different technologies to provide failover support. - Multi-AZ deployments for Oracle, PostgreSQL, MySQL, and MariaDB DB instances use Amazon's failover technology. - SQL Server DB instances use SQL Server Database Mirroring (DBM). Reference:."
       },
       {
         "id": "18_46",
@@ -22746,8 +23344,10 @@ const allExams = [
             "text": "AWS Developer Forums"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/report-aws-abuse/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_47",
@@ -22770,8 +23370,10 @@ const allExams = [
             "text": "AWS CloudHSM"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. - With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. - CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. - This event history simplifies security analysis, resource change tracking, and troubleshooting. - In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. - These capabilities help simplify operational analysis and troubleshooting. Reference:."
       },
       {
         "id": "18_48",
@@ -22794,8 +23396,10 @@ const allExams = [
             "text": "Overprovisioning of resources"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "18_49",
@@ -22818,8 +23422,10 @@ const allExams = [
             "text": "Customers can permanently run enough instances to handle peak workloads."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - The ability to launch instances on-demand when needed allows customers launch and terminate instances in response to a varying workload. - This is a more economical practice than purchasing enough on-premises servers to handle the peak load."
       },
       {
         "id": "18_50",
@@ -22842,15 +23448,17 @@ const allExams = [
             "text": "Amazon AppStream 2.0"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/dms/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 19,
-    "name": "Practice Exam 19",
-    "description": "Practice Exam 19 - 50 questions",
+    "name": "Examen Pratique 19",
+    "description": "Examen Pratique 19 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -22875,8 +23483,10 @@ const allExams = [
             "text": "AWS Marketplace"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/mp/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_2",
@@ -22899,8 +23509,10 @@ const allExams = [
             "text": "Amazon Virtual Private Cloud (Amazon VPC."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/vpc/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_3",
@@ -22923,8 +23535,10 @@ const allExams = [
             "text": "Managing custom Amazon Machine Images (AMIs)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_4",
@@ -22947,8 +23561,10 @@ const allExams = [
             "text": "Amazon Virtual Private Cloud (Amazon VPC."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/cloudfront/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_5",
@@ -22971,8 +23587,10 @@ const allExams = [
             "text": "Enable AWS CloudTrail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/iam/details/mfa/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_6",
@@ -22995,8 +23613,10 @@ const allExams = [
             "text": "AWS Identity and Access Management (AWS IAM)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_7",
@@ -23019,8 +23639,10 @@ const allExams = [
             "text": "Amazon Route 53"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_8",
@@ -23043,8 +23665,10 @@ const allExams = [
             "text": "AWS Acceptable Use Policy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/aup/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_9",
@@ -23067,8 +23691,10 @@ const allExams = [
             "text": "By replacing the repeated scaling of virtual servers with a simpler fixed-scale model"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - AWS does not require minimum spend commitments or long-term contracts. - You replace large upfront expenses with low variable payments that only apply to what you use. - With AWS you are not bound to multi-year agreements or complicated licensing models. Reference:."
       },
       {
         "id": "19_10",
@@ -23091,8 +23717,10 @@ const allExams = [
             "text": "AWS Server Migration Service (AWS SMS) to move Amazon EC2 instances into a different Region"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_11",
@@ -23115,8 +23743,10 @@ const allExams = [
             "text": "Distribute the compute load across multiple resources"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - Use load balancing for offloading encryption termination (TLS) to improve performance and to manage and route traffic effectively. - Distribute traffic across multiple resources or services to allow your workload to take advantage of the elasticity that AWS provides. Reference:."
       },
       {
         "id": "19_12",
@@ -23139,12 +23769,14 @@ const allExams = [
             "text": "Require IAM users to store their passwords in raw text"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_13",
-        "text": "A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br/> How can the company get this support? (Choose two.)",
+        "text": "A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. How can the company get this support? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -23163,8 +23795,10 @@ const allExams = [
             "text": "Select a partner from the AWS Partner Network (APN) to assist with the migration"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/solutions/aws-landing-zone/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_14",
@@ -23187,8 +23821,10 @@ const allExams = [
             "text": "Answering questions regarding technical support cases"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/enterprise/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_15",
@@ -23211,12 +23847,14 @@ const allExams = [
             "text": "having elasticity"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. being highly available."
       },
       {
         "id": "19_16",
-        "text": "A new service using AWS must be highly available. Yet, due to regulatory requirements, all of its Amazon EC2 instances must be located in a single geographic area. <br/> According to best practices, to meet these requirements, the EC2 instances must be placed in at least two:",
+        "text": "A new service using AWS must be highly available. Yet, due to regulatory requirements, all of its Amazon EC2 instances must be located in a single geographic area. According to best practices, to meet these requirements, the EC2 instances must be placed in at least two:",
         "options": [
           {
             "letter": "A",
@@ -23235,8 +23873,10 @@ const allExams = [
             "text": "placement groups"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_17",
@@ -23259,12 +23899,14 @@ const allExams = [
             "text": "Cost Explorer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tco-calculator/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_18",
-        "text": "A company has multiple AWS accounts within AWS Organizations and wants to apply the Amazon EC2 Reserved Instances benefit to a single account only. <br/> Which action should be taken?",
+        "text": "A company has multiple AWS accounts within AWS Organizations and wants to apply the Amazon EC2 Reserved Instances benefit to a single account only. Which action should be taken?",
         "options": [
           {
             "letter": "A",
@@ -23283,8 +23925,10 @@ const allExams = [
             "text": "Enable Reserved Instance sharing in the AWS Billing and Cost Management console."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ri-consolidated-billing/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_19",
@@ -23307,12 +23951,14 @@ const allExams = [
             "text": "A user needs to change payment methods due to a compromise"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/report-aws-abuse/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_20",
-        "text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br/> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
+        "text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -23331,8 +23977,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/cloudfront/faqs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_21",
@@ -23355,8 +24003,10 @@ const allExams = [
             "text": "Amazon ElastiCache"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://blogs.itemis.com/en/serverless-services-on-aws>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_22",
@@ -23379,8 +24029,10 @@ const allExams = [
             "text": "Internet gateways"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://subscription.packtpub.com/book/virtualization_and_cloud/9781788293723/3/ch03lvl1sec26/vpc-components>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_23",
@@ -23403,8 +24055,10 @@ const allExams = [
             "text": "split an AWS bill across multiple forms of payment"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_24",
@@ -23427,8 +24081,10 @@ const allExams = [
             "text": "Security groups"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/security/guidelines-for-protecting-your-aws-account-while-using-programmatic-access/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_25",
@@ -23451,8 +24107,10 @@ const allExams = [
             "text": "Available software patches"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_26",
@@ -23475,8 +24133,10 @@ const allExams = [
             "text": "Create and manage keys for multi-factor authentication"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/kms/latest/developerguide/control-access.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_27",
@@ -23499,8 +24159,10 @@ const allExams = [
             "text": "It automatically corrects potential security issues caused by permissions settings on account resources"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. It provides a list of cost optimization recommendations based on current AWS usage."
       },
       {
         "id": "19_28",
@@ -23523,12 +24185,14 @@ const allExams = [
             "text": "AWS manages the development of applications on AWS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/data-center/controls/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_29",
-        "text": "A user deploys an Amazon RDS DB instance in multiple Availability Zones. <br/> This strategy involves which pillar of the AWS Well-Architected Framework?",
+        "text": "A user deploys an Amazon RDS DB instance in multiple Availability Zones. This strategy involves which pillar of the AWS Well-Architected Framework?",
         "options": [
           {
             "letter": "A",
@@ -23547,8 +24211,10 @@ const allExams = [
             "text": "Security"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_30",
@@ -23571,8 +24237,10 @@ const allExams = [
             "text": "AWS Direct Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "19_31",
@@ -23595,8 +24263,10 @@ const allExams = [
             "text": "Amazon QuickSight"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_32",
@@ -23619,8 +24289,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_33",
@@ -23643,8 +24315,10 @@ const allExams = [
             "text": "VPC Flow Logs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ": - VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. - Flow log data can be published to Amazon CloudWatch Logs or Amazon S3. After you've created a flow log, you can retrieve and view its data in the chosen destination. Reference:."
       },
       {
         "id": "19_34",
@@ -23667,8 +24341,10 @@ const allExams = [
             "text": "AWS Lambda"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/aws/category/auto-scaling/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_35",
@@ -23691,12 +24367,14 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_36",
-        "text": "A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks including provisioning, patching, and performing backups. <br/> Which AWS service will support this use case?",
+        "text": "A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks including provisioning, patching, and performing backups. Which AWS service will support this use case?",
         "options": [
           {
             "letter": "A",
@@ -23715,12 +24393,14 @@ const allExams = [
             "text": "Amazon ElastiCache"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - Amazon RDS makes it easy to set up, operate, and scale a relational database in the cloud. - It provides cost-efficient and resizable capacity while automating time-consuming administration tasks, such as hardware provisioning, database setup, patching, and backups. - It frees you to focus on your applications, so you can give them the fast performance, high availability, security, and compatibility that they need. Reference:."
       },
       {
         "id": "19_37",
-        "text": "A company wants to expand from one AWS Region into a second AWS Region. <br/> What does the company need to do to start supporting the new Region?",
+        "text": "A company wants to expand from one AWS Region into a second AWS Region. What does the company need to do to start supporting the new Region?",
         "options": [
           {
             "letter": "A",
@@ -23739,12 +24419,14 @@ const allExams = [
             "text": "Download the AWS Management Console for the new Region"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_38",
-        "text": "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server. <br/> Which Amazon EC2 instance pricing option will meet these requirements?",
+        "text": "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server. Which Amazon EC2 instance pricing option will meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -23763,8 +24445,10 @@ const allExams = [
             "text": "Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/dedicated-hosts/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_39",
@@ -23787,12 +24471,14 @@ const allExams = [
             "text": "AWS Secrets Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "19_40",
-        "text": "A company is planning to migrate from on-premises to the AWS Cloud. <br/> Which AWS tool or service provides detailed reports on estimated cost savings after migration?",
+        "text": "A company is planning to migrate from on-premises to the AWS Cloud. Which AWS tool or service provides detailed reports on estimated cost savings after migration?",
         "options": [
           {
             "letter": "A",
@@ -23811,8 +24497,10 @@ const allExams = [
             "text": "AWS Migration Hub"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": (26)."
       },
       {
         "id": "19_41",
@@ -23835,8 +24523,10 @@ const allExams = [
             "text": "AWS Partner Network (APN)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS Professional Services."
       },
       {
         "id": "19_42",
@@ -23859,8 +24549,10 @@ const allExams = [
             "text": "AWS Directory Service"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - The AWS CloudHSM service helps you meet corporate, contractual, and regulatory compliance requirements for data security by using dedicated Hardware Security Module (HSM) instances within the AWS cloud. - AWS and AWS Marketplace partners offer a variety of solutions for protecting sensitive data within the AWS platform, but for some applications and data subject to contractual or regulatory mandates for managing cryptographic keys, additional protection may be necessary. - CloudHSM complements existing data protection solutions and allows you to protect your encryption keys within HSMs that are designed and validated to government standards for secure key management. - CloudHSM allows you to securely generate, store, and manage cryptographic keys used for data encryption in a way that keys are accessible only by you. Reference:."
       },
       {
         "id": "19_43",
@@ -23883,8 +24575,10 @@ const allExams = [
             "text": "Controlling physical access to data centers"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.whizlabs.com/blog/aws-security-shared-responsibility/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_44",
@@ -23907,8 +24601,10 @@ const allExams = [
             "text": "Amazon Lumberyard"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - An easy-to-use service for deploying and scaling web applications and web services developed in a number of programming languages. - You can configure event notifications for your Elastic Beanstalk environment so that notable events can be automatically published to an SNS topic, then pushed to topic subscribers. - As an example, you may use this event-driven architecture to coordinate your continuous integration pipeline (such as Jenkins CI). - That way, whenever an environment is created, Elastic Beanstalk publishes this event to an SNS topic, which triggers a subscribing Lambda function, which then kicks off a CI job against your newly created Elastic Beanstalk environment. Reference:."
       },
       {
         "id": "19_45",
@@ -23931,8 +24627,10 @@ const allExams = [
             "text": "AWS manages user applications in the AWS Cloud"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/aws-whitepaper-business-value-of-aws.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_46",
@@ -23955,12 +24653,14 @@ const allExams = [
             "text": "The source S3 bucket owner must have the source and destination AWS Regions disabled for their account"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_47",
-        "text": "What is a user responsible for when running an application in the AWS Cloud?   - A. Managing physical hardware",
+        "text": "What is a user responsible for when running an application in the AWS Cloud? - A. Managing physical hardware",
         "options": [
           {
             "letter": "B",
@@ -23975,12 +24675,14 @@ const allExams = [
             "text": "Managing application software updates"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_48",
-        "text": "A company that does business online needs to quickly deliver new functionality in an iterative manner, minimizing the time to market. <br/> Which AWS Cloud feature can provide this?",
+        "text": "A company that does business online needs to quickly deliver new functionality in an iterative manner, minimizing the time to market. Which AWS Cloud feature can provide this?",
         "options": [
           {
             "letter": "A",
@@ -23999,8 +24701,10 @@ const allExams = [
             "text": "Reliability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/devops/partner-solutions/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_49",
@@ -24023,8 +24727,10 @@ const allExams = [
             "text": "Billing alerts and Amazon CloudWatch alarms"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "19_50",
@@ -24047,15 +24753,17 @@ const allExams = [
             "text": "establish a dedicated network connection to AWS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 20,
-    "name": "Practice Exam 20",
-    "description": "Practice Exam 20 - 50 questions",
+    "name": "Examen Pratique 20",
+    "description": "Examen Pratique 20 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
@@ -24080,12 +24788,14 @@ const allExams = [
             "text": "Amazon CloudWatch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/guardduty/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_2",
-        "text": "A company wants to try a third-party ecommerce solution before deciding to use it long term. <br/> Which AWS service or tool will support this effort?",
+        "text": "A company wants to try a third-party ecommerce solution before deciding to use it long term. Which AWS service or tool will support this effort?",
         "options": [
           {
             "letter": "A",
@@ -24104,8 +24814,10 @@ const allExams = [
             "text": "AWS Service Catalog"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/whats-new/2019/09/aws-marketplace-easier-to-find-solutions-from-aws-console/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_3",
@@ -24128,8 +24840,10 @@ const allExams = [
             "text": "Amazon RDS for MariaDB"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/dynamodb/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_4",
@@ -24152,12 +24866,14 @@ const allExams = [
             "text": "Amazon QuickSight"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_5",
-        "text": "A company is hosting a web application in a Docker container on Amazon EC2. <br/> AWS is responsible for which of the following tasks?",
+        "text": "A company is hosting a web application in a Docker container on Amazon EC2. AWS is responsible for which of the following tasks?",
         "options": [
           {
             "letter": "A",
@@ -24176,12 +24892,14 @@ const allExams = [
             "text": "Managing the guest operating system, including updates and security patches"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_6",
-        "text": "Users are reporting latency when connecting to a website with a global customer base. <br/> Which AWS service will improve the customer experience by reducing latency?",
+        "text": "Users are reporting latency when connecting to a website with a global customer base. Which AWS service will improve the customer experience by reducing latency?",
         "options": [
           {
             "letter": "A",
@@ -24200,8 +24918,10 @@ const allExams = [
             "text": "AWS Transit Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/tutorials/deliver-content-faster/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_7",
@@ -24224,8 +24944,10 @@ const allExams = [
             "text": "Rotate access keys on a regular basis"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_8",
@@ -24248,12 +24970,14 @@ const allExams = [
             "text": "AWS CloudTrail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_9",
-        "text": "A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability. <br/> Which service will support these requirements?",
+        "text": "A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability. Which service will support these requirements?",
         "options": [
           {
             "letter": "A",
@@ -24272,8 +24996,10 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - AWS Global Accelerator uses the AWS global network to optimize the path from your users to your applications, improving the performance of your traffic by as much as 60%. - AWS Global Accelerator continually monitors the health of your application endpoints and redirects traffic to healthy endpoints in less than 30 seconds. Reference:."
       },
       {
         "id": "20_10",
@@ -24296,8 +25022,10 @@ const allExams = [
             "text": "Use AWS Certificate Manager to whitelist approved AWS resources and services"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Use AWS Config to generate an inventory of AWS resources."
       },
       {
         "id": "20_11",
@@ -24320,8 +25048,10 @@ const allExams = [
             "text": "AWS IAM"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/mt/monitor-and-notify-on-aws-account-root-user-activity/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_12",
@@ -24344,8 +25074,10 @@ const allExams = [
             "text": "Implement the least permissive rules for security groups"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.botmetric.com/blog/aws-cloud-architecture-design-principles/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_13",
@@ -24368,12 +25100,14 @@ const allExams = [
             "text": "AWS Database Migration Service (AWS DMS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/snowball/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_14",
-        "text": "A batch workload takes 5 hours to finish on an Amazon EC2 instance. The amount of data to be processed doubles monthly and the processing time is proportional. <br/> What is the best cloud architecture to address this consistently growing demand?",
+        "text": "A batch workload takes 5 hours to finish on an Amazon EC2 instance. The amount of data to be processed doubles monthly and the processing time is proportional. What is the best cloud architecture to address this consistently growing demand?",
         "options": [
           {
             "letter": "A",
@@ -24392,12 +25126,14 @@ const allExams = [
             "text": "Run the application on a bare metal EC2 instance."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Distribute the application across multiple EC2 instances and run the workload in parallel.."
       },
       {
         "id": "20_15",
-        "text": "Each department within a company has its own independent AWS account and its own payment method. New company leadership wants to centralize departmental governance and consolidate payments. <br/> How can this be achieved using AWS services or features?",
+        "text": "Each department within a company has its own independent AWS account and its own payment method. New company leadership wants to centralize departmental governance and consolidate payments. How can this be achieved using AWS services or features?",
         "options": [
           {
             "letter": "A",
@@ -24416,8 +25152,10 @@ const allExams = [
             "text": "Use Cost Explorer to combine costs from all accounts. Then replicate IAM policies across accounts."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_16",
@@ -24440,12 +25178,14 @@ const allExams = [
             "text": "Agility"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Elasticity."
       },
       {
         "id": "20_17",
-        "text": "An ecommerce company anticipates a huge increase in web traffic for two very popular upcoming shopping holidays. <br/> Which AWS service or feature can be configured to dynamically adjust resources to meet this change in demand?",
+        "text": "An ecommerce company anticipates a huge increase in web traffic for two very popular upcoming shopping holidays. Which AWS service or feature can be configured to dynamically adjust resources to meet this change in demand?",
         "options": [
           {
             "letter": "A",
@@ -24464,8 +25204,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/autoscaling/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_18",
@@ -24488,8 +25230,10 @@ const allExams = [
             "text": "Amazon Pinpoint"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/aws-security-whitepaper.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_19",
@@ -24512,12 +25256,14 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-forecast.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_20",
-        "text": "A company is running an ecommerce application hosted in Europe. To decrease latency for users who access the website from other parts of the world, the company would like to cache frequently accessed static content closer to the users. <br/> Which AWS service will support these requirements?",
+        "text": "A company is running an ecommerce application hosted in Europe. To decrease latency for users who access the website from other parts of the world, the company would like to cache frequently accessed static content closer to the users. Which AWS service will support these requirements?",
         "options": [
           {
             "letter": "A",
@@ -24536,8 +25282,10 @@ const allExams = [
             "text": "Amazon Elastic Block Store (Amazon EBS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Amazon CloudFront employs a global network of edge locations and regional edge caches that cache copies of your content close to your viewers. - Amazon CloudFront ensures that end-user requests are served by the closest edge location. - As a result, viewer requests travel a short distance, improving performance for your viewers. - For files not cached at the edge locations and the regional edge caches, Amazon CloudFront keeps persistent connections with your origin servers so that those files can be fetched from the origin servers as quickly as possible. Reference:."
       },
       {
         "id": "20_21",
@@ -24560,8 +25308,10 @@ const allExams = [
             "text": "AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/global-infrastructure/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_22",
@@ -24584,8 +25334,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/faqs/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_23",
@@ -24608,8 +25360,10 @@ const allExams = [
             "text": "They are provided at no charge to users."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_24",
@@ -24632,12 +25386,14 @@ const allExams = [
             "text": "Networking infrastructure protection"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudacademy.com/blog/aws-shared-responsibility-model-security/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_25",
-        "text": "IT systems should be designed to reduce interdependencies, so that a change or failure in one component does not cascade to other components. <br/> This is an example of which principle of cloud architecture design?",
+        "text": "IT systems should be designed to reduce interdependencies, so that a change or failure in one component does not cascade to other components. This is an example of which principle of cloud architecture design?",
         "options": [
           {
             "letter": "A",
@@ -24656,8 +25412,10 @@ const allExams = [
             "text": "Automatic scaling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_26",
@@ -24680,12 +25438,14 @@ const allExams = [
             "text": "AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "20_27",
-        "text": "An application runs on multiple Amazon EC2 instances that access a shared file system simultaneously. <br/> Which AWS storage service should be used?",
+        "text": "An application runs on multiple Amazon EC2 instances that access a shared file system simultaneously. Which AWS storage service should be used?",
         "options": [
           {
             "letter": "A",
@@ -24704,12 +25464,14 @@ const allExams = [
             "text": "AWS Artifact"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/efs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_28",
-        "text": "A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br/> Which security measures fall under the responsibility of AWS? (Choose two.)",
+        "text": "A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. Which security measures fall under the responsibility of AWS? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -24728,8 +25490,10 @@ const allExams = [
             "text": "Encrypting communication between the EC2 instances and the Elastic Load Balancer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Protecting against IP spoofing and packet sniffing."
       },
       {
         "id": "20_29",
@@ -24752,8 +25516,10 @@ const allExams = [
             "text": "Automatically adjust the required compute capacity to maintain consistent performance."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aimconsulting.com/insights/blog/the-elastic-cloud-opportunity/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_30",
@@ -24776,12 +25542,14 @@ const allExams = [
             "text": "reserved storage pricing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. economies of scale."
       },
       {
         "id": "20_31",
-        "text": "A company needs an Amazon S3 bucket that cannot have any public objects due to compliance requirements. <br/> How can this be accomplished?",
+        "text": "A company needs an Amazon S3 bucket that cannot have any public objects due to compliance requirements. How can this be accomplished?",
         "options": [
           {
             "letter": "A",
@@ -24800,12 +25568,14 @@ const allExams = [
             "text": "Create a service to monitor all S3 uploads and remove any public uploads."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_32",
-        "text": "A Cloud Practitioner identifies a billing issue after examining the AWS Cost and Usage report in the AWS Management Console. <br/> Which action can be taken to resolve this?",
+        "text": "A Cloud Practitioner identifies a billing issue after examining the AWS Cost and Usage report in the AWS Management Console. Which action can be taken to resolve this?",
         "options": [
           {
             "letter": "A",
@@ -24824,8 +25594,10 @@ const allExams = [
             "text": "Proceed with creating a new dashboard in Amazon QuickSight."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "< https://docs.aws.amazon.com/awssupport/latest/user/case-management.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_33",
@@ -24848,8 +25620,10 @@ const allExams = [
             "text": "Estimates CPU utilization"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/aws/estimate-your-c/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_34",
@@ -24872,8 +25646,10 @@ const allExams = [
             "text": "AWS Support"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_35",
@@ -24896,8 +25672,10 @@ const allExams = [
             "text": "Amazon Route 53"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/autoscaling/faqs/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_36",
@@ -24920,8 +25698,10 @@ const allExams = [
             "text": "Decreased latency to reach applications deployed on AWS"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/global-accelerator/faqs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_37",
@@ -24944,8 +25724,10 @@ const allExams = [
             "text": "AWS Support"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/knowledge-center/reactivate-suspended-account/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_38",
@@ -24968,8 +25750,10 @@ const allExams = [
             "text": "Break apart the application into loosely coupled components"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - In a traditional computing environment, you provision capacity based on an estimate of a theoretical maximum peak. - This can result in periods where expensive resources are sitting idle or occasions of insufficient capacity. - With cloud computing, you can access as much or as little capacity as you need and dynamically scale to meet actual demand, while only paying for what you use."
       },
       {
         "id": "20_39",
@@ -24992,8 +25776,10 @@ const allExams = [
             "text": "Purchasing for the maximum possible load"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.cloudmanagementinsider.com/ways-to-optimize-aws-cost/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_40",
@@ -25016,8 +25802,10 @@ const allExams = [
             "text": "Installing operating system security patches for Amazon RDS database instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_41",
@@ -25040,8 +25828,10 @@ const allExams = [
             "text": "Switch automatically to Reserved Instances or Spot Instances, whichever is most cost-effective."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Break down AWS costs by day, service, and linked AWS account.."
       },
       {
         "id": "20_42",
@@ -25064,8 +25854,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_43",
@@ -25088,8 +25880,10 @@ const allExams = [
             "text": "AWS Firewall Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - -."
       },
       {
         "id": "20_44",
@@ -25112,8 +25906,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/artifact/#:~:text=AWS%20Artifact%20is%20your%20go,reports%20and%20select%20online%20agreements>."
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": ."
       },
       {
         "id": "20_45",
@@ -25136,8 +25932,10 @@ const allExams = [
             "text": "Amazon Lex"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/polly/#:~:text=Amazon%20Polly%20is%20a%20service,synthesize%20natural%20sounding%20human%20speech>."
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ": ."
       },
       {
         "id": "20_46",
@@ -25160,8 +25958,10 @@ const allExams = [
             "text": "Design all components using open-source code"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Assume that all components within an application can fail."
       },
       {
         "id": "20_47",
@@ -25184,8 +25984,10 @@ const allExams = [
             "text": "IAM credential report"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": #Security."
       },
       {
         "id": "20_48",
@@ -25208,8 +26010,10 @@ const allExams = [
             "text": "Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/dedicated-hosts/pricing/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "20_49",
@@ -25232,8 +26036,10 @@ const allExams = [
             "text": "Data centers"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ": - When your web traffic is geo-dispersed, it's not always feasible and certainly not cost effective to replicate your entire infrastructure across the globe. - A CDN provides you the ability to utilize its global network of edge locations to deliver a cached copy of web content such as videos, webpages, images and so on to your customers. - To reduce response time, the CDN utilizes the nearest edge location to the customer or originating request location in order to reduce the response time. - Throughput is dramatically increased given that the web assets are delivered from cache. - For dynamic data, many CDNs can be configured to retrieve data from the origin servers. Reference:."
       },
       {
         "id": "20_50",
@@ -25256,21 +26062,23 @@ const allExams = [
             "text": "Cost optimization"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 21,
-    "name": "Practice Exam 21",
-    "description": "Practice Exam 21 - 50 questions",
+    "name": "Examen Pratique 21",
+    "description": "Examen Pratique 21 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
       {
         "id": "21_1",
-        "text": "A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database software. <br/> Which AWS service can be used to accomplish this?",
+        "text": "A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database software. Which AWS service can be used to accomplish this?",
         "options": [
           {
             "letter": "A",
@@ -25289,12 +26097,14 @@ const allExams = [
             "text": "Amazon Redshift"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_2",
-        "text": "A Cloud Practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas.<br/> Which of the following meets these requirements?",
+        "text": "A Cloud Practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas. Which of the following meets these requirements?",
         "options": [
           {
             "letter": "A",
@@ -25313,8 +26123,10 @@ const allExams = [
             "text": "Edge locations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.botmetric.com/blog/having-a-disaster-recovery-plan-is-pivotal-the-dos-and-donts-on-aws-cloud/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_3",
@@ -25337,8 +26149,10 @@ const allExams = [
             "text": "Implementing consolidated billing"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/organizations/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_4",
@@ -25361,8 +26175,10 @@ const allExams = [
             "text": "AWS Systems Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/opsworks/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_5",
@@ -25385,8 +26201,10 @@ const allExams = [
             "text": "Cost allocation report"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_6",
@@ -25409,8 +26227,10 @@ const allExams = [
             "text": "enable billing alerts to monitor actual AWS costs compared to estimated costs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/tco-calculator/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_7",
@@ -25433,8 +26253,10 @@ const allExams = [
             "text": "AWS VPN"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/directconnect/faqs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_8",
@@ -25457,8 +26279,10 @@ const allExams = [
             "text": "Physical security of data center facilities"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_9",
@@ -25481,12 +26305,14 @@ const allExams = [
             "text": "Basic"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_10",
-        "text": "A company has deployed several relational databases on Amazon EC2 instances. Every month, the database software vendor releases new security patches that need to be applied to the databases. <br/> What is the MOST efficient way to apply the security patches?",
+        "text": "A company has deployed several relational databases on Amazon EC2 instances. Every month, the database software vendor releases new security patches that need to be applied to the databases. What is the MOST efficient way to apply the security patches?",
         "options": [
           {
             "letter": "A",
@@ -25505,12 +26331,14 @@ const allExams = [
             "text": "Use AWS Systems Manager to automate database patching according to a schedule."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/rds/faqs/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_11",
-        "text": "A company wants to use Amazon Elastic Compute Cloud (Amazon EC2) to deploy a global commercial application. The deployment solution should be built with the highest redundancy and fault tolerance. <br/> Based on this situation, the Amazon EC2 instances should be deployed:",
+        "text": "A company wants to use Amazon Elastic Compute Cloud (Amazon EC2) to deploy a global commercial application. The deployment solution should be built with the highest redundancy and fault tolerance. Based on this situation, the Amazon EC2 instances should be deployed:",
         "options": [
           {
             "letter": "A",
@@ -25529,12 +26357,14 @@ const allExams = [
             "text": "across multiple Availability Zones in two AWS Regions"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://jayendrapatil.com/aws-high-availability-fault-tolerance-architecture-certification/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_12",
-        "text": "A company has an application with users in both Australia and Brazil. All the company infrastructure is currently provisioned in the Asia Pacific (Sydney) Region in Australia, and Brazilian users are experiencing high latency. <br/> What should the company do to reduce latency?",
+        "text": "A company has an application with users in both Australia and Brazil. All the company infrastructure is currently provisioned in the Asia Pacific (Sydney) Region in Australia, and Brazilian users are experiencing high latency. What should the company do to reduce latency?",
         "options": [
           {
             "letter": "A",
@@ -25553,12 +26383,14 @@ const allExams = [
             "text": "Launch additional Amazon EC2 instances in Sydney to handle the demand"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/transit-gateway/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_13",
-        "text": "An Amazon EC2 instance runs only when needed yet must remain active for the duration of the process. <br/> What is the most appropriate purchasing option?",
+        "text": "An Amazon EC2 instance runs only when needed yet must remain active for the duration of the process. What is the most appropriate purchasing option?",
         "options": [
           {
             "letter": "A",
@@ -25577,8 +26409,10 @@ const allExams = [
             "text": "Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. On-Demand Instances."
       },
       {
         "id": "21_14",
@@ -25601,8 +26435,10 @@ const allExams = [
             "text": "Amazon CloudWatch dashboard"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_15",
@@ -25625,8 +26461,10 @@ const allExams = [
             "text": "AWS Storage Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/storagegateway/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_16",
@@ -25649,8 +26487,10 @@ const allExams = [
             "text": "Access Control Lists (ACL)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_17",
@@ -25673,8 +26513,10 @@ const allExams = [
             "text": "Use an AWS Transit Gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/building-a-scalable-and-secure-multi-vpc-aws-network-infrastructure.pdf>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_18",
@@ -25697,8 +26539,10 @@ const allExams = [
             "text": "Enterprise"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/plans/enterprise/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_19",
@@ -25721,8 +26565,10 @@ const allExams = [
             "text": "AWS Firewall Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_20",
@@ -25745,8 +26591,10 @@ const allExams = [
             "text": "AWS Support"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/faq/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_21",
@@ -25769,8 +26617,10 @@ const allExams = [
             "text": "Amazon S3 Glacier"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/s3/storage-classes/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_22",
@@ -25793,8 +26643,10 @@ const allExams = [
             "text": "A data center location with a single source of power and networking"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/global-infrastructure/regions_az/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_23",
@@ -25817,8 +26669,10 @@ const allExams = [
             "text": "AWS OpsWorks"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://blog.newrelic.com/engineering/best-cloud-infrastructure-automation-tools/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_24",
@@ -25841,12 +26695,14 @@ const allExams = [
             "text": "AWS Systems Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_25",
-        "text": "A user would like to encrypt data that is received, stored, and managed by AWS CloudTrail. <br/> Which AWS service will provide this capability?",
+        "text": "A user would like to encrypt data that is received, stored, and managed by AWS CloudTrail. Which AWS service will provide this capability?",
         "options": [
           {
             "letter": "A",
@@ -25865,8 +26721,10 @@ const allExams = [
             "text": "AWS Certificate Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awscloudtrail/latest/userguide/data-protection.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_26",
@@ -25889,8 +26747,10 @@ const allExams = [
             "text": "Lower variable costs due to massive economies of scale"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Elasticity of the AWS Cloud."
       },
       {
         "id": "21_27",
@@ -25913,8 +26773,10 @@ const allExams = [
             "text": "A user ID"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_28",
@@ -25937,8 +26799,10 @@ const allExams = [
             "text": "AWS Batch"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_29",
@@ -25961,8 +26825,10 @@ const allExams = [
             "text": "Use AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Create a separate AWS account for each department."
       },
       {
         "id": "21_30",
@@ -25985,8 +26851,10 @@ const allExams = [
             "text": "Centralized AWS IAM"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://jayendrapatil.com/aws-consolidated-billing/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_31",
@@ -26009,8 +26877,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/hands-on/control-your-costs-free-tier-budgets/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_32",
@@ -26033,8 +26903,10 @@ const allExams = [
             "text": "AWS Shield"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/macie/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_33",
@@ -26057,12 +26929,14 @@ const allExams = [
             "text": "AWS Cost and Usage report"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/mt/monitoring-service-limits-with-trusted-advisor-and-amazon-cloudwatch/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_34",
-        "text": "A company has distributed its workload on both the AWS Cloud and some on-premises servers. <br/> What type of architecture is this?",
+        "text": "A company has distributed its workload on both the AWS Cloud and some on-premises servers. What type of architecture is this?",
         "options": [
           {
             "letter": "A",
@@ -26081,8 +26955,10 @@ const allExams = [
             "text": "Private cloud"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/hybrid/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_35",
@@ -26105,8 +26981,10 @@ const allExams = [
             "text": "Store AWS credentials within Amazon EC2 instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://cloudcheckr.com/cloud-security/top-5-iam-best-practices/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_36",
@@ -26129,8 +27007,10 @@ const allExams = [
             "text": "AWS Well-Architected Tool"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": - Control Tower automates the process of setting up a new baseline multi-account AWS environment that is secure, well-architected, and ready to use. - Control Tower incorporates the knowledge that AWS Professional Service has gained over the course of thousands of successful customer engagements. Reference:."
       },
       {
         "id": "21_37",
@@ -26153,12 +27033,14 @@ const allExams = [
             "text": "AWS Global Accelerator"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/training-and-certification/explore-the-aws-transit-gateway-networking-and-scaling-digital-course/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_38",
-        "text": "A company needs protection from expanded distributed denial of service (DDoS) attacks on its website and assistance from AWS experts during such events. <br/> Which AWS managed service will meet these requirements?",
+        "text": "A company needs protection from expanded distributed denial of service (DDoS) attacks on its website and assistance from AWS experts during such events. Which AWS managed service will meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -26177,12 +27059,14 @@ const allExams = [
             "text": "Amazon GuardDuty"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_39",
-        "text": "A company's application has flexible start and end times. <br/> Which Amazon EC2 pricing model will be the MOST cost-effective?",
+        "text": "A company's application has flexible start and end times. Which Amazon EC2 pricing model will be the MOST cost-effective?",
         "options": [
           {
             "letter": "A",
@@ -26201,8 +27085,10 @@ const allExams = [
             "text": "Dedicated Hosts"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_40",
@@ -26225,8 +27111,10 @@ const allExams = [
             "text": "Security of data in transit"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Security of data in transit."
       },
       {
         "id": "21_41",
@@ -26249,8 +27137,10 @@ const allExams = [
             "text": "Dedicated Hosts"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "21_42",
@@ -26273,8 +27163,10 @@ const allExams = [
             "text": "Amazon Elastic Block Store (Amazon EBS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Amazon Elastic Container Service (Amazon ECS)."
       },
       {
         "id": "21_43",
@@ -26297,12 +27189,14 @@ const allExams = [
             "text": "AWS IAM user access key"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS IAM role."
       },
       {
         "id": "21_44",
-        "text": "A company with a Developer-level AWS Support plan provisioned an Amazon RDS database and cannot connect to it. <br/> Who should the developer contact for this level of support?",
+        "text": "A company with a Developer-level AWS Support plan provisioned an Amazon RDS database and cannot connect to it. Who should the developer contact for this level of support?",
         "options": [
           {
             "letter": "A",
@@ -26321,8 +27215,10 @@ const allExams = [
             "text": "AWS consulting partners"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. AWS Support using a support case."
       },
       {
         "id": "21_45",
@@ -26345,12 +27241,14 @@ const allExams = [
             "text": "To load balance traffic from the Internet across Amazon EC2 instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. To allow communication between the VPC and the Internet."
       },
       {
         "id": "21_46",
-        "text": "A company must ensure that its endpoint for a database instance remains the same after a single Availability Zone service interruption. The application needs to resume database operations without the need for manual administrative intervention. <br/> How can these requirements be met?",
+        "text": "A company must ensure that its endpoint for a database instance remains the same after a single Availability Zone service interruption. The application needs to resume database operations without the need for manual administrative intervention. How can these requirements be met?",
         "options": [
           {
             "letter": "A",
@@ -26369,8 +27267,10 @@ const allExams = [
             "text": "Deploy a single Network Load Balancer to distribute incoming traffic across multiple Amazon CloudFront origins."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Configure Amazon RDS Multi-Availability Zone deployments with automatic failover to the standby.."
       },
       {
         "id": "21_47",
@@ -26393,8 +27293,10 @@ const allExams = [
             "text": "AWS PrivateLink"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Elastic Load Balancing."
       },
       {
         "id": "21_48",
@@ -26417,8 +27319,10 @@ const allExams = [
             "text": "Performance"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Cost optimization."
       },
       {
         "id": "21_49",
@@ -26441,8 +27345,10 @@ const allExams = [
             "text": "Attaching a role to an Amazon EC2 instance"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Closing an AWS account."
       },
       {
         "id": "21_50",
@@ -26465,21 +27371,23 @@ const allExams = [
             "text": "the built-in redundancy of an application's components"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. the built-in redundancy of an application's components."
       }
     ]
   },
   {
     "id": 22,
-    "name": "Practice Exam 22",
-    "description": "Practice Exam 22 - 50 questions",
+    "name": "Examen Pratique 22",
+    "description": "Examen Pratique 22 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
       {
         "id": "22_1",
-        "text": "A company operating in the AWS Cloud requires separate invoices for specific environments, such as development, testing, and production. <br/> How can this be achieved?",
+        "text": "A company operating in the AWS Cloud requires separate invoices for specific environments, such as development, testing, and production. How can this be achieved?",
         "options": [
           {
             "letter": "A",
@@ -26498,8 +27406,10 @@ const allExams = [
             "text": "Use Cost Explorer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Use multiple AWS accounts."
       },
       {
         "id": "22_2",
@@ -26522,8 +27432,10 @@ const allExams = [
             "text": "AWS DataSync"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS CodePipeline."
       },
       {
         "id": "22_3",
@@ -26546,12 +27458,14 @@ const allExams = [
             "text": "Reserved Instances for sustained workloads"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Spot Instances for stateless and flexible workloads."
       },
       {
         "id": "22_4",
-        "text": "A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS compliance reports and AWS agreements. <br/> Which AWS service provides on-demand access to these items?",
+        "text": "A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS compliance reports and AWS agreements. Which AWS service provides on-demand access to these items?",
         "options": [
           {
             "letter": "A",
@@ -26570,8 +27484,10 @@ const allExams = [
             "text": "AWS CloudTrail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Artifact."
       },
       {
         "id": "22_5",
@@ -26594,8 +27510,10 @@ const allExams = [
             "text": "Amazon Route 53"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Amazon Route 53."
       },
       {
         "id": "22_6",
@@ -26618,12 +27536,14 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS CloudTrail."
       },
       {
         "id": "22_7",
-        "text": "A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource changes. <br/> Which AWS service can be used to meet these requirements?",
+        "text": "A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource changes. Which AWS service can be used to meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -26642,12 +27562,14 @@ const allExams = [
             "text": "AWS Systems Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. AWS Config."
       },
       {
         "id": "22_8",
-        "text": "A user is planning to launch two additional Amazon EC2 instances to increase availability. <br/> Which action should the user take?",
+        "text": "A user is planning to launch two additional Amazon EC2 instances to increase availability. Which action should the user take?",
         "options": [
           {
             "letter": "A",
@@ -26666,12 +27588,14 @@ const allExams = [
             "text": "Launch the instances as EC2 Spot Instances in the same AWS Region, but in different Availability Zones."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Launch the instances across multiple Availability Zones in a single AWS Region.."
       },
       {
         "id": "22_9",
-        "text": "A company must store critical business data in Amazon S3 with a backup to another AWS Region. <br/> How can this be achieved?",
+        "text": "A company must store critical business data in Amazon S3 with a backup to another AWS Region. How can this be achieved?",
         "options": [
           {
             "letter": "A",
@@ -26690,8 +27614,10 @@ const allExams = [
             "text": "Take Amazon S3 bucket snapshots and copy that data to another AWS Region"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Set up Amazon S3 cross-region replication to another AWS Region."
       },
       {
         "id": "22_10",
@@ -26714,8 +27640,10 @@ const allExams = [
             "text": "AWS Organizations"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. AWS Budgets."
       },
       {
         "id": "22_11",
@@ -26738,12 +27666,14 @@ const allExams = [
             "text": "Contact your AWS sales representative"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Fill out the Penetration Testing Request Form."
       },
       {
         "id": "22_12",
-        "text": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. <br/> Which AWS service can meet these requirements?",
+        "text": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. Which AWS service can meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -26762,8 +27692,10 @@ const allExams = [
             "text": "AWS Secrets Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Amazon Macie."
       },
       {
         "id": "22_13",
@@ -26786,8 +27718,10 @@ const allExams = [
             "text": "Transit gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Customer gateway."
       },
       {
         "id": "22_14",
@@ -26810,8 +27744,10 @@ const allExams = [
             "text": "Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. On-Demand Instances."
       },
       {
         "id": "22_15",
@@ -26834,8 +27770,10 @@ const allExams = [
             "text": "Loose coupling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Loose coupling."
       },
       {
         "id": "22_16",
@@ -26858,8 +27796,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Security Bulletins."
       },
       {
         "id": "22_17",
@@ -26882,8 +27822,10 @@ const allExams = [
             "text": "Amazon ElastiCache"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. Amazon Elastic Block Store (Amazon EBS)."
       },
       {
         "id": "22_18",
@@ -26906,8 +27848,10 @@ const allExams = [
             "text": "Running all operations on a single AWS account"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Tagging resources."
       },
       {
         "id": "22_19",
@@ -26930,8 +27874,10 @@ const allExams = [
             "text": "AWS Shield"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Artifact."
       },
       {
         "id": "22_20",
@@ -26954,8 +27900,10 @@ const allExams = [
             "text": "Amazon DynamoDB"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. AWS Lambda."
       },
       {
         "id": "22_21",
@@ -26978,8 +27926,10 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. AWS VPN."
       },
       {
         "id": "22_22",
@@ -27002,8 +27952,10 @@ const allExams = [
             "text": "The payer account must be used to remove the linked account from the organization."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. The member account must meet the requirements of a standalone account.."
       },
       {
         "id": "22_23",
@@ -27026,12 +27978,14 @@ const allExams = [
             "text": "Scalability"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "La réponse correcte est l'option D. Scalability."
       },
       {
         "id": "22_24",
-        "text": "During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report. <br/> Which service should be used to submit this request?",
+        "text": "During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report. Which service should be used to submit this request?",
         "options": [
           {
             "letter": "A",
@@ -27050,12 +28004,14 @@ const allExams = [
             "text": "Amazon S3"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "La réponse correcte est l'option C. AWS Artifact."
       },
       {
         "id": "22_25",
-        "text": "A company wants to set up a highly available workload in AWS with a disaster recovery plan that will allow the company to recover in case of a regional service interruption. <br/> Which configuration will meet these requirements?",
+        "text": "A company wants to set up a highly available workload in AWS with a disaster recovery plan that will allow the company to recover in case of a regional service interruption. Which configuration will meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -27074,12 +28030,14 @@ const allExams = [
             "text": "Run across two AWS Regions, using a third AWS Region for the disaster recovery site."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/startups/large-scale-disaster-recovery-using-aws-regions/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ": Option D increased complexity and cost."
       },
       {
         "id": "22_26",
-        "text": "A company has a 500 TB image repository that needs to be transported to AWS for processing. <br/> Which AWS service can import this data MOST cost-effectively?",
+        "text": "A company has a 500 TB image repository that needs to be transported to AWS for processing. Which AWS service can import this data MOST cost-effectively?",
         "options": [
           {
             "letter": "A",
@@ -27098,8 +28056,10 @@ const allExams = [
             "text": "Amazon S3"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/storage/migrating-hundreds-of-tb-of-data-to-amazon-s3-with-aws-datasync/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_27",
@@ -27122,8 +28082,10 @@ const allExams = [
             "text": "Amazon EMR"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/rds/postgresql/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_28",
@@ -27146,12 +28108,14 @@ const allExams = [
             "text": "Using AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Using tags on resources."
       },
       {
         "id": "22_29",
-        "text": "A company wants to allow full access to an Amazon S3 bucket for a particular user. <br/> Which element in the S3 bucket policy holds the user details that describe who needs access to the S3 bucket?",
+        "text": "A company wants to allow full access to an Amazon S3 bucket for a particular user. Which element in the S3 bucket policy holds the user details that describe who needs access to the S3 bucket?",
         "options": [
           {
             "letter": "A",
@@ -27170,8 +28134,10 @@ const allExams = [
             "text": "Statement"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonS3/latest/dev/walkthrough1.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_30",
@@ -27194,12 +28160,14 @@ const allExams = [
             "text": "Amazon Connect"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/aws/aws-organizations-policy-based-management-for-multiple-aws-accounts/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_31",
-        "text": "A company is piloting a new customer-facing application on Amazon Elastic Compute Cloud (Amazon EC2) for one month. <br/> What pricing model is appropriate?",
+        "text": "A company is piloting a new customer-facing application on Amazon Elastic Compute Cloud (Amazon EC2) for one month. What pricing model is appropriate?",
         "options": [
           {
             "letter": "A",
@@ -27218,8 +28186,10 @@ const allExams = [
             "text": "Dedicated Hosts"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/pricing/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_32",
@@ -27242,8 +28212,10 @@ const allExams = [
             "text": "Cost Explorer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-forecast.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_33",
@@ -27266,8 +28238,10 @@ const allExams = [
             "text": "Applying updates to the hypervisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/compliance/shared-responsibility-model/?ref=wellarchitected>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_34",
@@ -27290,8 +28264,10 @@ const allExams = [
             "text": "AWS Organizations."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_35",
@@ -27314,8 +28290,10 @@ const allExams = [
             "text": "Security"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_36",
@@ -27338,8 +28316,10 @@ const allExams = [
             "text": "Changing infrastructure manually"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_37",
@@ -27362,8 +28342,10 @@ const allExams = [
             "text": "Users can shorten the term of their Convertible RIs by merging them with other Convertible RIs."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-convertible-exchange.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_38",
@@ -27386,12 +28368,14 @@ const allExams = [
             "text": "Maintaining the underlying infrastructure components"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Implementing controls to route application traffic."
       },
       {
         "id": "22_39",
-        "text": "An architecture design includes Amazon EC2, an Elastic Load Balancer, and Amazon RDS. <br/> What is the BEST way to get a monthly cost estimation for this architecture?",
+        "text": "An architecture design includes Amazon EC2, an Elastic Load Balancer, and Amazon RDS. What is the BEST way to get a monthly cost estimation for this architecture?",
         "options": [
           {
             "letter": "A",
@@ -27410,8 +28394,10 @@ const allExams = [
             "text": "Use the AWS Total Cost of Ownership (TCO) Calculator to estimate the monthly cost."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/pricing-calculator/latest/userguide/aws-pc.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_40",
@@ -27434,8 +28420,10 @@ const allExams = [
             "text": "Software patching"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_41",
@@ -27458,12 +28446,14 @@ const allExams = [
             "text": "Secure, durable, and lowest cost storage for data archival"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/whats-new/2018/11/s3-intelligent-tiering/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_42",
-        "text": "A company has multiple data sources across the organization and wants to consolidate data into one data warehouse. <br/> Which AWS service can be used to meet this requirement?",
+        "text": "A company has multiple data sources across the organization and wants to consolidate data into one data warehouse. Which AWS service can be used to meet this requirement?",
         "options": [
           {
             "letter": "A",
@@ -27482,8 +28472,10 @@ const allExams = [
             "text": "Amazon QuickSight"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/redshift/faqs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_43",
@@ -27506,12 +28498,14 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_44",
-        "text": "A user has underutilized on-premises resources. <br/> Which AWS Cloud concept can BEST address this issue?",
+        "text": "A user has underutilized on-premises resources. Which AWS Cloud concept can BEST address this issue?",
         "options": [
           {
             "letter": "A",
@@ -27530,12 +28524,14 @@ const allExams = [
             "text": "Loose coupling"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.gremlin.com/blog/implementing-cost-saving-strategies-on-amazon-ec-2-with-chaos-engineering/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_45",
-        "text": "A user has a stateful workload that will run on Amazon EC2 for the next 3 years. <br/> What is the MOST cost-effective pricing model for this workload?",
+        "text": "A user has a stateful workload that will run on Amazon EC2 for the next 3 years. What is the MOST cost-effective pricing model for this workload?",
         "options": [
           {
             "letter": "A",
@@ -27554,12 +28550,14 @@ const allExams = [
             "text": "Spot Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Reserved Instances."
       },
       {
         "id": "22_46",
-        "text": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. <br/> What is the most suitable and cost-effective option for this task?",
+        "text": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. What is the most suitable and cost-effective option for this task?",
         "options": [
           {
             "letter": "A",
@@ -27578,8 +28576,10 @@ const allExams = [
             "text": "Spot Instance"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. On-Demand Instance."
       },
       {
         "id": "22_47",
@@ -27602,12 +28602,14 @@ const allExams = [
             "text": "Improving security by proactively monitoring the AWS environment"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/about-aws/whats-new/2016/06/aws-support-enables-tagging-capabilities-for-trusted-advisor/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_48",
-        "text": "A developer has been hired by a large company and needs AWS credentials. <br/> Which are security best practices that should be followed? (Choose two.)",
+        "text": "A developer has been hired by a large company and needs AWS credentials. Which are security best practices that should be followed? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -27626,8 +28628,10 @@ const allExams = [
             "text": "Configure a password policy that ensures the developer's password cannot be changed."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Grant the developer access to only the AWS resources needed to perform the job.."
       },
       {
         "id": "22_49",
@@ -27650,8 +28654,10 @@ const allExams = [
             "text": "AWS Snowball"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/snowball/latest/ug/transfer-petabytes.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "22_50",
@@ -27674,21 +28680,23 @@ const allExams = [
             "text": "Amazon VPC"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/redshift/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       }
     ]
   },
   {
     "id": 23,
-    "name": "Practice Exam 23",
-    "description": "Practice Exam 23 - 50 questions",
+    "name": "Examen Pratique 23",
+    "description": "Examen Pratique 23 - 50 questions",
     "questionCount": 50,
     "duration": 90,
     "questions": [
       {
         "id": "23_1",
-        "text": "A user is planning to migrate an application workload to the AWS Cloud. <br/> Which control becomes the responsibility of AWS once the migration is complete?",
+        "text": "A user is planning to migrate an application workload to the AWS Cloud. Which control becomes the responsibility of AWS once the migration is complete?",
         "options": [
           {
             "letter": "A",
@@ -27707,8 +28715,10 @@ const allExams = [
             "text": "Patching specific applications"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Maintaining physical and environmental controls."
       },
       {
         "id": "23_2",
@@ -27731,8 +28741,10 @@ const allExams = [
             "text": "AWS Application Discovery Service"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_3",
@@ -27755,8 +28767,10 @@ const allExams = [
             "text": "AWS Managed Services"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/connect/customers/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_4",
@@ -27779,8 +28793,10 @@ const allExams = [
             "text": "AWS Pricing Calculator"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://calculator.aws/#/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_5",
@@ -27803,8 +28819,10 @@ const allExams = [
             "text": "Internet gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/aws-security-whitepaper.pdf>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_6",
@@ -27827,12 +28845,14 @@ const allExams = [
             "text": "No Upfront Reserved Instance"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_7",
-        "text": "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage. <br/> Which set of tasks would meet this requirement?",
+        "text": "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage. Which set of tasks would meet this requirement?",
         "options": [
           {
             "letter": "A",
@@ -27851,12 +28871,14 @@ const allExams = [
             "text": "Enable termination protection for the EC2 instance to avoid outages"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_8",
-        "text": "A company wants to ensure that AWS Management Console users are meeting password complexity requirements. <br/> How can the company configure password complexity?",
+        "text": "A company wants to ensure that AWS Management Console users are meeting password complexity requirements. How can the company configure password complexity?",
         "options": [
           {
             "letter": "A",
@@ -27875,8 +28897,10 @@ const allExams = [
             "text": "Using an AWS Security Hub managed insight"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_9",
@@ -27899,8 +28923,10 @@ const allExams = [
             "text": "Configuration of AWS infrastructure devices"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "La réponse correcte est l'option A. Patching guest OS and applications."
       },
       {
         "id": "23_10",
@@ -27923,12 +28949,14 @@ const allExams = [
             "text": "Use an AWS service that is in scope for PCI compliance and apply PCI controls at the application layer"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-pci-controls.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_11",
-        "text": "A company is building an application that requires the ability to send, store, and receive messages between application components. The company has another requirement to process messages in first-in, first-out (FIFO) order. <br/> Which AWS service should the company use?",
+        "text": "A company is building an application that requires the ability to send, store, and receive messages between application components. The company has another requirement to process messages in first-in, first-out (FIFO) order. Which AWS service should the company use?",
         "options": [
           {
             "letter": "A",
@@ -27947,12 +28975,14 @@ const allExams = [
             "text": "Amazon Simple Queue Service (Amazon SQS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/sqs/faqs/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_12",
-        "text": "AnyCompany recently purchased Example Corp. Both companies use AWS resources, and AnyCompany wants a single aggregated bill.  <br/> Which option allows AnyCompany to receive a single bill?",
+        "text": "AnyCompany recently purchased Example Corp. Both companies use AWS resources, and AnyCompany wants a single aggregated bill. Which option allows AnyCompany to receive a single bill?",
         "options": [
           {
             "letter": "A",
@@ -27971,8 +29001,10 @@ const allExams = [
             "text": "Migrate the Example Corp. VPCs, Amazon EC2 instances, and other resources into the AnyCompany AWS account."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/awsaccountbilling-aboutv2.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_13",
@@ -27995,12 +29027,14 @@ const allExams = [
             "text": "AWS CloudTrail"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/hands-on/control-your-costs-free-tier-budgets/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_14",
-        "text": "A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js application in the AWS Cloud. <br/> Which service should be used to deploy the application?",
+        "text": "A user has limited knowledge of AWS services, but wants to quickly deploy a scalable Node.js application in the AWS Cloud. Which service should be used to deploy the application?",
         "options": [
           {
             "letter": "A",
@@ -28019,8 +29053,10 @@ const allExams = [
             "text": "AWS OpsWorks"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/elasticbeanstalk/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_15",
@@ -28043,12 +29079,14 @@ const allExams = [
             "text": "Fault tolerance checks"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.amazonaws.cn/en/support/trustedadvisor/faq/#checks>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_16",
-        "text": "A web developer is concerned that a DDoS attack could target an application. <br/> Which AWS services or features can help protect against such an attack? (Choose two.)",
+        "text": "A web developer is concerned that a DDoS attack could target an application. Which AWS services or features can help protect against such an attack? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -28067,8 +29105,10 @@ const allExams = [
             "text": "AWS Support Center"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/shield/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_17",
@@ -28091,12 +29131,14 @@ const allExams = [
             "text": "AWS Artifact"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/artifact>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_18",
-        "text": "A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). <br/> Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)",
+        "text": "A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -28115,12 +29157,14 @@ const allExams = [
             "text": "Create an IAM policy with administrator access and attach it to the IAM user."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. Create an IAM user and provide programmatic access only.."
       },
       {
         "id": "23_19",
-        "text": "A company has a compliance requirement to record and evaluate configuration changes, as well as perform remediation actions on AWS resources. <br/> Which AWS service should the company use?",
+        "text": "A company has a compliance requirement to record and evaluate configuration changes, as well as perform remediation actions on AWS resources. Which AWS service should the company use?",
         "options": [
           {
             "letter": "A",
@@ -28139,8 +29183,10 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/config/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_20",
@@ -28163,12 +29209,14 @@ const allExams = [
             "text": "Increasing the availability of the application"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increase-availability.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_21",
-        "text": "A workload on AWS will run for the foreseeable future by using a consistent number of Amazon EC2 instances. <br/> What pricing model will minimize cost while ensuring that compute resources remain available?",
+        "text": "A workload on AWS will run for the foreseeable future by using a consistent number of Amazon EC2 instances. What pricing model will minimize cost while ensuring that compute resources remain available?",
         "options": [
           {
             "letter": "A",
@@ -28187,8 +29235,10 @@ const allExams = [
             "text": "Reserved Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_22",
@@ -28211,8 +29261,10 @@ const allExams = [
             "text": "AWS Config"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_23",
@@ -28235,8 +29287,10 @@ const allExams = [
             "text": "Replacing failed DB instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_24",
@@ -28259,12 +29313,14 @@ const allExams = [
             "text": "Code encryption"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/lambda/security-overview-of-aws-lambda/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_25",
-        "text": "A company wants to be notified when its AWS Cloud costs or usage exceed defined thresholds. <br/> Which AWS service will support these requirements?",
+        "text": "A company wants to be notified when its AWS Cloud costs or usage exceed defined thresholds. Which AWS service will support these requirements?",
         "options": [
           {
             "letter": "A",
@@ -28283,8 +29339,10 @@ const allExams = [
             "text": "Amazon Macie"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/aws-cost-management/aws-budgets/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_26",
@@ -28307,8 +29365,10 @@ const allExams = [
             "text": "Amazon Redshift"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/nosql/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_27",
@@ -28331,8 +29391,10 @@ const allExams = [
             "text": "Spot Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/spot/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_28",
@@ -28355,8 +29417,10 @@ const allExams = [
             "text": "Internet gateway"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/directconnect/partners/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_29",
@@ -28379,8 +29443,10 @@ const allExams = [
             "text": "Amazon Cognito"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_30",
@@ -28403,8 +29469,10 @@ const allExams = [
             "text": "AWS CodeStar"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_31",
@@ -28427,12 +29495,14 @@ const allExams = [
             "text": "AWS Trusted Advisor"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.coalfire.com/the-coalfire-blog/march-2019/aws-trusted-advisor-for-security-compliance>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_32",
-        "text": "A company wants to ensure its infrastructure is designed for fault tolerance and business continuity in the event of an environmental disruption. <br/> Which AWS infrastructure component should the company replicate across?",
+        "text": "A company wants to ensure its infrastructure is designed for fault tolerance and business continuity in the event of an environmental disruption. Which AWS infrastructure component should the company replicate across?",
         "options": [
           {
             "letter": "A",
@@ -28451,8 +29521,10 @@ const allExams = [
             "text": "Amazon Route 53"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d36cz9buwru1tt.cloudfront.net/AWS_Building_Fault_Tolerant_Applications.pdf>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_33",
@@ -28475,8 +29547,10 @@ const allExams = [
             "text": "Amazon Simple Queue Service (Amazon SQS)"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/sns/faqs/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_34",
@@ -28499,12 +29573,14 @@ const allExams = [
             "text": "Adopting a consumption model"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://wa.aws.amazon.com/wat.pillar.reliability.en.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_35",
-        "text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br/> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
+        "text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
         "options": [
           {
             "letter": "A",
@@ -28523,12 +29599,14 @@ const allExams = [
             "text": "Amazon CloudFront"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/cloudfront/faqs/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_36",
-        "text": "A company wants to connect to AWS over a private, low-latency connection from its remote office. <br/> What is the recommended method to meet these requirements?",
+        "text": "A company wants to connect to AWS over a private, low-latency connection from its remote office. What is the recommended method to meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -28547,8 +29625,10 @@ const allExams = [
             "text": "Use AWS Direct Connect."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/getting-started/projects/connect-data-center-to-aws/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_37",
@@ -28571,12 +29651,14 @@ const allExams = [
             "text": "AWS Certificate Manager"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/artifact/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_38",
-        "text": "A company has an AWS-hosted website located behind an Application Load Balancer. The company wants to safeguard the website from SQL injection or cross-site scripting. <br/> Which AWS service should the company use?",
+        "text": "A company has an AWS-hosted website located behind an Application Load Balancer. The company wants to safeguard the website from SQL injection or cross-site scripting. Which AWS service should the company use?",
         "options": [
           {
             "letter": "A",
@@ -28595,8 +29677,10 @@ const allExams = [
             "text": "Amazon Inspector"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/waf/faq/>"
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_39",
@@ -28619,12 +29703,14 @@ const allExams = [
             "text": "Deploy the application in one Amazon EC2 instance in an Auto Scaling group."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://www.betsol.com/blog/how-to-make-high-availability-web-applications-on-amazon-web-services/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_40",
-        "text": "A company is running a self-managed Oracle database directly on Amazon EC2 for its steady-state database. The company wants to reduce compute costs. <br/> Which option should the company use to maximize savings over a 3-year term?",
+        "text": "A company is running a self-managed Oracle database directly on Amazon EC2 for its steady-state database. The company wants to reduce compute costs. Which option should the company use to maximize savings over a 3-year term?",
         "options": [
           {
             "letter": "A",
@@ -28643,12 +29729,14 @@ const allExams = [
             "text": "EC2 On-Demand Instances"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/choosing-a-cloud-platform/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_41",
-        "text": "An external auditor has requested that a company provide a list of all its IAM users, including the status of users' credentials and access keys. <br/> What it the SIMPLEST way to provide this information?",
+        "text": "An external auditor has requested that a company provide a list of all its IAM users, including the status of users' credentials and access keys. What it the SIMPLEST way to provide this information?",
         "options": [
           {
             "letter": "A",
@@ -28667,8 +29755,10 @@ const allExams = [
             "text": "Download the AWS Trusted Advisor report, then provide the report to the auditor."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_42",
@@ -28691,12 +29781,14 @@ const allExams = [
             "text": "Installment payment options"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_43",
-        "text": "A company is expecting a short-term spike in internet traffic for its application. During the traffic increase, the application cannot be interrupted. The company also needs to minimize cost and maximize flexibility. <br/> Which Amazon EC2 instance type should the company use to meet these requirements?",
+        "text": "A company is expecting a short-term spike in internet traffic for its application. During the traffic increase, the application cannot be interrupted. The company also needs to minimize cost and maximize flexibility. Which Amazon EC2 instance type should the company use to meet these requirements?",
         "options": [
           {
             "letter": "A",
@@ -28715,12 +29807,14 @@ const allExams = [
             "text": "Dedicated Hosts"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/ec2/faqs/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_44",
-        "text": "A company wants to track AWS resource configuration changes for compliance reasons. <br/> Which AWS feature can be used to meet this requirement?",
+        "text": "A company wants to track AWS resource configuration changes for compliance reasons. Which AWS feature can be used to meet this requirement?",
         "options": [
           {
             "letter": "A",
@@ -28739,12 +29833,14 @@ const allExams = [
             "text": "VPC Flow Logs"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/config/>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_45",
-        "text": "A company is building an application that needs to deliver images and videos globally with minimal latency. <br/> Which approach can the company use to accomplish this in a cost effective manner?",
+        "text": "A company is building an application that needs to deliver images and videos globally with minimal latency. Which approach can the company use to accomplish this in a cost effective manner?",
         "options": [
           {
             "letter": "A",
@@ -28763,8 +29859,10 @@ const allExams = [
             "text": "Deliver the content through AWS PrivateLink."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://aws.amazon.com/blogs/industries/how-to-build-a-global-scalable-low-latency-and-secure-machine-learning-medical-imaging-analysis-platform-on-aws/>"
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_46",
@@ -28787,8 +29885,10 @@ const allExams = [
             "text": "apply an IAM policy only to IAM users who require it."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://kirkpatrickprice.com/blog/best-practices-for-privilege-management-in-aws/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_47",
@@ -28811,12 +29911,14 @@ const allExams = [
             "text": "Economies of scale"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://innovationtactics.com/amazon-business-model-amazon-web-services/>"
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_48",
-        "text": "A pharmaceutical company operates its infrastructure in a single AWS Region. The company has thousands of VPCs in a various AWS accounts that it wants to interconnect. <br/> Which AWS service or feature should the company use to help simplify management and reduce operational costs?",
+        "text": "A pharmaceutical company operates its infrastructure in a single AWS Region. The company has thousands of VPCs in a various AWS accounts that it wants to interconnect. Which AWS service or feature should the company use to help simplify management and reduce operational costs?",
         "options": [
           {
             "letter": "A",
@@ -28835,8 +29937,10 @@ const allExams = [
             "text": "VPC peering"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "<https://d1.awsstatic.com/whitepapers/building-a-scalable-and-secure-multi-vpc-aws-network-infrastructure.pdf>"
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       },
       {
         "id": "23_49",
@@ -28859,8 +29963,10 @@ const allExams = [
             "text": "Amazon CloudWatch will automatically predict what resources are needed."
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "La réponse correcte est l'option B. The application can be built to scale up or down automatically as resources are needed."
       },
       {
         "id": "23_50",
@@ -28883,8 +29989,10 @@ const allExams = [
             "text": "IAM policy"
           }
         ],
-        "correctAnswers": [],
-        "explanation": "Réponse correcte: "
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": ":."
       }
     ]
   }

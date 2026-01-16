@@ -90,62 +90,6 @@
     <script src="data.js"></script>
     <script src="script.js"></script>
     <script>
-        // Fonction pour restaurer un test depuis localStorage
-        function restoreTestFromStorage() {
-            const savedTest = localStorage.getItem('currentTest');
-
-            if (!savedTest) {
-                return false;
-            }
-
-            const testData = JSON.parse(savedTest);
-            const examId = testData.examId;
-
-            // Trouver l'examen dans allExams
-            if (examId === 'challenge') {
-                // Recréer le challenge (avec les mêmes questions si possible)
-                let allQuestions = [];
-                allExams.forEach(exam => {
-                    if (exam.questions && exam.questions.length > 0) {
-                        allQuestions = allQuestions.concat(exam.questions);
-                    }
-                });
-
-                // Mélanger les questions
-                for (let i = allQuestions.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
-                }
-
-                currentTest = {
-                    id: 'challenge',
-                    name: 'Challenge Aléatoire',
-                    description: '65 questions sélectionnées aléatoirement',
-                    questionCount: 65,
-                    duration: 110,
-                    questions: allQuestions.slice(0, 65)
-                };
-            } else {
-                const exam = allExams.find(e => e.id === parseInt(examId));
-                if (!exam) {
-                    return false;
-                }
-                currentTest = exam;
-            }
-
-            // Restaurer les données
-            currentQuestionIndex = testData.questionIndex || 0;
-            userAnswers = testData.answers || {};
-
-            if (testData.startTime) {
-                testStartTime = new Date(testData.startTime).getTime();
-            } else {
-                testStartTime = Date.now();
-            }
-
-            return true;
-        }
-
         function generateQuestionGrid() {
             const grid = document.getElementById('questionGrid');
             if (!grid || !currentTest) return;
@@ -171,40 +115,7 @@
             currentQuestionIndex = index;
             displayQuestion(index);
             generateQuestionGrid();
-        }
-
-        function updateProgress() {
-            if (!currentTest) return;
-
-            const answered = Object.keys(userAnswers).filter(key =>
-                userAnswers[key] && userAnswers[key].length > 0
-            ).length;
-
-            const percentage = Math.round((answered / currentTest.questionCount) * 100);
-
-            const progressFill = document.getElementById('progressFill');
-            const progressText = document.getElementById('progressText');
-            const answeredCount = document.getElementById('answeredCount');
-            const totalQuestions = document.getElementById('totalQuestions');
-
-            if (progressFill) {
-                progressFill.style.width = `${percentage}%`;
-            }
-            if (progressText) {
-                progressText.textContent = `${percentage}% complété`;
-            }
-            if (answeredCount) {
-                answeredCount.textContent = answered;
-            }
-            if (totalQuestions) {
-                totalQuestions.textContent = currentTest.questionCount;
-            }
-
-            // Mettre à jour le compteur de questions
-            const questionCounter = document.getElementById('questionCounter');
-            if (questionCounter) {
-                questionCounter.textContent = `Question ${currentQuestionIndex + 1} sur ${currentTest.questionCount}`;
-            }
+            saveProgress();
         }
 
         function showSubmitModal() {
@@ -224,28 +135,84 @@
         // Initialisation spécifique à la page de test
         document.addEventListener('DOMContentLoaded', function () {
             // Restaurer le test depuis le localStorage
-            const restored = restoreTestFromStorage();
+            const savedTest = localStorage.getItem('currentTest');
 
-            if (!restored) {
+            if (!savedTest) {
                 // Pas de test en cours, rediriger vers la page des examens
                 window.location.href = 'tests.html';
                 return;
             }
 
-            // Afficher la question actuelle
-            displayQuestion(currentQuestionIndex);
+            const testData = JSON.parse(savedTest);
+            const examId = testData.examId;
 
-            // Mettre à jour le titre
-            const testTitle = document.getElementById('testTitle');
-            const examName = document.getElementById('examName');
-            if (testTitle) testTitle.textContent = currentTest.name;
-            if (examName) examName.textContent = currentTest.name;
+            // Trouver l'examen dans allExams
+            if (examId === 'challenge') {
+                // Pour le challenge, on doit recréer les questions
+                let allQuestions = [];
+                allExams.forEach(exam => {
+                    if (exam.questions && exam.questions.length > 0) {
+                        allQuestions = allQuestions.concat(exam.questions);
+                    }
+                });
 
-            // Démarrer le chronomètre
-            startTimer();
+                // Mélanger les questions (pour avoir les mêmes qu'à la création)
+                // Note: Pour garder la cohérence, on devrait sauvegarder les questions du challenge
+                // Pour l'instant, on les recrée de la même manière
+                for (let i = allQuestions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+                }
 
-            // Générer la grille de navigation des questions
-            generateQuestionGrid();
+                currentTest = {
+                    id: 'challenge',
+                    name: 'Challenge Aléatoire',
+                    description: '65 questions sélectionnées aléatoirement',
+                    questionCount: 65,
+                    duration: 110,
+                    questions: allQuestions.slice(0, 65)
+                };
+            } else {
+                const exam = allExams.find(e => e.id === parseInt(examId));
+                if (!exam) {
+                    window.location.href = 'tests.html';
+                    return;
+                }
+                currentTest = exam;
+            }
+
+            if (currentTest) {
+                // Restaurer les données
+                currentQuestionIndex = testData.questionIndex || 0;
+                userAnswers = testData.answers || {};
+                testStartTime = testData.startTime || Date.now();
+
+                // Si le test a été commencé il y a longtemps, ajuster le temps
+                if (testData.startTime) {
+                    const timeSinceStart = Date.now() - testData.startTime;
+                    // Si plus de 24h, réinitialiser
+                    if (timeSinceStart > 24 * 60 * 60 * 1000) {
+                        testStartTime = Date.now();
+                    }
+                }
+
+                // Afficher la question actuelle
+                displayQuestion(currentQuestionIndex);
+
+                // Mettre à jour le titre
+                const testTitle = document.getElementById('testTitle');
+                const examName = document.getElementById('examName');
+                if (testTitle) testTitle.textContent = currentTest.name;
+                if (examName) examName.textContent = currentTest.name;
+
+                // Démarrer le chronomètre
+                startTimer();
+
+                // Générer la grille de navigation des questions
+                generateQuestionGrid();
+            } else {
+                window.location.href = 'tests.html';
+            }
         });
 
         // Exposer les fonctions au scope global
