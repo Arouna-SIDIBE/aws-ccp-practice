@@ -71,16 +71,19 @@
         document.addEventListener('DOMContentLoaded', function () {
             const examsGrid = document.getElementById('examsGrid');
 
-            if (examsGrid && exams) {
+            if (examsGrid && typeof allExams !== 'undefined') {
+                // Trier les examens par numéro
+                const sortedExams = [...allExams].sort((a, b) => a.id - b.id);
+
                 let html = '';
 
-                exams.forEach(exam => {
+                sortedExams.forEach(exam => {
                     html += `
                         <div class="exam-card">
                             <h3>${exam.name}</h3>
                             <p>${exam.description}</p>
                             <div class="exam-info">
-                                <span><i class="fas fa-question-circle"></i> ${exam.questionCount} questions</span>
+                                <span><i class="fas fa-question-circle"></i> ${exam.questions.length} questions</span>
                                 <span><i class="fas fa-clock"></i> ${exam.duration} minutes</span>
                             </div>
                             <button class="start-exam-btn" onclick="startExam(${exam.id})">
@@ -107,6 +110,9 @@
 
                 examsGrid.innerHTML = html;
             }
+
+            // Charger l'historique
+            loadTestHistory();
         });
     </script>
 </body>

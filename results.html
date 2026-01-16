@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats du test - AWS CCP Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span>Résultats du test</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <div id="resultsContainer">
+            <!-- Les résultats seront chargés dynamiquement ici -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Chargement des résultats...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AWS CCP Practice</h3>
+                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tests.html">Examens</a></li>
+                    <li><a href="challenge.html">Challenge</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@awsccppractice.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Afficher les résultats quand la page est chargée
+        document.addEventListener('DOMContentLoaded', function () {
+            displayResults();
+        });
+    </script>
+</body>
+
+</html>

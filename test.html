@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test AWS CCP - En cours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation simplifiée pour le test -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span id="testTitle">Examen en cours</span>
+            </div>
+            <div class="timer" id="timer">00:00:00</div>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <!-- En-tête du test -->
+        <div class="test-header">
+            <div>
+                <h2 id="examName">Examen</h2>
+                <div class="question-counter" id="questionCounter">Question 1 sur 50</div>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span id="progressText">0% complété</span>
+            </div>
+        </div>
+
+        <!-- Conteneur pour les questions -->
+        <div id="questionContainer">
+            <!-- Les questions seront chargées dynamiquement ici -->
+        </div>
+
+        <!-- Navigation des questions -->
+        <div class="question-navigation">
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="prevQuestion()" id="prevBtn">
+                    <i class="fas fa-arrow-left"></i> Précédent
+                </button>
+                <button class="nav-btn" onclick="nextQuestion()" id="nextBtn">
+                    Suivant <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="nav-btn submit-btn" onclick="submitTest()" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Soumettre le test
+                </button>
+            </div>
+
+            <div class="question-grid" id="questionGrid">
+                <!-- Les numéros de questions seront générés dynamiquement -->
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <ul>
+                <li>Cliquez sur une réponse pour la sélectionner</li>
+                <li>Utilisez les boutons "Précédent" et "Suivant" pour naviguer</li>
+                <li>Le temps est enregistré automatiquement</li>
+                <li>Vous pouvez revenir à n'importe quelle question avant de soumettre</li>
+                <li>Une fois soumis, vous ne pourrez plus modifier vos réponses</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal de confirmation de soumission -->
+    <div class="modal" id="submitModal">
+        <div class="modal-content">
+            <h2><i class="fas fa-exclamation-triangle"></i> Confirmer la soumission</h2>
+            <p>Êtes-vous sûr de vouloir soumettre votre test ?</p>
+            <p>Vous avez répondu à <span id="answeredCount">0</span> questions sur <span id="totalQuestions">0</span>.
+            </p>
+            <div class="modal-buttons">
+                <button class="modal-btn cancel-btn" onclick="closeModal()">Annuler</button>
+                <button class="modal-btn confirm-btn" onclick="confirmSubmit()">Confirmer la soumission</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialisation spécifique à la page de test
+        document.addEventListener('DOMContentLoaded', function () {
+            // Récupérer l'état du test depuis le localStorage
+            const savedTest = localStorage.getItem('currentTest');
+
+            if (savedTest) {
+                const testData = JSON.parse(savedTest);
+                const examId = testData.examId;
+
+                if (examId === 'challenge') {
+                    // Redémarrer le challenge
+                    startChallenge();
+                } else {
+                    // Redémarrer l'examen spécifique
+                    startExam(parseInt(examId));
+                }
+
+                // Restaurer les réponses si elles existent
+                if (testData.answers) {
+                    userAnswers = testData.answers;
+                }
+
+                // Restaurer l'index de la question
+                currentQuestionIndex = testData.questionIndex || 0;
+
+                // Afficher la question actuelle
+                displayQuestion(currentQuestionIndex);
+
+                // Mettre à jour le titre
+                document.getElementById('testTitle').textContent = currentTest.name;
+                document.getElementById('examName').textContent = currentTest.name;
+
+                // Démarrer le chronomètre
+                if (testStartTime) {
+                    startTimer();
+                }
+
+                // Générer la grille de navigation des questions
+                generateQuestionGrid();
+            } else {
+                // Pas de test en cours, rediriger vers la page des examens
+                window.location.href = 'tests.html';
+            }
+        });
+
+        function generateQuestionGrid() {
+            const grid = document.getElementById('questionGrid');
+            if (!grid || !currentTest) return;
+
+            let html = '';
+            for (let i = 0; i < currentTest.questionCount; i++) {
+                const isAnswered = userAnswers[i] && userAnswers[i].length > 0;
+                const isCurrent = i === currentQuestionIndex;
+                const questionClass = isCurrent ? 'grid-item current' :
+                    isAnswered ? 'grid-item answered' : 'grid-item';
+
+                html += `
+                    <div class="${questionClass}" onclick="goToQuestion(${i})">
+                        ${i + 1}
+                    </div>
+                `;
+            }
+
+            grid.innerHTML = html;
+        }
+
+        function goToQuestion(index) {
+            currentQuestionIndex = index;
+            displayQuestion(index);
+            generateQuestionGrid();
+        }
+
+        function updateProgress() {
+            if (!currentTest) return;
+
+            const answered = Object.keys(userAnswers).filter(key =>
+                userAnswers[key] && userAnswers[key].length > 0
+            ).length;
+
+            const percentage = Math.round((answered / currentTest.questionCount) * 100);
+
+            const progressFill = document.getElementById('progressFill');
+            const progressText = document.getElementById('progressText');
+            const answeredCount = document.getElementById('answeredCount');
+            const totalQuestions = document.getElementById('totalQuestions');
+
+            if (progressFill) {
+                progressFill.style.width = `${percentage}%`;
+            }
+            if (progressText) {
+                progressText.textContent = `${percentage}% complété`;
+            }
+            if (answeredCount) {
+                answeredCount.textContent = answered;
+            }
+            if (totalQuestions) {
+                totalQuestions.textContent = currentTest.questionCount;
+            }
+
+            // Mettre à jour le compteur de questions
+            const questionCounter = document.getElementById('questionCounter');
+            if (questionCounter) {
+                questionCounter.textContent = `Question ${currentQuestionIndex + 1} sur ${currentTest.questionCount}`;
+            }
+        }
+
+        function showSubmitModal() {
+            document.getElementById('submitModal').style.display = 'flex';
+            updateProgress();
+        }
+
+        function closeModal() {
+            document.getElementById('submitModal').style.display = 'none';
+        }
+
+        function confirmSubmit() {
+            closeModal();
+            submitTest();
+        }
+
+        // Exposer les fonctions au scope global
+        window.prevQuestion = prevQuestion;
+        window.nextQuestion = nextQuestion;
+        window.submitTest = submitTest;
+        window.goToQuestion = goToQuestion;
+        window.showSubmitModal = showSubmitModal;
+        window.closeModal = closeModal;
+        window.confirmSubmit = confirmSubmit;
+    </script>
+</body>
+
+</html>
