@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode Révision - AWS CCP Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span>Mode Révision</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="review.html" class="active"><i class="fas fa-book"></i> Révision</a></li>
+                <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <div class="review-intro">
+            <h1><i class="fas fa-book-open"></i> Mode Révision AWS CCP</h1>
+            <p class="review-description">
+                Étudiez à votre rythme avec accès immédiat aux réponses et explications. Parfait pour apprendre et
+                comprendre les concepts AWS sans pression de temps.
+            </p>
+
+            <div class="review-info">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Pas de chronomètre</h3>
+                    <p>Apprenez à votre propre rythme</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Explications détaillées</h3>
+                    <p>Comprenez chaque concept en profondeur</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Réponses immédiates</h3>
+                    <p>Vérifiez vos réponses instantanément</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-list"></i>
+                    <h3>Organisation par examen</h3>
+                    <p>Parcourez les examens un par un</p>
+                </div>
+            </div>
+
+            <div class="exams-grid" id="examsGrid">
+                <!-- Les examens seront chargés dynamiquement -->
+            </div>
+
+            <div class="review-instructions">
+                <h3><i class="fas fa-info-circle"></i> Comment utiliser le mode révision</h3>
+                <div class="instructions-content">
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <p>Sélectionnez un examen ci-dessous</p>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <p>Parcourez les questions une par une</p>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">3</div>
+                        <p>Les réponses correctes sont indiquées en vert</p>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">4</div>
+                        <p>Lisez les explications pour comprendre les concepts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AWS CCP Practice</h3>
+                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tests.html">Examens</a></li>
+                    <li><a href="challenge.html">Challenge</a></li>
+                    <li><a href="review.html">Révision</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@awsccppractice.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Charger la liste des examens pour la révision
+        document.addEventListener('DOMContentLoaded', function () {
+            const examsGrid = document.getElementById('examsGrid');
+
+            if (examsGrid && typeof allExams !== 'undefined') {
+                // Trier les examens par numéro
+                const sortedExams = [...allExams].sort((a, b) => a.id - b.id);
+
+                let html = '<h2>Sélectionnez un examen à réviser</h2><div class="review-exam-grid">';
+
+                sortedExams.forEach(exam => {
+                    html += `
+                        <div class="review-exam-card">
+                            <div class="review-exam-header">
+                                <h3>${exam.name}</h3>
+                                <span class="exam-number">Examen ${exam.id}</span>
+                            </div>
+                            <div class="review-exam-info">
+                                <p><i class="fas fa-question-circle"></i> ${exam.questions.length} questions</p>
+                                <p><i class="fas fa-book"></i> Mode révision disponible</p>
+                            </div>
+                            <div class="review-exam-description">
+                                <p>${exam.description}</p>
+                            </div>
+                            <button class="btn review-btn" onclick="startReview(${exam.id})">
+                                <i class="fas fa-book-open"></i> Réviser cet examen
+                            </button>
+                        </div>
+                    `;
+                });
+
+                html += '</div>';
+                examsGrid.innerHTML = html;
+            }
+        });
+
+        // Fonction pour démarrer la révision d'un examen
+        function startReview(examId) {
+            // Stocker l'examen à réviser
+            localStorage.setItem('reviewExam', examId);
+            // Rediriger vers la page de révision détaillée
+            window.location.href = 'review-exam.html';
+        }
+
+        // Exposer la fonction au scope global
+        window.startReview = startReview;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision d'examen - AWS CCP Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span id="reviewTitle">Révision en cours</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="review.html" class="active"><i class="fas fa-book"></i> Révision</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="test-container">
+        <!-- En-tête de révision -->
+        <div class="review-exam-header-container">
+            <div class="exam-info">
+                <h1 id="examName">Chargement...</h1>
+                <div class="exam-meta">
+                    <span><i class="fas fa-question-circle"></i> <span id="questionCount">0</span> questions</span>
+                    <span><i class="fas fa-book"></i> Mode révision</span>
+                    <span><i class="fas fa-clock"></i> Pas de limite de temps</span>
+                </div>
+            </div>
+            <div class="review-controls">
+                <button class="btn btn-secondary" onclick="goToQuestion(0)">
+                    <i class="fas fa-redo"></i> Recommencer
+                </button>
+                <button class="btn btn-primary" onclick="window.location.href='review.html'">
+                    <i class="fas fa-list"></i> Retour aux examens
+                </button>
+            </div>
+        </div>
+
+        <!-- Progression -->
+        <div class="review-progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="reviewProgressFill"></div>
+            </div>
+            <div class="progress-info">
+                <span id="reviewProgressText">Question 0/0</span>
+                <span id="reviewNavigation">
+                    <button class="nav-btn-small" onclick="prevReviewQuestion()" id="prevReviewBtn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn-small" onclick="nextReviewQuestion()" id="nextReviewBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- Conteneur des questions -->
+        <div id="reviewQuestionContainer">
+            <!-- Les questions de révision seront chargées ici -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Chargement des questions de révision...</p>
+            </div>
+        </div>
+
+        <!-- Navigation des questions -->
+        <div class="question-navigation">
+            <div class="review-question-grid-header">
+                <h4><i class="fas fa-map-signs"></i> Navigation rapide</h4>
+            </div>
+            <div class="review-question-grid" id="reviewQuestionGrid">
+                <!-- Les numéros de questions seront générés ici -->
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="review-instructions-card">
+            <h3><i class="fas fa-lightbulb"></i> Conseils pour la révision</h3>
+            <ul>
+                <li>Prenez le temps de lire chaque question et les options attentivement</li>
+                <li>Les réponses correctes sont indiquées en <span class="correct-example">vert</span></li>
+                <li>Lisez les explications pour comprendre pourquoi les réponses sont correctes</li>
+                <li>Utilisez les boutons de navigation ou la grille pour parcourir les questions</li>
+                <li>Vous pouvez revenir à cette révision autant de fois que nécessaire</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AWS CCP Practice</h3>
+                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
+                <p>© 2024 Tous droits réservés</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tests.html">Examens</a></li>
+                    <li><a href="challenge.html">Challenge</a></li>
+                    <li><a href="review.html">Révision</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@awsccppractice.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Variables pour la révision
+        let reviewExam = null;
+        let reviewQuestionIndex = 0;
+        let reviewQuestions = [];
+
+        // Charger l'examen à réviser
+        document.addEventListener('DOMContentLoaded', function () {
+            const examId = localStorage.getItem('reviewExam');
+
+            if (!examId) {
+                window.location.href = 'review.html';
+                return;
+            }
+
+            // Chercher l'examen dans allExams
+            if (typeof allExams !== 'undefined') {
+                const exam = allExams.find(e => e.id === parseInt(examId));
+
+                if (exam) {
+                    reviewExam = exam;
+                    reviewQuestions = exam.questions;
+                    reviewQuestionIndex = 0;
+
+                    // Mettre à jour l'interface
+                    document.getElementById('reviewTitle').textContent = `Révision: ${exam.name}`;
+                    document.getElementById('examName').textContent = exam.name;
+                    document.getElementById('questionCount').textContent = exam.questions.length;
+
+                    // Afficher la première question
+                    displayReviewQuestion(0);
+
+                    // Générer la grille de navigation
+                    generateReviewQuestionGrid();
+                } else {
+                    window.location.href = 'review.html';
+                }
+            } else {
+                window.location.href = 'review.html';
+            }
+        });
+
+        // Afficher une question en mode révision
+        function displayReviewQuestion(index) {
+            if (!reviewQuestions || !reviewQuestions[index]) return;
+
+            const question = reviewQuestions[index];
+            const container = document.getElementById('reviewQuestionContainer');
+
+            let html = `
+                <div class="review-question-card">
+                    <div class="question-header">
+                        <span class="question-number">Question ${index + 1}</span>
+                        ${question.correctAnswers && question.correctAnswers.length > 1 ?
+                    '<span class="multiple-choice"><i class="fas fa-check-double"></i> Choix multiple</span>' : ''}
+                    </div>
+                    
+                    <div class="question-text">${question.text}</div>
+                    
+                    <div class="options-container">
+            `;
+
+            // Afficher les options avec les réponses correctes marquées
+            if (question.options && question.options.length > 0) {
+                question.options.forEach((option) => {
+                    const isCorrect = question.correctAnswers.includes(option.letter);
+                    const optionClass = isCorrect ? 'option correct-option' : 'option';
+
+                    html += `
+                        <div class="${optionClass}">
+                            <span class="option-label">${option.letter}.</span>
+                            <span class="option-text">${option.text}</span>
+                            ${isCorrect ? '<span class="correct-badge"><i class="fas fa-check-circle"></i> Correct</span>' : ''}
+                        </div>
+                    `;
+                });
+            }
+
+            // Ajouter l'explication si disponible
+            if (question.explanation) {
+                html += `
+                    <div class="review-explanation-section">
+                        <h3><i class="fas fa-lightbulb"></i> Explication</h3>
+                        <div class="explanation-content">
+                            ${question.explanation}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Ajouter la section des réponses correctes
+            if (question.correctAnswers && question.correctAnswers.length > 0) {
+                html += `
+                    <div class="review-answer-summary">
+                        <h3><i class="fas fa-check-circle"></i> Réponse(s) correcte(s)</h3>
+                        <div class="correct-answers-list">
+                `;
+
+                question.correctAnswers.forEach(letter => {
+                    const option = question.options.find(opt => opt.letter === letter);
+                    html += option ?
+                        `<div class="correct-answer-item">${letter}. ${option.text}</div>` :
+                        `<div class="correct-answer-item">${letter}</div>`;
+                });
+
+                html += `
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += `
+                    </div>
+                </div>
+            `;
+
+            if (container) {
+                container.innerHTML = html;
+            }
+
+            // Mettre à jour la progression
+            updateReviewProgress();
+
+            // Mettre à jour les boutons de navigation
+            updateReviewNavigationButtons();
+
+            // Mettre à jour la grille de navigation
+            updateReviewQuestionGrid();
+        }
+
+        // Générer la grille de navigation pour la révision
+        function generateReviewQuestionGrid() {
+            const grid = document.getElementById('reviewQuestionGrid');
+            if (!grid || !reviewQuestions) return;
+
+            let html = '';
+
+            reviewQuestions.forEach((question, index) => {
+                const isCurrent = index === reviewQuestionIndex;
+                const questionClass = isCurrent ? 'review-grid-item current' : 'review-grid-item';
+
+                html += `
+                    <div class="${questionClass}" onclick="goToQuestion(${index})">
+                        ${index + 1}
+                    </div>
+                `;
+            });
+
+            grid.innerHTML = html;
+        }
+
+        // Mettre à jour la grille de navigation
+        function updateReviewQuestionGrid() {
+            const gridItems = document.querySelectorAll('#reviewQuestionGrid .review-grid-item');
+            if (gridItems) {
+                gridItems.forEach((item, index) => {
+                    item.classList.remove('current');
+                    if (index === reviewQuestionIndex) {
+                        item.classList.add('current');
+                    }
+                });
+            }
+        }
+
+        // Aller à une question spécifique
+        function goToQuestion(index) {
+            if (index >= 0 && index < reviewQuestions.length) {
+                reviewQuestionIndex = index;
+                displayReviewQuestion(reviewQuestionIndex);
+            }
+        }
+
+        // Question précédente
+        function prevReviewQuestion() {
+            if (reviewQuestionIndex > 0) {
+                reviewQuestionIndex--;
+                displayReviewQuestion(reviewQuestionIndex);
+            }
+        }
+
+        // Question suivante
+        function nextReviewQuestion() {
+            if (reviewQuestionIndex < reviewQuestions.length - 1) {
+                reviewQuestionIndex++;
+                displayReviewQuestion(reviewQuestionIndex);
+            }
+        }
+
+        // Mettre à jour la progression
+        function updateReviewProgress() {
+            if (!reviewQuestions) return;
+
+            const percentage = Math.round(((reviewQuestionIndex + 1) / reviewQuestions.length) * 100);
+
+            const progressFill = document.getElementById('reviewProgressFill');
+            const progressText = document.getElementById('reviewProgressText');
+
+            if (progressFill) {
+                progressFill.style.width = `${percentage}%`;
+            }
+            if (progressText) {
+                progressText.textContent = `Question ${reviewQuestionIndex + 1}/${reviewQuestions.length}`;
+            }
+        }
+
+        // Mettre à jour les boutons de navigation
+        function updateReviewNavigationButtons() {
+            const prevBtn = document.getElementById('prevReviewBtn');
+            const nextBtn = document.getElementById('nextReviewBtn');
+
+            if (prevBtn) {
+                prevBtn.disabled = reviewQuestionIndex === 0;
+            }
+            if (nextBtn) {
+                nextBtn.disabled = reviewQuestionIndex === reviewQuestions.length - 1;
+            }
+        }
+
+        // Exposer les fonctions au scope global
+        window.prevReviewQuestion = prevReviewQuestion;
+        window.nextReviewQuestion = nextReviewQuestion;
+        window.goToQuestion = goToQuestion;
+    </script>
+</body>
+
+</html>

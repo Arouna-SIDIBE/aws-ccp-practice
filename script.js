@@ -651,6 +651,59 @@ document.addEventListener('DOMContentLoaded', function() {
     loadTestHistory();
 });
 
+// ========== FONCTIONS POUR LE MODE RÉVISION ==========
+
+// Charger l'historique des tests dans la page review
+function loadReviewHistory() {
+    const history = JSON.parse(localStorage.getItem('testHistory') || '[]');
+    const historyElement = document.getElementById('reviewHistory');
+    
+    if (historyElement && history.length > 0) {
+        let html = '<h3>Vos derniers tests</h3>';
+        
+        history.slice(-3).reverse().forEach(test => {
+            html += `
+                <div class="history-item">
+                    <p><strong>${test.examName}</strong> - ${new Date(test.date).toLocaleDateString()}</p>
+                    <p>Score: ${test.score}% (${test.correctAnswers}/${test.totalQuestions})</p>
+                    <a href="#" onclick="reviewTestResults('${test.examId}')" class="review-link">
+                        <i class="fas fa-book-open"></i> Réviser ce test
+                    </a>
+                </div>
+            `;
+        });
+        
+        historyElement.innerHTML = html;
+    }
+}
+
+// Réviser les résultats d'un test spécifique
+function reviewTestResults(examId) {
+    // Cette fonction peut être étendue pour charger un test spécifique
+    localStorage.setItem('reviewExam', examId);
+    window.location.href = 'review-exam.html';
+}
+
+// ========== MODIFICATION DE L'INITIALISATION ==========
+
+// Mettre à jour l'initialisation pour inclure la page review
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialiser la page actuelle
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    if (currentPage === 'test.html') {
+        // Code existant pour test.html...
+    } else if (currentPage === 'results.html') {
+        displayResults();
+    } else if (currentPage === 'review.html') {
+        // Charger l'historique pour la page review
+        loadReviewHistory();
+    }
+    
+    // Charger l'historique des tests (pour toutes les pages)
+    loadTestHistory();
+});
+
 // Exposer les fonctions au scope global
 window.startExam = startExam;
 window.startChallenge = startChallenge;

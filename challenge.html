@@ -7,6 +7,10 @@
     <title>Challenge AWS CCP - Test Aléatoire</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 
 <body>
@@ -21,6 +25,7 @@
                 <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
                 <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
                 <li><a href="challenge.html" class="active"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
                 <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
             </ul>
         </div>
@@ -58,7 +63,7 @@
             </div>
 
             <div class="challenge-stats">
-                <h3>Vos statistiques de challenge</h3>
+                <h3><i class="fas fa-chart-bar"></i> Vos statistiques de challenge</h3>
                 <div id="challengeStats">
                     <p>Connectez-vous ou commencez votre premier challenge pour voir vos statistiques.</p>
                 </div>
@@ -74,9 +79,10 @@
             </div>
 
             <div class="recent-challenges">
-                <h3>Derniers challenges</h3>
+                <h3><i class="fas fa-history"></i> Derniers challenges</h3>
                 <div id="recentChallenges">
                     <!-- Les derniers challenges seront chargés ici -->
+                    <p>Aucun challenge complété pour le moment.</p>
                 </div>
             </div>
         </div>
@@ -92,9 +98,10 @@
             <div class="footer-section">
                 <h3>Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tests.html">Examens</a></li>
-                    <li><a href="challenge.html">Challenge</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
+                    <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                    <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -111,62 +118,6 @@
 
     <script src="data.js"></script>
     <script src="script.js"></script>
-    <script>
-        // Charger les statistiques de challenge
-        document.addEventListener('DOMContentLoaded', function () {
-            loadChallengeStats();
-        });
-
-        function loadChallengeStats() {
-            const history = JSON.parse(localStorage.getItem('testHistory') || '[]');
-            const challengeHistory = history.filter(test => test.examId === 'challenge');
-
-            if (challengeHistory.length > 0) {
-                // Calculer les statistiques
-                const totalTests = challengeHistory.length;
-                const averageScore = challengeHistory.reduce((sum, test) => sum + test.score, 0) / totalTests;
-                const bestScore = Math.max(...challengeHistory.map(test => test.score));
-                const latestTest = challengeHistory[challengeHistory.length - 1];
-
-                // Afficher les statistiques
-                document.getElementById('challengeStats').innerHTML = `
-                    <div class="stats-grid">
-                        <div class="stat-box">
-                            <h3>Tests complétés</h3>
-                            <p>${totalTests}</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>Score moyen</h3>
-                            <p>${Math.round(averageScore)}%</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>Meilleur score</h3>
-                            <p>${bestScore}%</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>Dernier score</h3>
-                            <p>${latestTest.score}%</p>
-                        </div>
-                    </div>
-                `;
-
-                // Afficher les derniers challenges
-                const recentChallenges = challengeHistory.slice(-3).reverse();
-                let challengesHtml = '';
-
-                recentChallenges.forEach(test => {
-                    challengesHtml += `
-                        <div class="history-item">
-                            <p><strong>${new Date(test.date).toLocaleDateString()} - ${test.score}%</strong></p>
-                            <p>${test.correctAnswers}/${test.totalQuestions} correctes | ${test.timeSpent}</p>
-                        </div>
-                    `;
-                });
-
-                document.getElementById('recentChallenges').innerHTML = challengesHtml;
-            }
-        }
-    </script>
 </body>
 
 </html>

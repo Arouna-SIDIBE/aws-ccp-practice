@@ -7,6 +7,10 @@
     <title>Examens AWS CCP - AWS CCP Practice</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 
 <body>
@@ -21,6 +25,7 @@
                 <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
                 <li><a href="tests.html" class="active"><i class="fas fa-file-alt"></i> Examens</a></li>
                 <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
                 <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
             </ul>
         </div>
@@ -33,8 +38,6 @@
         <div class="exam-grid" id="examsGrid">
             <!-- Les examens seront chargés dynamiquement -->
         </div>
-
-        <div id="testHistory"></div>
     </div>
 
     <footer class="footer">
@@ -50,6 +53,7 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="tests.html">Examens</a></li>
                     <li><a href="challenge.html">Challenge</a></li>
+                    <li><a href="review.html">Révision</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -80,7 +84,7 @@
                 sortedExams.forEach(exam => {
                     html += `
                         <div class="exam-card">
-                            <h3>${exam.name}</h3>
+                            <h3><i class="fas fa-file-alt"></i> ${exam.name}</h3>
                             <p>${exam.description}</p>
                             <div class="exam-info">
                                 <span><i class="fas fa-question-circle"></i> ${exam.questions.length} questions</span>
@@ -110,10 +114,27 @@
 
                 examsGrid.innerHTML = html;
             }
-
-            // Charger l'historique
-            loadTestHistory();
         });
+
+        // Fonction pour démarrer un examen
+        function startExam(examId) {
+            // Sauvegarder les informations du test
+            const testData = {
+                examId: examId,
+                startTime: Date.now(),
+                answers: {},
+                questionIndex: 0
+            };
+
+            localStorage.setItem('currentTest', JSON.stringify(testData));
+
+            // Rediriger vers la page de test
+            window.location.href = 'test.html';
+        }
+
+        // Exposer les fonctions au scope global
+        window.startExam = startExam;
+        window.startChallenge = startChallenge;
     </script>
 </body>
 
