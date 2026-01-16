@@ -50,7 +50,7 @@
                 <button class="nav-btn" onclick="nextQuestion()" id="nextBtn">
                     Suivant <i class="fas fa-arrow-right"></i>
                 </button>
-                <button class="nav-btn submit-btn" onclick="submitTest()" id="submitBtn">
+                <button class="nav-btn submit-btn" onclick="showSubmitModal()" id="submitBtn">
                     <i class="fas fa-paper-plane"></i> Soumettre le test
                 </button>
             </div>
@@ -90,50 +90,61 @@
     <script src="data.js"></script>
     <script src="script.js"></script>
     <script>
-        // Initialisation spécifique à la page de test
-        document.addEventListener('DOMContentLoaded', function () {
-            // Récupérer l'état du test depuis le localStorage
+        // Fonction pour restaurer un test depuis localStorage
+        function restoreTestFromStorage() {
             const savedTest = localStorage.getItem('currentTest');
 
-            if (savedTest) {
-                const testData = JSON.parse(savedTest);
-                const examId = testData.examId;
-
-                if (examId === 'challenge') {
-                    // Redémarrer le challenge
-                    startChallenge();
-                } else {
-                    // Redémarrer l'examen spécifique
-                    startExam(parseInt(examId));
-                }
-
-                // Restaurer les réponses si elles existent
-                if (testData.answers) {
-                    userAnswers = testData.answers;
-                }
-
-                // Restaurer l'index de la question
-                currentQuestionIndex = testData.questionIndex || 0;
-
-                // Afficher la question actuelle
-                displayQuestion(currentQuestionIndex);
-
-                // Mettre à jour le titre
-                document.getElementById('testTitle').textContent = currentTest.name;
-                document.getElementById('examName').textContent = currentTest.name;
-
-                // Démarrer le chronomètre
-                if (testStartTime) {
-                    startTimer();
-                }
-
-                // Générer la grille de navigation des questions
-                generateQuestionGrid();
-            } else {
-                // Pas de test en cours, rediriger vers la page des examens
-                window.location.href = 'tests.html';
+            if (!savedTest) {
+                return false;
             }
-        });
+
+            const testData = JSON.parse(savedTest);
+            const examId = testData.examId;
+
+            // Trouver l'examen dans allExams
+            if (examId === 'challenge') {
+                // Recréer le challenge (avec les mêmes questions si possible)
+                let allQuestions = [];
+                allExams.forEach(exam => {
+                    if (exam.questions && exam.questions.length > 0) {
+                        allQuestions = allQuestions.concat(exam.questions);
+                    }
+                });
+
+                // Mélanger les questions
+                for (let i = allQuestions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+                }
+
+                currentTest = {
+                    id: 'challenge',
+                    name: 'Challenge Aléatoire',
+                    description: '65 questions sélectionnées aléatoirement',
+                    questionCount: 65,
+                    duration: 110,
+                    questions: allQuestions.slice(0, 65)
+                };
+            } else {
+                const exam = allExams.find(e => e.id === parseInt(examId));
+                if (!exam) {
+                    return false;
+                }
+                currentTest = exam;
+            }
+
+            // Restaurer les données
+            currentQuestionIndex = testData.questionIndex || 0;
+            userAnswers = testData.answers || {};
+
+            if (testData.startTime) {
+                testStartTime = new Date(testData.startTime).getTime();
+            } else {
+                testStartTime = Date.now();
+            }
+
+            return true;
+        }
 
         function generateQuestionGrid() {
             const grid = document.getElementById('questionGrid');
@@ -209,6 +220,33 @@
             closeModal();
             submitTest();
         }
+
+        // Initialisation spécifique à la page de test
+        document.addEventListener('DOMContentLoaded', function () {
+            // Restaurer le test depuis le localStorage
+            const restored = restoreTestFromStorage();
+
+            if (!restored) {
+                // Pas de test en cours, rediriger vers la page des examens
+                window.location.href = 'tests.html';
+                return;
+            }
+
+            // Afficher la question actuelle
+            displayQuestion(currentQuestionIndex);
+
+            // Mettre à jour le titre
+            const testTitle = document.getElementById('testTitle');
+            const examName = document.getElementById('examName');
+            if (testTitle) testTitle.textContent = currentTest.name;
+            if (examName) examName.textContent = currentTest.name;
+
+            // Démarrer le chronomètre
+            startTimer();
+
+            // Générer la grille de navigation des questions
+            generateQuestionGrid();
+        });
 
         // Exposer les fonctions au scope global
         window.prevQuestion = prevQuestion;

@@ -9,6 +9,89 @@ let timeSpent = 0;
 // Utiliser allExams si disponible, sinon utiliser un tableau vide
 let exams = typeof allExams !== 'undefined' ? allExams : [];
 
+
+// Fonction pour sauvegarder l'état du test (à appeler régulièrement)
+function autoSaveProgress() {
+    if (!currentTest) return;
+    
+    const progress = {
+        examId: currentTest.id,
+        startTime: testStartTime,
+        questionIndex: currentQuestionIndex,
+        answers: userAnswers
+    };
+    
+    localStorage.setItem('currentTest', JSON.stringify(progress));
+}
+
+// Modifier la fonction saveProgress pour inclure l'auto-sauvegarde
+function saveProgress() {
+    autoSaveProgress();
+}
+
+// Modifier la fonction startExam pour NE PAS rediriger ici
+function startExam(examId) {
+    const exam = exams.find(e => e.id === examId);
+    if (!exam) {
+        alert("Examen non trouvé");
+        return;
+    }
+    
+    currentTest = exam;
+    currentQuestionIndex = 0;
+    userAnswers = {};
+    timeSpent = 0;
+    testStartTime = Date.now();
+    
+    // Sauvegarder l'état du test
+    autoSaveProgress();
+    
+    // Rediriger vers la page de test
+    window.location.href = 'test.html';
+}
+
+// Modifier la fonction startChallenge pour NE PAS rediriger ici
+function startChallenge() {
+    // Collecter toutes les questions de tous les examens
+    let allQuestions = [];
+    exams.forEach(exam => {
+        if (exam.questions && exam.questions.length > 0) {
+            allQuestions = allQuestions.concat(exam.questions);
+        }
+    });
+    
+    if (allQuestions.length < 65) {
+        alert("Pas assez de questions disponibles pour le challenge");
+        return;
+    }
+    
+    // Mélanger les questions
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+    }
+    
+    currentTest = {
+        id: 'challenge',
+        name: 'Challenge Aléatoire',
+        description: '65 questions sélectionnées aléatoirement',
+        questionCount: 65,
+        duration: 110,
+        questions: allQuestions.slice(0, 65)
+    };
+    
+    currentQuestionIndex = 0;
+    userAnswers = {};
+    timeSpent = 0;
+    testStartTime = Date.now();
+    
+    // Sauvegarder l'état du challenge
+    autoSaveProgress();
+    
+    // Rediriger vers la page de test
+    window.location.href = 'test.html';
+}
+
 // Fonctions utilitaires
 function formatTime(seconds) {
     const hours = Math.floor(seconds / 3600);
