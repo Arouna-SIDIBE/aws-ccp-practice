@@ -1,4 +1,3 @@
-
 // convert.js - Script amélioré pour convertir les fichiers MD en JSON
 const fs = require('fs');
 const path = require('path');
@@ -103,7 +102,7 @@ function extractExplanation(text) {
     return '';
 }
 
-// Fonction pour formater les explications - SIMPLIFIÉE
+// Fonction pour formater les explications - VERSION CORRIGÉE
 function formatExplanation(explanationText) {
     if (!explanationText) return '';
     
@@ -117,38 +116,115 @@ function formatExplanation(explanationText) {
     explanation = explanation.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     explanation = explanation.replace(/\*(.*?)\*/g, '<em>$1</em>');
     
-    // Gérer les listes markdown
-    const lines = explanation.split('\n');
-    let inList = false;
-    let formattedLines = [];
+    // Traitement spécial pour les titres des sections
+    // On va séparer le traitement des titres des sections des éléments de liste
     
-    for (let line of lines) {
-        if (line.trim().startsWith('- ')) {
-            if (!inList) {
-                formattedLines.push('<ul>');
-                inList = true;
-            }
-            const listItem = line.replace(/^-\s*/, '');
-            formattedLines.push(`<li>${listItem}</li>`);
-        } else {
+    const lines = explanation.split('\n');
+    let formattedLines = [];
+    let inList = false;
+    let currentSection = null;
+    
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i].trim();
+        
+        if (!line) {
             if (inList) {
                 formattedLines.push('</ul>');
                 inList = false;
             }
-            if (line.trim()) {
-                // Ajouter les paragraphes
+            continue;
+        }
+        
+        // Détecter les titres de sections (Option correcte, Autres options incorrectes, etc.)
+        const isSectionTitle = line.match(/^-\s*\*\*(Option|Options|Réponse|Réponses|Bonne(?:s)? réponse(?:s)?|Correct(?:e)?(?:s)?|Autres?\s*(?:options?|réponses?)\s*(?:incorrectes?|fausses?))\s*\*\*\s*(?:[:：]?\s*(?:✅|❌)?)?$/i);
+        
+        if (isSectionTitle) {
+            // Fermer la liste précédente si elle existe
+            if (inList) {
+                formattedLines.push('</ul>');
+                inList = false;
+            }
+            
+            // Extraire le titre sans le tiret
+            const title = line.replace(/^-\s*\*\*/, '').replace(/\*\*\s*$/, '');
+            
+            // Déterminer la classe CSS en fonction du type de section
+            const isCorrectSection = title.toLowerCase().includes('correct') || 
+                                   title.toLowerCase().includes('bonne') || 
+                                   title.toLowerCase().includes('réponse');
+            const isIncorrectSection = title.toLowerCase().includes('incorrect') || 
+                                     title.toLowerCase().includes('fausse');
+            
+            let sectionClass = 'explanation-section';
+            if (isCorrectSection) sectionClass = 'correct-section';
+            if (isIncorrectSection) sectionClass = 'incorrect-section';
+            
+            // Ajouter le titre de section
+            formattedLines.push(`<div class="${sectionClass}">`);
+            formattedLines.push(`<strong>${title}</strong>`);
+            
+            // Vérifier s'il y a un emoji dans la ligne originale
+            if (line.includes('✅')) {
+                formattedLines.push(' <span class="correct-marker">✅</span>');
+            } else if (line.includes('❌')) {
+                formattedLines.push(' <span class="incorrect-marker">❌</span>');
+            }
+            
+            currentSection = sectionClass;
+            continue;
+        }
+        
+        // Détecter les éléments de liste (commençant par -)
+        if (line.startsWith('- ')) {
+            if (!inList) {
+                formattedLines.push('<ul>');
+                inList = true;
+            }
+            
+            // Nettoyer le tiret et convertir le markdown
+            let listItem = line.replace(/^-\s*/, '');
+            listItem = listItem.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            listItem = listItem.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            listItem = listItem.replace(/✅/g, '<span class="correct-marker">✅</span>');
+            listItem = listItem.replace(/❌/g, '<span class="incorrect-marker">❌</span>');
+            
+            formattedLines.push(`<li>${listItem}</li>`);
+        } else {
+            // Si ce n'est pas une liste et qu'on était dans une liste, fermer la liste
+            if (inList) {
+                formattedLines.push('</ul>');
+                inList = false;
+                
+                // Si on était dans une section, fermer la section
+                if (currentSection) {
+                    formattedLines.push('</div>');
+                    currentSection = null;
+                }
+            }
+            
+            // Si c'est du texte normal, l'ajouter comme paragraphe
+            if (line) {
                 formattedLines.push(`<p>${line}</p>`);
             }
         }
     }
     
+    // Fermer les éléments ouverts
     if (inList) {
         formattedLines.push('</ul>');
+    }
+    if (currentSection) {
+        formattedLines.push('</div>');
     }
     
     explanation = formattedLines.join('');
     
-    // Ajouter la classe CSS pour le style
+    // Si l'explication est vide, retourner une explication par défaut
+    if (!explanation.trim()) {
+        return '<div class="basic-explanation"><em>Explication non disponible pour cette question</em></div>';
+    }
+    
+    // Ajouter le conteneur principal
     explanation = `<div class="explanation-content">${explanation}</div>`;
     
     return explanation;
@@ -339,12 +415,21 @@ if (typeof module !== 'undefined' && module.exports) {
     console.log(`📄 Fichier généré: ${OUTPUT_FILE}`);
     console.log(`📏 Taille: ${Math.round(jsContent.length / 1024)} KB`);
     
-    // Exécuter le script pour tester les explications
-    console.log('\n🔍 Test des explications...');
+    // Tester quelques explications pour vérifier le formatage
+    console.log('\n🔍 Test des explications formatées:');
     if (allExams.length > 0 && allExams[0].questions.length > 0) {
         const sampleQuestion = allExams[0].questions[0];
-        console.log(`Exemple d'explication pour la première question:`);
-        console.log(sampleQuestion.explanation ? sampleQuestion.explanation.substring(0, 200) + '...' : 'Pas d\'explication');
+        console.log('Structure de l\'explication pour la première question:');
+        if (sampleQuestion.explanation) {
+            // Afficher un extrait propre
+            const cleanExcerpt = sampleQuestion.explanation
+                .replace(/<[^>]*>/g, ' ')
+                .replace(/\s+/g, ' ')
+                .substring(0, 200);
+            console.log(`"${cleanExcerpt}..."`);
+        } else {
+            console.log('Pas d\'explication');
+        }
     }
 }
 
