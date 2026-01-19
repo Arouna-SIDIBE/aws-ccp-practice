@@ -6,7 +6,7 @@ let testStartTime = null;
 let timerInterval = null;
 let timeSpent = 0;
 
-// Utiliser allExams si disponible, sinon utiliser un tableau vide
+// Utiliser allExams si disponible
 let exams = typeof allExams !== 'undefined' ? allExams : [];
 
 // Fonction pour sauvegarder l'état du test
@@ -38,16 +38,12 @@ function startExam(examId) {
     timeSpent = 0;
     testStartTime = Date.now();
     
-    // Sauvegarder l'état du test
     saveProgress();
-    
-    // Rediriger vers la page de test
     window.location.href = 'test.html';
 }
 
 // Fonction pour démarrer un challenge
 function startChallenge() {
-    // Collecter toutes les questions de tous les examens
     let allQuestions = [];
     exams.forEach(exam => {
         if (exam.questions && exam.questions.length > 0) {
@@ -80,10 +76,7 @@ function startChallenge() {
     timeSpent = 0;
     testStartTime = Date.now();
     
-    // Sauvegarder l'état du challenge
     saveProgress();
-    
-    // Rediriger vers la page de test
     window.location.href = 'test.html';
 }
 
@@ -104,7 +97,6 @@ function formatTime(seconds) {
 
 function startTimer() {
     if (testStartTime) {
-        // Si le test était en pause, calculer le temps déjà écoulé
         timeSpent = Math.floor((Date.now() - testStartTime) / 1000);
     } else {
         testStartTime = Date.now();
@@ -154,7 +146,6 @@ function displayQuestion(index) {
             <div class="options-container">
     `;
     
-    // Afficher les options
     if (question.options && question.options.length > 0) {
         question.options.forEach((option) => {
             const isSelected = userAnswers[index] && userAnswers[index].includes(option.letter);
@@ -178,10 +169,7 @@ function displayQuestion(index) {
         container.innerHTML = html;
     }
     
-    // Mettre à jour la progression
     updateProgress();
-    
-    // Mettre à jour les boutons de navigation
     updateNavigationButtons();
 }
 
@@ -196,7 +184,6 @@ function selectOption(questionIndex, optionLetter) {
     const isMultipleChoice = question.correctAnswers && question.correctAnswers.length > 1;
     
     if (isMultipleChoice) {
-        // Pour les questions à choix multiple
         const index = userAnswers[questionIndex].indexOf(optionLetter);
         if (index > -1) {
             userAnswers[questionIndex].splice(index, 1);
@@ -204,14 +191,10 @@ function selectOption(questionIndex, optionLetter) {
             userAnswers[questionIndex].push(optionLetter);
         }
     } else {
-        // Pour les questions à choix unique
         userAnswers[questionIndex] = [optionLetter];
     }
     
-    // Mettre à jour l'affichage
     displayQuestion(questionIndex);
-    
-    // Sauvegarder la réponse
     saveProgress();
 }
 
@@ -258,7 +241,6 @@ function updateProgress() {
         totalQuestions.textContent = currentTest.questionCount;
     }
     
-    // Mettre à jour le compteur de questions
     const questionCounter = document.getElementById('questionCounter');
     if (questionCounter) {
         questionCounter.textContent = `Question ${currentQuestionIndex + 1} sur ${currentTest.questionCount}`;
@@ -302,7 +284,6 @@ function submitTest() {
         
         if (isCorrect) correct++;
         
-        // Récupérer le texte des réponses de l'utilisateur
         let userAnswerText = [];
         if (userAnswer.length > 0) {
             userAnswer.forEach(letter => {
@@ -313,7 +294,6 @@ function submitTest() {
             });
         }
         
-        // Récupérer le texte des réponses correctes
         let correctAnswerText = [];
         if (correctAnswer.length > 0) {
             correctAnswer.forEach(letter => {
@@ -332,7 +312,7 @@ function submitTest() {
             correctAnswerText: correctAnswerText.join(' | '),
             isCorrect,
             explanation: question.explanation || "Pas d'explication disponible",
-            options: question.options // On stocke aussi les options pour l'affichage
+            options: question.options
         });
     });
     
@@ -348,18 +328,14 @@ function submitTest() {
         totalQuestions: currentTest.questionCount,
         timeSpent: formatTime(timeSpent),
         results,
-        questions: currentTest.questions // On stocke toutes les questions pour l'affichage des résultats
+        questions: currentTest.questions
     };
     
-    // Sauvegarder dans l'historique
     let history = JSON.parse(localStorage.getItem('testHistory') || '[]');
     history.push(testResult);
     localStorage.setItem('testHistory', JSON.stringify(history));
     
-    // Nettoyer le test en cours
     localStorage.removeItem('currentTest');
-    
-    // Rediriger vers la page de résultats
     localStorage.setItem('lastTestResult', JSON.stringify(testResult));
     window.location.href = 'results.html';
 }
@@ -444,7 +420,7 @@ function displayResults() {
     }
 }
 
-// Fonction pour générer les détails des résultats (AMÉLIORÉE)
+// Fonction pour générer les détails des résultats
 function generateResultsDetails(results) {
     if (!results || !Array.isArray(results)) return '<p>Aucun détail disponible</p>';
     
@@ -454,6 +430,25 @@ function generateResultsDetails(results) {
         const itemClass = item.isCorrect ? 'review-item correct' : 'review-item incorrect';
         const icon = item.isCorrect ? '✓' : '✗';
         const statusText = item.isCorrect ? 'Correcte' : 'Incorrecte';
+        
+        // Récupérer les réponses avec HTML
+        let userAnswerText = '';
+        if (item.userAnswer && item.options) {
+            const userAnswers = item.userAnswer.split(', ').filter(a => a);
+            userAnswerText = userAnswers.map(letter => {
+                const option = item.options.find(opt => opt.letter === letter);
+                return option ? `${letter}. ${option.text}` : letter;
+            }).join('<br>');
+        }
+        
+        let correctAnswerText = '';
+        if (item.correctAnswer && item.options) {
+            const correctAnswers = item.correctAnswer.split(', ').filter(a => a);
+            correctAnswerText = correctAnswers.map(letter => {
+                const option = item.options.find(opt => opt.letter === letter);
+                return option ? `${letter}. ${option.text}` : letter;
+            }).join('<br>');
+        }
         
         html += `
             <div class="${itemClass}">
@@ -471,7 +466,7 @@ function generateResultsDetails(results) {
                             <strong>Votre réponse:</strong>
                         </div>
                         <div class="answer-content">
-                            ${item.userAnswerText ? formatAnswerText(item.userAnswerText) : '<em>Non répondue</em>'}
+                            ${userAnswerText || '<em>Non répondue</em>'}
                         </div>
                     </div>
                     
@@ -481,7 +476,7 @@ function generateResultsDetails(results) {
                             <strong>Réponse correcte:</strong>
                         </div>
                         <div class="answer-content">
-                            ${formatAnswerText(item.correctAnswerText)}
+                            ${correctAnswerText}
                         </div>
                     </div>
                 </div>
@@ -490,7 +485,7 @@ function generateResultsDetails(results) {
                     <div class="review-explanation">
                         <div class="explanation-header">
                             <i class="fas fa-info-circle"></i>
-                            <strong>Explication:</strong>
+                            <strong>Explication détaillée:</strong>
                         </div>
                         <div class="explanation-content">
                             ${item.explanation}
@@ -505,11 +500,10 @@ function generateResultsDetails(results) {
     return html;
 }
 
-// Fonction utilitaire pour formater le texte des réponses
+
 function formatAnswerText(answerText) {
     if (!answerText) return '';
     
-    // Séparer les réponses multiples par " | "
     const answers = answerText.split(' | ');
     
     if (answers.length === 1) {
@@ -584,11 +578,9 @@ function loadTestHistory() {
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialiser la page actuelle
     const currentPage = window.location.pathname.split('/').pop();
     
     if (currentPage === 'test.html') {
-        // Restaurer le test
         const savedTest = localStorage.getItem('currentTest');
         
         if (savedTest) {
@@ -596,7 +588,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const examId = testData.examId;
             
             if (examId === 'challenge') {
-                // Pour le challenge, recréer avec les mêmes règles
                 let allQuestions = [];
                 allExams.forEach(exam => {
                     if (exam.questions && exam.questions.length > 0) {
@@ -604,7 +595,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 
-                // Mélanger de la même manière
                 for (let i = allQuestions.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
@@ -646,14 +636,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     } else if (currentPage === 'results.html') {
         displayResults();
+    } else if (currentPage === 'review.html') {
+        loadReviewHistory();
     }
     
     loadTestHistory();
 });
 
-// ========== FONCTIONS POUR LE MODE RÉVISION ==========
-
-// Charger l'historique des tests dans la page review
+// Fonctions pour le mode révision
 function loadReviewHistory() {
     const history = JSON.parse(localStorage.getItem('testHistory') || '[]');
     const historyElement = document.getElementById('reviewHistory');
@@ -677,32 +667,10 @@ function loadReviewHistory() {
     }
 }
 
-// Réviser les résultats d'un test spécifique
 function reviewTestResults(examId) {
-    // Cette fonction peut être étendue pour charger un test spécifique
     localStorage.setItem('reviewExam', examId);
     window.location.href = 'review-exam.html';
 }
-
-// ========== MODIFICATION DE L'INITIALISATION ==========
-
-// Mettre à jour l'initialisation pour inclure la page review
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialiser la page actuelle
-    const currentPage = window.location.pathname.split('/').pop();
-    
-    if (currentPage === 'test.html') {
-        // Code existant pour test.html...
-    } else if (currentPage === 'results.html') {
-        displayResults();
-    } else if (currentPage === 'review.html') {
-        // Charger l'historique pour la page review
-        loadReviewHistory();
-    }
-    
-    // Charger l'historique des tests (pour toutes les pages)
-    loadTestHistory();
-});
 
 // Exposer les fonctions au scope global
 window.startExam = startExam;
