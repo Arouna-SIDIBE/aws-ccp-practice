@@ -2,28 +2,29 @@
 
 ## 🌐 Vue d'ensemble
 
-**AWS CCP Practice** est une plateforme web interactive de préparation à la certification **AWS Certified Cloud Practitioner**. Développée initialement pour accompagner ma formation à l'Orange Digital Center (ODC) du Mali, cette plateforme est désormais ouverte à tous les apprenants souhaitant tester et renforcer leurs connaissances sur AWS.
+**AWS CCP Practice** est une plateforme web interactive 100% française de préparation à la certification **AWS Certified Cloud Practitioner**. Développée initialement pour accompagner ma formation à l'Orange Digital Center (ODC) du Mali, cette plateforme est désormais ouverte à tous les apprenants souhaitant tester et renforcer leurs connaissances sur AWS.
 
 **Lien du site :** [https://arouna-sidibe.github.io/aws-ccp-practice/](https://arouna-sidibe.github.io/aws-ccp-practice/)
 
 ## 🎯 Objectifs du projet
 
 ### Objectif principal
-- Fournir une plateforme complète de révision pour la certification AWS Cloud Practitioner
-- Permettre aux apprenants de s'entraîner avec des questions pratiques similaires à l'examen réel
+- Fournir une plateforme complète de révision pour la certification AWS Cloud Practitioner en français
+- Permettre aux apprenants francophones de s'entraîner avec des questions pratiques similaires à l'examen réel
 
 ### Objectifs spécifiques
-- Centraliser plus de 350 questions de pratique
+- Centraliser plus de 1250 questions de pratique en français
 - Offrir des tests chronométrés dans des conditions d'examen réalistes
 - Permettre le suivi de la progression avec des statistiques détaillées
-- Faciliter l'apprentissage avec des corrections et explications claires
+- Faciliter l'apprentissage avec des corrections et explications claires en français
 
 ## 📚 Source des questions
 
 Les questions utilisées dans cette plateforme proviennent du repository GitHub suivant :
 - **Repository source :** [https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes](https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes)
 - **Auteur :** Kanani Nirav - Développeur Ruby on Rails passionné par le cloud AWS
-- **Contenu :** 23 examens pratiques complets avec plus de 350 questions
+- **Contenu original :** 23 examens pratiques complets en anglais
+- **Adaptation :** Traduction et adaptation en français de l'ensemble des questions et explications
 
 ### À propos de Kanani Nirav
 ```
@@ -36,33 +37,41 @@ Software Engineer 💻 Passionate about continuous growth and development.
 📫 How to reach me: kananinirav0@gmail.com
 ```
 
+**Note :** Les fichiers en anglais sont conservés pour créditer la source originale, mais ne sont pas utilisés dans la plateforme qui est entièrement en français.
+
 ## 🚀 Fonctionnalités principales
 
 ### 1. **Examens structurés**
-- 23 examens pratiques complets
+- 25 examens pratiques complets en français
 - 50 questions par examen (sauf exceptions)
 - Chronomètre intégré (90 minutes par examen)
-- Interface intuitive et responsive
+- Interface intuitive et responsive en français
 
 ### 2. **Mode Challenge**
-- 65 questions sélectionnées aléatoirement parmi toutes les bases
+- 65 questions sélectionnées aléatoirement parmi toutes les bases (1257+ questions)
 - Génération unique à chaque tentative
 - Temps recommandé : 110 minutes
 - Simulation réaliste de l'examen final
 
-### 3. **Système de suivi**
+### 3. **Mode Révision**
+- Étude à votre rythme sans pression de temps
+- Réponses et explications immédiatement disponibles
+- Navigation libre entre les questions
+- Organisation par examen pour un apprentissage structuré
+
+### 4. **Système de suivi**
 - Sauvegarde automatique de la progression
 - Historique complet des tentatives
 - Statistiques détaillées (score moyen, meilleur score, temps passé)
 - Progression visualisable graphiquement
 
-### 4. **Corrections détaillées**
-- Affichage des réponses avec explications complètes
+### 5. **Corrections détaillées**
+- Affichage des réponses avec explications complètes en français
 - Comparaison côte à côte : votre réponse vs réponse correcte
 - Explications contextuelles pour chaque question
 - Recommandations personnalisées basées sur le score
 
-### 5. **Gestion du temps**
+### 6. **Gestion du temps**
 - Chronomètre intelligent avec sauvegarde automatique
 - Temps par question et temps total
 - Alertes de gestion du temps
@@ -71,13 +80,13 @@ Software Engineer 💻 Passionate about continuous growth and development.
 ## 📱 Pages du site
 
 ### 🏠 **Accueil (`index.html`)**
-- Présentation de la plateforme
-- Statistiques globales (350+ questions, 7+ examens, etc.)
+- Présentation de la plateforme en français
+- Statistiques globales (1257+ questions, 25+ examens, etc.)
 - Fonctionnalités principales expliquées
 - Guide pas à pas pour commencer
 
 ### 📝 **Examens (`tests.html`)**
-- Liste complète de tous les examens disponibles
+- Liste complète de tous les examens disponibles en français
 - Informations sur chaque examen (nombre de questions, durée)
 - Bouton de démarrage direct
 - Historique des derniers tests passés
@@ -89,7 +98,7 @@ Software Engineer 💻 Passionate about continuous growth and development.
 - Bouton de démarrage avec recommandations
 
 ### 🧪 **Test en cours (`test.html`)**
-- Interface complète de passage de test
+- Interface complète de passage de test en français
 - Affichage d'une question à la fois
 - Navigation fluide entre les questions
 - Sauvegarde automatique toutes les 30 secondes
@@ -98,10 +107,16 @@ Software Engineer 💻 Passionate about continuous growth and development.
 
 ### 📊 **Résultats (`results.html`)**
 - Score final avec indicateur visuel
-- Détail question par question
+- Détail question par question avec explications
 - Explications des réponses correctes/incorrectes
 - Recommandations pour l'amélioration
 - Options de reprise ou de nouveau test
+
+### 📚 **Mode Révision (`review.html`)**
+- Sélection d'examen pour révision libre
+- Navigation entre les questions avec explications
+- Affichage des réponses correctes en temps réel
+- Apprentissage sans contrainte de temps
 
 ## 🔧 Comment fonctionne la plateforme
 
@@ -111,6 +126,7 @@ Frontend : HTML5, CSS3, JavaScript vanilla
 Stockage : localStorage pour la persistance des données
 Styles : CSS personnalisé avec Font Awesome
 Conversion : Node.js pour le traitement des questions
+Langue : 100% français
 ```
 
 ### Flux d'utilisation
@@ -145,9 +161,6 @@ git clone https://github.com/Arouna-SIDIBE/aws-ccp-practice.git
 # Accédez au dossier
 cd aws-ccp-practice
 
-# Installez les dépendances (si nécessaire)
-npm install
-
 # Convertissez les fichiers MD en JSON
 node convert.js
 
@@ -157,10 +170,10 @@ node convert.js
 ## 🔄 Conversion des questions
 
 ### Processus de conversion
-Le système utilise un script Node.js (`convert.js`) pour transformer les fichiers Markdown en JSON utilisable par l'application.
+Le système utilise un script Node.js (`convert.js`) pour transformer les fichiers Markdown français en JSON utilisable par l'application.
 
 ### Étapes de conversion
-1. **Lecture** : Lecture de tous les fichiers `.md` du dossier `questions/`
+1. **Lecture** : Lecture de tous les fichiers `.md` du dossier `questions/fr/`
 2. **Parsing** : Extraction structurée des questions, options et réponses
 3. **Nettoyage** : Suppression des balises HTML, formatage uniforme
 4. **Génération** : Création du fichier `data.js` avec toutes les données
@@ -174,27 +187,27 @@ cd /chemin/vers/aws-ccp-practice
 node convert.js
 
 # Résultat attendu
-✅ CONVERSION TERMINÉE AVEC SUCCÈS !
+✅ CONVERSION TERMINÉE !
 📄 Fichier généré: data.js
-📈 Taille du fichier: 450 KB
-📊 23 examens convertis, 1150 questions totales
+📏 Taille: 2032 KB
+📊 25 examens convertis, 1257 questions totales
 ```
 
-### Structure des fichiers MD source
+### Structure des fichiers MD source (format français)
 ```
-# Practice Exam 1
+# Examen Pratique 1
 
-1. Question text...
+1. Texte de la question...
 - A. Option A
 - B. Option B
 - C. Option C
 - D. Option D
 
-<details markdown=1>
-<summary>Answer</summary>
+<details>
+<summary>Réponse</summary>
 
-Correct answer: A
-Explanation: Detailed explanation here...
+Bonne réponse : A
+Explication : Explication détaillée ici...
 </details>
 ```
 
@@ -208,6 +221,8 @@ aws-ccp-practice/
 ├── test.html           # Interface de test
 ├── results.html        # Page des résultats
 ├── challenge.html      # Page du challenge
+├── review.html         # Mode révision
+├── review-exam.html    # Révision d'examen spécifique
 │
 ├── styles.css          # Feuille de style principale
 ├── script.js           # Logique JavaScript principale
@@ -215,12 +230,18 @@ aws-ccp-practice/
 ├── convert.js          # Script de conversion
 │
 ├── questions/          # Dossier des questions source
-│   ├── practice-exam-1.md
-│   ├── practice-exam-2.md
-│   └── ...
+│   ├── fr/             # Questions en français (utilisées)
+│   │   ├── practice-exam-1.md
+│   │   ├── practice-exam-2.md
+│   │   └── ... (25 fichiers)
+│   └── en/             # Questions en anglais (source originale)
+│       ├── practice-exam-1.md
+│       ├── practice-exam-2.md
+│       └── ... (23 fichiers)
 │
+├── favicon.ico         # Favicon
 ├── README.md           # Ce fichier
-└── (autres assets si nécessaires)
+└── (autres assets)
 ```
 
 ## 🎨 Technologies utilisées
@@ -234,12 +255,12 @@ aws-ccp-practice/
 
 ## 📊 Statistiques du projet
 
-- **23** examens pratiques complets
-- **350+** questions disponibles
+- **25** examens pratiques complets en français
+- **1257** questions disponibles en français
 - **65** questions par challenge aléatoire
 - **90** minutes par examen standard
 - **110** minutes pour le challenge
-- **100%** des questions avec corrections détaillées
+- **100%** des questions avec corrections détaillées en français
 
 ## 👨‍💻 Contexte de développement
 
@@ -248,19 +269,26 @@ Ce projet a été initié dans le cadre de ma formation en cloud computing à l'
 
 ### Évolution du projet
 1. **Phase 1** : Outil personnel de révision
-2. **Phase 2** : Plateforme web interactive
-3. **Phase 3** : Ouverture à la communauté
+2. **Phase 2** : Plateforme web interactive en français
+3. **Phase 3** : Ouverture à la communauté francophone
 
 ### Valeur ajoutée
-- **Pour les apprenants** : Accès gratuit à des centaines de questions pratiques
-- **Pour la communauté** : Contribution à l'écosystème éducatif AWS
-- **Pour les formateurs** : Outil complémentaire pour les formations
+- **Pour les apprenants francophones** : Accès gratuit à des milliers de questions pratiques en français
+- **Pour la communauté** : Contribution à l'écosystème éducatif AWS francophone
+- **Pour les formateurs** : Outil complémentaire pour les formations en français
 
 ## 🤝 Contribution
 
+### Format des contributions
+Pour ajouter des QCM en français, respectez scrupuleusement le format des fichiers existants dans `questions/fr/` :
+- Utilisez le markdown avec la même structure
+- Incluez les réponses dans des balises `<details>`
+- Assurez-vous que les explications sont claires et complètes
+- Maintenez la qualité de la langue française
+
 ### Amélioration des questions
 Si vous trouvez des erreurs ou souhaitez ajouter des questions :
-1. Modifiez les fichiers Markdown dans le dossier `questions/`
+1. Modifiez les fichiers Markdown dans le dossier `questions/fr/`
 2. Exécutez `node convert.js` pour regénérer `data.js`
 3. Testez les changements
 
@@ -276,7 +304,7 @@ Utilisez les issues GitHub pour signaler tout problème rencontré.
 ## 📝 Licence et attribution
 
 ### Questions
-Les questions sont utilisées avec reconnaissance depuis le repository de [Kanani Nirav](https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes).
+Les questions sont utilisées avec reconnaissance depuis le repository de [Kanani Nirav](https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes), traduites et adaptées en français.
 
 ### Code
 Le code de cette plateforme est ouvert et peut être utilisé pour des projets éducatifs.
@@ -285,6 +313,7 @@ Le code de cette plateforme est ouvert et peut être utilisé pour des projets �
 Si vous utilisez ce projet, merci de mentionner :
 - La source des questions : Kanani Nirav
 - Ce projet : AWS CCP Practice by Arouna SIDIBE
+- La langue : Plateforme 100% française
 
 ## 📞 Contact et support
 
@@ -301,8 +330,11 @@ Pour toute question, suggestion ou problème :
 
 ---
 
-**🚀 Prêt à réussir votre certification AWS Cloud Practitioner ?**
+**🚀 Prêt à réussir votre certification AWS Cloud Practitioner en français ?**
 
-[Commencer l'entraînement maintenant →](https://github.com/Arouna-SIDIBE/aws-ccp-practice)
+[Commencer l'entraînement maintenant →](https://arouna-sidibe.github.io/aws-ccp-practice/)
 
 *Bonne chance pour votre préparation ! ☁️🎯*
+
+---
+**Note sur la langue** : Cette plateforme est entièrement en français. Pour une version anglaise, utilisez la fonction de traduction de votre navigateur ou contribuez à la traduction du projet.

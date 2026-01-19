@@ -1,7 +1,7 @@
 // Structure de données générée automatiquement
 // Date: 2026-01-19
-// Examens: 24
-// Questions: 1207
+// Examens: 25
+// Questions: 1257
 
 const allExams = [
   {
@@ -31767,6 +31767,1326 @@ const allExams = [
           "B"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS Partner Solutions (Quick Starts)</strong> : Références de déploiement automatisées pour des technologies populaires sur AWS, avec des modèles CloudFormation et des guides de meilleures pratiques.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Forums</strong> : Communauté d'entraide.</li><li><strong>C. AWS CodeDeploy</strong> : Déploiement d'applications.</li><li><strong>D. AWS Whitepapers</strong> : Documentation technique.</li></ul></div>"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Examen Pratique 25",
+    "description": "Examen Pratique 25 - 50 questions",
+    "questionCount": 50,
+    "duration": 90,
+    "questions": [
+      {
+        "id": "25_1",
+        "text": "Quel est un avantage de déplacer une base de données sur site vers Amazon Relational Database Service (RDS) ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Il n'est pas nécessaire de gérer les systèmes d'exploitation."
+          },
+          {
+            "letter": "B",
+            "text": "Vous pouvez mettre à l'échelle verticalement sans temps d'arrêt."
+          },
+          {
+            "letter": "C",
+            "text": "Aucune administration de base de données n'est requise."
+          },
+          {
+            "letter": "D",
+            "text": "Vous pouvez exécuter n'importe quel moteur de base de données."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Il n'est pas nécessaire de gérer les systèmes d'exploitation</strong> : Avec Amazon RDS, qui est un service managé, vous n'avez pas besoin de gérer les systèmes d'exploitation. Cela réduit les coûts opérationnels.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Vous pouvez mettre à l'échelle verticalement sans temps d'arrêt</strong> : Faux. Lors de la mise à l'échelle avec RDS, vous devez changer le type d'instance, ce qui nécessite une courte période d'arrêt pendant le redémarrage du système d'exploitation de l'instance.</li><li><strong>C. Aucune administration de base de données n'est requise</strong> : Faux. Il y a toujours une administration de base de données requise dans le cloud. Vous ne gérez pas le système d'exploitation sous-jacent, mais vous devez toujours gérer vos propres tables et données dans la base de données.</li><li><strong>D. Vous pouvez exécuter n'importe quel moteur de base de données</strong> : Faux. Les options sont MySQL, Microsoft SQL, MariaDB, Oracle, PostgreSQL et Aurora.</li></ul></div>"
+      },
+      {
+        "id": "25_2",
+        "text": "Quelle entité IAM est associée à un identifiant de clé d'accès et une clé d'accès secrète ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Groupe IAM."
+          },
+          {
+            "letter": "B",
+            "text": "Rôle IAM."
+          },
+          {
+            "letter": "C",
+            "text": "Politique IAM."
+          },
+          {
+            "letter": "D",
+            "text": "Utilisateur IAM."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Utilisateur IAM</strong> : Un identifiant de clé d'accès et une clé d'accès secrète sont utilisés pour signer les requêtes programmatiques vers AWS. Ils sont associés à un utilisateur IAM.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Groupe IAM</strong> : Les groupes IAM ne sont pas associés à des clés d'accès.</li><li><strong>B. Rôle IAM</strong> : Les rôles IAM ne sont pas associés à des clés d'accès ; ils sont utilisés pour déléguer des permissions.</li><li><strong>C. Politique IAM</strong> : Les politiques IAM définissent les permissions, mais ne sont pas associées à des clés d'accès.</li></ul></div>"
+      },
+      {
+        "id": "25_3",
+        "text": "Quel service peut être utilisé pour déplacer des exaoctets de données vers AWS de manière économique ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Snowmobile."
+          },
+          {
+            "letter": "B",
+            "text": "AWS Snowball."
+          },
+          {
+            "letter": "C",
+            "text": "S3 Transfer Acceleration."
+          },
+          {
+            "letter": "D",
+            "text": "S3 Cross-Region Replication (CRR)."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. AWS Snowmobile</strong> : Avec AWS Snowmobile, vous pouvez déplacer 100 Po par snowmobile. AWS appelle cela un \"service de transfert de données à l'échelle de l'exaoctet\".</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. AWS Snowball</strong> : Avec AWS Snowball, vous pouvez déplacer jusqu'à 80 To par appareil. AWS appelle cela un \"service de transfert de données à l'échelle du pétaoctet\".</li><li><strong>C. S3 Transfer Acceleration</strong> : Conçu pour accélérer les téléversements vers Amazon S3, mais ne serait pas utilisé pour des exaoctets de données.</li><li><strong>D. S3 Cross-Region Replication (CRR)</strong> : Utilisé pour copier des données entre régions, pas vers AWS. Il est également inadapté pour déplacer une telle quantité énorme de données.</li></ul></div>"
+      },
+      {
+        "id": "25_4",
+        "text": "Quel service peut être utilisé pour créer facilement plusieurs comptes ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon IAM."
+          },
+          {
+            "letter": "B",
+            "text": "AWS CloudFormation."
+          },
+          {
+            "letter": "C",
+            "text": "AWS Organizations."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon Connect."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Organizations</strong> : AWS Organizations peut être utilisé pour automatiser la création de comptes AWS via l'API Organizations.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon IAM</strong> : Vous ne pouvez pas utiliser IAM pour créer des comptes.</li><li><strong>B. AWS CloudFormation</strong> : Vous pourriez théoriquement utiliser AWS CloudFormation pour automatiser la création de comptes avec des scripts, mais ce n'est certainement pas le moyen le plus facile d'atteindre ce résultat.</li><li><strong>D. Amazon Connect</strong> : Amazon Connect est un service de centre de contact auto-géré, basé sur le cloud, qui permet aux entreprises de fournir un meilleur service client à un coût inférieur.</li></ul></div>"
+      },
+      {
+        "id": "25_5",
+        "text": "Vous exécutez une instance Amazon EC2 on-demand sous Linux pendant 4 heures, 5 minutes et 6 secondes. Combien de temps serez-vous facturé ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "5 heures."
+          },
+          {
+            "letter": "B",
+            "text": "4 heures, 6 minutes."
+          },
+          {
+            "letter": "C",
+            "text": "4 heures, 5 minutes et 6 secondes."
+          },
+          {
+            "letter": "D",
+            "text": "4 heures."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. 4 heures, 5 minutes et 6 secondes</strong> : Les instances Amazon EC2 Linux on-demand, réservées et spot sont facturées à la seconde avec un minimum de 1 minute. Par conséquent, comme le minimum a été dépassé, exactement 4 heures, 5 minutes et 6 secondes seront facturées.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. 5 heures</strong> : Faux, la facturation est à la seconde.</li><li><strong>B. 4 heures, 6 minutes</strong> : Faux, les secondes sont comptées.</li><li><strong>D. 4 heures</strong> : Faux, les minutes et secondes supplémentaires sont facturées.</li></ul></div>"
+      },
+      {
+        "id": "25_6",
+        "text": "Quels sont les avantages d'utiliser des instances réservées ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Coût réduit."
+          },
+          {
+            "letter": "B",
+            "text": "Plus de flexibilité."
+          },
+          {
+            "letter": "C",
+            "text": "Réserver de la capacité."
+          },
+          {
+            "letter": "D",
+            "text": "Utilise du matériel dédié."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Coût réduit</strong> : Avec les instances réservées, vous vous engagez sur un terme de 1 ou 3 ans et obtenez une remise significative par rapport au tarif on-demand.</li><li><strong>C. Réserver de la capacité</strong> : Vous pouvez également réserver de la capacité dans une zone de disponibilité avec des instances réservées.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Plus de flexibilité</strong> : Faux. Si vous avez besoin de flexibilité, les instances on-demand sont meilleures mais plus coûteuses.</li><li><strong>D. Utilise du matériel dédié</strong> : Faux. Les instances réservées sont différentes des instances dédiées. Les instances dédiées et les hôtes dédiés utilisent du matériel dédié, mais pas les instances réservées.</li><li><strong>E. Haute disponibilité</strong> : Faux. Vous n'obtenez pas de haute disponibilité avec les instances réservées ; c'est un modèle de tarification.</li></ul></div>"
+      },
+      {
+        "id": "25_7",
+        "text": "Quelle entité IAM peut être utilisée pour attribuer des permissions aux services AWS ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Identifiant de clé d'accès et clé d'accès secrète IAM."
+          },
+          {
+            "letter": "B",
+            "text": "Politique IAM."
+          },
+          {
+            "letter": "C",
+            "text": "Rôle IAM."
+          },
+          {
+            "letter": "D",
+            "text": "Service de jeton de sécurité (STS)."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Rôle IAM</strong> : Avec les rôles IAM, vous pouvez déléguer des permissions à des ressources pour des utilisateurs et des services sans utiliser d'informations d'identification permanentes. Vous pouvez créer un rôle et y attacher une politique IAM.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Identifiant de clé d'accès et clé d'accès secrète IAM</strong> : Sont attribués aux utilisateurs IAM et utilisés pour l'accès programmatique via l'API ou la CLI.</li><li><strong>B. Politique IAM</strong> : Est un document de politique utilisé pour définir des permissions qui peuvent être appliquées aux utilisateurs, groupes et rôles. Vous n'appliquez pas la politique au service, vous l'appliquez au rôle.</li><li><strong>D. Service de jeton de sécurité (STS)</strong> : Permet de demander des informations d'identification temporaires et à privilèges limités.</li></ul></div>"
+      },
+      {
+        "id": "25_8",
+        "text": "Votre CTO veut migrer vers le cloud. Quels sont les avantages en termes de coûts ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vous provisionnez uniquement ce dont vous avez besoin et vous ajustez à la charge de pointe."
+          },
+          {
+            "letter": "B",
+            "text": "Vous pouvez réduire vos coûts marketing."
+          },
+          {
+            "letter": "C",
+            "text": "Vous n'avez pas besoin de payer les licences logicielles."
+          },
+          {
+            "letter": "D",
+            "text": "Vous bénéficiez d'un transfert de données gratuit vers et depuis le cloud."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Vous provisionnez uniquement ce dont vous avez besoin et vous ajustez à la charge de pointe</strong> : L'un des meilleurs avantages du cloud est que vous pouvez lancer ce dont vous avez besoin et ajuster automatiquement vos ressources en fonction de la demande. Cela signifie que vous ne payez que ce que vous utilisez.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Vous pouvez réduire vos coûts marketing</strong> : Faux. Votre organisation a toujours besoin de faire la même quantité de marketing.</li><li><strong>C. Vous n'avez pas besoin de payer les licences logicielles</strong> : Faux. Vous payez toujours pour vos licences logicielles lorsque vous exécutez sur Amazon EC2.</li><li><strong>D. Vous bénéficiez d'un transfert de données gratuit vers et depuis le cloud</strong> : Faux. AWS facture le transfert de données sortant.</li></ul></div>"
+      },
+      {
+        "id": "25_9",
+        "text": "Que doit faire une organisation pour migrer vers une autre région AWS ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Demander un autre compte AWS dans cette région."
+          },
+          {
+            "letter": "B",
+            "text": "Créer un compte IAM séparé pour cette région."
+          },
+          {
+            "letter": "C",
+            "text": "Soumettre une demande pour étendre son compte à la région supplémentaire."
+          },
+          {
+            "letter": "D",
+            "text": "Commencer simplement à déployer des ressources dans la région supplémentaire."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Commencer simplement à déployer des ressources dans la région supplémentaire</strong> : Avec le cloud AWS, vous pouvez utiliser n'importe quelle région dans le monde à tout moment. Il n'y a pas besoin d'un compte séparé, et IAM est un service global.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Demander un autre compte AWS dans cette région</strong> : Inutile, vous pouvez utiliser plusieurs régions avec un seul compte.</li><li><strong>B. Créer un compte IAM séparé pour cette région</strong> : IAM est global, pas régional.</li><li><strong>C. Soumettre une demande pour étendre son compte</strong> : Aucune demande n'est nécessaire.</li></ul></div>"
+      },
+      {
+        "id": "25_10",
+        "text": "Une organisation a un cloud sur site et accède à son cloud AWS via Internet. Comment peut-elle créer une connexion hybride privée ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Managed VPN."
+          },
+          {
+            "letter": "B",
+            "text": "AWS VPN CloudHub."
+          },
+          {
+            "letter": "C",
+            "text": "AWS Direct Connect."
+          },
+          {
+            "letter": "D",
+            "text": "AWS VPC Endpoint."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Direct Connect</strong> : AWS Direct Connect est une connexion privée à faible latence et à haute bande passante vers AWS. Elle peut être utilisée pour créer une connexion hybride privée entre l'environnement sur site et le cloud AWS.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Managed VPN</strong> et <strong>B. AWS VPN CloudHub</strong> : Utilisent tous deux Internet pour les connexions réseau, donc ne créent pas une connexion privée. La connexion est sécurisée mais utilise Internet.</li><li><strong>D. AWS VPC Endpoint</strong> : Une connexion PrivateLink qui connecte un service public AWS à un VPC via une connexion privée. Cela ne connecte pas les environnements sur site à AWS.</li></ul></div>"
+      },
+      {
+        "id": "25_11",
+        "text": "Lesquels des éléments suivants doivent être inclus dans une analyse du coût total de possession (TCO) ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Coûts de sécurité du centre de données."
+          },
+          {
+            "letter": "B",
+            "text": "Marketing à l'échelle de l'entreprise."
+          },
+          {
+            "letter": "C",
+            "text": "Développement d'applications."
+          },
+          {
+            "letter": "D",
+            "text": "Installation d'équipements de locaux."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Coûts de sécurité du centre de données</strong> : Fait partie des coûts d'exploitation actuels de l'infrastructure sur site.</li><li><strong>D. Installation d'équipements de locaux</strong> : Fait également partie des coûts d'infrastructure sur site.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Marketing à l'échelle de l'entreprise</strong> : Non affecté par la migration vers le cloud.</li><li><strong>C. Développement d'applications</strong> : Doit se poursuivre dans le cloud.</li><li><strong>E. Salaire du responsable informatique</strong> : Devrait toujours être payé après la migration.</li></ul></div>"
+      },
+      {
+        "id": "25_12",
+        "text": "Lesquelles des suivantes sont des bonnes pratiques architecturales pour le cloud AWS ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Déployer dans plusieurs zones de disponibilité."
+          },
+          {
+            "letter": "B",
+            "text": "Concevoir pour la tolérance aux pannes."
+          },
+          {
+            "letter": "C",
+            "text": "Créer des architectures monolithiques."
+          },
+          {
+            "letter": "D",
+            "text": "Déployer dans une seule zone de disponibilité."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Déployer dans plusieurs zones de disponibilité</strong> : Meilleure pratique pour la haute disponibilité.</li><li><strong>B. Concevoir pour la tolérance aux pannes</strong> : Meilleure pratique pour assurer la continuité des opérations.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>C. Créer des architectures monolithiques</strong> : Non recommandé. Les microservices sont préférés.</li><li><strong>D. Déployer dans une seule zone de disponibilité</strong> : Risque de défaillance unique.</li><li><strong>E. Couplage étroit</strong> : Non recommandé. Le découplage est préférable.</li></ul></div>"
+      },
+      {
+        "id": "25_13",
+        "text": "Que pouvez-vous utiliser pour connecter rapidement et de manière sécurisée votre bureau à votre Amazon VPC ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Managed VPN."
+          },
+          {
+            "letter": "B",
+            "text": "Direct Connect."
+          },
+          {
+            "letter": "C",
+            "text": "Internet Gateway."
+          },
+          {
+            "letter": "D",
+            "text": "Table de routage."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. AWS Managed VPN</strong> : Peut être utilisé pour connecter rapidement un bureau à un Amazon VPC via une connexion VPN sécurisée.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Direct Connect</strong> : Fournit une connectivité à haute bande passante et faible latence, mais prend des semaines à des mois à mettre en place (et est beaucoup plus cher).</li><li><strong>C. Internet Gateway</strong> : Utilisé pour connecter un sous-réseau public à Internet (sortie).</li><li><strong>D. Table de routage</strong> : Fait partie d'un VPC et est utilisée pour contrôler le routage du trafic au sein du VPC.</li></ul></div>"
+      },
+      {
+        "id": "25_14",
+        "text": "Selon le modèle de responsabilité partagée AWS, de quoi le client est-il responsable ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Gestion des correctifs de l'infrastructure."
+          },
+          {
+            "letter": "B",
+            "text": "Remplacement et élimination des disques durs."
+          },
+          {
+            "letter": "C",
+            "text": "Sécurité physique du centre de données."
+          },
+          {
+            "letter": "D",
+            "text": "Configuration des groupes de sécurité."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Configuration des groupes de sécurité</strong> : Responsabilité du client.</li><li><strong>E. Chiffrement des données client</strong> : Responsabilité du client.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Gestion des correctifs de l'infrastructure</strong> : Responsabilité d'AWS.</li><li><strong>B. Remplacement et élimination des disques durs</strong> : Responsabilité d'AWS.</li><li><strong>C. Sécurité physique du centre de données</strong> : Responsabilité d'AWS.</li></ul></div>"
+      },
+      {
+        "id": "25_15",
+        "text": "Quels avantages obtenez-vous en utilisant le cloud AWS ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Arrêtez de deviner la capacité nécessaire."
+          },
+          {
+            "letter": "B",
+            "text": "Dépenses en capital accrues."
+          },
+          {
+            "letter": "C",
+            "text": "Conformité à tous les programmes de sécurité locaux."
+          },
+          {
+            "letter": "D",
+            "text": "Gain d'un plus grand contrôle de la couche d'infrastructure."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Arrêtez de deviner la capacité nécessaire</strong> : Un des 6 avantages du cloud.</li><li><strong>E. Échangez les dépenses en capital contre des dépenses variables</strong> : Un des 6 avantages du cloud.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Dépenses en capital accrues</strong> : Faux. Le cloud réduit les dépenses en capital.</li><li><strong>C. Conformité à tous les programmes de sécurité locaux</strong> : Non garanti, mais AWS est conforme à de nombreux programmes.</li><li><strong>D. Gain d'un plus grand contrôle de la couche d'infrastructure</strong> : Faux. AWS contrôle largement l'infrastructure.</li></ul></div>"
+      },
+      {
+        "id": "25_16",
+        "text": "Quels services AWS sont utilisés pour l'analytique ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon Athena."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon S3."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon EMR."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon ElastiCache."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon Athena</strong> : Service de requête interactif qui facilite l'analyse des données dans Amazon S3 à l'aide de SQL standard.</li><li><strong>C. Amazon EMR</strong> : Fournit un framework Hadoop managé pour traiter de vastes quantités de données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon S3</strong> : Utilisé pour le stockage d'objets.</li><li><strong>D. Amazon ElastiCache</strong> : Service de mise en cache de données pour améliorer les performances.</li><li><strong>E. Amazon RDS</strong> : Base de données relationnelle principalement utilisée pour les charges de travail transactionnelles.</li></ul></div>"
+      },
+      {
+        "id": "25_17",
+        "text": "Quel service de base de données est une base de données NoSQL entièrement managée ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon DynamoDB."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon RDS."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon RedShift."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon ElastiCache."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon DynamoDB</strong> : Base de données NoSQL entièrement managée d'Amazon.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon RDS</strong> : Base de données relationnelle (SQL).</li><li><strong>C. Amazon RedShift</strong> : Entrepôt de données analysable avec des outils SQL.</li><li><strong>D. Amazon ElastiCache</strong> : Service de mise en cache de données pour améliorer les performances.</li></ul></div>"
+      },
+      {
+        "id": "25_18",
+        "text": "Quel est le plan de support le plus économique qui devrait être sélectionné pour fournir un temps de réponse d'au plus 1 heure pour une panne de système de production ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Enterprise."
+          },
+          {
+            "letter": "B",
+            "text": "Basic."
+          },
+          {
+            "letter": "C",
+            "text": "Business."
+          },
+          {
+            "letter": "D",
+            "text": "Developer."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Business</strong> : Fournit des temps de réponse < 1 heure pour une panne de système de production.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Enterprise</strong> : Fournit également des temps de réponse < 1 heure mais est plus cher.</li><li><strong>B. Basic</strong> : Ne fournit aucun support technique.</li><li><strong>D. Developer</strong> : Fournit un accès par e-mail pendant les heures de bureau.</li></ul></div>"
+      },
+      {
+        "id": "25_19",
+        "text": "Quelle fonctionnalité d'Amazon Rekognition peut aider à gagner du temps ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Fournit un accès à la demande à des informations liées à la conformité."
+          },
+          {
+            "letter": "B",
+            "text": "Identification de la langue du texte dans un document."
+          },
+          {
+            "letter": "C",
+            "text": "Identification d'objets dans des images et vidéos."
+          },
+          {
+            "letter": "D",
+            "text": "Ajoute la reconnaissance vocale automatique aux applications."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Identification d'objets dans des images et vidéos</strong> : Amazon Rekognition facilite l'ajout d'analyse d'images et de vidéos à vos applications. Le service peut identifier les objets, personnes, textes, scènes et activités.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Fournit un accès à la demande à des informations liées à la conformité</strong> : Description d'AWS Artifact.</li><li><strong>B. Identification de la langue du texte dans un document</strong> : Fonctionnalité d'Amazon Comprehend.</li><li><strong>D. Ajoute la reconnaissance vocale automatique aux applications</strong> : Description d'Amazon Transcribe.</li></ul></div>"
+      },
+      {
+        "id": "25_20",
+        "text": "L'infrastructure globale AWS est composée de ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zones de défaillance."
+          },
+          {
+            "letter": "B",
+            "text": "Zones de disponibilité."
+          },
+          {
+            "letter": "C",
+            "text": "Clusters."
+          },
+          {
+            "letter": "D",
+            "text": "Régions."
+          }
+        ],
+        "correctAnswers": [
+          "B",
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Zones de disponibilité</strong> : Un ou plusieurs centres de données discrets avec alimentation, réseau et connectivité redondants.</li><li><strong>D. Régions</strong> : Emplacements physiques dans le monde où AWS dispose de plusieurs zones de disponibilité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Zones de défaillance</strong> : N'existe pas dans la terminologie AWS.</li><li><strong>C. Clusters</strong> : Non, l'infrastructure est basée sur des régions et des AZ.</li><li><strong>E. Sous-réseaux IP</strong> : Composants réseau au sein d'un VPC, pas de l'infrastructure globale.</li></ul></div>"
+      },
+      {
+        "id": "25_21",
+        "text": "Quelle technologie de stockage AWS peut être considérée comme un \"disque dur virtuel dans le cloud\" ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Archive Amazon Glacier."
+          },
+          {
+            "letter": "B",
+            "text": "Objet Amazon S3."
+          },
+          {
+            "letter": "C",
+            "text": "Volume Amazon Elastic Block Storage (EBS)."
+          },
+          {
+            "letter": "D",
+            "text": "Système de fichiers Amazon Elastic File Storage (EFS)."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Volume Amazon Elastic Block Storage (EBS)</strong> : Un périphérique de stockage par blocs qui, lorsqu'il est attaché à une instance, apparaît comme un disque local pouvant héberger un système d'exploitation ou être formaté.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Archive Amazon Glacier</strong> : Solution d'archivage pour les objets S3.</li><li><strong>B. Objet Amazon S3</strong> : Système de stockage d'objets, ne peut pas être monté comme un disque dur.</li><li><strong>D. Système de fichiers Amazon Elastic File Storage (EFS)</strong> : Système de fichiers réseau monté via NFS, pas un disque dur local.</li></ul></div>"
+      },
+      {
+        "id": "25_22",
+        "text": "Quel type de déploiement cloud permet aux clients de tirer parti des avantages du cloud public tout en coexistant avec une infrastructure sur site ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Cloud privé."
+          },
+          {
+            "letter": "B",
+            "text": "Cloud hybride."
+          },
+          {
+            "letter": "C",
+            "text": "Infrastructure informatique héritée."
+          },
+          {
+            "letter": "D",
+            "text": "Cloud public."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Cloud hybride</strong> : Un déploiement hybride connecte l'infrastructure et les applications entre des ressources basées sur le cloud et des ressources existantes non localisées dans le cloud.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Cloud privé</strong> : Déploiement de ressources sur site utilisant la virtualisation, ne fournit pas tous les avantages du cloud computing.</li><li><strong>C. Infrastructure informatique héritée</strong> : Systèmes non virtualisés ou sans couche de gestion cloud.</li><li><strong>D. Cloud public</strong> : Application entièrement déployée dans le cloud.</li></ul></div>"
+      },
+      {
+        "id": "25_23",
+        "text": "Quel service AWS peut être utilisé pour convertir des fichiers vidéo et audio de leur format source en versions lisibles sur des appareils comme smartphones, tablettes et PC ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Elastic Transcoder."
+          },
+          {
+            "letter": "B",
+            "text": "Elastic Beanstalk."
+          },
+          {
+            "letter": "C",
+            "text": "Auto Scaling."
+          },
+          {
+            "letter": "D",
+            "text": "Elastic Load Balancer."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Elastic Transcoder</strong> : Service hautement évolutif et économique pour convertir des fichiers vidéo et audio.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Elastic Beanstalk</strong> : Utilisé pour déployer et gérer rapidement des applications dans le cloud AWS.</li><li><strong>C. Auto Scaling</strong> : Utilisé pour ajuster automatiquement le nombre d'instances EC2.</li><li><strong>D. Elastic Load Balancer</strong> : Distribue les connexions entrantes vers des instances EC2.</li></ul></div>"
+      },
+      {
+        "id": "25_24",
+        "text": "Lesquelles des affirmations suivantes sont exactes concernant les compartiments Amazon S3 ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Les compartiments sont spécifiques à une région."
+          },
+          {
+            "letter": "B",
+            "text": "Les compartiments peuvent contenir d'autres compartiments."
+          },
+          {
+            "letter": "C",
+            "text": "Les noms de compartiments doivent être uniques globalement."
+          },
+          {
+            "letter": "D",
+            "text": "Les compartiments sont répliqués globalement."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Les compartiments sont spécifiques à une région</strong> : Vous créez des compartiments dans une région et les données ne quittent pas cette région sauf configuration explicite.</li><li><strong>C. Les noms de compartiments doivent être uniques globalement</strong> : S3 utilise un espace de noms global universel.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Les compartiments peuvent contenir d'autres compartiments</strong> : Faux, vous ne pouvez pas créer de compartiments imbriqués.</li><li><strong>D. Les compartiments sont répliqués globalement</strong> : Faux, les objets sont répliqués au sein d'une région sur plusieurs AZ (sauf One-Zone IA).</li><li><strong>E. Les noms de compartiments doivent être uniques régionalement</strong> : Faux, ils doivent être uniques globalement.</li></ul></div>"
+      },
+      {
+        "id": "25_25",
+        "text": "Quel est le terme décrivant l'action d'exécuter automatiquement des scripts sur des instances Amazon EC2 lors de leur lancement pour installer des logiciels ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Images dorées."
+          },
+          {
+            "letter": "B",
+            "text": "Amorçage (Bootstrapping)."
+          },
+          {
+            "letter": "C",
+            "text": "Conteneurisation."
+          },
+          {
+            "letter": "D",
+            "text": "Automatisation des flux de travail."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amorçage (Bootstrapping)</strong> : Exécution d'actions automatisées (généralement des scripts) lors du lancement d'instances pour configurer le logiciel.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Images dorées</strong> : Snapshots de volumes EBS pré-configurés utilisés pour lancer de nouvelles instances.</li><li><strong>C. Conteneurisation</strong> : Logiciel empaqueté s'exécutant dans une image Docker.</li><li><strong>D. Automatisation des flux de travail</strong> : Processus d'orchestration d'actions automatisées associé à des services comme Chef, Puppet ou AWS OpsWorks.</li></ul></div>"
+      },
+      {
+        "id": "25_26",
+        "text": "Quelle fonctionnalité d'AWS vous permet de déployer une nouvelle application dont les exigences peuvent changer avec le temps ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Ressources jetables."
+          },
+          {
+            "letter": "B",
+            "text": "Tolérance aux pannes."
+          },
+          {
+            "letter": "C",
+            "text": "Haute disponibilité."
+          },
+          {
+            "letter": "D",
+            "text": "Élasticité."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Élasticité</strong> : Permet de déployer une application sans se soucier de ses besoins futurs en ressources. L'infrastructure peut évoluer à la demande.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Ressources jetables</strong> : Principe architectural où les serveurs sont traités comme des ressources temporaires.</li><li><strong>B. Tolérance aux pannes</strong> et <strong>C. Haute disponibilité</strong> : Mécanismes pour assurer la disponibilité de l'application et se protéger contre les défaillances.</li></ul></div>"
+      },
+      {
+        "id": "25_27",
+        "text": "Quel service de stockage permet de connecter plusieurs instances EC2 simultanément à l'aide de protocoles de niveau fichier ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon Glacier."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon EFS."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon EBS."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon S3."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon EFS</strong> : Amazon Elastic File System permet de connecter des centaines ou des milliers d'instances EC2 simultanément et est accessible via le protocole NFS (niveau fichier).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon Glacier</strong> : Utilisé pour l'archivage d'objets S3.</li><li><strong>C. Amazon EBS</strong> : Fournit des volumes de niveau bloc à des instances EC2 individuelles (ne peut pas connecter plusieurs instances à un seul volume EBS).</li><li><strong>D. Amazon S3</strong> : Système de stockage d'objets.</li></ul></div>"
+      },
+      {
+        "id": "25_28",
+        "text": "Lequel des éléments suivants est une méthode de sauvegarde disponible dans le cloud AWS ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Snapshots EBS."
+          },
+          {
+            "letter": "B",
+            "text": "Enregistrement Alias Route 53."
+          },
+          {
+            "letter": "C",
+            "text": "Systèmes de fichiers EFS."
+          },
+          {
+            "letter": "D",
+            "text": "Zones de disponibilité."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Snapshots EBS</strong> : Copies ponctuelles de volumes EBS, utilisées pour sauvegarder vos données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Enregistrement Alias Route 53</strong> : Type d'enregistrement DNS mappant un nom de domaine public à une cible de service AWS.</li><li><strong>C. Systèmes de fichiers EFS</strong> : Service de stockage, pas une méthode de sauvegarde.</li><li><strong>D. Zones de disponibilité</strong> : Partie de l'infrastructure globale AWS pour la haute disponibilité, pas une solution de sauvegarde.</li></ul></div>"
+      },
+      {
+        "id": "25_29",
+        "text": "Une entreprise souhaite maximiser ses remises volume et sur les instances réservées sur plusieurs comptes et appliquer des politiques de contrôle des services sur les comptes membres. Quel service ou outil peut-elle utiliser pour bénéficier de ces avantages ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Budgets."
+          },
+          {
+            "letter": "B",
+            "text": "AWS Organizations."
+          },
+          {
+            "letter": "C",
+            "text": "AWS Cost Explorer."
+          },
+          {
+            "letter": "D",
+            "text": "AWS IAM."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS Organizations</strong> : Permet de créer des groupes de comptes AWS et de gérer centralement les politiques sur ces comptes. Fournit la facturation consolidée et permet d'appliquer des remises volume.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Budgets</strong> : Permet de définir des budgets personnalisés et des alertes de coût.</li><li><strong>C. AWS Cost Explorer</strong> : Outil gratuit permettant de visualiser des graphiques de vos coûts.</li><li><strong>D. AWS IAM</strong> : Permet de gérer l'accès aux services et ressources AWS.</li></ul></div>"
+      },
+      {
+        "id": "25_30",
+        "text": "Quels types de politiques tarifaires AWS offre-t-il ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Économisez lorsque vous réservez."
+          },
+          {
+            "letter": "B",
+            "text": "Remises d'utilisation globale."
+          },
+          {
+            "letter": "C",
+            "text": "Remises en heures creuses."
+          },
+          {
+            "letter": "D",
+            "text": "Accord de licence d'entreprise (ELA)."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Économisez lorsque vous réservez</strong> : Modèle d'instances réservées.</li><li><strong>E. Paiement à l'usage</strong> : Modèle de paiement à l'heure ou à la seconde sans engagement.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Remises d'utilisation globale</strong> : Non offert par AWS.</li><li><strong>C. Remises en heures creuses</strong> : Non offert par AWS.</li><li><strong>D. Accord de licence d'entreprise (ELA)</strong> : Non offert par AWS.</li></ul></div>"
+      },
+      {
+        "id": "25_31",
+        "text": "Quel modèle de tarification devez-vous utiliser pour des instances EC2 qui seront utilisées dans un environnement de laboratoire pendant plusieurs heures un week-end et doivent s'exécuter sans interruption ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Instance dédiée."
+          },
+          {
+            "letter": "B",
+            "text": "Réservée."
+          },
+          {
+            "letter": "C",
+            "text": "À la demande."
+          },
+          {
+            "letter": "D",
+            "text": "Spot."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. À la demande</strong> : Meilleur choix pour cette situation car c'est l'option la plus économique qui garantit aucune interruption.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Instance dédiée</strong> : Instances EC2 exécutées sur du matériel dédié à un seul client.</li><li><strong>B. Réservée</strong> : Bon pour les exigences à long terme et statiques car vous devez vous engager pour 1 ou 3 ans.</li><li><strong>D. Spot</strong> : Bonnes pour les exigences à court terme car très économiques, mais peuvent être interrompues si le prix du marché spot évolue.</li></ul></div>"
+      },
+      {
+        "id": "25_32",
+        "text": "Quelle stratégie peut aider à attribuer des métadonnées aux ressources AWS pour le suivi des coûts et la visibilité ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Étiquetage."
+          },
+          {
+            "letter": "B",
+            "text": "Catégorisation."
+          },
+          {
+            "letter": "C",
+            "text": "Marquage (Tagging)."
+          },
+          {
+            "letter": "D",
+            "text": "Contrôle d'accès."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Marquage (Tagging)</strong> : AWS permet aux clients d'attribuer des métadonnées à leurs ressources AWS sous forme d'étiquettes (tags). Chaque étiquette est une simple étiquette composée d'une clé définie par le client et d'une valeur facultative.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Étiquetage</strong> : Terme similaire, mais le terme AWS spécifique est \"tagging\".</li><li><strong>B. Catégorisation</strong> : Non une méthode d'ajout de métadonnées à une ressource AWS.</li><li><strong>D. Contrôle d'accès</strong> : Méthode de gestion des autorisations, pas d'ajout de métadonnées.</li></ul></div>"
+      },
+      {
+        "id": "25_33",
+        "text": "Quels éléments peuvent être configurés à partir de la console de gestion VPC ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Régions."
+          },
+          {
+            "letter": "B",
+            "text": "Sous-réseaux."
+          },
+          {
+            "letter": "C",
+            "text": "Groupes de sécurité."
+          },
+          {
+            "letter": "D",
+            "text": "Équilibrage de charge."
+          }
+        ],
+        "correctAnswers": [
+          "B",
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Sous-réseaux</strong> : Peuvent être configurés dans la console VPC.</li><li><strong>C. Groupes de sécurité</strong> : Peuvent être configurés dans la console VPC.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Régions</strong> : Non configurées, les ressources au sein des régions sont configurées.</li><li><strong>D. Équilibrage de charge</strong> et <strong>E. Mise à l'échelle automatique</strong> : Configurés depuis la console EC2.</li></ul></div>"
+      },
+      {
+        "id": "25_34",
+        "text": "Comment une organisation peut-elle comparer le coût d'exécution d'applications dans un environnement sur site ou en colocation par rapport au cloud AWS ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Budgets."
+          },
+          {
+            "letter": "B",
+            "text": "AWS Simple Monthly Calculator."
+          },
+          {
+            "letter": "C",
+            "text": "Calculateur TCO."
+          },
+          {
+            "letter": "D",
+            "text": "AWS Cost Explorer."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Calculateur TCO</strong> : Outil gratuit fourni par AWS qui permet d'estimer les économies de coûts liées à l'utilisation du cloud AWS par rapport à l'utilisation d'un centre de données sur site.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Budgets</strong> : Permet de définir des budgets personnalisés et des alertes de coût.</li><li><strong>B. AWS Simple Monthly Calculator</strong> : Aide les clients à estimer leur facture mensuelle AWS plus efficacement.</li><li><strong>D. AWS Cost Explorer</strong> : Outil gratuit permettant de visualiser des graphiques de vos coûts.</li></ul></div>"
+      },
+      {
+        "id": "25_35",
+        "text": "Quelle fonctionnalité pouvez-vous utiliser pour accorder un accès en lecture/écriture à un compartiment Amazon S3 ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Rôle IAM."
+          },
+          {
+            "letter": "B",
+            "text": "Utilisateur IAM."
+          },
+          {
+            "letter": "C",
+            "text": "Groupe IAM."
+          },
+          {
+            "letter": "D",
+            "text": "Politique IAM."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Politique IAM</strong> : Les politiques IAM sont des documents qui définissent les permissions et peuvent être appliqués aux utilisateurs, groupes et rôles. Vous pouvez écrire des politiques IAM pour accorder l'accès aux compartiments S3.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Rôle IAM</strong> : Créés puis \"assumés\" par des entités de confiance et définissent un ensemble d'autorisations pour effectuer des requêtes de service AWS.</li><li><strong>B. Utilisateur IAM</strong> : Entité qui représente une personne ou un service.</li><li><strong>C. Groupe IAM</strong> : Collections d'utilisateurs avec des politiques attachées.</li></ul></div>"
+      },
+      {
+        "id": "25_36",
+        "text": "Pour quels services Amazon ne facture-t-il pas les clients ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon CloudFormation."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon EBS."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon VPC."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon S3."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon CloudFormation</strong> : Gratuit, cependant vous payez pour les ressources qu'il crée.</li><li><strong>C. Amazon VPC</strong> : Gratuit.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon EBS</strong>, <strong>D. Amazon S3</strong>, <strong>E. Amazon SNS</strong> : Tous facturables.</li></ul></div>"
+      },
+      {
+        "id": "25_37",
+        "text": "Selon le modèle de responsabilité partagée, quels sont des exemples de contrôles partagés ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Gestion de la configuration."
+          },
+          {
+            "letter": "B",
+            "text": "Physique et environnemental."
+          },
+          {
+            "letter": "C",
+            "text": "Protection des services et des communications."
+          },
+          {
+            "letter": "D",
+            "text": "Gestion des correctifs."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Gestion de la configuration</strong> : AWS est responsable de la configuration de ses dispositifs d'infrastructure, mais un client est responsable de la configuration de ses systèmes d'exploitation invités, bases de données et applications.</li><li><strong>D. Gestion des correctifs</strong> : AWS est responsable de l'application des correctifs et de la correction des failles au sein de l'infrastructure, mais les clients sont responsables de l'application des correctifs sur leur système d'exploitation invité et leurs applications.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Physique et environnemental</strong> : Exemple de contrôle hérité (entièrement par AWS).</li><li><strong>C. Protection des services et des communications</strong> : Exemple de contrôle spécifique au client.</li><li><strong>E. Application des correctifs du système de stockage</strong> : Responsabilité d'AWS.</li></ul></div>"
+      },
+      {
+        "id": "25_38",
+        "text": "Quel service de base de données AWS prend en charge les requêtes complexes et les jointures et convient à un déploiement de base de données transactionnelle ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon RDS."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon EMR."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon DynamoDB."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon RedShift."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon RDS</strong> : Prend en charge les requêtes complexes et les jointures et convient à un déploiement de base de données transactionnelle.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon EMR</strong> : Service Hadoop non adapté aux bases de données transactionnelles.</li><li><strong>C. Amazon DynamoDB</strong> : Base de données NoSQL qui ne prend pas en charge les requêtes complexes et les jointures.</li><li><strong>D. Amazon RedShift</strong> : Entrepôt de données utilisé pour l'analyse, pas pour les bases de données transactionnelles.</li></ul></div>"
+      },
+      {
+        "id": "25_39",
+        "text": "Quelle est la portée d'un VPC au sein d'une région ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "S'étend sur toutes les zones de disponibilité globalement."
+          },
+          {
+            "letter": "B",
+            "text": "S'étend sur toutes les zones de disponibilité au sein de la région."
+          },
+          {
+            "letter": "C",
+            "text": "Au moins 2 centres de données par région."
+          },
+          {
+            "letter": "D",
+            "text": "Au moins 2 sous-réseaux par région."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. S'étend sur toutes les zones de disponibilité au sein de la région</strong> : Un VPC s'étend sur toutes les zones de disponibilité d'une région.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. S'étend sur toutes les zones de disponibilité globalement</strong> : Faux. Les VPC ne s'étendent pas sur les régions.</li><li><strong>C. Au moins 2 centres de données par région</strong> : Non pertinent pour la portée d'un VPC.</li><li><strong>D. Au moins 2 sous-réseaux par région</strong> : Non, les sous-réseaux sont créés au sein des AZ et vous pouvez avoir de nombreux sous-réseaux dans une AZ.</li></ul></div>"
+      },
+      {
+        "id": "25_40",
+        "text": "Comment AWS aide-t-il les organisations à gérer leurs besoins en capacité ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Vous n'avez pas besoin de deviner vos besoins en capacité."
+          },
+          {
+            "letter": "B",
+            "text": "Avec AWS, vous ne payez pas pour les centres de données."
+          },
+          {
+            "letter": "C",
+            "text": "Avec AWS, vous ne payez que ce que vous utilisez."
+          },
+          {
+            "letter": "D",
+            "text": "Vous ne possédez pas l'infrastructure."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Vous n'avez pas besoin de deviner vos besoins en capacité</strong> : La capacité de s'adapter à la demande est l'avantage clé qui peut les aider ici, car ils peuvent déployer ce dont ils ont besoin aujourd'hui et le faire évoluer demain.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Avec AWS, vous ne payez pas pour les centres de données</strong> : Vrai, mais ne répond pas spécifiquement à la question sur la gestion de la capacité.</li><li><strong>C. Avec AWS, vous ne payez que ce que vous utilisez</strong> : Vrai, mais ne répond pas spécifiquement à la question sur la gestion de la capacité.</li><li><strong>D. Vous ne possédez pas l'infrastructure</strong> : Vrai, mais ne répond pas spécifiquement à la question sur la gestion de la capacité.</li></ul></div>"
+      },
+      {
+        "id": "25_41",
+        "text": "Quel service prend en charge la résolution des noms de domaine publics en adresses IP ou en ressources AWS ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Zones hébergées."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon SNS."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon Route 53."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Amazon Route 53</strong> : Service DNS hautement disponible et évolutif.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Zones hébergées</strong> : Collection d'enregistrements pour un domaine spécifié dans Route 53.</li><li><strong>B. Amazon SNS</strong> : Utilisé pour envoyer des notifications sur plusieurs protocoles de transport.</li><li><strong>C. Amazon CloudFront</strong> : Réseau de diffusion de contenu (CDN) permettant de stocker (mettre en cache) votre contenu sur des \"emplacements périphériques\".</li></ul></div>"
+      },
+      {
+        "id": "25_42",
+        "text": "Quelles sont les considérations lors du choix de la région à utiliser ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Tarification en monnaie locale."
+          },
+          {
+            "letter": "B",
+            "text": "Latence."
+          },
+          {
+            "letter": "C",
+            "text": "Capacité de stockage disponible."
+          },
+          {
+            "letter": "D",
+            "text": "Capacité de calcul disponible."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Latence</strong> : Vous pouvez choisir une région pour réduire la latence.</li><li><strong>E. Souveraineté des données</strong> : Pour répondre aux exigences réglementaires concernant l'emplacement des données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Tarification en monnaie locale</strong> : Les prix des services AWS sont en USD.</li><li><strong>C. Capacité de stockage disponible</strong> et <strong>D. Capacité de calcul disponible</strong> : Généralement non préoccupant car AWS dispose d'un vaste pool de ressources et ne divulgue pas la capacité disponible dans chaque région.</li></ul></div>"
+      },
+      {
+        "id": "25_43",
+        "text": "Quelle meilleure pratique architecturale vise à réduire les interdépendances entre les services ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Découplage."
+          },
+          {
+            "letter": "B",
+            "text": "Suppression des points de défaillance uniques."
+          },
+          {
+            "letter": "C",
+            "text": "Services, pas serveurs."
+          },
+          {
+            "letter": "D",
+            "text": "Automatisation."
+          }
+        ],
+        "correctAnswers": [
+          "A"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Découplage</strong> : Le concept de découplage comprend des \"interfaces bien définies\" qui réduisent les interdépendances dans un système en permettant l'interaction uniquement par des interfaces spécifiques et agnostiques de la technologie.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Suppression des points de défaillance uniques</strong> : Principe de haute disponibilité.</li><li><strong>C. Services, pas serveurs</strong> : Approche de conception orientée services.</li><li><strong>D. Automatisation</strong> : Principe de gestion de l'infrastructure.</li></ul></div>"
+      },
+      {
+        "id": "25_44",
+        "text": "Identifiez les services qui ont une portée globale (plutôt que régionale) ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "AWS Lambda."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon S3."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon EC2."
+          }
+        ],
+        "correctAnswers": [
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon CloudFront</strong> : CDN avec portée globale.</li><li><strong>E. Amazon Route 53</strong> : Service DNS avec portée globale.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Lambda</strong> : Service régional.</li><li><strong>C. Amazon S3</strong> : Utilise un espace de noms global mais les compartiments et objets sont créés dans une région.</li><li><strong>D. Amazon EC2</strong> : Service régional.</li></ul></div>"
+      },
+      {
+        "id": "25_45",
+        "text": "Quel type d'Amazon Elastic Load Balancer opère au niveau 7 du modèle OSI ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Classic Load Balancer."
+          },
+          {
+            "letter": "B",
+            "text": "F5 Load Balancer."
+          },
+          {
+            "letter": "C",
+            "text": "Application Load Balancer."
+          },
+          {
+            "letter": "D",
+            "text": "Network Load Balancer."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Application Load Balancer (ALB)</strong> : Équilibreur de charge de niveau 7 qui achemine les connexions en fonction du contenu de la requête.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Classic Load Balancer (CLB)</strong> : Le plus ancien des trois, fournit un équilibrage de charge basique aux niveaux 4 et 7.</li><li><strong>B. F5 Load Balancer</strong> : N'est pas un équilibreur de charge Amazon.</li><li><strong>D. Network Load Balancer (NLB)</strong> : Équilibreur de charge de niveau 4 qui achemine les connexions en fonction des données de protocole IP.</li></ul></div>"
+      },
+      {
+        "id": "25_46",
+        "text": "Quels avantages Amazon CloudFront fournit-il ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Le contenu est mis en cache aux emplacements périphériques pour une distribution rapide aux clients."
+          },
+          {
+            "letter": "B",
+            "text": "Protection intégrée contre les attaques par déni de service distribué (DDoS)."
+          },
+          {
+            "letter": "C",
+            "text": "Fournit un service DNS distribué dans le monde entier."
+          },
+          {
+            "letter": "D",
+            "text": "Permet d'enregistrer des noms de domaine."
+          }
+        ],
+        "correctAnswers": [
+          "A",
+          "B"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Le contenu est mis en cache aux emplacements périphériques pour une distribution rapide aux clients</strong> : CloudFront est un réseau de diffusion de contenu (CDN) qui permet de stocker (mettre en cache) votre contenu sur des \"emplacements périphériques\" situés dans le monde entier.</li><li><strong>B. Protection intégrée contre les attaques par déni de service distribué (DDoS)</strong> : Fournit une sécurité contre les attaques DDoS.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>C. Fournit un service DNS distribué dans le monde entier</strong> : C'est le rôle d'Amazon Route 53.</li><li><strong>D. Permet d'enregistrer des noms de domaine</strong> : C'est le rôle d'Amazon Route 53.</li><li><strong>E. Utilisé pour permettre aux instances de sous-réseau privé d'accéder à Internet</strong> : C'est le rôle d'une passerelle NAT, pas de CloudFront.</li></ul></div>"
+      },
+      {
+        "id": "25_47",
+        "text": "Une entreprise prévoit de créer une architecture cloud hybride. Quelle technologie leur permettra de créer un cloud hybride ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Peering VPC."
+          },
+          {
+            "letter": "B",
+            "text": "Internet Gateway."
+          },
+          {
+            "letter": "C",
+            "text": "Interface réseau élastique."
+          },
+          {
+            "letter": "D",
+            "text": "AWS Direct Connect."
+          }
+        ],
+        "correctAnswers": [
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. AWS Direct Connect</strong> : Fournit une connexion à faible latence et à haute bande passante pour connecter les environnements sur site au cloud AWS, leur permettant de créer une architecture cloud \"hybride\".</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Peering VPC</strong> : Moyen de permettre le routage entre les VPC dans différents comptes AWS.</li><li><strong>B. Internet Gateway</strong> : Utilisé pour connecter des sous-réseaux publics à Internet (sortie).</li><li><strong>C. Interface réseau élastique (ENI)</strong> : Composant réseau logique dans un VPC qui représente une carte réseau virtuelle.</li></ul></div>"
+      },
+      {
+        "id": "25_48",
+        "text": "Quel service peut être utilisé pour suivre l'utilisation du CPU d'une instance EC2 ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon CloudFormation."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon CloudWatch."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon CloudTrail."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Amazon CloudWatch</strong> : Service de surveillance pour les ressources cloud AWS et les applications que vous exécutez sur AWS.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon CloudFront</strong> : Réseau de diffusion de contenu (CDN) qui met en cache le contenu.</li><li><strong>B. Amazon CloudFormation</strong> : Utilisé pour le provisionnement automatisé de l'infrastructure.</li><li><strong>D. Amazon CloudTrail</strong> : Utilisé pour l'audit des appels d'API.</li></ul></div>"
+      },
+      {
+        "id": "25_49",
+        "text": "Quel service enregistre l'activité des API sur votre compte et fournit des fichiers journaux à un compartiment Amazon S3 ?",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Amazon CloudWatch."
+          },
+          {
+            "letter": "B",
+            "text": "Amazon S3 Event Notifications."
+          },
+          {
+            "letter": "C",
+            "text": "Amazon CloudTrail."
+          },
+          {
+            "letter": "D",
+            "text": "Amazon CloudWatch Logs."
+          }
+        ],
+        "correctAnswers": [
+          "C"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Option correcte</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Amazon CloudTrail</strong> : Service web qui enregistre l'activité effectuée sur votre compte et fournit des fichiers journaux à un compartiment Amazon S3.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon CloudWatch</strong> : Pour la surveillance des performances.</li><li><strong>B. Amazon S3 Event Notifications</strong> : Fonctionnalité qui vous notifie lorsque certains événements se produisent dans vos compartiments S3, n'enregistre pas l'activité des API au niveau du compte.</li><li><strong>D. Amazon CloudWatch Logs</strong> : Vous permet de surveiller et de dépanner vos systèmes et applications en utilisant vos fichiers journaux système, d'application et personnalisés existants.</li></ul></div>"
+      },
+      {
+        "id": "25_50",
+        "text": "Quels sont deux avantages que peut obtenir une organisation en migrant vers le cloud AWS ? (Choisissez DEUX)",
+        "options": [
+          {
+            "letter": "A",
+            "text": "Passer à un modèle CAPEX."
+          },
+          {
+            "letter": "B",
+            "text": "Augmenter la vitesse et l'agilité."
+          },
+          {
+            "letter": "C",
+            "text": "Amortir les actifs sur une période plus longue."
+          },
+          {
+            "letter": "D",
+            "text": "Arrêter de deviner la capacité nécessaire."
+          }
+        ],
+        "correctAnswers": [
+          "B",
+          "D"
+        ],
+        "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Augmenter la vitesse et l'agilité</strong> : Dans un environnement cloud, de nouvelles ressources informatiques sont à un clic, ce qui réduit le délai de mise à disposition de ces ressources pour vos développeurs de plusieurs semaines à quelques minutes.</li><li><strong>D. Arrêter de deviner la capacité nécessaire</strong> : Lorsque vous prenez une décision de capacité avant de déployer une application, vous vous retrouvez souvent avec des ressources chères inutilisées ou avec une capacité limitée. Avec le cloud computing, ces problèmes disparaissent.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Passer à un modèle CAPEX</strong> : Le cloud est basé sur un modèle de dépenses opérationnelles (OPEX), pas un modèle de dépenses en capital (CAPEX).</li><li><strong>C. Amortir les actifs sur une période plus longue</strong> : Le cloud ne fournit pas la capacité d'amortir les actifs sur une période plus longue car vous ne possédez généralement pas les actifs.</li><li><strong>E. Obtenir un plus grand contrôle de la sécurité du centre de données</strong> : Bien que le cloud AWS fournisse des normes de sécurité importantes pour le centre de données, vous n'obtenez pas plus de contrôle car c'est une responsabilité d'AWS.</li></ul></div>"
       }
     ]
   }
