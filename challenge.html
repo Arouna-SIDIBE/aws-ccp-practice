@@ -7,10 +7,7 @@
     <title>Challenge AWS CCP - Test Aléatoire</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
@@ -26,7 +23,6 @@
                 <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
                 <li><a href="challenge.html" class="active"><i class="fas fa-trophy"></i> Challenge</a></li>
                 <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
-                <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +31,7 @@
         <div class="challenge-intro">
             <h1><i class="fas fa-trophy"></i> Challenge Aléatoire AWS CCP</h1>
             <p class="challenge-description">
-                Testez vos connaissances avec 65 questions sélectionnées aléatoirement parmi plus de 350 questions.
+                Testez vos connaissances avec 65 questions sélectionnées aléatoirement parmi plus de 1257 questions.
                 Chaque tentative génère un test unique !
             </p>
 
@@ -106,11 +102,15 @@
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> contact@awsccppractice.com</p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
+                </p>
+
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Arouna-SIDIBE/aws-ccp-practice" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -118,6 +118,54 @@
 
     <script src="data.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let history = [];
+            try {
+                history = JSON.parse(localStorage.getItem('testHistory') || '[]');
+            } catch (e) {
+                history = [];
+            }
+            const challenges = history.filter(h => h.examId === 'challenge');
+
+            const statsEl = document.getElementById('challengeStats');
+            if (statsEl) {
+                if (challenges.length === 0) {
+                    statsEl.innerHTML = '<p>Commence ton premier challenge pour voir tes statistiques ici.</p>';
+                } else {
+                    const total = challenges.length;
+                    const avg = Math.round(challenges.reduce((s, c) => s + c.score, 0) / total);
+                    const best = Math.max(...challenges.map(c => c.score));
+                    statsEl.innerHTML = `
+                        <div class="challenge-info">
+                            <div class="info-card"><h3>${total}</h3><p>Challenges tentés</p></div>
+                            <div class="info-card"><h3>${avg}%</h3><p>Score moyen</p></div>
+                            <div class="info-card"><h3>${best}%</h3><p>Meilleur score</p></div>
+                        </div>
+                    `;
+                }
+            }
+
+            const recentEl = document.getElementById('recentChallenges');
+            if (recentEl) {
+                if (challenges.length === 0) {
+                    recentEl.innerHTML = '<p>Aucun challenge complété pour le moment.</p>';
+                } else {
+                    const last = challenges.slice(-5).reverse();
+                    recentEl.innerHTML = last.map(c => {
+                        const d = new Date(c.date).toLocaleDateString('fr-FR');
+                        const cls = c.score >= 70 ? 'passed' : 'failed';
+                        return `
+                            <div class="history-item">
+                                <p><strong>${d}</strong> — Score : <span class="score-status ${cls}">${c.score}%</span> (${c.correctAnswers}/${c.totalQuestions})</p>
+                                <p>Temps : ${c.timeSpent}</p>
+                            </div>
+                        `;
+                    }).join('');
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -50,33 +50,46 @@ function startChallenge() {
             allQuestions = allQuestions.concat(exam.questions);
         }
     });
-    
+
     if (allQuestions.length < 65) {
         alert("Pas assez de questions disponibles pour le challenge");
         return;
     }
-    
+
     // Mélanger les questions
     for (let i = allQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
     }
-    
+
+    const selectedQuestions = allQuestions.slice(0, 65);
+
     currentTest = {
         id: 'challenge',
         name: 'Challenge Aléatoire',
         description: '65 questions sélectionnées aléatoirement',
         questionCount: 65,
         duration: 110,
-        questions: allQuestions.slice(0, 65)
+        questions: selectedQuestions
     };
-    
+
     currentQuestionIndex = 0;
     userAnswers = {};
     timeSpent = 0;
     testStartTime = Date.now();
-    
-    saveProgress();
+
+    // Sauvegarder les IDs des questions pour pouvoir restaurer le même set
+    // au reload (sinon les réponses sauvegardées ne correspondraient plus).
+    const progress = {
+        examId: 'challenge',
+        startTime: testStartTime,
+        questionIndex: 0,
+        answers: {},
+        timeSpent: 0,
+        challengeQuestionIds: selectedQuestions.map(q => q.id)
+    };
+    localStorage.setItem('currentTest', JSON.stringify(progress));
+
     window.location.href = 'test.html';
 }
 
@@ -265,6 +278,35 @@ function updateNavigationButtons() {
     }
 }
 
+// Grille de navigation des questions (page test.html)
+function generateQuestionGrid() {
+    const grid = document.getElementById('questionGrid');
+    if (!grid || !currentTest) return;
+
+    let html = '';
+    for (let i = 0; i < currentTest.questionCount; i++) {
+        const isAnswered = userAnswers[i] && userAnswers[i].length > 0;
+        const isCurrent = i === currentQuestionIndex;
+        const questionClass = isCurrent ? 'grid-item current' :
+            isAnswered ? 'grid-item answered' : 'grid-item';
+
+        html += `
+            <div class="${questionClass}" onclick="goToQuestion(${i})">
+                ${i + 1}
+            </div>
+        `;
+    }
+
+    grid.innerHTML = html;
+}
+
+function goToQuestion(index) {
+    currentQuestionIndex = index;
+    displayQuestion(index);
+    generateQuestionGrid();
+    saveProgress();
+}
+
 function submitTest() {
     stopTimer();
     
@@ -331,12 +373,43 @@ function submitTest() {
         questions: currentTest.questions
     };
     
-    let history = JSON.parse(localStorage.getItem('testHistory') || '[]');
-    history.push(testResult);
-    localStorage.setItem('testHistory', JSON.stringify(history));
-    
+    // Sauvegarder les résultats (limité aux 20 derniers pour éviter de saturer le localStorage)
+    let history = [];
+    try {
+        history = JSON.parse(localStorage.getItem('testHistory') || '[]');
+    } catch (e) {
+        history = [];
+    }
+    // Version allégée pour l'historique (sans les questions complètes)
+    const historyEntry = {
+        examId: testResult.examId,
+        examName: testResult.examName,
+        date: testResult.date,
+        score: testResult.score,
+        correctAnswers: testResult.correctAnswers,
+        totalQuestions: testResult.totalQuestions,
+        timeSpent: testResult.timeSpent
+    };
+    history.push(historyEntry);
+    // Garder seulement les 20 derniers
+    if (history.length > 20) {
+        history = history.slice(-20);
+    }
+    try {
+        localStorage.setItem('testHistory', JSON.stringify(history));
+    } catch (e) {
+        // Quota dépassé : on tronque plus agressivement
+        localStorage.setItem('testHistory', JSON.stringify(history.slice(-10)));
+    }
+
     localStorage.removeItem('currentTest');
-    localStorage.setItem('lastTestResult', JSON.stringify(testResult));
+    try {
+        localStorage.setItem('lastTestResult', JSON.stringify(testResult));
+    } catch (e) {
+        // Si trop volumineux, on stocke une version sans les questions complètes
+        const light = { ...testResult, questions: undefined };
+        localStorage.setItem('lastTestResult', JSON.stringify(light));
+    }
     window.location.href = 'results.html';
 }
 
@@ -588,25 +661,30 @@ document.addEventListener('DOMContentLoaded', function() {
             const examId = testData.examId;
             
             if (examId === 'challenge') {
-                let allQuestions = [];
+                // Restaurer exactement les mêmes questions que celles générées au démarrage.
+                const savedIds = testData.challengeQuestionIds || [];
+                const questionsById = new Map();
                 allExams.forEach(exam => {
-                    if (exam.questions && exam.questions.length > 0) {
-                        allQuestions = allQuestions.concat(exam.questions);
-                    }
+                    (exam.questions || []).forEach(q => questionsById.set(q.id, q));
                 });
-                
-                for (let i = allQuestions.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+                const restored = savedIds
+                    .map(id => questionsById.get(id))
+                    .filter(Boolean);
+
+                if (restored.length !== 65) {
+                    // Fallback : données corrompues, on redémarre
+                    localStorage.removeItem('currentTest');
+                    window.location.href = 'challenge.html';
+                    return;
                 }
-                
+
                 currentTest = {
                     id: 'challenge',
                     name: 'Challenge Aléatoire',
                     description: '65 questions sélectionnées aléatoirement',
                     questionCount: 65,
                     duration: 110,
-                    questions: allQuestions.slice(0, 65)
+                    questions: restored
                 };
             } else {
                 const exam = allExams.find(e => e.id === parseInt(examId));
@@ -614,19 +692,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     currentTest = exam;
                 }
             }
-            
+
             if (currentTest) {
                 currentQuestionIndex = testData.questionIndex || 0;
                 userAnswers = testData.answers || {};
                 testStartTime = testData.startTime || Date.now();
-                
+
                 displayQuestion(currentQuestionIndex);
-                
+                generateQuestionGrid();
+
                 const testTitle = document.getElementById('testTitle');
                 const examName = document.getElementById('examName');
                 if (testTitle) testTitle.textContent = currentTest.name;
                 if (examName) examName.textContent = currentTest.name;
-                
+
                 startTimer();
             } else {
                 window.location.href = 'tests.html';
@@ -681,3 +760,5 @@ window.submitTest = submitTest;
 window.selectOption = selectOption;
 window.retryTest = retryTest;
 window.toggleReview = toggleReview;
+window.generateQuestionGrid = generateQuestionGrid;
+window.goToQuestion = goToQuestion;
