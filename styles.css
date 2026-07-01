@@ -1845,3 +1845,28 @@ body {
     margin-bottom: 0;
 }
 }
+/* Accessibilité : skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    z-index: 2000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus visible sur les éléments interactifs */
+.option:focus-visible,
+.grid-item:focus-visible,
+.review-grid-item:focus-visible,
+.btn:focus-visible,
+.nav-btn:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}

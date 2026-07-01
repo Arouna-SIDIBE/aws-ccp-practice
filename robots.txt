@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arouna-sidibe.github.io/aws-ccp-practice/sitemap.xml

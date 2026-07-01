@@ -9,6 +9,18 @@ let timeSpent = 0;
 // Utiliser allExams si disponible
 let exams = typeof allExams !== 'undefined' ? allExams : [];
 
+// Échappe le HTML pour empêcher toute injection quand on rend du contenu
+// dans innerHTML (défense en profondeur, même si nos données viennent du repo).
+function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // Fonction pour sauvegarder l'état du test
 function saveProgress() {
     if (!currentTest) return;
@@ -154,20 +166,22 @@ function displayQuestion(index) {
                     '<span class="multiple-choice"><i class="fas fa-check-double"></i> Choix multiple</span>' : ''}
             </div>
             
-            <div class="question-text">${question.text}</div>
-            
+            <div class="question-text">${escapeHtml(question.text)}</div>
+
             <div class="options-container">
     `;
-    
+
     if (question.options && question.options.length > 0) {
         question.options.forEach((option) => {
             const isSelected = userAnswers[index] && userAnswers[index].includes(option.letter);
             const optionClass = isSelected ? 'option selected' : 'option';
-            
+
             html += `
-                <div class="${optionClass}" onclick="selectOption(${index}, '${option.letter}')">
-                    <span class="option-label">${option.letter}.</span>
-                    <span class="option-text">${option.text}</span>
+                <div class="${optionClass}" role="button" tabindex="0"
+                     onclick="selectOption(${index}, '${escapeHtml(option.letter)}')"
+                     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(${index}, '${escapeHtml(option.letter)}')}">
+                    <span class="option-label">${escapeHtml(option.letter)}.</span>
+                    <span class="option-text">${escapeHtml(option.text)}</span>
                 </div>
             `;
         });
@@ -291,7 +305,9 @@ function generateQuestionGrid() {
             isAnswered ? 'grid-item answered' : 'grid-item';
 
         html += `
-            <div class="${questionClass}" onclick="goToQuestion(${i})">
+            <div class="${questionClass}" role="button" tabindex="0"
+                 onclick="goToQuestion(${i})"
+                 onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();goToQuestion(${i})}">
                 ${i + 1}
             </div>
         `;
@@ -530,7 +546,7 @@ function generateResultsDetails(results) {
                     <span class="review-score">${statusText}</span>
                 </div>
                 
-                <div class="review-question">${item.question}</div>
+                <div class="review-question">${escapeHtml(item.question)}</div>
                 
                 <div class="review-answers-grid">
                     <div class="review-answer user-answer">
