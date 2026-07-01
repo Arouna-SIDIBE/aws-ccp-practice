@@ -1,5 +1,10 @@
 # AWS CCP Practice Platform
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Questions](https://img.shields.io/badge/questions-1257%2B-orange)](questions/fr/)
+[![Examens](https://img.shields.io/badge/examens-25-blue)](questions/fr/)
+[![Site](https://img.shields.io/badge/site-online-brightgreen)](https://arouna-sidibe.github.io/aws-ccp-practice/)
+
 ## 🌐 Vue d'ensemble
 
 **AWS CCP Practice** est une plateforme web interactive 100% française de préparation à la certification **AWS Certified Cloud Practitioner**. Développée initialement pour accompagner ma formation à l'Orange Digital Center (ODC) du Mali, cette plateforme est désormais ouverte à tous les apprenants souhaitant tester et renforcer leurs connaissances sur AWS.
@@ -277,6 +282,23 @@ Ce projet a été initié dans le cadre de ma formation en cloud computing à l'
 - **Pour la communauté** : Contribution à l'écosystème éducatif AWS francophone
 - **Pour les formateurs** : Outil complémentaire pour les formations en français
 
+## Contribuer
+
+Les contributions de la communauté sont bienvenues : corrections de
+traductions, ajout de questions, corrections de bugs, améliorations
+d'accessibilité, tout est utile. Lis le guide [CONTRIBUTING.md](CONTRIBUTING.md)
+pour démarrer.
+
+## Développement local
+
+    git clone https://github.com/Arouna-SIDIBE/aws-ccp-practice.git
+    cd aws-ccp-practice
+    npm run serve
+
+Pour régénérer `data.js` après modification des `.md` :
+
+    npm run check
+
 ## 🤝 Contribution
 
 ### Format des contributions
@@ -338,3 +360,9 @@ Pour toute question, suggestion ou problème :
 
 ---
 **Note sur la langue** : Cette plateforme est entièrement en français. Pour une version anglaise, utilisez la fonction de traduction de votre navigateur ou contribuez à la traduction du projet.
+
+## Licence
+
+MIT — voir [LICENSE](LICENSE). Les questions QCM sont adaptées et traduites
+depuis [AWS-Certified-Cloud-Practitioner-Notes](https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes)
+(Kanani Nirav).
