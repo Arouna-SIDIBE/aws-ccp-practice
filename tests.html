@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examens AWS CCP - AWS CCP Practice</title>
+    <meta name="description" content="Préparation gratuite à la certification AWS Certified Cloud Practitioner en français. 1257+ questions, 25 examens complets, mode challenge et mode révision.">
+    <meta name="author" content="Arouna SIDIBE">
+    <meta name="theme-color" content="#232F3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AWS CCP Practice — Préparation 100% française">
+    <meta property="og:description" content="1257+ questions, 25 examens, mode challenge et révision pour réussir la certification AWS Cloud Practitioner.">
+    <meta property="og:url" content="https://arouna-sidibe.github.io/aws-ccp-practice/">
+    <meta property="og:image" content="https://arouna-sidibe.github.io/aws-ccp-practice/favicon.svg">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AWS CCP Practice — Préparation 100% française">
+    <meta name="twitter:description" content="1257+ questions, 25 examens, mode challenge et révision.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -26,12 +38,11 @@
                 <li><a href="tests.html" class="active"><i class="fas fa-file-alt"></i> Examens</a></li>
                 <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
                 <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
-                <li><a href="#stats"><i class="fas fa-chart-bar"></i> Statistiques</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="test-container">
+    <div class="test-container" id="main">
         <h1>Examens Pratiques AWS CCP</h1>
         <p>Sélectionnez un examen pour commencer votre préparation</p>
 
@@ -73,8 +84,8 @@
         </div>
     </footer>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
     <script>
         // Charger la liste des examens
         document.addEventListener('DOMContentLoaded', function () {
@@ -120,26 +131,6 @@
                 examsGrid.innerHTML = html;
             }
         });
-
-        // Fonction pour démarrer un examen
-        function startExam(examId) {
-            // Sauvegarder les informations du test
-            const testData = {
-                examId: examId,
-                startTime: Date.now(),
-                answers: {},
-                questionIndex: 0
-            };
-
-            localStorage.setItem('currentTest', JSON.stringify(testData));
-
-            // Rediriger vers la page de test
-            window.location.href = 'test.html';
-        }
-
-        // Exposer les fonctions au scope global
-        window.startExam = startExam;
-        window.startChallenge = startChallenge;
     </script>
 </body>
 

@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Régénérer data.js
+        run: node convert.js
+      - name: Vérifier l'intégrité des données
+        run: node scripts/verify-data.js
+      - name: Vérifier qu'aucun fichier n'a été oublié
+        run: |
+          if [ -n "$(git status --porcelain data.js)" ]; then
+            echo "data.js n'est pas à jour. Lance 'npm run build' et commit."
+            git diff data.js | head -50
+            exit 1
+          fi

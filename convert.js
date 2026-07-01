@@ -397,7 +397,7 @@ function convertAllExams() {
     
     // Générer le fichier data.js
     const jsContent = `// Structure de données générée automatiquement
-// Date: ${new Date().toISOString().split('T')[0]}
+// Fichier régénérable via : node convert.js
 // Examens: ${allExams.length}
 // Questions: ${totalQuestions}
 

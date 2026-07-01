@@ -1,5 +1,5 @@
 // Structure de données générée automatiquement
-// Date: 2026-01-19
+// Fichier régénérable via : node convert.js
 // Examens: 25
 // Questions: 1257
 

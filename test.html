@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test AWS CCP - En cours</title>
+    <meta name="description" content="Préparation gratuite à la certification AWS Certified Cloud Practitioner en français. 1257+ questions, 25 examens complets, mode challenge et mode révision.">
+    <meta name="author" content="Arouna SIDIBE">
+    <meta name="theme-color" content="#232F3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AWS CCP Practice — Préparation 100% française">
+    <meta property="og:description" content="1257+ questions, 25 examens, mode challenge et révision pour réussir la certification AWS Cloud Practitioner.">
+    <meta property="og:url" content="https://arouna-sidibe.github.io/aws-ccp-practice/">
+    <meta property="og:image" content="https://arouna-sidibe.github.io/aws-ccp-practice/favicon.svg">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AWS CCP Practice — Préparation 100% française">
+    <meta name="twitter:description" content="1257+ questions, 25 examens, mode challenge et révision.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
     <!-- Navigation simplifiée pour le test -->
     <nav class="navbar">
         <div class="nav-container">
@@ -25,7 +37,7 @@
         </div>
     </nav>
 
-    <div class="test-container">
+    <div class="test-container" id="main">
         <!-- En-tête du test -->
         <div class="test-header">
             <div>
@@ -91,139 +103,20 @@
         </div>
     </div>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
     <script>
-        function generateQuestionGrid() {
-            const grid = document.getElementById('questionGrid');
-            if (!grid || !currentTest) return;
-
-            let html = '';
-            for (let i = 0; i < currentTest.questionCount; i++) {
-                const isAnswered = userAnswers[i] && userAnswers[i].length > 0;
-                const isCurrent = i === currentQuestionIndex;
-                const questionClass = isCurrent ? 'grid-item current' :
-                    isAnswered ? 'grid-item answered' : 'grid-item';
-
-                html += `
-                    <div class="${questionClass}" onclick="goToQuestion(${i})">
-                        ${i + 1}
-                    </div>
-                `;
-            }
-
-            grid.innerHTML = html;
-        }
-
-        function goToQuestion(index) {
-            currentQuestionIndex = index;
-            displayQuestion(index);
-            generateQuestionGrid();
-            saveProgress();
-        }
-
         function showSubmitModal() {
             document.getElementById('submitModal').style.display = 'flex';
             updateProgress();
         }
-
         function closeModal() {
             document.getElementById('submitModal').style.display = 'none';
         }
-
         function confirmSubmit() {
             closeModal();
             submitTest();
         }
-
-        // Initialisation spécifique à la page de test
-        document.addEventListener('DOMContentLoaded', function () {
-            // Restaurer le test depuis le localStorage
-            const savedTest = localStorage.getItem('currentTest');
-
-            if (!savedTest) {
-                // Pas de test en cours, rediriger vers la page des examens
-                window.location.href = 'tests.html';
-                return;
-            }
-
-            const testData = JSON.parse(savedTest);
-            const examId = testData.examId;
-
-            // Trouver l'examen dans allExams
-            if (examId === 'challenge') {
-                // Pour le challenge, on doit recréer les questions
-                let allQuestions = [];
-                allExams.forEach(exam => {
-                    if (exam.questions && exam.questions.length > 0) {
-                        allQuestions = allQuestions.concat(exam.questions);
-                    }
-                });
-
-                // Mélanger les questions (pour avoir les mêmes qu'à la création)
-                // Note: Pour garder la cohérence, on devrait sauvegarder les questions du challenge
-                // Pour l'instant, on les recrée de la même manière
-                for (let i = allQuestions.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
-                }
-
-                currentTest = {
-                    id: 'challenge',
-                    name: 'Challenge Aléatoire',
-                    description: '65 questions sélectionnées aléatoirement',
-                    questionCount: 65,
-                    duration: 110,
-                    questions: allQuestions.slice(0, 65)
-                };
-            } else {
-                const exam = allExams.find(e => e.id === parseInt(examId));
-                if (!exam) {
-                    window.location.href = 'tests.html';
-                    return;
-                }
-                currentTest = exam;
-            }
-
-            if (currentTest) {
-                // Restaurer les données
-                currentQuestionIndex = testData.questionIndex || 0;
-                userAnswers = testData.answers || {};
-                testStartTime = testData.startTime || Date.now();
-
-                // Si le test a été commencé il y a longtemps, ajuster le temps
-                if (testData.startTime) {
-                    const timeSinceStart = Date.now() - testData.startTime;
-                    // Si plus de 24h, réinitialiser
-                    if (timeSinceStart > 24 * 60 * 60 * 1000) {
-                        testStartTime = Date.now();
-                    }
-                }
-
-                // Afficher la question actuelle
-                displayQuestion(currentQuestionIndex);
-
-                // Mettre à jour le titre
-                const testTitle = document.getElementById('testTitle');
-                const examName = document.getElementById('examName');
-                if (testTitle) testTitle.textContent = currentTest.name;
-                if (examName) examName.textContent = currentTest.name;
-
-                // Démarrer le chronomètre
-                startTimer();
-
-                // Générer la grille de navigation des questions
-                generateQuestionGrid();
-            } else {
-                window.location.href = 'tests.html';
-            }
-        });
-
-        // Exposer les fonctions au scope global
-        window.prevQuestion = prevQuestion;
-        window.nextQuestion = nextQuestion;
-        window.submitTest = submitTest;
-        window.goToQuestion = goToQuestion;
         window.showSubmitModal = showSubmitModal;
         window.closeModal = closeModal;
         window.confirmSubmit = confirmSubmit;

@@ -1,0 +1,37 @@
+# Dépendances Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# Fichiers de test / couverture
+coverage/
+.nyc_output/
+
+# Éditeurs et OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.cache/
+
+# Note : data.js est volontairement versionné pour que GitHub Pages
+# puisse servir le site sans étape de build.
