@@ -1,0 +1,37 @@
+{
+  "name": "aws-ccp-practice",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Plateforme web 100% française de préparation à la certification AWS Certified Cloud Practitioner. 1257+ questions, 25 examens, mode challenge et révision.",
+  "keywords": [
+    "aws",
+    "certification",
+    "cloud-practitioner",
+    "ccp",
+    "qcm",
+    "practice-exam",
+    "francais",
+    "afrique",
+    "mali",
+    "orange-digital-center"
+  ],
+  "homepage": "https://arouna-sidibe.github.io/aws-ccp-practice/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arouna-SIDIBE/aws-ccp-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arouna-SIDIBE/aws-ccp-practice/issues"
+  },
+  "author": "Arouna SIDIBE <arousidibe20@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node convert.js",
+    "verify": "node scripts/verify-data.js",
+    "check": "node convert.js && node scripts/verify-data.js",
+    "serve": "npx --yes http-server . -p 8080 -c-1 -o"
+  }
+}
