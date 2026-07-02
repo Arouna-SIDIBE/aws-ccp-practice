@@ -108,10 +108,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Fournir une compensation aux clients en cas de problèmes."
+          },
+          {
+            "letter": "E",
+            "text": "Capacité à récupérer rapidement après des défaillances."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Provisionner automatiquement de nouvelles ressources pour répondre à la demande</strong> : L'élasticité est un principe clé de la fiabilité, permettant au système de s'adapter à la charge.</li><li><strong>E. Capacité à récupérer rapidement après des défaillances</strong> : La capacité de résilience et de reprise après sinistre est au cœur de la fiabilité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Appliquer le principe du moindre privilège</strong> : Il s'agit d'un principe de sécurité, pas de fiabilité.</li><li><strong>C. Tous les services AWS sont considérés comme des services globaux</strong> : Ce n'est pas vrai. De nombreux services sont régionaux. Même si certains services sont globaux, cela relève plus de la portée mondiale que de la fiabilité intrinsèque.</li><li><strong>D. Fournir une compensation aux clients</strong> : Il s'agit d'une clause de niveau de service (SLA), pas d'une caractéristique de fiabilité architecturale.</li></ul></div>"
       },
@@ -212,10 +217,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un service de transfert de données à l'échelle de l'exaoctet qui vous permet de déplacer des quantités extrêmement importantes de données vers AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Transfert sécurisé de grandes quantités de données vers et depuis AWS."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Des capacités de calcul intégrées qui permettent aux clients de traiter des données localement</strong> : AWS Snowball Edge (une variante) offre des capacités de calcul en bordure (edge computing) pour le prétraitement des données.</li><li><strong>E. Transfert sécurisé de grandes quantités de données vers et depuis AWS</strong> : Snowball est un service de transfert de données physique sécurisé pour déplacer des téraoctets ou des pétaoctets de données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Un catalogue de solutions logicielles tierces</strong> : C'est la description d'AWS Marketplace, pas de Snowball.</li><li><strong>C. Un stockage cloud hybride entre les environnements sur site et le cloud AWS</strong> : C'est plutôt le rôle d'AWS Storage Gateway.</li><li><strong>D. Un service de transfert de données à l'échelle de l'exaoctet</strong> : Cela décrit AWS Snowmobile (camion), pas Snowball (appareil plus petit). Snowball est adapté aux pétaoctets, Snowmobile aux exaoctets.</li></ul></div>"
       },
@@ -368,10 +378,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Exploiter des applications pour le compte des clients."
+          },
+          {
+            "letter": "E",
+            "text": "Toute la sécurité physique et la plupart de la sécurité des données/réseau sont prises en charge pour vous."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Augmenter la vitesse et l'agilité</strong> : AWS permet de provisionner des ressources en quelques minutes, accélérant ainsi l'innovation et le time-to-market.</li><li><strong>E. Toute la sécurité physique et la plupart de la sécurité des données/réseau sont prises en charge pour vous</strong> : Selon le modèle de responsabilité partagée, AWS est responsable de la sécurité <em>du</em> cloud (infrastructure physique, réseau sous-jacent, virtualisation). Le client est responsable de la sécurité <em>dans</em> le cloud (données, applications, configurations de sécurité).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Pas besoin de se soucier de la sécurité</strong> : Faux. Le client doit toujours se soucier de la sécurité de ses applications, données et configurations. La sécurité est une responsabilité partagée.</li><li><strong>C. Obtenir un contrôle total sur l'infrastructure physique</strong> : C'est l'inverse. AWS gère l'infrastructure physique, le client bénéficie d'une abstraction.</li><li><strong>D. Exploiter des applications pour le compte des clients</strong> : AWS fournit l'infrastructure et les services, mais c'est au client de déployer et d'exploiter ses applications.</li></ul></div>"
       },
@@ -472,6 +487,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Stocker une sauvegarde quotidienne sur un disque externe."
+          },
+          {
+            "letter": "E",
+            "text": "Empêcher tout accès non autorisé aux datacenters AWS."
           }
         ],
         "correctAnswers": [
@@ -525,6 +544,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer AWS CloudTrail pour supprimer automatiquement toutes les ressources AWS lorsque le seuil est dépassé."
+          },
+          {
+            "letter": "E",
+            "text": "Configurer le service Amazon Connect pour alerter l'entreprise lorsque le seuil est dépassé."
           }
         ],
         "correctAnswers": [
@@ -682,6 +705,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS WAF."
+          },
+          {
+            "letter": "E",
+            "text": "AWS KMS."
           }
         ],
         "correctAnswers": [
@@ -839,6 +866,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS IAM."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Elastic Compute Cloud."
           }
         ],
         "correctAnswers": [
@@ -996,6 +1027,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gestion de la configuration (Configuration Management)."
+          },
+          {
+            "letter": "E",
+            "text": "Opérations du centre de données."
           }
         ],
         "correctAnswers": [
@@ -1023,6 +1058,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "ECR."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EC2."
           }
         ],
         "correctAnswers": [
@@ -1154,10 +1193,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un tableau de bord détaillant les vulnérabilités dans vos applications."
+          },
+          {
+            "letter": "E",
+            "text": "Une vue personnalisée de l'état de santé des services AWS."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Des conseils de dépannage détaillés pour résoudre les événements AWS impactant vos ressources</strong> : AWS Health fournit des informations spécifiques et des conseils d'action lorsqu'un événement AWS affecte vos ressources.</li><li><strong>E. Une vue personnalisée de l'état de santé des services AWS</strong> : Il offre une vue personnalisée de l'état de performance et de disponibilité des services AWS que vous utilisez, avec des alertes et des notifications.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Des contrôles de santé pour les instances Auto Scaling</strong> : Ces contrôles sont effectués par le service Auto Scaling lui-même ou par un ELB, pas par AWS Health.</li><li><strong>C. Des recommandations pour l'optimisation des coûts</strong> : C'est le rôle d'AWS Trusted Advisor ou AWS Cost Explorer.</li><li><strong>D. Un tableau de bord détaillant les vulnérabilités dans vos applications</strong> : C'est le rôle de services comme Amazon Inspector ou AWS Security Hub.</li></ul></div>"
       },
@@ -1232,6 +1276,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon S3 peut être mis à l'échelle manuellement pour stocker et récupérer n'importe quelle quantité de données de n'importe où."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon S3 fournit une durabilité des données de 99,999999999 % (11 9)."
           }
         ],
         "correctAnswers": [
@@ -1259,10 +1307,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Définition des règles de complexité des mots de passe."
+          },
+          {
+            "letter": "E",
+            "text": "Configuration des règles d'accès réseau."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Définition des règles de complexité des mots de passe</strong> : Le client est responsable de la politique de mots de passe pour ses utilisateurs IAM.</li><li><strong>E. Configuration des règles d'accès réseau</strong> : Le client est responsable de la configuration des groupes de sécurité (Security Groups) et des listes de contrôle d'accès réseau (NACLs) pour contrôler le trafic.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Destruction des disques</strong> : AWS est responsable de la destruction sécurisée des supports de stockage physiques en fin de vie.</li><li><strong>B. Contrôle de l'accès physique aux ressources de calcul</strong> : C'est la responsabilité d'AWS (sécurité des centres de données).</li><li><strong>C. Application des correctifs sur l'infrastructure réseau</strong> : AWS est responsable de la mise à jour et de la maintenance de l'infrastructure réseau physique.</li></ul></div>"
       },
@@ -1502,6 +1555,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudWatch."
+          },
+          {
+            "letter": "E",
+            "text": "Équipe de support Concierge."
           }
         ],
         "correctAnswers": [
@@ -1685,6 +1742,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tests de pénétration."
+          },
+          {
+            "letter": "E",
+            "text": "Mise à l'échelle verticale."
           }
         ],
         "correctAnswers": [
@@ -1738,10 +1799,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "S'assurer que l'hôte EC2 sous-jacent est correctement configuré."
+          },
+          {
+            "letter": "E",
+            "text": "Appliquer des correctifs aux applications installées sur Amazon EC2."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Protéger la confidentialité des données en transit dans Amazon S3</strong> : Le client est responsable du chiffrement des données en transit (par exemple, en utilisant HTTPS).</li><li><strong>E. Appliquer des correctifs aux applications installées sur Amazon EC2</strong> : Le client est responsable de la gestion du système d'exploitation invité et des applications.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Gérer les événements environnementaux des centres de données AWS</strong> : Responsabilité d'AWS.</li><li><strong>C. Contrôler l'accès physique aux régions AWS</strong> : Responsabilité d'AWS.</li><li><strong>D. S'assurer que l'hôte EC2 sous-jacent est correctement configuré</strong> : Responsabilité d'AWS (infrastructure sous-jacente).</li></ul></div>"
       },
@@ -1764,10 +1830,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EC2."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Amazon EC2</strong> : Service de calcul élastique qui fournit des instances virtuelles serveurs.</li><li><strong>E. AWS Lambda</strong> : Service de calcul sans serveur qui exécute du code en réponse à des événements.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon VPC</strong> : Service de réseau virtuel, pas de calcul.</li><li><strong>B. Amazon CloudWatch</strong> : Service de surveillance, pas de calcul.</li><li><strong>C. Amazon S3</strong> : Service de stockage d'objets, pas de calcul.</li></ul></div>"
       },
@@ -1946,10 +2017,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Automatisez autant que possible."
+          },
+          {
+            "letter": "E",
+            "text": "Supprimez les points de défaillance uniques."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Automatisez autant que possible</strong> : L'automatisation permet la reproductibilité, la rapidité et la réduction des erreurs humaines.</li><li><strong>E. Supprimez les points de défaillance uniques</strong> : Concevez des architectures redondantes pour garantir la haute disponibilité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Utilisez toujours des services globaux...</strong> : Les services régionaux sont souvent nécessaires pour la latence, la conformité, etc. Le choix dépend des besoins.</li><li><strong>B. Choisissez toujours de payer à l'usage</strong> : Bien que le paiement à l'usage soit un avantage du cloud, d'autres modèles (comme les instances réservées) peuvent être plus économiques pour des charges de travail stables.</li><li><strong>C. Traitez les serveurs comme des ressources fixes</strong> : C'est l'opposé de la mentalité cloud ; traitez les serveurs comme du bétail, pas comme des animaux de compagnie (disposables).</li></ul></div>"
       },
@@ -2076,10 +2152,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configuration des listes de contrôle d'accès (ACL)."
+          },
+          {
+            "letter": "E",
+            "text": "Maintenance matérielle."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Création d'hyperviseurs</strong> : AWS est responsable de l'infrastructure de virtualisation (hyperviseur).</li><li><strong>E. Maintenance matérielle</strong> : AWS est responsable de la maintenance du matériel physique dans les centres de données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Surveillance des performances réseau</strong> : Partagé. AWS surveille le réseau sous-jacent, mais le client surveille son propre trafic réseau et ses configurations.</li><li><strong>B. Installation de logiciels sur les instances EC2</strong> : Responsabilité du client (système d'exploitation invité et applications).</li><li><strong>D. Configuration des listes de contrôle d'accès (ACL)</strong> : Le client configure les NACL (Network ACL) dans son VPC.</li></ul></div>"
       },
@@ -2180,6 +2261,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Ressources de calcul virtualisées."
+          },
+          {
+            "letter": "E",
+            "text": "Hébergement dédié."
           }
         ],
         "correctAnswers": [
@@ -2207,10 +2292,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Mise à jour corrective du matériel."
+          },
+          {
+            "letter": "E",
+            "text": "Sécurisation de l'infrastructure physique mondiale."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Mise à jour corrective du matériel</strong> : AWS est responsable de la mise à jour du matériel physique.</li><li><strong>E. Sécurisation de l'infrastructure physique mondiale</strong> : AWS est responsable de la sécurité physique des centres de données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Chiffrement des volumes EBS</strong> : Le client doit activer et gérer le chiffrement EBS (bien qu'AWS fournisse le service de clés).</li><li><strong>B. Sécurité VPC</strong> : Le client est responsable de la configuration des groupes de sécurité, NACL, etc.</li><li><strong>C. Autorisations d'accès</strong> : Le client gère les politiques IAM pour contrôler les accès.</li></ul></div>"
       },
@@ -2285,10 +2375,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS X-Ray."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Config."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. AWS CloudTrail</strong> : Enregistre l'historique des appels d'API et des actions de gestion pour la gouvernance, la conformité et l'audit.</li><li><strong>E. AWS Config</strong> : Évalue, audite et évalue la configuration des ressources, et enregistre les changements de configuration au fil du temps.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon Comprehend</strong> : Service de traitement du langage naturel (NLP) pour extraire des informations.</li><li><strong>C. AWS Transit Gateway</strong> : Service de réseau pour connecter plusieurs VPC.</li><li><strong>D. AWS X-Ray</strong> : Service de traçage distribué pour les applications.</li></ul></div>"
       },
@@ -2389,6 +2484,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "CloudFormation."
+          },
+          {
+            "letter": "E",
+            "text": "Network ACLs."
           }
         ],
         "correctAnswers": [
@@ -2494,10 +2593,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Glue."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon CloudFront."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS Global Accelerator</strong> : Dirige le trafic utilisateur vers le point de terminaison AWS optimal en utilisant le réseau mondial d'AWS, améliorant ainsi les performances et la disponibilité.</li><li><strong>E. Amazon CloudFront</strong> : CDN qui diffuse le contenu depuis des emplacements périphériques proches des utilisateurs, réduisant la latence.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS KMS</strong> : Service de gestion des clés de chiffrement.</li><li><strong>C. AWS Direct Connect</strong> : Connexion réseau dédiée entre votre datacenter et AWS, n'améliore pas directement la latence pour les utilisateurs mondiaux.</li><li><strong>D. AWS Glue</strong> : Service d'intégration de données (ETL).</li></ul></div>"
       },
@@ -2520,6 +2624,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Appliquer des correctifs au logiciel de base de données."
+          },
+          {
+            "letter": "E",
+            "text": "Installer le logiciel de base de données."
           }
         ],
         "correctAnswers": [
@@ -2660,6 +2768,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon ECS."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EMR."
           }
         ],
         "correctAnswers": [
@@ -2817,10 +2929,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EBS."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon DynamoDB."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Amazon Simple Storage Service (S3)</strong> : Conçu pour une durabilité de 99,999999999% (11 9) et une disponibilité de 99,99% en stockant les données sur plusieurs installations et dispositifs dans une région.</li><li><strong>E. Amazon DynamoDB</strong> : Base de données NoSQL entièrement gérée qui réplique automatiquement les données sur trois zones de disponibilité dans une région.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon Redshift</strong> : Entrepôt de données qui peut être configuré pour la haute disponibilité, mais nécessite une configuration manuelle (comme le déploiement multi-AZ).</li><li><strong>B. AWS Snowball</strong> : Appareil de transfert de données physique, pas un service cloud avec tolérance aux pannes native.</li><li><strong>D. Amazon EBS</strong> : Les volumes EBS sont liés à une zone de disponibilité spécifique. Pour la tolérance aux pannes, vous devez créer des snapshots et les restaurer dans une autre AZ.</li></ul></div>"
       },
@@ -2843,6 +2960,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Réplicas de lecture."
+          },
+          {
+            "letter": "E",
+            "text": "Emplacements périphériques."
           }
         ],
         "correctAnswers": [
@@ -3000,6 +3121,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Bases de données actives."
+          },
+          {
+            "letter": "E",
+            "text": "Données en cache."
           }
         ],
         "correctAnswers": [
@@ -3079,10 +3204,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Contrôles environnementaux."
+          },
+          {
+            "letter": "E",
+            "text": "Contrôles physiques."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Contrôles environnementaux</strong> : AWS est responsable des contrôles environnementaux (climatisation, alimentation, etc.) dans les centres de données.</li><li><strong>E. Contrôles physiques</strong> : AWS est responsable de la sécurité physique des centres de données (accès, surveillance, etc.).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Contrôles de gestion des correctifs</strong> : Partagé. AWS corrige l'infrastructure sous-jacente, le client corrige le système d'exploitation invité et les applications.</li><li><strong>B. Contrôles de base de données</strong> : Partagé. Pour un service managé comme RDS, AWS corrige le moteur de base de données, mais le client est responsable de la configuration et des données.</li><li><strong>C. Sensibilisation et formation</strong> : Responsabilité du client.</li></ul></div>"
       },
@@ -3157,10 +3287,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EC2."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Amazon EC2</strong> : Les Savings Plans s'appliquent à l'utilisation d'EC2.</li><li><strong>E. AWS Lambda</strong> : Les Savings Plans s'appliquent également à l'utilisation de Lambda.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Batch</strong> : Non éligible aux Savings Plans.</li><li><strong>B. AWS Outposts</strong> : Non éligible aux Savings Plans (les ressources Outposts sont facturées différemment).</li><li><strong>C. Amazon Lightsail</strong> : Offre des plans forfaitaires, pas de Savings Plans.</li></ul></div>"
       },
@@ -3209,6 +3344,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Vous pouvez utiliser AWS Trusted Advisor pour surveiller vos limites de service."
+          },
+          {
+            "letter": "E",
+            "text": "Le Amazon Simple Email Service est responsable de l'envoi de notifications par e-mail lorsque l'utilisation approche une limite de service."
           }
         ],
         "correctAnswers": [
@@ -3262,10 +3401,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS CloudTrail."
+          },
+          {
+            "letter": "E",
+            "text": "AWS VPN."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Direct Connect</strong> : Connexion réseau dédiée entre votre datacenter et AWS.</li><li><strong>E. AWS VPN</strong> : Connexion sécurisée via Internet entre votre réseau et un VPC AWS.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Artifact</strong> : Portail pour les rapports de conformité et les accords.</li><li><strong>B. AWS Cloud9</strong> : Environnement de développement intégré (IDE) cloud.</li><li><strong>D. AWS CloudTrail</strong> : Service de journalisation des appels d'API.</li></ul></div>"
       },
@@ -3340,10 +3484,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS IAM."
+          },
+          {
+            "letter": "E",
+            "text": "Listes de contrôle d'accès réseau (Network ACLs)."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Groupes de sécurité</strong> : Peuvent limiter le trafic autorisé vers les instances, réduisant la surface d'attaque.</li><li><strong>E. Listes de contrôle d'accès réseau (Network ACLs)</strong> : Contrôle le trafic au niveau du sous-réseau, offrant une couche de défense supplémentaire.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS CloudHSM</strong> : Module de sécurité matériel pour le chiffrement, pas pour la protection DDoS.</li><li><strong>C. AWS Batch</strong> : Service de traitement par lots, pas de sécurité.</li><li><strong>D. AWS IAM</strong> : Gestion des identités et des accès, pas de protection réseau.</li></ul></div>"
       },
@@ -3444,6 +3593,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Nombre de compartiments."
+          },
+          {
+            "letter": "E",
+            "text": "Nombre d'IP privées."
           }
         ],
         "correctAnswers": [
@@ -3549,6 +3702,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Met à l'échelle automatiquement vers des types d'instance plus grands ou plus petits."
+          },
+          {
+            "letter": "E",
+            "text": "Prend en charge les structures de données document et clé-valeur."
           }
         ],
         "correctAnswers": [
@@ -3628,10 +3785,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Politiques IAM."
+          },
+          {
+            "letter": "E",
+            "text": "Groupes de sécurité."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Listes de contrôle d'accès réseau (NACLs)</strong> : Contrôle le trafic entrant et sortant au niveau du sous-réseau (stateless).</li><li><strong>E. Groupes de sécurité</strong> : Contrôle le trafic entrant et sortant au niveau de l'instance (stateful).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Paires de clés</strong> : Utilisées pour l'authentification SSH aux instances EC2.</li><li><strong>C. Clés d'accès</strong> : Utilisées pour l'authentification programmatique aux API AWS.</li><li><strong>D. Politiques IAM</strong> : Contrôlent les autorisations d'accès aux ressources AWS, pas le trafic réseau.</li></ul></div>"
       },
@@ -3758,6 +3920,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Elastic Beanstalk."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Macie."
           }
         ],
         "correctAnswers": [
@@ -3837,6 +4003,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les instances réservées offrent une remise importante par rapport aux instances à la demande."
+          },
+          {
+            "letter": "E",
+            "text": "Les instances réservées sont mieux adaptées aux charges de travail périodiques."
           }
         ],
         "correctAnswers": [
@@ -3977,6 +4147,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Identity & Access Management."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Data Pipeline."
           }
         ],
         "correctAnswers": [
@@ -4004,6 +4178,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EMR."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EBS."
           }
         ],
         "correctAnswers": [
@@ -4031,6 +4209,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Maintenance du système d'exploitation."
+          },
+          {
+            "letter": "E",
+            "text": "Gestion des données."
           }
         ],
         "correctAnswers": [
@@ -4240,6 +4422,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Élimine le besoin de chiffrer les données."
+          },
+          {
+            "letter": "E",
+            "text": "Permet aux développeurs de contrôler toutes les activités de correction."
           }
         ],
         "correctAnswers": [
@@ -4267,6 +4453,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un magasin de média pour le service CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "Traiter des flux de données à n'importe quelle échelle."
           }
         ],
         "correctAnswers": [
@@ -4476,6 +4666,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Maintenance du système d'exploitation."
+          },
+          {
+            "letter": "E",
+            "text": "Créer des politiques d'accès."
           }
         ],
         "correctAnswers": [
@@ -4607,6 +4801,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "La nature des requêtes."
+          },
+          {
+            "letter": "E",
+            "text": "Bogues logiciels."
           }
         ],
         "correctAnswers": [
@@ -4634,10 +4832,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Identifier rapidement les ressources supprimées et leurs métadonnées."
+          },
+          {
+            "letter": "E",
+            "text": "Suivre les dépenses AWS sur plusieurs ressources."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Identifier rapidement les ressources qui appartiennent à un projet spécifique</strong> : Les étiquettes permettent d'organiser les ressources par projet, département, environnement, etc.</li><li><strong>E. Suivre les dépenses AWS sur plusieurs ressources</strong> : Les étiquettes peuvent être utilisées dans AWS Cost Explorer pour analyser les coûts par projet, service, etc.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Identifier rapidement les solutions logicielles sur AWS</strong> : Les étiquettes ne sont pas conçues pour identifier des solutions logicielles spécifiques.</li><li><strong>C. Suivre les appels d'API dans votre compte AWS</strong> : C'est le rôle d'AWS CloudTrail.</li><li><strong>D. Identifier rapidement les ressources supprimées et leurs métadonnées</strong> : Les étiquettes ne sont pas conservées après la suppression des ressources.</li></ul></div>"
       },
@@ -4686,6 +4889,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser des architectures serverless."
+          },
+          {
+            "letter": "E",
+            "text": "Activer la journalisation d'audit."
           }
         ],
         "correctAnswers": [
@@ -4713,10 +4920,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Maintenir des composants matériels cohérents."
+          },
+          {
+            "letter": "E",
+            "text": "Installer et configurer des logiciels tiers."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Protéger les données sensibles</strong> : Le client est responsable de la sécurité de ses données, y compris le chiffrement et la gestion des accès.</li><li><strong>E. Installer et configurer des logiciels tiers</strong> : Le client gère le système d'exploitation invité et les applications installées sur l'instance EC2.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Appliquer des correctifs à l'infrastructure sous-jacente</strong> : C'est la responsabilité d'AWS (hyperviseur, matériel).</li><li><strong>C. Configuration et exploitation de bases de données managées</strong> : Pour un service managé comme RDS, AWS gère une grande partie de l'exploitation, mais le client est responsable de la configuration de la base de données. Cependant, la question porte sur EC2, pas sur les services managés.</li><li><strong>D. Maintenir des composants matériels cohérents</strong> : C'est la responsabilité d'AWS.</li></ul></div>"
       },
@@ -4739,10 +4951,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Visites sur site pour l'audit."
+          },
+          {
+            "letter": "E",
+            "text": "Économies de coûts."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Ressources élastiques</strong> : AWS permet de mettre à l'échelle les ressources de calcul rapidement et à la demande.</li><li><strong>E. Économies de coûts</strong> : Le modèle de paiement à l'usage et l'absence de coûts d'investissement initiaux permettent de réduire les coûts par rapport à un centre de données sur site.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Licences logicielles commerciales gratuites</strong> : AWS ne fournit pas de licences logicielles commerciales gratuites.</li><li><strong>B. Support technique gratuit</strong> : Seul le support Basic est gratuit ; les plans supérieurs sont payants.</li><li><strong>D. Visites sur site pour l'audit</strong> : AWS n'offre généralement pas de visites sur site pour les clients ; des audits à distance sont possibles via des rapports de conformité.</li></ul></div>"
       },
@@ -4765,10 +4982,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon ECS."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Config."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon Inspector</strong> : Évalue automatiquement les applications pour les vulnérabilités de sécurité et les écarts par rapport aux meilleures pratiques.</li><li><strong>E. AWS Config</strong> : Audite et évalue la configuration des ressources pour la conformité aux règles internes et aux réglementations.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. AWS Virtual Private Gateway</strong> : Composant VPN pour connecter un VPC à un réseau distant, pas d'analyse de sécurité.</li><li><strong>C. AWS Batch</strong> : Service de traitement par lots, pas de sécurité.</li><li><strong>D. Amazon ECS</strong> : Service de gestion de conteneurs.</li></ul></div>"
       },
@@ -4947,10 +5169,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS supprime le besoin d'investir dans les dépenses d'exploitation."
+          },
+          {
+            "letter": "E",
+            "text": "L'utilisation d'AWS permet aux entreprises de remplacer les dépenses d'investissement importantes par des coûts variables faibles."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Réduire le time-to-market en se concentrant sur les activités commerciales</strong> : AWS permet de se concentrer sur le développement de produits plutôt que sur l'infrastructure.</li><li><strong>E. Remplacer les dépenses d'investissement (CapEx) par des coûts variables faibles (OpEx)</strong> : Le modèle de paiement à l'usage élimine les coûts initiaux élevés.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Payer plus tard lorsque leur entreprise réussit</strong> : AWS facture à l'usage, pas de paiement différé.</li><li><strong>B. Construire des centres de données plus rapidement</strong> : Bien qu'AWS ait une infrastructure mondiale, ce n'est pas la raison principale pour les startups.</li><li><strong>D. Supprime le besoin d'investir dans les dépenses d'exploitation</strong> : Les dépenses d'exploitation (OpEx) existent toujours, mais elles sont variables et généralement plus faibles.</li></ul></div>"
       },
@@ -4973,6 +5200,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Offre une latence extrêmement faible (millisecondes à un chiffre)."
+          },
+          {
+            "letter": "E",
+            "text": "Prend en charge les moteurs de base de données NoSQL les plus populaires tels que CouchDB et MongoDB."
           }
         ],
         "correctAnswers": [
@@ -5000,6 +5231,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Déchiffrement."
+          },
+          {
+            "letter": "E",
+            "text": "Conversion."
           }
         ],
         "correctAnswers": [
@@ -5027,6 +5262,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Athena."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon PinPoint."
           }
         ],
         "correctAnswers": [
@@ -5106,10 +5345,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Audit et conformité réglementaire."
+          },
+          {
+            "letter": "E",
+            "text": "Sécurité de l'infrastructure."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Opérations du centre de données</strong> : AWS est responsable de l'exploitation des centres de données (alimentation, refroidissement, sécurité physique).</li><li><strong>E. Sécurité de l'infrastructure</strong> : AWS est responsable de la sécurité de l'infrastructure sous-jacente (matériel, réseau, virtualisation).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Exécuter des tests d'intrusion</strong> : Le client peut effectuer des tests d'intrusion sur ses propres instances avec certaines restrictions.</li><li><strong>B. Réserver de la capacité</strong> : Le client peut choisir de réserver de la capacité avec des instances réservées ou des Savings Plans.</li><li><strong>D. Audit et conformité réglementaire</strong> : Le client est responsable de la conformité de ses charges de travail et de ses données, bien qu'AWS fournisse des rapports et des certifications.</li></ul></div>"
       },
@@ -5158,10 +5402,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS DMS."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Management Console."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS CloudFormation</strong> : Permet de provisionner des ressources RDS via des modèles d'infrastructure as code.</li><li><strong>E. AWS Management Console</strong> : Interface web pour créer et gérer des instances RDS manuellement.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS CodeDeploy</strong> : Service de déploiement d'applications, pas de provisionnement de base de données.</li><li><strong>B. AWS Quick Starts</strong> : Guides et modèles CloudFormation pour déployer rapidement des solutions, mais ne crée pas directement des instances RDS (bien que des modèles puissent inclure RDS).</li><li><strong>D. AWS DMS</strong> : Database Migration Service pour migrer des bases de données, pas pour créer de nouvelles instances RDS.</li></ul></div>"
       },
@@ -5349,6 +5598,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Stockage illimité."
+          },
+          {
+            "letter": "E",
+            "text": "Équilibrage de charge."
           }
         ],
         "correctAnswers": [
@@ -5428,6 +5681,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Network Access Control Lists."
+          },
+          {
+            "letter": "E",
+            "text": "AWS CodeCommit."
           }
         ],
         "correctAnswers": [
@@ -5455,6 +5712,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utilisateurs IAM."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Organizations."
           }
         ],
         "correctAnswers": [
@@ -5664,6 +5925,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Le nombre prévu de VPC."
+          },
+          {
+            "letter": "E",
+            "text": "Proximité géographique de l'emplacement de l'entreprise."
           }
         ],
         "correctAnswers": [
@@ -5769,10 +6034,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gestion des correctifs de l'infrastructure sous-jacente."
+          },
+          {
+            "letter": "E",
+            "text": "Chiffrement du système de fichiers."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Construire un schéma pour une application</strong> : La conception de l'application relève de la responsabilité du client.</li><li><strong>E. Chiffrement du système de fichiers</strong> : Le client doit configurer le chiffrement pour ses données et systèmes de fichiers.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Remplacer le matériel physique</strong> : Responsabilité d'AWS.</li><li><strong>C. Créer un nouvel hyperviseur</strong> : Responsabilité d'AWS.</li><li><strong>D. Gestion des correctifs de l'infrastructure sous-jacente</strong> : Responsabilité d'AWS.</li></ul></div>"
       },
@@ -5847,6 +6117,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Nombre de zones hébergées."
+          },
+          {
+            "letter": "E",
+            "text": "Nombre d'instances."
           }
         ],
         "correctAnswers": [
@@ -6056,6 +6330,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Architecture logicielle."
+          },
+          {
+            "letter": "E",
+            "text": "Compatibilité logicielle."
           }
         ],
         "correctAnswers": [
@@ -6109,6 +6387,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EMR."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon RDS."
           }
         ],
         "correctAnswers": [
@@ -6370,6 +6652,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon SNS."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Virtual Private Cloud."
           }
         ],
         "correctAnswers": [
@@ -6449,10 +6735,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Ouvrir une enquête et supprimer tout utilisateur IAM potentiellement compromis."
+          },
+          {
+            "letter": "E",
+            "text": "Changer votre mot de passe de compte root AWS et les mots de passe de tout utilisateur IAM."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Ouvrir une enquête et supprimer tout utilisateur IAM potentiellement compromis</strong> : Identifiez la source de l'activité non autorisée et supprimez les accès compromis.</li><li><strong>E. Changer votre mot de passe de compte root AWS et les mots de passe de tout utilisateur IAM</strong> : Changez immédiatement les mots de passe pour empêcher tout accès ultérieur.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Arrêter tous les services</strong> : Cela pourrait interrompre des services légitimes et nuire à l'entreprise.</li><li><strong>B. Donner votre mot de passe root au support AWS</strong> : Jamais partager vos mots de passe. Le support AWS n'a jamais besoin de votre mot de passe.</li><li><strong>C. Supprimer tous les utilisateurs IAM</strong> : Radical et pourrait supprimer des utilisateurs légitimes.</li></ul></div>"
       },
@@ -6553,10 +6844,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Lambda ne prend pas en charge les langages de programmation ; c'est un service de calcul sans serveur."
+          },
+          {
+            "letter": "E",
+            "text": "Lambda peut prendre en charge n'importe quel langage de programmation à l'aide d'une API."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Lambda prend en charge nativement un certain nombre de langages de programmation tels que Node.js, Python et Java</strong> : Lambda prend en charge nativement plusieurs langages, y compris Node.js, Python, Java, C#, Go, Ruby.</li><li><strong>E. Lambda peut prendre en charge n'importe quel langage de programmation à l'aide d'une API</strong> : Via l'API d'exécution Lambda ou des couches d'exécution personnalisées, vous pouvez exécuter du code dans d'autres langages.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Lambda ne prend en charge que Python et Node.js</strong> : Faux, il en supporte plus.</li><li><strong>C. Lambda est le langage de programmation propriétaire d'AWS</strong> : Lambda est un service, pas un langage.</li><li><strong>D. Lambda ne prend pas en charge les langages de programmation</strong> : Faux, il en supporte plusieurs.</li></ul></div>"
       },
@@ -6579,6 +6875,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Déploie des applications sur des instances Amazon EC2."
+          },
+          {
+            "letter": "E",
+            "text": "Déploie des applications sur des serveurs sur site."
           }
         ],
         "correctAnswers": [
@@ -6641,6 +6941,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Accès 24h/24 et 7j/7 à la fonctionnalité TAM."
+          },
+          {
+            "letter": "E",
+            "text": "Accès partiel aux vérifications de base de Trusted Advisor."
           }
         ],
         "correctAnswers": [
@@ -6719,6 +7023,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Élimine le besoin de deviner les besoins en capacité d'infrastructure."
+          },
+          {
+            "letter": "E",
+            "text": "Permet aux clients d'échanger leurs dépenses d'investissement (CapEx) contre des dépenses d'exploitation (OpEx)."
           }
         ],
         "correctAnswers": [
@@ -6745,6 +7053,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Database Migration Service (DMS)."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda."
           }
         ],
         "correctAnswers": [
@@ -6823,6 +7135,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "MySQL sur Amazon EC2."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon RDS pour MySQL."
           }
         ],
         "correctAnswers": [
@@ -6927,6 +7243,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Il vous permet de modéliser toute votre infrastructure dans un simple fichier texte."
+          },
+          {
+            "letter": "E",
+            "text": "Il compile et construit le code d'application en temps opportun."
           }
         ],
         "correctAnswers": [
@@ -7187,6 +7507,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Le temps de calcul que vous consommez."
+          },
+          {
+            "letter": "E",
+            "text": "Le nombre d'appareils de stockage Snowball que vous demandez."
           }
         ],
         "correctAnswers": [
@@ -7239,6 +7563,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les frais de transfert de données sortant (Data Transfer Out)."
+          },
+          {
+            "letter": "E",
+            "text": "Le nombre de rôles IAM provisionnés."
           }
         ],
         "correctAnswers": [
@@ -7421,6 +7749,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Trusted Advisor."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Cognito."
           }
         ],
         "correctAnswers": [
@@ -7499,6 +7831,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Fargate."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EMR."
           }
         ],
         "correctAnswers": [
@@ -7551,6 +7887,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Vous permet d'exécuter et de mettre à l'échelle facilement Apache Spark, Hadoop et d'autres frameworks Big Data."
+          },
+          {
+            "letter": "E",
+            "text": "Vous permet d'exécuter et de gérer facilement des conteneurs Docker."
           }
         ],
         "correctAnswers": [
@@ -7655,6 +7995,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "La gestion des accès."
+          },
+          {
+            "letter": "E",
+            "text": "La gestion des règles de pare-feu."
           }
         ],
         "correctAnswers": [
@@ -7837,6 +8181,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gère le trafic des applications mondiales grâce à une variété de types de routage."
+          },
+          {
+            "letter": "E",
+            "text": "Fournit des recommandations d'optimisation de la sécurité de l'infrastructure."
           }
         ],
         "correctAnswers": [
@@ -7924,6 +8272,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Chiffrer les données avant de les télécharger."
+          },
+          {
+            "letter": "E",
+            "text": "Supprimer tous les utilisateurs IAM ayant accès à S3."
           }
         ],
         "correctAnswers": [
@@ -7977,10 +8329,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Créer et supprimer des compartiments S3."
+          },
+          {
+            "letter": "E",
+            "text": "La taille totale en gigaoctets de tous les objets stockés."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. La classe de stockage utilisée pour les objets stockés</strong> : Différentes classes de stockage S3 (Standard, Intelligent-Tiering, Standard-IA, Glacier, etc.) ont des prix différents par Go.</li><li><strong>E. La taille totale en gigaoctets de tous les objets stockés</strong> : Les coûts de stockage S3 sont basés sur la quantité totale de données stockées, facturées par Go.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Utiliser le chiffrement par défaut pour n'importe quel nombre de compartiments S3</strong> : Le chiffrement par défaut n'entraîne pas de frais supplémentaires.</li><li><strong>B. Le nombre de volumes EBS attachés à vos instances</strong> : EBS est un service distinct facturé séparément, non lié aux coûts de S3.</li><li><strong>D. Créer et supprimer des compartiments S3</strong> : La création/suppression de compartiments S3 est gratuite.</li></ul></div>"
       },
@@ -8003,10 +8360,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Stocke des données archivées à très faible coût."
+          },
+          {
+            "letter": "E",
+            "text": "Distribue le contenu aux utilisateurs finaux avec une faible latence."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Augmente la disponibilité des applications grâce à la mise en cache en périphérie</strong> : CloudFront met en cache le contenu sur des emplacements périphériques mondiaux, réduisant la charge sur l'origine et améliorant la disponibilité.</li><li><strong>E. Distribue le contenu aux utilisateurs finaux avec une faible latence</strong> : En servant le contenu depuis des emplacements géographiquement proches des utilisateurs, CloudFront réduit la latence.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Suit l'activité des utilisateurs et l'utilisation des API</strong> : C'est le rôle de services comme AWS CloudTrail ou Amazon CloudWatch.</li><li><strong>C. Permet une reprise après sinistre plus rapide</strong> : CloudFront n'est pas un service de reprise après sinistre.</li><li><strong>D. Stocke des données archivées à très faible coût</strong> : C'est le rôle d'Amazon S3 Glacier.</li></ul></div>"
       },
@@ -8081,10 +8443,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Spot."
+          },
+          {
+            "letter": "E",
+            "text": "Standard."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Convertible</strong> : Offre la possibilité d'échanger l'instance réservée contre une autre avec des attributs différents.</li><li><strong>E. Standard</strong> : Offre la remise la plus élevée mais sans flexibilité d'échange.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Expedited</strong> : Ce n'est pas un type d'instance réservée.</li><li><strong>C. Bulk</strong> : Ce n'est pas un type d'instance réservée.</li><li><strong>D. Spot</strong> : Type d'instance à prix réduit mais pouvant être interrompue, pas une instance réservée.</li></ul></div>"
       },
@@ -8211,6 +8578,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon ECS."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EMR."
           }
         ],
         "correctAnswers": [
@@ -8446,10 +8817,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS CodeCommit."
+          },
+          {
+            "letter": "E",
+            "text": "CloudHSM."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. AWS KMS</strong> : Service de gestion des clés entièrement managé pour créer et contrôler les clés de chiffrement.</li><li><strong>E. CloudHSM</strong> : Module de sécurité matériel dédié pour la génération et le stockage sécurisé des clés de chiffrement.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. AWS Certificate Manager</strong> : Gère les certificats SSL/TLS, pas les clés de chiffrement générales.</li><li><strong>C. AWS CodeDeploy</strong> : Service de déploiement automatisé.</li><li><strong>D. AWS CodeCommit</strong> : Service de contrôle de source.</li></ul></div>"
       },
@@ -8550,6 +8926,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Ressources jetables au lieu de serveurs fixes."
+          },
+          {
+            "letter": "E",
+            "text": "Déploiements multi-AZ au lieu de déploiements multi-régions."
           }
         ],
         "correctAnswers": [
@@ -8655,6 +9035,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Route 53."
+          },
+          {
+            "letter": "E",
+            "text": "AWS VPN."
           }
         ],
         "correctAnswers": [
@@ -8682,6 +9066,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Type d'instance."
+          },
+          {
+            "letter": "E",
+            "text": "Classe de stockage."
           }
         ],
         "correctAnswers": [
@@ -8735,6 +9123,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Blog de sécurité AWS (AWS Security Blog)."
+          },
+          {
+            "letter": "E",
+            "text": "Formation en classe AWS (AWS Classroom Training)."
           }
         ],
         "correctAnswers": [
@@ -8944,10 +9336,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Aider l'organisation à atteindre les résultats commerciaux souhaités avec AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Consolider la facturation sur plusieurs comptes AWS."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Contrôler l'accès aux services AWS</strong> : Grâce aux politiques de contrôle de service (SCP), vous pouvez restreindre les services et actions autorisés dans les comptes membres.</li><li><strong>E. Consolider la facturation sur plusieurs comptes AWS</strong> : La facturation consolidée regroupe les frais de tous les comptes membres.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Aider les organisations à concevoir et maintenir un chemin accéléré...</strong> : C'est le rôle d'AWS Control Tower ou des partenaires AWS.</li><li><strong>C. Gérer les méthodes de paiement de votre organisation</strong> : La gestion des méthodes de paiement se fait dans le compte de facturation, mais pas spécifiquement une fonctionnalité d'Organizations.</li><li><strong>D. Aider l'organisation à atteindre les résultats commerciels souhaités avec AWS</strong> : Trop générique, pas une fonctionnalité spécifique d'Organizations.</li></ul></div>"
       },
@@ -9100,6 +9497,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Contrôles environnementaux."
+          },
+          {
+            "letter": "E",
+            "text": "Gestion de la configuration des ressources."
           }
         ],
         "correctAnswers": [
@@ -9153,10 +9554,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Réduire la taille des ressources multimédias à l'aide d'Amazon Elastic Transcoder."
+          },
+          {
+            "letter": "E",
+            "text": "Stocker les ressources multimédias dans S3 et utiliser CloudFront pour distribuer ces ressources."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Stocker les ressources multimédias dans la région la plus proche de vos utilisateurs finaux</strong> : Réduit la distance réseau et donc la latence.</li><li><strong>E. Stocker les ressources multimédias dans S3 et utiliser CloudFront pour distribuer ces ressources</strong> : CloudFront met en cache le contenu sur des emplacements périphériques mondiaux, réduisant la latence.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Stocker les ressources multimédias sur un volume EBS supplémentaire...</strong> : N'affecte pas directement la latence pour les utilisateurs distants.</li><li><strong>C. Répliquer les ressources multimédias sur au moins deux zones de disponibilité</strong> : Améliore la disponibilité, pas la latence.</li><li><strong>D. Réduire la taille des ressources multimédias...</strong> : Peut réduire le temps de téléchargement, mais ne réduit pas la latence réseau.</li></ul></div>"
       },
@@ -9179,6 +9585,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Activer la traçabilité en temps réel."
+          },
+          {
+            "letter": "E",
+            "text": "Ne jamais stocker de données sensibles dans le cloud."
           }
         ],
         "correctAnswers": [
@@ -9345,6 +9755,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "API de support AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Gestion technique proactive du compte (Proactive Technical Account Management)."
           }
         ],
         "correctAnswers": [
@@ -9424,10 +9838,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Fournit des sauvegardes automatiques des données."
+          },
+          {
+            "letter": "E",
+            "text": "Peut être mis à l'échelle manuellement en moins de temps."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Améliore la tolérance aux pannes</strong> : AWS fournit des fonctionnalités comme les zones de disponibilité, Auto Scaling, etc., pour concevoir des architectures tolérantes aux pannes.</li><li><strong>E. Peut être mis à l'échelle manuellement en moins de temps</strong> : Les instances EC2 peuvent être lancées ou terminées en quelques minutes, contrairement aux serveurs physiques qui prennent des jours ou des semaines.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Fournit à votre entreprise une accessibilité à distance transparente</strong> : Les serveurs traditionnels peuvent également être accessibles à distance.</li><li><strong>C. Empêche les utilisateurs non autorisés d'entrer dans votre réseau</strong> : La sécurité réseau est une responsabilité partagée ; AWS fournit des outils, mais le client doit les configurer.</li><li><strong>D. Fournit des sauvegardes automatiques des données</strong> : Les sauvegardes automatiques ne sont pas fournies par défaut pour EC2 ; le client doit configurer des snapshots EBS ou utiliser d'autres services.</li></ul></div>"
       },
@@ -9450,6 +9869,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Pour certains services, vous devez payer des frais de démarrage pour que le service fonctionne."
+          },
+          {
+            "letter": "E",
+            "text": "Il n'y a pas de réservations sur AWS, vous payez uniquement ce que vous utilisez."
           }
         ],
         "correctAnswers": [
@@ -9581,10 +10004,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Groupes de placement."
+          },
+          {
+            "letter": "E",
+            "text": "Temps de calcul consommé."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Nombre de requêtes vers vos fonctions</strong> : Vous payez pour le nombre total de requêtes (appels) à vos fonctions Lambda.</li><li><strong>E. Temps de calcul consommé</strong> : Vous payez pour la durée d'exécution de votre code, facturée par milliseconde.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Stockage consommé</strong> : Lambda n'a pas de coût de stockage pour le code (stocké dans S3 ou ECR), mais ce n'est pas un facteur de facturation principal.</li><li><strong>C. Nombre de volumes</strong> : Non applicable à Lambda.</li><li><strong>D. Groupes de placement</strong> : Non applicable à Lambda.</li></ul></div>"
       },
@@ -9607,6 +10035,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un rôle est associé de manière unique à une seule personne, tandis qu'un utilisateur IAM est destiné à être assumé par toute personne qui en a besoin."
+          },
+          {
+            "letter": "E",
+            "text": "Un utilisateur IAM a des identifiants temporaires associés, tandis qu'un rôle a des identifiants permanents associés."
           }
         ],
         "correctAnswers": [
@@ -9634,6 +10066,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Changer le type de volume."
+          },
+          {
+            "letter": "E",
+            "text": "Répartir les requêtes sur plusieurs volumes."
           }
         ],
         "correctAnswers": [
@@ -9817,10 +10253,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Standard."
+          },
+          {
+            "letter": "E",
+            "text": "Business."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Enterprise</strong> : Accès 24/7 au support technique par téléphone, chat et e-mail.</li><li><strong>E. Business</strong> : Accès 24/7 au support technique par téléphone, chat et e-mail.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Developer</strong> : Accès par e-mail uniquement pendant les heures de bureau.</li><li><strong>B. Premium</strong> : Il n'existe pas de plan \"Premium\". Les plans sont Basic, Developer, Business et Enterprise.</li><li><strong>D. Standard</strong> : Il n'existe pas de plan \"Standard\". Les plans sont Basic, Developer, Business et Enterprise.</li></ul></div>"
       },
@@ -9843,6 +10284,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utilisateur racine du compte AWS."
+          },
+          {
+            "letter": "E",
+            "text": "TAM."
           }
         ],
         "correctAnswers": [
@@ -9948,10 +10393,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Fournit des options de tarification flexibles qui conviennent à la plupart des besoins des clients."
+          },
+          {
+            "letter": "E",
+            "text": "Fournit des solutions logicielles qui s'exécutent sur AWS ou tout autre fournisseur de cloud."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Fournit des options de tarification flexibles</strong> : AWS Marketplace propose diverses options de tarification (à l'usage, forfaitaires, etc.).</li><li><strong>E. Fournit des solutions logicielles qui s'exécutent sur AWS ou tout autre fournisseur de cloud</strong> : Les solutions du Marketplace sont conçues pour s'exécuter sur AWS, mais certaines peuvent également être déployées ailleurs.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Protège les clients en effectuant des contrôles de sécurité périodiques</strong> : AWS Marketplace ne garantit pas la sécurité des produits tiers.</li><li><strong>B. Facturation à la seconde</strong> : La facturation à la seconde est une caractéristique de certains services AWS (comme EC2), pas spécifique au Marketplace.</li><li><strong>C. Fournit des options moins chères pour l'achat d'instances EC2 à la demande</strong> : Les instances EC2 achetées via le Marketplace peuvent inclure des frais de licence logicielle, pas nécessairement moins chers.</li></ul></div>"
       },
@@ -10078,10 +10528,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Faire tourner (rotater) toutes les clés d'accès."
+          },
+          {
+            "letter": "E",
+            "text": "Changer l'adresse e-mail et le mot de passe de l'utilisateur racine et activer l'authentification multi-facteurs (MFA)."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Faire tourner toutes les clés d'accès</strong> : Cela invalide les anciennes clés d'accès que l'administrateur aurait pu créer.</li><li><strong>E. Changer l'adresse e-mail et le mot de passe de l'utilisateur racine et activer MFA</strong> : Protège le compte racine, qui a un accès complet à toutes les ressources.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Télécharger toutes les politiques attachées</strong> : Cela ne protège pas contre un accès malveillant.</li><li><strong>B. Supprimer tous les comptes IAM et les recréer</strong> : Cela interromprait les opérations légitimes. Il vaut mieux désactiver les comptes suspects et révoquer leurs autorisations.</li><li><strong>C. Utiliser CloudWatch pour vérifier tous les appels d'API</strong> : CloudWatch ne journalise pas les appels d'API ; c'est le rôle de CloudTrail. De plus, c'est réactif, pas une mesure de protection immédiate.</li></ul></div>"
       },
@@ -10104,6 +10559,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Fournir un cache compatible Chef pour accélérer la réponse des applications."
+          },
+          {
+            "letter": "E",
+            "text": "Répartir les requêtes sur plusieurs instances."
           }
         ],
         "correctAnswers": [
@@ -10131,10 +10590,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser Elastic Load Balancing."
+          },
+          {
+            "letter": "E",
+            "text": "Utiliser le calcul serverless (Serverless Computing) chaque fois que possible."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Utiliser Amazon EC2 Auto Scaling</strong> : Ajuste automatiquement la capacité de calcul en fonction de la demande, optimisant les coûts.</li><li><strong>E. Utiliser le calcul serverless chaque fois que possible</strong> : Les services serverless comme Lambda ne facturent que lorsque le code s'exécute, offrant une élasticité parfaite.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Déployer vos ressources sur plusieurs zones de disponibilité</strong> : Améliore la disponibilité, pas directement l'élasticité.</li><li><strong>C. Déployer vos ressources dans une autre région</strong> : Améliore la redondance géographique, pas l'élasticité.</li><li><strong>D. Utiliser Elastic Load Balancing</strong> : Répartit la charge, mais ne provisionne pas automatiquement de nouvelles ressources.</li></ul></div>"
       },
@@ -10157,10 +10621,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Elles ne nécessitent que 1-2 jours pour la configuration."
+          },
+          {
+            "letter": "E",
+            "text": "Vous pouvez augmenter ou diminuer votre capacité de calcul en fonction des exigences de votre application."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Elles éliminent le besoin d'acheter une capacité de \"filet de sécurité\"</strong> : Avec l'élasticité du cloud, vous pouvez provisionner des ressources à la demande sans surprovisionnement.</li><li><strong>E. Vous pouvez augmenter ou diminuer votre capacité de calcul</strong> : C'est la définition de l'élasticité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Elles fournissent une capacité gratuite</strong> : L'offre gratuite d'AWS est limitée et n'est pas spécifique aux instances à la demande.</li><li><strong>B. Elles sont moins chères que toutes les autres options EC2</strong> : Faux. Les instances réservées et Spot sont moins chères pour des cas d'utilisation spécifiques.</li><li><strong>D. Elles ne nécessitent que 1-2 jours pour la configuration</strong> : Les instances EC2 peuvent être lancées en quelques minutes.</li></ul></div>"
       },
@@ -10235,6 +10704,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer l'infrastructure sous-jacente des services AWS pour répondre à toutes les exigences PCI DSS."
+          },
+          {
+            "letter": "E",
+            "text": "S'assurer que toutes les exigences de sécurité physique PCI DSS sont satisfaites."
           }
         ],
         "correctAnswers": [
@@ -10522,6 +10995,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tarification à l'usage."
+          },
+          {
+            "letter": "E",
+            "text": "Fiabilité."
           }
         ],
         "correctAnswers": [
@@ -10844,6 +11321,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utilisation du chiffrement."
+          },
+          {
+            "letter": "E",
+            "text": "Haute disponibilité."
           }
         ],
         "correctAnswers": [
@@ -10896,6 +11377,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "S'appuyer sur des composants individuels."
+          },
+          {
+            "letter": "E",
+            "text": "Concevoir pour l'évolutivité."
           }
         ],
         "correctAnswers": [
@@ -11052,6 +11537,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Performances."
+          },
+          {
+            "letter": "E",
+            "text": "Capacité de stockage."
           }
         ],
         "correctAnswers": [
@@ -11104,6 +11593,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer les listes de contrôle d'accès réseau (ACL)."
+          },
+          {
+            "letter": "E",
+            "text": "Maintenir les contrôles environnementaux dans un centre de données."
           }
         ],
         "correctAnswers": [
@@ -11234,6 +11727,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Direct Connect."
           }
         ],
         "correctAnswers": [
@@ -11338,6 +11835,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Organizations."
+          },
+          {
+            "letter": "E",
+            "text": "Listes de contrôle d'accès réseau (Network ACLs)."
           }
         ],
         "correctAnswers": [
@@ -11442,6 +11943,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Plans de paiement différé pour les startups."
+          },
+          {
+            "letter": "E",
+            "text": "Lignes de crédit commercial pour les startups."
           }
         ],
         "correctAnswers": [
@@ -11494,6 +11999,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Comprehend permet aux utilisateurs de créer des applications qui peuvent répondre aux requêtes des utilisateurs dans de nombreuses langues."
+          },
+          {
+            "letter": "E",
+            "text": "Elastic Load Balancing peut distribuer le trafic web des applications vers plusieurs régions AWS dans le monde, ce qui réduit la latence."
           }
         ],
         "correctAnswers": [
@@ -11520,6 +12029,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Régions."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Machine Images (AMIs)."
           }
         ],
         "correctAnswers": [
@@ -11650,6 +12163,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Auto Scaling."
+          },
+          {
+            "letter": "E",
+            "text": "Métriques par défaut d'Amazon CloudWatch."
           }
         ],
         "correctAnswers": [
@@ -11754,6 +12271,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon DynamoDB."
           }
         ],
         "correctAnswers": [
@@ -11867,6 +12388,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EC2 Auto Scaling."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Management Console."
           }
         ],
         "correctAnswers": [
@@ -11919,6 +12444,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Surveillance en temps réel."
+          },
+          {
+            "letter": "E",
+            "text": "Rétention ajustable."
           }
         ],
         "correctAnswers": [
@@ -12075,6 +12604,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Planifié."
+          },
+          {
+            "letter": "E",
+            "text": "Coût variable."
           }
         ],
         "correctAnswers": [
@@ -12101,6 +12634,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "S'assurer que l'accès aux centres de données est restreint."
+          },
+          {
+            "letter": "E",
+            "text": "S'assurer que le matériel est éliminé correctement."
           }
         ],
         "correctAnswers": [
@@ -12179,6 +12716,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Redshift."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EFS."
           }
         ],
         "correctAnswers": [
@@ -12257,6 +12798,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Temps de réponse de 15 minutes pour les cas d'interruption de système de production."
+          },
+          {
+            "letter": "E",
+            "text": "Revues opérationnelles annuelles avec des Solutions Architects AWS."
           }
         ],
         "correctAnswers": [
@@ -12387,6 +12932,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Pour des applications flexibles tolérantes aux pannes."
+          },
+          {
+            "letter": "E",
+            "text": "Pour des applications de base de données sensibles."
           }
         ],
         "correctAnswers": [
@@ -12413,6 +12962,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Calculateur de coût total de possession (TCO) AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Estimateur de coûts."
           }
         ],
         "correctAnswers": [
@@ -12569,6 +13122,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS CloudHSM."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon CloudWatch."
           }
         ],
         "correctAnswers": [
@@ -12595,6 +13152,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un système de fichiers réseau."
+          },
+          {
+            "letter": "E",
+            "text": "Un système de stockage durable."
           }
         ],
         "correctAnswers": [
@@ -12855,6 +13416,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Redshift."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon S3."
           }
         ],
         "correctAnswers": [
@@ -13202,10 +13767,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Forums."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Classroom Training."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS Online Tech Talks</strong> : Webinaires en ligne gratuits couvrant divers sujets AWS, y compris la sécurité.</li><li><strong>E. AWS Classroom Training</strong> : Formations en présentiel ou virtuelles avec instructeur, proposées par AWS Training.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Trusted Advisor</strong> : Outil de recommandation automatisé, pas une formation dirigée par un instructeur.</li><li><strong>C. AWS Blog</strong> : Ressource écrite pour les articles techniques et les annonces.</li><li><strong>D. AWS Forums</strong> : Plateforme communautaire pour poser des questions et partager des connaissances.</li></ul></div>"
       },
@@ -13228,10 +13798,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Groupes de sécurité."
+          },
+          {
+            "letter": "E",
+            "text": "Politiques de mot de passe."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Multi-Factor Authentication (AWS MFA)</strong> : Ajoute une couche de sécurité supplémentaire en exigeant un code unique en plus du mot de passe.</li><li><strong>E. Politiques de mot de passe</strong> : Permettent d'imposer des exigences de complexité et de rotation des mots de passe pour les utilisateurs IAM.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Secrets Manager</strong> : Gère les secrets (mots de passe, clés API) pour les applications, pas pour l'authentification console.</li><li><strong>B. AWS Certificate Manager</strong> : Gère les certificats SSL/TLS, pas l'authentification console.</li><li><strong>D. Groupes de sécurité</strong> : Firewall au niveau de l'instance pour le trafic réseau, pas pour l'accès console.</li></ul></div>"
       },
@@ -13254,6 +13829,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sous-réseaux."
+          },
+          {
+            "letter": "E",
+            "text": "Elastic Load Balancing."
           }
         ],
         "correctAnswers": [
@@ -13307,6 +13886,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Des remises volume potentielles, car l'utilisation de tous les comptes est combinée."
+          },
+          {
+            "letter": "E",
+            "text": "L'extension automatique du plan de support AWS du compte maître à tous les comptes."
           }
         ],
         "correctAnswers": [
@@ -13334,6 +13917,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Créer un schéma de base de données."
+          },
+          {
+            "letter": "E",
+            "text": "Exécuter des tests d'intrusion."
           }
         ],
         "correctAnswers": [
@@ -13543,6 +14130,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Il corrige automatiquement les problèmes de sécurité potentiels causés par les paramètres d'autorisation sur les ressources du compte."
+          },
+          {
+            "letter": "E",
+            "text": "Il fournit une alerte proactive chaque fois qu'une instance Amazon EC2 a été compromise."
           }
         ],
         "correctAnswers": [
@@ -13674,6 +14265,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un ID utilisateur."
+          },
+          {
+            "letter": "E",
+            "text": "Une clé secondaire."
           }
         ],
         "correctAnswers": [
@@ -13831,10 +14426,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Activer Amazon CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "Activer l'authentification multi-facteurs (MFA) pour les utilisateurs privilégiés."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Accorder un accès de moindre privilège aux utilisateurs IAM</strong> : Limite les autorisations au strict nécessaire.</li><li><strong>E. Activer l'authentification multi-facteurs (MFA) pour les utilisateurs privilégiés</strong> : Ajoute une deuxième couche de sécurité pour les comptes sensibles.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Activer AWS CloudTrail</strong> : Important pour l'audit, mais ne protège pas directement l'accès.</li><li><strong>C. Créer un utilisateur IAM et le partager</strong> : Mauvaise pratique ; chaque utilisateur doit avoir son propre compte.</li><li><strong>D. Activer Amazon CloudFront</strong> : CDN, pas de sécurité d'accès au compte.</li></ul></div>"
       },
@@ -14117,10 +14717,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Glacier."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon CloudFront."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon S3</strong> : Stockage durable et scalable pour les fichiers vidéo.</li><li><strong>E. Amazon CloudFront</strong> : CDN qui diffuse le contenu depuis des emplacements périphériques proches des utilisateurs, réduisant la latence.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. appGateway</strong> : N'existe pas dans AWS.</li><li><strong>C. Amazon Elastic File System (EFS)</strong> : Stockage de fichiers, pas optimisé pour la diffusion de vidéos à grande échelle.</li><li><strong>D. Amazon Glacier</strong> : Service d'archivage, latence élevée.</li></ul></div>"
       },
@@ -14143,6 +14748,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Réduire le trafic sur le serveur en mettant en cache les réponses."
+          },
+          {
+            "letter": "E",
+            "text": "Envoyer des messages de notification aux utilisateurs finaux."
           }
         ],
         "correctAnswers": [
@@ -14352,6 +14961,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Coûts de refroidissement dans les climats plus chauds."
+          },
+          {
+            "letter": "E",
+            "text": "Proximité du bureau du client pour des visites sur site."
           }
         ],
         "correctAnswers": [
@@ -14457,6 +15070,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer une politique de mot de passe forte."
+          },
+          {
+            "letter": "E",
+            "text": "Activer AWS Organizations."
           }
         ],
         "correctAnswers": [
@@ -14545,6 +15162,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Partner Network (APN)."
+          },
+          {
+            "letter": "E",
+            "text": "AWS Secrets Manager."
           }
         ],
         "correctAnswers": [
@@ -14598,6 +15219,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Logiciel en tant que service (SaaS)."
+          },
+          {
+            "letter": "E",
+            "text": "Hybride."
           }
         ],
         "correctAnswers": [
@@ -14755,6 +15380,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS peut facilement s'adapter aux changements de demande de l'application."
+          },
+          {
+            "letter": "E",
+            "text": "AWS s'occupe de la mise à jour corrective de sécurité de l'application."
           }
         ],
         "correctAnswers": [
@@ -14808,10 +15437,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser l'authentification multi-facteurs (MFA)."
+          },
+          {
+            "letter": "E",
+            "text": "Appliquer la force et l'expiration des mots de passe."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Utiliser l'authentification multi-facteurs (MFA)</strong> : Ajoute une deuxième couche d'authentification pour les utilisateurs IAM.</li><li><strong>E. Appliquer la force et l'expiration des mots de passe</strong> : Les politiques de mot de passe IAM permettent de définir des exigences de complexité et de rotation.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Mettre en œuvre Amazon Rekognition</strong> : Service de vision par ordinateur, pas pour la sécurité IAM.</li><li><strong>B. Utiliser des ressources protégées par AWS Shield</strong> : Protection DDoS, pas pour la sécurité IAM.</li><li><strong>C. Bloquer l'accès avec des groupes de sécurité</strong> : Les groupes de sécurité contrôlent le trafic réseau, pas l'accès IAM.</li></ul></div>"
       },
@@ -14938,6 +15572,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Connecter le centre de données sur site de l'entreprise à AWS en utilisant AWS Direct Connect."
+          },
+          {
+            "letter": "E",
+            "text": "Tirer parti d'Amazon CloudFront pour restreindre l'accès au contenu web statique fourni par les serveurs web sur site de l'entreprise."
           }
         ],
         "correctAnswers": [
@@ -14991,6 +15629,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tests d'intrusion automatisés."
+          },
+          {
+            "letter": "E",
+            "text": "Détection de contenu protégé par le droit d'auteur sur Amazon S3."
           }
         ],
         "correctAnswers": [
@@ -15018,6 +15660,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Inspector."
           }
         ],
         "correctAnswers": [
@@ -15331,10 +15977,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sécurité physique des centres de données."
+          },
+          {
+            "letter": "E",
+            "text": "Configuration du groupe de sécurité."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Application de correctifs aux systèmes d'exploitation</strong> : Pour les instances EC2, le client est responsable des correctifs du système d'exploitation invité.</li><li><strong>E. Configuration du groupe de sécurité</strong> : Le client configure les règles des groupes de sécurité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Mises à niveau du microprogramme de l'infrastructure réseau</strong> : AWS est responsable.</li><li><strong>C. Application de correctifs à l'hyperviseur sous-jacent</strong> : AWS est responsable.</li><li><strong>D. Sécurité physique des centres de données</strong> : AWS est responsable.</li></ul></div>"
       },
@@ -15383,6 +16034,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Storage Gateway."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Connect."
           }
         ],
         "correctAnswers": [
@@ -15410,6 +16065,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Dépenses en capital initiales accrues."
+          },
+          {
+            "letter": "E",
+            "text": "Accès physique aux centres de données cloud."
           }
         ],
         "correctAnswers": [
@@ -15463,6 +16122,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Batch."
+          },
+          {
+            "letter": "E",
+            "text": "AWS X-Ray."
           }
         ],
         "correctAnswers": [
@@ -15542,6 +16205,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Des remises volume potentielles, car l'utilisation de tous les comptes est combinée."
+          },
+          {
+            "letter": "E",
+            "text": "L'extension automatique du plan de support AWS du compte maître à tous les comptes."
           }
         ],
         "correctAnswers": [
@@ -15734,6 +16401,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Redshift"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon S3"
           }
         ],
         "correctAnswers": [
@@ -15813,6 +16484,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tarification à l'usage"
+          },
+          {
+            "letter": "E",
+            "text": "Fiabilité"
           }
         ],
         "correctAnswers": [
@@ -15866,10 +16541,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un système de fichiers réseau"
+          },
+          {
+            "letter": "E",
+            "text": "Un système de stockage durable"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Un magasin d'objets</strong> : S3 est un service de stockage d'objets, pas un système de fichiers traditionnel.</li><li><strong>E. Un système de stockage durable</strong> : Conçu pour une durabilité de 99,999999999 % (11 9).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Un système de fichiers global</strong> : Ce n'est pas un système de fichiers. Amazon EFS est un système de fichiers réseau.</li><li><strong>C. Un magasin de fichiers local</strong> : Non, S3 est un service cloud.</li><li><strong>D. Un système de fichiers réseau</strong> : Cela décrit Amazon EFS.</li></ul></div>"
       },
@@ -15892,6 +16572,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Auto Scaling"
+          },
+          {
+            "letter": "E",
+            "text": "Mesures par défaut d'Amazon CloudWatch"
           }
         ],
         "correctAnswers": [
@@ -15997,6 +16681,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Total Cost of Ownership (TCO) Calculator"
+          },
+          {
+            "letter": "E",
+            "text": "Cost Eliminator"
           }
         ],
         "correctAnswers": [
@@ -16025,6 +16713,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Des remises volume potentielles, car l'utilisation de tous les comptes est combinée"
+          },
+          {
+            "letter": "E",
+            "text": "L'extension automatique du plan de support AWS du compte maître à tous les comptes"
           }
         ],
         "correctAnswers": [
@@ -16286,6 +16978,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer les listes de contrôle d'accès réseau (ACL)"
+          },
+          {
+            "letter": "E",
+            "text": "Maintenir les contrôles environnementaux dans un centre de données"
           }
         ],
         "correctAnswers": [
@@ -16365,10 +17061,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser l'authentification multifacteur (MFA)"
+          },
+          {
+            "letter": "E",
+            "text": "Appliquer la force et l'expiration des mots de passe"
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Utiliser l'authentification multifacteur (MFA)</strong> : Ajoute une couche de sécurité en exigeant un second facteur d'authentification.</li><li><strong>E. Appliquer la force et l'expiration des mots de passe</strong> : Politiques de mot de passe pour renforcer la sécurité des comptes IAM.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Mettre en œuvre Amazon Rekognition</strong> : Service de vision par ordinateur, pas de sécurité IAM.</li><li><strong>B. Utiliser des ressources protégées par AWS Shield</strong> : Protection DDoS, pas de sécurité IAM.</li><li><strong>C. Bloquer l'accès avec les groupes de sécurité</strong> : Les groupes de sécurité contrôlent le trafic réseau, pas l'accès IAM.</li></ul></div>"
       },
@@ -16391,10 +17092,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Redshift"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon EFS"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon RDS</strong> : Base de données relationnelle pour les données transactionnelles en constante évolution.</li><li><strong>E. Amazon EFS</strong> : Système de fichiers élastique pour partager des données entre instances, prenant en charge les mises à jour fréquentes.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon Glacier</strong> : Archivage, pas pour des données fréquemment mises à jour.</li><li><strong>C. AWS Snowball</strong> : Transfert de données physique, pas de stockage actif.</li><li><strong>D. Amazon Redshift</strong> : Entrepôt de données pour l'analyse, pas pour les transactions en temps réel.</li></ul></div>"
       },
@@ -16833,10 +17539,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Surveillance en temps réel"
+          },
+          {
+            "letter": "E",
+            "text": "Rétention ajustable"
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Surveillance en temps réel</strong> : CloudWatch Logs peut surveiller les logs en temps réel et déclencher des alarmes.</li><li><strong>E. Rétention ajustable</strong> : Vous pouvez définir la période de rétention des logs (de 1 jour à 10 ans).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Résumés par Amazon SNS</strong> : CloudWatch Logs peut envoyer des notifications via SNS, mais ne fournit pas de résumés.</li><li><strong>B. Analytics gratuits d'Amazon Elasticsearch Service</strong> : Non, Elasticsearch Service est un service séparé.</li><li><strong>C. Fournis gratuitement</strong> : CloudWatch Logs a des coûts (ingestion, stockage, etc.).</li></ul></div>"
       },
@@ -16885,6 +17596,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Coûts de refroidissement dans les climats plus chauds"
+          },
+          {
+            "letter": "E",
+            "text": "Proximité du bureau du client pour des visites sur site"
           }
         ],
         "correctAnswers": [
@@ -17077,6 +17792,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Logiciel en tant que service"
+          },
+          {
+            "letter": "E",
+            "text": "Hybride"
           }
         ],
         "correctAnswers": [
@@ -17130,10 +17849,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Glacier"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon CloudFront"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon S3</strong> : Stockage durable et évolutif pour le contenu vidéo.</li><li><strong>E. Amazon CloudFront</strong> : CDN qui diffuse le contenu depuis des emplacements périphériques proches des utilisateurs, réduisant la latence.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Storage Gateway</strong> : Service de stockage hybride, pas optimisé pour la diffusion vidéo.</li><li><strong>C. Amazon Elastic File System (EFS)</strong> : Stockage de fichiers pour instances EC2, pas un CDN.</li><li><strong>D. Amazon Glacier</strong> : Archivage à long terme avec temps de récupération élevés.</li></ul></div>"
       },
@@ -17260,6 +17984,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tests de pénétration automatisés"
+          },
+          {
+            "letter": "E",
+            "text": "Détection de contenu protégé par copyright sur Amazon S3"
           }
         ],
         "correctAnswers": [
@@ -17599,6 +18327,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Batch"
+          },
+          {
+            "letter": "E",
+            "text": "AWS X-Ray"
           }
         ],
         "correctAnswers": [
@@ -17652,10 +18384,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Compter sur des composants individuels."
+          },
+          {
+            "letter": "E",
+            "text": "Concevoir pour l'évolutivité."
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Mettre en œuvre un couplage lâche</strong> : Réduit les interdépendances entre les composants.</li><li><strong>E. Concevoir pour l'évolutivité</strong> : Permet à l'application de s'adapter à la charge.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Utiliser une surveillance manuelle</strong> : L'automatisation est recommandée.</li><li><strong>B. Utiliser des serveurs fixes</strong> : L'élasticité est préférable.</li><li><strong>D. Compter sur des composants individuels</strong> : Conception résiliente avec redondance est préférable.</li></ul></div>"
       },
@@ -17886,10 +18623,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EC2 Auto Scaling"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Management Console"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS CloudFormation</strong> : Infrastructure as code pour provisionner des ressources.</li><li><strong>E. AWS Management Console</strong> : Interface web pour gérer les ressources AWS.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Concierge</strong> : Service de support pour clients Enterprise, pas pour provisionner des ressources.</li><li><strong>C. Amazon Simple Storage Service (Amazon S3)</strong> : Service de stockage, pas pour lancer des clusters RDS.</li><li><strong>D. Amazon EC2 Auto Scaling</strong> : Pour ajuster le nombre d'instances EC2, pas pour lancer des clusters RDS.</li></ul></div>"
       },
@@ -17938,10 +18680,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Activer Amazon CloudFront."
+          },
+          {
+            "letter": "E",
+            "text": "Activer l'authentification multi-facteurs (MFA) pour les utilisateurs privilégiés."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Accorder un accès au moindre privilège aux utilisateurs IAM</strong> : Limite les permissions au strict nécessaire.</li><li><strong>E. Activer l'authentification multi-facteurs (MFA) pour les utilisateurs privilégiés</strong> : Ajoute une couche de sécurité supplémentaire.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Activer AWS CloudTrail</strong> : Journalisation des API, important pour l'audit mais ne protège pas directement l'accès.</li><li><strong>C. Créer un seul utilisateur IAM et le partager</strong> : Mauvaise pratique ; chaque utilisateur doit avoir son propre compte.</li><li><strong>D. Activer Amazon CloudFront</strong> : CDN pour la diffusion de contenu, pas pour la sécurité de l'accès au compte.</li></ul></div>"
       },
@@ -18146,10 +18893,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Forums"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Classroom Training"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. AWS Online Tech Talks</strong> : Sessions en ligne dirigées par des experts.</li><li><strong>E. AWS Classroom Training</strong> : Formation en classe avec instructeur.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Trusted Advisor</strong> : Outil de recommandations, pas de formation.</li><li><strong>C. AWS Blog</strong> : Articles en ligne, pas de formation dirigée.</li><li><strong>D. AWS Forums</strong> : Forums de discussion communautaires.</li></ul></div>"
       },
@@ -18172,6 +18924,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sous-réseaux"
+          },
+          {
+            "letter": "E",
+            "text": "Elastic Load Balancing"
           }
         ],
         "correctAnswers": [
@@ -18260,10 +19016,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS CloudHSM"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon CloudWatch"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS CloudTrail</strong> : Service qui enregistre l'historique des appels d'API et des actions de gestion pour la gouvernance, la conformité et l'audit.</li><li><strong>E. Amazon CloudWatch</strong> : Service de surveillance qui collecte des métriques et des logs, permettant de surveiller l'utilisation et les performances.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon CloudFront</strong> : Réseau de diffusion de contenu (CDN), pas pour la collecte d'activité de compte.</li><li><strong>B. AWS Cloud9</strong> : Environnement de développement intégré (IDE) cloud, pas pour la surveillance d'activité.</li><li><strong>D. AWS CloudHSM</strong> : Module de sécurité matériel (HSM) pour la gestion des clés de chiffrement, pas pour la collecte d'activité.</li></ul></div>"
       },
@@ -18286,6 +19047,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Créer le schéma de la base de données."
+          },
+          {
+            "letter": "E",
+            "text": "Exécuter des tests de pénétration."
           }
         ],
         "correctAnswers": [
@@ -18443,6 +19208,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Réduire le trafic sur le serveur en mettant en cache les réponses."
+          },
+          {
+            "letter": "E",
+            "text": "Envoyer des messages de notification aux utilisateurs finaux."
           }
         ],
         "correctAnswers": [
@@ -18678,6 +19447,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Réduire le trafic sur le serveur en mettant en cache les réponses."
+          },
+          {
+            "letter": "E",
+            "text": "Envoyer des messages de notification aux utilisateurs finaux."
           }
         ],
         "correctAnswers": [
@@ -18731,6 +19504,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon DynamoDB"
           }
         ],
         "correctAnswers": [
@@ -18784,6 +19561,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "S'assurer que l'accès aux centres de données est restreint."
+          },
+          {
+            "letter": "E",
+            "text": "S'assurer que le matériel est éliminé correctement."
           }
         ],
         "correctAnswers": [
@@ -18863,6 +19644,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "plans de paiement différé pour les startups."
+          },
+          {
+            "letter": "E",
+            "text": "lignes de crédit commercial pour les startups."
           }
         ],
         "correctAnswers": [
@@ -18995,6 +19780,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Performance"
+          },
+          {
+            "letter": "E",
+            "text": "Capacité de stockage"
           }
         ],
         "correctAnswers": [
@@ -19178,6 +19967,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Colocalisation."
+          },
+          {
+            "letter": "E",
+            "text": "Dépenses en capital."
           }
         ],
         "correctAnswers": [
@@ -19257,6 +20050,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Il garantit l'utilisation de cadres de conformité utilisés par d'autres fournisseurs de cloud."
+          },
+          {
+            "letter": "E",
+            "text": "Il adoptera de nouveaux cadres de conformité dès qu'ils deviendront pertinents pour les charges de travail des clients."
           }
         ],
         "correctAnswers": [
@@ -19336,6 +20133,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Serveurs physiques."
+          },
+          {
+            "letter": "E",
+            "text": "Licence de logiciel antivirus."
           }
         ],
         "correctAnswers": [
@@ -19363,6 +20164,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Remplacer les disques durs défaillants."
+          },
+          {
+            "letter": "E",
+            "text": "Déployer du matériel dans différentes zones de disponibilité."
           }
         ],
         "correctAnswers": [
@@ -19390,6 +20195,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser des documents de conformité AWS pour accélérer le processus de conformité."
+          },
+          {
+            "letter": "E",
+            "text": "Avoir la capacité de créer et de gouverner des environnements à l'aide de code."
           }
         ],
         "correctAnswers": [
@@ -19443,6 +20252,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Temps des développeurs d'applications."
+          },
+          {
+            "letter": "E",
+            "text": "Capacité du moteur de base de données."
           }
         ],
         "correctAnswers": [
@@ -19765,6 +20578,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser des étiquettes (tags) pour associer chaque instance à un département particulier."
+          },
+          {
+            "letter": "E",
+            "text": "Payer les factures à l'aide de bons de commande."
           }
         ],
         "correctAnswers": [
@@ -19870,10 +20687,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gestion des installations"
+          },
+          {
+            "letter": "E",
+            "text": "Gestion du pare-feu"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Gestion du chiffrement</strong> : Le client est responsable du chiffrement des données (côté client et serveur) et de la protection du trafic réseau.</li><li><strong>E. Gestion du pare-feu</strong> : Le client configure les groupes de sécurité et les listes de contrôle d'accès réseau (NACL).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Gestion de la virtualisation</strong> : Responsabilité d'AWS (hyperviseur).</li><li><strong>B. Gestion du matériel</strong> : Responsabilité d'AWS.</li><li><strong>D. Gestion des installations</strong> : Responsabilité d'AWS (centres de données).</li></ul></div>"
       },
@@ -20078,6 +20900,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer une politique de mot de passe forte"
+          },
+          {
+            "letter": "E",
+            "text": "Activer AWS Organizations"
           }
         ],
         "correctAnswers": [
@@ -20521,10 +21347,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Planifié"
+          },
+          {
+            "letter": "E",
+            "text": "Coût variable"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Paiement à l'usage</strong> : Vous payez uniquement pour les services que vous utilisez, sans engagement à long terme.</li><li><strong>E. Coût variable</strong> : Les coûts varient en fonction de l'utilisation, contrairement aux coûts fixes traditionnels.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. À terme fixe</strong> : AWS propose des instances réservées, mais le modèle général est flexible.</li><li><strong>C. Colocation</strong> : Modèle d'hébergement physique, pas le modèle cloud d'AWS.</li><li><strong>D. Planifié</strong> : Pas un terme utilisé pour décrire le modèle de tarification.</li></ul></div>"
       },
@@ -20547,10 +21378,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Équilibreurs de charge cross-zone avec IPs publiques et privées"
+          },
+          {
+            "letter": "E",
+            "text": "Application Load Balancers"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Classic Load Balancers</strong> : Ancienne génération, fonctionne au niveau de la couche 4 (TCP/SSL) et de la couche 7 (HTTP/HTTPS).</li><li><strong>E. Application Load Balancers</strong> : Nouvelle génération, fonctionne au niveau de la couche 7 (HTTP/HTTPS) avec des fonctionnalités avancées.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Équilibreurs de charge publics avec capacités de mise à l'échelle automatique</strong> : Les ELB peuvent être intégrés à Auto Scaling, mais ce n'est pas un type distinct.</li><li><strong>B. F5 Big-IP et Citrix NetScaler</strong> : Solutions tierces, pas des services ELB natifs AWS.</li><li><strong>D. Équilibreurs de charge cross-zone avec IPs publiques et privées</strong> : Cross-zone load balancing est une fonctionnalité, pas un type.</li></ul></div>"
       },
@@ -20807,6 +21643,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Inspector"
           }
         ],
         "correctAnswers": [
@@ -20834,6 +21674,14 @@ const allExams = [
           {
             "letter": "D",
             "text": "Coûts de transfert de données"
+          },
+          {
+            "letter": "E",
+            "text": "Coûts d'infrastructure réseau"
+          },
+          {
+            "letter": "F",
+            "text": "Coûts de cycle de vie du matériel"
           }
         ],
         "correctAnswers": [
@@ -21131,6 +21979,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS CloudFormation"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Config"
           }
         ],
         "correctAnswers": [
@@ -21184,6 +22036,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Tester pour une demande modérée pour garantir la fiabilité"
+          },
+          {
+            "letter": "E",
+            "text": "Sauvegarder la récupération vers un environnement sur site"
           }
         ],
         "correctAnswers": [
@@ -21211,10 +22067,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Supprimer les ressources AWS CloudTrail."
+          },
+          {
+            "letter": "E",
+            "text": "Contacter le support AWS."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Faire tourner les mots de passe et les clés d'accès</strong> : Pour invalider les anciennes informations d'identification compromises.</li><li><strong>E. Contacter le support AWS</strong> : Pour obtenir de l'aide et signaler l'incident.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Supprimer les jetons MFA</strong> : Cela réduirait la sécurité ; il faut plutôt réinitialiser MFA.</li><li><strong>C. Déplacer les ressources vers une autre région</strong> : Non, cela n'aide pas à résoudre la compromission.</li><li><strong>D. Supprimer les ressources CloudTrail</strong> : Cela supprimerait les journaux d'audit, ce qui est contre-productif.</li></ul></div>"
       },
@@ -21341,10 +22202,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les clients peuvent mettre à niveau les instances à mesure que de nouveaux types deviennent disponibles."
+          },
+          {
+            "letter": "E",
+            "text": "Les clients peuvent réserver de la capacité dans une zone de disponibilité."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Elles offrent une remise par rapport aux tarifs à la demande</strong> : Jusqu'à 75 % de réduction.</li><li><strong>E. Les clients peuvent réserver de la capacité dans une zone de disponibilité</strong> : Les instances réservées offrent une réservation de capacité dans une AZ spécifique (pour les instances réservées zonales).</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Accès à des types d'instances supplémentaires</strong> : Non, mêmes types que les instances à la demande.</li><li><strong>C. Capacités de réseautage supplémentaires</strong> : Non.</li><li><strong>D. Mise à niveau des instances</strong> : Les instances réservées standard ne permettent pas de changer de famille d'instance ; les instances convertibles le permettent avec certaines limitations.</li></ul></div>"
       },
@@ -21445,6 +22311,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Glacier"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Organizations"
           }
         ],
         "correctAnswers": [
@@ -21498,6 +22368,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Storage Gateway"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Connect"
           }
         ],
         "correctAnswers": [
@@ -21551,6 +22425,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon RDS"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon ElastiCache"
           }
         ],
         "correctAnswers": [
@@ -21630,6 +22508,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Marketplace élimine le besoin de mettre à niveau vers des versions logicielles plus récentes."
+          },
+          {
+            "letter": "E",
+            "text": "Les utilisateurs peuvent déployer des logiciels tiers sans tests."
           }
         ],
         "correctAnswers": [
@@ -21683,10 +22565,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sécurité physique des centres de données"
+          },
+          {
+            "letter": "E",
+            "text": "Configuration du groupe de sécurité"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Application de correctifs aux systèmes d'exploitation</strong> : Pour les instances EC2, le client est responsable de l'OS invité.</li><li><strong>E. Configuration du groupe de sécurité</strong> : Le client configure les règles des groupes de sécurité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Mises à niveau du microprogramme réseau</strong> : Responsabilité d'AWS.</li><li><strong>C. Correctifs de l'hyperviseur</strong> : Responsabilité d'AWS.</li><li><strong>D. Sécurité physique des centres de données</strong> : Responsabilité d'AWS.</li></ul></div>"
       },
@@ -21865,6 +22752,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les utilisateurs ont accès à un stockage gratuit et illimité."
+          },
+          {
+            "letter": "E",
+            "text": "Les utilisateurs ont le contrôle de l'infrastructure physique."
           }
         ],
         "correctAnswers": [
@@ -21996,6 +22887,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Comprehend permet aux utilisateurs de créer des applications qui peuvent répondre aux demandes des utilisateurs dans de nombreuses langues."
+          },
+          {
+            "letter": "E",
+            "text": "Elastic Load Balancing peut distribuer le trafic web d'application vers plusieurs régions AWS à travers le monde, ce qui réduit la latence."
           }
         ],
         "correctAnswers": [
@@ -22240,6 +23135,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utilisation du chiffrement"
+          },
+          {
+            "letter": "E",
+            "text": "Haute disponibilité"
           }
         ],
         "correctAnswers": [
@@ -22345,6 +23244,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Connecter le centre de données sur site de l'entreprise à AWS en utilisant AWS Direct Connect."
+          },
+          {
+            "letter": "E",
+            "text": "Tirer parti d'Amazon CloudFront pour restreindre l'accès au contenu web statique fourni par les serveurs web sur site de l'entreprise."
           }
         ],
         "correctAnswers": [
@@ -22554,6 +23457,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS peut facilement s'adapter aux changements de demande de l'application."
+          },
+          {
+            "letter": "E",
+            "text": "AWS s'occupe de l'application des correctifs de sécurité."
           }
         ],
         "correctAnswers": [
@@ -22685,6 +23592,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Agilité accrue."
+          },
+          {
+            "letter": "E",
+            "text": "AWS assume la responsabilité de la sécurité dans le cloud."
           }
         ],
         "correctAnswers": [
@@ -22920,6 +23831,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Par le langage de programmation utilisé pour la fonction Lambda."
+          },
+          {
+            "letter": "E",
+            "text": "Par le nombre total de fonctions Lambda dans un compte AWS."
           }
         ],
         "correctAnswers": [
@@ -22947,10 +23862,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Il y a plus de régions AWS que d'emplacements périphériques."
+          },
+          {
+            "letter": "E",
+            "text": "Il y a plus de zones de disponibilité que de régions AWS."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Il y a plus d'emplacements périphériques que de régions AWS</strong> : Des centaines d'edge locations vs des dizaines de régions.</li><li><strong>E. Il y a plus de zones de disponibilité que de régions AWS</strong> : Plusieurs AZ par région.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Il y a plus de régions AWS que de zones de disponibilité</strong> : Faux.</li><li><strong>C. Un emplacement périphérique est une zone de disponibilité</strong> : Non, ce sont des infrastructures distinctes.</li><li><strong>D. Il y a plus de régions AWS que d'emplacements périphériques</strong> : Faux.</li></ul></div>"
       },
@@ -23025,6 +23945,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Acheter des documents de sécurité et de conformité AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Commander AWS Snowball."
           }
         ],
         "correctAnswers": [
@@ -23156,6 +24080,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Dépenses d'investissement initial accrues"
+          },
+          {
+            "letter": "E",
+            "text": "Accès physique aux centres de données cloud"
           }
         ],
         "correctAnswers": [
@@ -23183,6 +24111,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les coûts des tests de pénétration tiers."
+          },
+          {
+            "letter": "E",
+            "text": "Les coûts publicitaires associés à une campagne permanente à l'échelle de l'entreprise."
           }
         ],
         "correctAnswers": [
@@ -23739,6 +24671,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Server Migration Service (AWS SMS) pour déplacer des instances Amazon EC2 dans une autre région"
+          },
+          {
+            "letter": "E",
+            "text": "Des ressources distribuées sur plusieurs points de présence AWS"
           }
         ],
         "correctAnswers": [
@@ -23792,6 +24728,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Exiger que les utilisateurs IAM stockent leurs mots de passe en texte brut"
+          },
+          {
+            "letter": "E",
+            "text": "Désactiver l'authentification multi-facteurs (MFA) pour les utilisateurs IAM"
           }
         ],
         "correctAnswers": [
@@ -23819,6 +24759,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sélectionner un partenaire de l'AWS Partner Network (APN) pour aider à la migration"
+          },
+          {
+            "letter": "E",
+            "text": "Utiliser Amazon Connect pour créer une nouvelle demande de proposition (RFP) pour une assistance experte dans la migration vers le cloud AWS."
           }
         ],
         "correctAnswers": [
@@ -24002,6 +24946,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda"
           }
         ],
         "correctAnswers": [
@@ -24055,6 +25003,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Passerelles Internet"
+          },
+          {
+            "letter": "E",
+            "text": "Clé d'accès"
           }
         ],
         "correctAnswers": [
@@ -24108,10 +25060,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Groupes de sécurité"
+          },
+          {
+            "letter": "E",
+            "text": "Politiques de mots de passe"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Multi-Factor Authentication (AWS MFA)</strong> : Ajoute une deuxième couche d'authentification.</li><li><strong>E. Politiques de mots de passe</strong> : Exigent des mots de passe forts et leur rotation.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Secrets Manager</strong> : Gère les secrets (mots de passe, clés API), pas l'accès console.</li><li><strong>B. AWS Certificate Manager</strong> : Gère les certificats SSL/TLS.</li><li><strong>D. Groupes de sécurité</strong> : Pare-feu pour les instances EC2, pas pour la console.</li></ul></div>"
       },
@@ -24134,6 +25091,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Correctifs logiciels disponibles"
+          },
+          {
+            "letter": "E",
+            "text": "Nombre d'utilisateurs dans le compte"
           }
         ],
         "correctAnswers": [
@@ -24187,6 +25148,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Il corrige automatiquement les problèmes de sécurité potentiels causés par les paramètres de permissions sur les ressources du compte"
+          },
+          {
+            "letter": "E",
+            "text": "Il fournit une alerte proactive chaque fois qu'une instance Amazon EC2 a été compromise"
           }
         ],
         "correctAnswers": [
@@ -24214,6 +25179,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS gère le développement d'applications sur AWS"
+          },
+          {
+            "letter": "E",
+            "text": "AWS gère la planification des coûts pour les serveurs virtuels"
           }
         ],
         "correctAnswers": [
@@ -24267,6 +25236,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Direct Connect"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Managed Services"
           }
         ],
         "correctAnswers": [
@@ -24502,10 +25475,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Secrets Manager"
+          },
+          {
+            "letter": "E",
+            "text": "AWS CloudHSM"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. AWS Key Management Service (AWS KMS)</strong> : Service managé pour créer et contrôler des clés de chiffrement.</li><li><strong>E. AWS CloudHSM</strong> : Module de sécurité matériel (HSM) dédié pour la gestion des clés.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon Macie</strong> : Découverte et classification des données sensibles.</li><li><strong>B. AWS Certificate Manager</strong> : Gère les certificats SSL/TLS.</li><li><strong>D. AWS Secrets Manager</strong> : Gère les secrets (mots de passe, clés API), mais ne génère pas de clés de chiffrement.</li></ul></div>"
       },
@@ -24554,6 +25532,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Partner Network (APN)"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Secrets Manager"
           }
         ],
         "correctAnswers": [
@@ -24607,10 +25589,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Contrôle de l'accès physique aux centres de données"
+          },
+          {
+            "letter": "E",
+            "text": "Gestion des correctifs du système d'exploitation d'une instance Amazon EC2"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Configuration des groupes de sécurité et des ACL</strong> : Le client configure les règles de pare-feu.</li><li><strong>E. Gestion des correctifs du système d'exploitation d'une instance Amazon EC2</strong> : Le client est responsable du système d'exploitation invité sur EC2.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Désactivation des dispositifs de stockage physiques</strong> : Responsabilité d'AWS.</li><li><strong>C. Gestion des correctifs du système d'exploitation d'une instance Amazon RDS</strong> : AWS gère les correctifs du moteur de base de données et du système d'exploitation sous-jacent pour RDS.</li><li><strong>D. Contrôle de l'accès physique aux centres de données</strong> : Responsabilité d'AWS.</li></ul></div>"
       },
@@ -24763,6 +25750,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Alertes de facturation et alarmes Amazon CloudWatch"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Price List API"
           }
         ],
         "correctAnswers": [
@@ -24981,6 +25972,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Faire tourner les clés d'accès régulièrement"
+          },
+          {
+            "letter": "E",
+            "text": "Éviter d'utiliser les rôles IAM pour déléguer des permissions"
           }
         ],
         "correctAnswers": [
@@ -25060,6 +26055,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser AWS Certificate Manager pour mettre sur liste blanche les ressources et services AWS approuvés"
+          },
+          {
+            "letter": "E",
+            "text": "Utiliser Amazon GuardDuty pour valider les changements de configuration apportés aux ressources AWS"
           }
         ],
         "correctAnswers": [
@@ -25139,6 +26138,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Database Migration Service (AWS DMS)"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon API Gateway"
           }
         ],
         "correctAnswers": [
@@ -25426,10 +26429,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Protection de l'infrastructure réseau"
+          },
+          {
+            "letter": "E",
+            "text": "Configuration des groupes de sécurité"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Gestion de la configuration des applications de l'utilisateur</strong> : Le client gère ses applications.</li><li><strong>E. Configuration des groupes de sécurité</strong> : Le client configure les règles de pare-feu.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Gestion de l'accès aux installations d'infrastructure</strong> : AWS.</li><li><strong>B. Gestion du cycle de vie du matériel d'infrastructure cloud</strong> : AWS.</li><li><strong>D. Protection de l'infrastructure réseau</strong> : AWS.</li></ul></div>"
       },
@@ -25478,10 +26486,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Organizations"
+          },
+          {
+            "letter": "E",
+            "text": "ACL réseau"
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. AWS WAF</strong> : Peut bloquer des requêtes basées sur des adresses IP.</li><li><strong>E. ACL réseau</strong> : Filtre le trafic au niveau du sous-réseau basé sur des règles d'adresse IP.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. AWS Trusted Advisor</strong> : Recommande, ne bloque pas.</li><li><strong>C. AWS Direct Connect</strong> : Connexion dédiée.</li><li><strong>D. AWS Organizations</strong> : Gestion de comptes.</li></ul></div>"
       },
@@ -25530,6 +26543,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Chiffrer la communication entre les instances EC2 et l'Elastic Load Balancer"
+          },
+          {
+            "letter": "E",
+            "text": "Configurer un groupe de sécurité et une liste de contrôle d'accès réseau (NACL) pour EC2"
           }
         ],
         "correctAnswers": [
@@ -25713,6 +26730,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Route 53"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Redshift"
           }
         ],
         "correctAnswers": [
@@ -25740,6 +26761,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Latence réduite pour atteindre les applications déployées sur AWS"
+          },
+          {
+            "letter": "E",
+            "text": "Sécurité plus élevée des données stockées sur AWS"
           }
         ],
         "correctAnswers": [
@@ -25871,6 +26896,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Passer automatiquement aux instances réservées ou spot, selon le plus rentable."
+          },
+          {
+            "letter": "E",
+            "text": "Déplacer les données stockées dans Amazon S3 vers une classe de stockage plus rentable."
           }
         ],
         "correctAnswers": [
@@ -26193,10 +27222,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Mettre en œuvre la facturation consolidée"
+          },
+          {
+            "letter": "E",
+            "text": "Appliquer la gouvernance des comptes AWS"
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Mettre en œuvre la facturation consolidée</strong> : Combine la facturation de plusieurs comptes.</li><li><strong>E. Appliquer la gouvernance des comptes AWS</strong> : Permet d'appliquer des politiques via SCP.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Établir des communications en temps réel entre les membres d'une équipe interne</strong> : Non, c'est le rôle de services comme Amazon Chime.</li><li><strong>B. Faciliter l'utilisation des bases de données NoSQL</strong> : Non, c'est le rôle de DynamoDB.</li><li><strong>C. Fournir des vérifications de sécurité automatisées</strong> : C'est le rôle d'AWS Trusted Advisor.</li></ul></div>"
       },
@@ -26297,6 +27331,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS VPN"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Connect"
           }
         ],
         "correctAnswers": [
@@ -26324,6 +27362,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sécurité physique des installations des centres de données"
+          },
+          {
+            "letter": "E",
+            "text": "Disponibilité de la capacité de calcul"
           }
         ],
         "correctAnswers": [
@@ -26715,6 +27757,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS OpsWorks"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon QuickSight"
           }
         ],
         "correctAnswers": [
@@ -26820,6 +27866,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Un ID utilisateur"
+          },
+          {
+            "letter": "E",
+            "text": "Une clé secondaire"
           }
         ],
         "correctAnswers": [
@@ -26847,6 +27897,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Batch"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Inspector"
           }
         ],
         "correctAnswers": [
@@ -27160,10 +28214,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Sécurité des données en transit"
+          },
+          {
+            "letter": "E",
+            "text": "Authentification de l'intégrité des données"
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Sécurité des données en transit</strong> : Le client doit chiffrer les données en transit.</li><li><strong>E. Authentification de l'intégrité des données</strong> : Le client est responsable de l'intégrité des données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Sécurité physique et environnementale</strong> : AWS.</li><li><strong>B. Dispositifs réseau physiques incluant les pare-feu</strong> : AWS.</li><li><strong>C. Désactivation des dispositifs de stockage</strong> : AWS.</li></ul></div>"
       },
@@ -27368,6 +28427,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Performance"
+          },
+          {
+            "letter": "E",
+            "text": "Évolutivité"
           }
         ],
         "correctAnswers": [
@@ -27395,6 +28458,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Attacher un rôle à une instance Amazon EC2"
+          },
+          {
+            "letter": "E",
+            "text": "Générer des clés d'accès pour les utilisateurs IAM"
           }
         ],
         "correctAnswers": [
@@ -27509,6 +28576,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Instances réservées pour les charges de travail soutenues"
+          },
+          {
+            "letter": "E",
+            "text": "Limites de dépenses définies avec AWS Budgets"
           }
         ],
         "correctAnswers": [
@@ -27770,10 +28841,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Passerelle de transit"
+          },
+          {
+            "letter": "E",
+            "text": "Passerelle privée virtuelle"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Passerelle client</strong> : Représente le dispositif VPN côté client (ou le logiciel) dans AWS.</li><li><strong>E. Passerelle privée virtuelle</strong> : Composant côté AWS qui sert de point de terminaison pour la connexion VPN.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Passerelle Internet</strong> : Permet l'accès à Internet pour un VPC, pas nécessaire pour un VPN site à site.</li><li><strong>B. Passerelle NAT</strong> : Permet aux instances dans un sous-réseau privé d'accéder à Internet.</li><li><strong>D. Passerelle de transit</strong> : Service de réseau pour connecter plusieurs VPC, pas spécifiquement pour VPN site à site.</li></ul></div>"
       },
@@ -27952,6 +29028,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon DynamoDB"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Redshift"
           }
         ],
         "correctAnswers": [
@@ -27979,6 +29059,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Connect"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Route 53"
           }
         ],
         "correctAnswers": [
@@ -28162,6 +29246,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utiliser AWS Trusted Advisor"
+          },
+          {
+            "letter": "E",
+            "text": "Utiliser la facturation consolidée"
           }
         ],
         "correctAnswers": [
@@ -28475,6 +29563,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Application des correctifs logiciels"
+          },
+          {
+            "letter": "E",
+            "text": "Gestion ETL (extract, transform, load)"
           }
         ],
         "correctAnswers": [
@@ -28658,6 +29750,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Améliorer la sécurité en surveillant proactivement l'environnement AWS"
+          },
+          {
+            "letter": "E",
+            "text": "Implémenter le tagging obligatoire sur les ressources AWS"
           }
         ],
         "correctAnswers": [
@@ -28685,10 +29781,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configurer une politique de mot de passe qui empêche le développeur de changer son mot de passe."
+          },
+          {
+            "letter": "E",
+            "text": "S'assurer que la politique de mot de passe du compte exige une longueur minimale."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Principe du moindre privilège</strong> : Accorder uniquement les permissions nécessaires.</li><li><strong>E. Exiger une longueur minimale de mot de passe</strong> : Meilleure pratique de sécurité pour les mots de passe.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Partager les identifiants root</strong> : Jamais partager les identifiants root.</li><li><strong>C. Ajouter au groupe administrateur</strong> : Donne trop de permissions, violation du moindre privilège.</li><li><strong>D. Empêcher le changement de mot de passe</strong> : Les utilisateurs doivent pouvoir changer leurs mots de passe.</li></ul></div>"
       },
@@ -28798,6 +29899,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Application Discovery Service"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Kinesis"
           }
         ],
         "correctAnswers": [
@@ -29163,6 +30268,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Support Center"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Service Health Dashboard"
           }
         ],
         "correctAnswers": [
@@ -29216,10 +30325,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Créer une politique IAM avec un accès administrateur et l'attacher à l'utilisateur IAM."
+          },
+          {
+            "letter": "E",
+            "text": "Créer une politique IAM avec un accès Amazon RDS et l'attacher à l'utilisateur IAM."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Créer un utilisateur IAM avec accès programmatique uniquement</strong> : Correspond à l'exigence de n'utiliser que CLI/SDK.</li><li><strong>E. Créer une politique IAM avec accès Amazon RDS</strong> : Applique le principe du moindre privilège en ne donnant que l'accès nécessaire.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Accès console uniquement</strong> : Non, l'employé a besoin d'un accès programmatique.</li><li><strong>C. Rôle IAM avec accès console</strong> : Rôle généralement pour les services, et accès console non requis.</li><li><strong>D. Politique administrateur</strong> : Donne trop de permissions, violation du moindre privilège.</li></ul></div>"
       },
@@ -29268,6 +30382,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Augmenter la disponibilité de l'application"
+          },
+          {
+            "letter": "E",
+            "text": "Augmenter la charge de l'application"
           }
         ],
         "correctAnswers": [
@@ -29503,10 +30621,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Cognito"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda"
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Amazon EC2</strong> : Service de calcul élastique basé sur des instances virtuelles.</li><li><strong>E. AWS Lambda</strong> : Service de calcul serverless.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Amazon S3</strong> : Service de stockage d'objets.</li><li><strong>C. Amazon EBS</strong> : Stockage par blocs pour EC2.</li><li><strong>D. Amazon Cognito</strong> : Service de gestion des identités utilisateur.</li></ul></div>"
       },
@@ -29633,10 +30756,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Adopter un modèle de consommation"
+          },
+          {
+            "letter": "E",
+            "text": "Récupérer automatiquement après une défaillance"
           }
         ],
         "correctAnswers": [
-          "C"
+          "C",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>C. Tester les procédures de récupération</strong> : Essentiel pour s'assurer que la reprise après sinistre fonctionne.</li><li><strong>E. Récupérer automatiquement après une défaillance</strong> : L'automatisation de la récupération améliore la fiabilité.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Utiliser une architecture monolithique</strong> : Généralement moins fiable qu'une architecture microservices découplée.</li><li><strong>B. Mesurer l'efficacité globale</strong> : Relève de l'efficacité des performances.</li><li><strong>D. Adopter un modèle de consommation</strong> : Avantage économique, pas directement lié à la fiabilité.</li></ul></div>"
       },
@@ -29659,6 +30787,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudFront"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Lambda"
           }
         ],
         "correctAnswers": [
@@ -29842,6 +30974,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Options de paiement en plusieurs fois"
+          },
+          {
+            "letter": "E",
+            "text": "Création de budgets personnalisés pour les coûts et l'utilisation"
           }
         ],
         "correctAnswers": [
@@ -30398,10 +31534,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Engineer"
+          },
+          {
+            "letter": "E",
+            "text": "Chief Technology Officer (CTO)"
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Engineer</strong> et <strong>E. Chief Technology Officer (CTO)</strong> : La perspective \"Plateforme\" du CAF se concentre sur l'accélération de la livraison des charges de travail via un environnement cloud hybride évolutif. Les parties prenantes typiques incluent le CTO, les leaders technologiques, les architectes et les ingénieurs.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A, B, C</strong> : Ces rôles sont plus associés à d'autres perspectives du CAF (Business, People, Governance).</li></ul></div>"
       },
@@ -30606,6 +31747,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Simple Storage Service (S3)"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon DynamoDB"
           }
         ],
         "correctAnswers": [
@@ -30633,6 +31778,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EFS, fonctions AWS Lambda"
+          },
+          {
+            "letter": "E",
+            "text": "Fonctions AWS Lambda, Amazon S3"
           }
         ],
         "correctAnswers": [
@@ -30738,6 +31887,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Systems Manager"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Step Function"
           }
         ],
         "correctAnswers": [
@@ -30791,6 +31944,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon CloudWatch"
+          },
+          {
+            "letter": "E",
+            "text": "AWS Budgets"
           }
         ],
         "correctAnswers": [
@@ -30922,10 +32079,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon Simple Storage Service (S3)"
+          },
+          {
+            "letter": "E",
+            "text": "Instance Store"
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon EBS</strong> : Stockage par blocs pour les instances EC2.</li><li><strong>E. Instance Store</strong> : Stockage par blocs temporaire directement attaché à l'hôte EC2.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Amazon EFS</strong> : Stockage de fichiers (file-level).</li><li><strong>C. Amazon ECS</strong> : Service de conteneurs, pas de stockage.</li><li><strong>D. Amazon S3</strong> : Stockage objet (object-level).</li></ul></div>"
       },
@@ -31052,6 +32214,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "La gestion de la configuration est la responsabilité du client."
+          },
+          {
+            "letter": "E",
+            "text": "AWS est responsable de la formation des employés AWS et des clients sur les produits et services AWS."
           }
         ],
         "correctAnswers": [
@@ -31079,6 +32245,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Storage Gateway"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Elastic File System (EFS)"
           }
         ],
         "correctAnswers": [
@@ -31106,6 +32276,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Acheter des instances EC2 réservées standard (RI)."
+          },
+          {
+            "letter": "E",
+            "text": "Demander l'achat d'une connexion AWS Direct Connect."
           }
         ],
         "correctAnswers": [
@@ -31263,6 +32437,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "AWS Fargate"
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Lightsail"
           }
         ],
         "correctAnswers": [
@@ -31368,10 +32546,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Remises volume pour Amazon EC2 et Amazon S3 agrégées sur les comptes membres."
+          },
+          {
+            "letter": "E",
+            "text": "Partager les instances EC2 réservées entre les comptes membres."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Remises volume agrégées</strong> : La facturation consolidée combine l'utilisation de tous les comptes, permettant des remises volume.</li><li><strong>E. Partager les instances EC2 réservées</strong> : Les avantages de facturation des instances réservées peuvent être partagés entre les comptes membres.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A, B, C</strong> : AWS Organizations ne fournit pas ces fonctionnalités directement ; d'autres services comme Inspector, Systems Manager, ou EC2 sont utilisés.</li></ul></div>"
       },
@@ -31472,6 +32655,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Less costly"
+          },
+          {
+            "letter": "E",
+            "text": "Storage"
           }
         ],
         "correctAnswers": [
@@ -31551,10 +32738,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Ne pas utiliser AWS Organizations pour automatiser la création de comptes AWS."
+          },
+          {
+            "letter": "E",
+            "text": "Restreindre les privilèges des comptes à l'aide de Service Control Policies (SCP)."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Créer des comptes par département</strong> : Pour l'isolation des ressources et la gestion des limites.</li><li><strong>E. Utiliser des SCP pour restreindre les privilèges</strong> : Les SCP permettent d'appliquer des garde-fous de permissions au niveau de l'organisation.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Ne pas utiliser de balises</strong> : Faux, les balises sont recommandées pour la catégorisation et la facturation.</li><li><strong>C. Désactiver CloudTrail</strong> : Faux, CloudTrail doit être activé pour l'audit.</li><li><strong>D. Ne pas utiliser Organizations pour automatiser</strong> : Faux, Organizations permet d'automatiser la création de comptes.</li></ul></div>"
       },
@@ -31707,6 +32899,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Arrêter de deviner la capacité"
+          },
+          {
+            "letter": "E",
+            "text": "Échanger les dépenses opérationnelles contre des dépenses en capital"
           }
         ],
         "correctAnswers": [
@@ -31734,6 +32930,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Acheter des instances EC2 réservées (RI)."
+          },
+          {
+            "letter": "E",
+            "text": "Construire ses propres serveurs."
           }
         ],
         "correctAnswers": [
@@ -31926,6 +33126,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Utilise du matériel dédié."
+          },
+          {
+            "letter": "E",
+            "text": "Haute disponibilité."
           }
         ],
         "correctAnswers": [
@@ -32057,6 +33261,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Installation d'équipements de locaux."
+          },
+          {
+            "letter": "E",
+            "text": "Salaire du responsable informatique."
           }
         ],
         "correctAnswers": [
@@ -32084,6 +33292,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Déployer dans une seule zone de disponibilité."
+          },
+          {
+            "letter": "E",
+            "text": "Couplage étroit."
           }
         ],
         "correctAnswers": [
@@ -32137,10 +33349,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Configuration des groupes de sécurité."
+          },
+          {
+            "letter": "E",
+            "text": "Chiffrement des données client."
           }
         ],
         "correctAnswers": [
-          "D"
+          "D",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>D. Configuration des groupes de sécurité</strong> : Responsabilité du client.</li><li><strong>E. Chiffrement des données client</strong> : Responsabilité du client.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Gestion des correctifs de l'infrastructure</strong> : Responsabilité d'AWS.</li><li><strong>B. Remplacement et élimination des disques durs</strong> : Responsabilité d'AWS.</li><li><strong>C. Sécurité physique du centre de données</strong> : Responsabilité d'AWS.</li></ul></div>"
       },
@@ -32163,10 +33380,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gain d'un plus grand contrôle de la couche d'infrastructure."
+          },
+          {
+            "letter": "E",
+            "text": "Échangez les dépenses en capital contre des dépenses variables."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Arrêtez de deviner la capacité nécessaire</strong> : Un des 6 avantages du cloud.</li><li><strong>E. Échangez les dépenses en capital contre des dépenses variables</strong> : Un des 6 avantages du cloud.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Dépenses en capital accrues</strong> : Faux. Le cloud réduit les dépenses en capital.</li><li><strong>C. Conformité à tous les programmes de sécurité locaux</strong> : Non garanti, mais AWS est conforme à de nombreux programmes.</li><li><strong>D. Gain d'un plus grand contrôle de la couche d'infrastructure</strong> : Faux. AWS contrôle largement l'infrastructure.</li></ul></div>"
       },
@@ -32189,6 +33411,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon ElastiCache."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon RDS."
           }
         ],
         "correctAnswers": [
@@ -32294,6 +33520,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Régions."
+          },
+          {
+            "letter": "E",
+            "text": "Sous-réseaux IP."
           }
         ],
         "correctAnswers": [
@@ -32399,6 +33629,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Les compartiments sont répliqués globalement."
+          },
+          {
+            "letter": "E",
+            "text": "Les noms de compartiments doivent être uniques régionalement."
           }
         ],
         "correctAnswers": [
@@ -32556,10 +33790,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Accord de licence d'entreprise (ELA)."
+          },
+          {
+            "letter": "E",
+            "text": "Paiement à l'usage."
           }
         ],
         "correctAnswers": [
-          "A"
+          "A",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>A. Économisez lorsque vous réservez</strong> : Modèle d'instances réservées.</li><li><strong>E. Paiement à l'usage</strong> : Modèle de paiement à l'heure ou à la seconde sans engagement.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>B. Remises d'utilisation globale</strong> : Non offert par AWS.</li><li><strong>C. Remises en heures creuses</strong> : Non offert par AWS.</li><li><strong>D. Accord de licence d'entreprise (ELA)</strong> : Non offert par AWS.</li></ul></div>"
       },
@@ -32634,6 +33873,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Équilibrage de charge."
+          },
+          {
+            "letter": "E",
+            "text": "Mise à l'échelle automatique."
           }
         ],
         "correctAnswers": [
@@ -32713,6 +33956,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon S3."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon SNS."
           }
         ],
         "correctAnswers": [
@@ -32740,6 +33987,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Gestion des correctifs."
+          },
+          {
+            "letter": "E",
+            "text": "Application des correctifs du système de stockage."
           }
         ],
         "correctAnswers": [
@@ -32871,10 +34122,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Capacité de calcul disponible."
+          },
+          {
+            "letter": "E",
+            "text": "Souveraineté des données."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Latence</strong> : Vous pouvez choisir une région pour réduire la latence.</li><li><strong>E. Souveraineté des données</strong> : Pour répondre aux exigences réglementaires concernant l'emplacement des données.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. Tarification en monnaie locale</strong> : Les prix des services AWS sont en USD.</li><li><strong>C. Capacité de stockage disponible</strong> et <strong>D. Capacité de calcul disponible</strong> : Généralement non préoccupant car AWS dispose d'un vaste pool de ressources et ne divulgue pas la capacité disponible dans chaque région.</li></ul></div>"
       },
@@ -32923,10 +34179,15 @@ const allExams = [
           {
             "letter": "D",
             "text": "Amazon EC2."
+          },
+          {
+            "letter": "E",
+            "text": "Amazon Route 53."
           }
         ],
         "correctAnswers": [
-          "B"
+          "B",
+          "E"
         ],
         "explanation": "<div class=\"explanation-content\"><ul><li><strong>Options correctes</strong> <span class=\"correct-marker\"><span class=\"correct-marker\">✅</span></span> :</li><li><strong>B. Amazon CloudFront</strong> : CDN avec portée globale.</li><li><strong>E. Amazon Route 53</strong> : Service DNS avec portée globale.</li><li><strong>Autres options incorrectes</strong> <span class=\"incorrect-marker\"><span class=\"incorrect-marker\">❌</span></span> :</li><li><strong>A. AWS Lambda</strong> : Service régional.</li><li><strong>C. Amazon S3</strong> : Utilise un espace de noms global mais les compartiments et objets sont créés dans une région.</li><li><strong>D. Amazon EC2</strong> : Service régional.</li></ul></div>"
       },
@@ -32975,6 +34236,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Permet d'enregistrer des noms de domaine."
+          },
+          {
+            "letter": "E",
+            "text": "Utilisé pour permettre aux instances de sous-réseau privé d'accéder à Internet."
           }
         ],
         "correctAnswers": [
@@ -33080,6 +34345,10 @@ const allExams = [
           {
             "letter": "D",
             "text": "Arrêter de deviner la capacité nécessaire."
+          },
+          {
+            "letter": "E",
+            "text": "Obtenir un plus grand contrôle de la sécurité du centre de données."
           }
         ],
         "correctAnswers": [

@@ -15,30 +15,26 @@ function getExamNumber(filename) {
 // Fonction pour détecter les réponses dans différents formats
 function extractCorrectAnswers(text) {
     const patterns = [
-        // Format anglais
-        /Correct answer:\s*([A-D](?:,\s*[A-D])*)/i,
-        /Answer:\s*([A-D](?:,\s*[A-D])*)/i,
-        
-        // Format français
-        /Bonne réponse\s*:\s*([A-D](?:,\s*[A-D])*)/i,
-        /Réponse\s*:\s*([A-D](?:,\s*[A-D])*)/i,
-        /Réponses?\s*correctes?\s*:\s*([A-D](?:,\s*[A-D])*)/i,
-        
-        // Format dans les balises <details>
-        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-D](?:,\s*[A-D])*)/i,
-        
-        // Format avec emojis
-        /✅\s*([A-D](?:,\s*[A-D])*)/i,
-        /Correct\s*:\s*([A-D](?:,\s*[A-D])*)/i
+        /Correct answer:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /Answer:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /Bonne réponse\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /Réponse\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /Réponses?\s*correctes?\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /✅\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
+        /Correct\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i
     ];
-    
+
     for (const pattern of patterns) {
         const match = text.match(pattern);
         if (match) {
-            return match[1].split(',').map(a => a.trim());
+            return match[1]
+                .split(/[,\s]+|et/i)
+                .map(a => a.trim().toUpperCase())
+                .filter(a => /^[A-F]$/.test(a));
         }
     }
-    
+
     return [];
 }
 
@@ -88,7 +84,7 @@ function extractExplanation(text) {
         }
         
         if (inExplanation && trimmedLine && 
-            !trimmedLine.match(/^-\s*[A-D]\./) && 
+            !trimmedLine.match(/^-\s*[A-F]\./) &&
             !trimmedLine.includes('Correct answer') &&
             !trimmedLine.includes('Bonne réponse')) {
             explanationLines.push(trimmedLine);
@@ -242,7 +238,7 @@ function parseQuestion(questionText, questionNumber, examNumber) {
         const options = [];
         for (let i = 1; i < lines.length; i++) {
             const line = lines[i].trim();
-            const optionMatch = line.match(/^-\s*([A-D])\.\s*(.+)/);
+            const optionMatch = line.match(/^-\s*([A-F])\.\s*(.+)/);
             if (optionMatch) {
                 options.push({
                     letter: optionMatch[1],
@@ -266,7 +262,7 @@ function parseQuestion(questionText, questionNumber, examNumber) {
         
         if (correctAnswers.length === 0) {
             // Essayer de deviner en cherchant des indices
-            const guessMatch = fullText.match(/(?:✅|correcte?|bonne)\s*[:\s]*([A-D])/i);
+            const guessMatch = fullText.match(/(?:✅|correcte?|bonne)\s*[:\s]*([A-F])/i);
             if (guessMatch) {
                 console.log(`  ➤ Deviné pour Q${questionNumber}: ${guessMatch[1]}`);
                 return {
