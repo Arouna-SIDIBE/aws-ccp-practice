@@ -154,20 +154,25 @@ function updateTimer() {
 // Fonctions de gestion des tests
 function displayQuestion(index) {
     if (!currentTest || !currentTest.questions || !currentTest.questions[index]) return;
-    
+
     const question = currentTest.questions[index];
     const container = document.getElementById('questionContainer');
-    
+    const isMulti = question.correctAnswers && question.correctAnswers.length > 1;
+    const expectedCount = question.correctAnswers ? question.correctAnswers.length : 1;
+
     let html = `
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">Question ${index + 1}</span>
-                ${question.correctAnswers && question.correctAnswers.length > 1 ? 
-                    '<span class="multiple-choice"><i class="fas fa-check-double"></i> Choix multiple</span>' : ''}
+                ${isMulti ? `<span class="multiple-choice"><i class="fas fa-check-double"></i> Choix multiple</span>` : ''}
             </div>
-            
             <div class="question-text">${escapeHtml(question.text)}</div>
-
+            ${isMulti ? `
+                <div class="answer-hint">
+                    <i class="fas fa-info-circle"></i>
+                    Sélectionnez ${expectedCount} réponses parmi les options ci-dessous.
+                </div>
+            ` : ''}
             <div class="options-container">
     `;
 
@@ -175,9 +180,9 @@ function displayQuestion(index) {
         question.options.forEach((option) => {
             const isSelected = userAnswers[index] && userAnswers[index].includes(option.letter);
             const optionClass = isSelected ? 'option selected' : 'option';
-
             html += `
                 <div class="${optionClass}" role="button" tabindex="0"
+                     data-multi="${isMulti}"
                      onclick="selectOption(${index}, '${escapeHtml(option.letter)}')"
                      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectOption(${index}, '${escapeHtml(option.letter)}')}">
                     <span class="option-label">${escapeHtml(option.letter)}.</span>
@@ -186,16 +191,10 @@ function displayQuestion(index) {
             `;
         });
     }
-    
-    html += `
-            </div>
-        </div>
-    `;
-    
-    if (container) {
-        container.innerHTML = html;
-    }
-    
+
+    html += `</div></div>`;
+
+    if (container) container.innerHTML = html;
     updateProgress();
     updateNavigationButtons();
 }
@@ -778,3 +777,26 @@ window.retryTest = retryTest;
 window.toggleReview = toggleReview;
 window.generateQuestionGrid = generateQuestionGrid;
 window.goToQuestion = goToQuestion;
+(function initTheme() {
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('themeToggle');
+        if (!btn) return;
+        const updateIcon = () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            btn.innerHTML = current === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        };
+        updateIcon();
+        btn.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateIcon();
+        });
+    });
+})();
