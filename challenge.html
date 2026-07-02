@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="challenge.title">
 
 <head>
     <meta charset="UTF-8">
@@ -37,10 +37,15 @@
                 <span>AWS CCP Practice</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                <li><a href="challenge.html" class="active"><i class="fas fa-trophy"></i> Challenge</a></li>
-                <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                <li><a href="challenge.html" class="active"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                <li><a href="review.html"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                        <span class="lang-current">FR</span>
+                    </button>
+                </li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
                         <i class="fas fa-moon"></i>
@@ -52,56 +57,55 @@
 
     <div class="test-container" id="main">
         <div class="challenge-intro">
-            <h1><i class="fas fa-trophy"></i> Challenge Aléatoire AWS CCP</h1>
-            <p class="challenge-description">
-                Testez vos connaissances avec 65 questions sélectionnées aléatoirement parmi plus de 1257 questions.
-                Chaque tentative génère un test unique !
+            <h1><i class="fas fa-trophy"></i> <span data-i18n="challenge.title">Challenge Aléatoire AWS CCP</span></h1>
+            <p class="challenge-description" data-i18n="challenge.desc">
+                Testez vos connaissances avec 65 questions sélectionnées aléatoirement parmi plus de 1257 questions. Chaque tentative génère un test unique.
             </p>
 
             <div class="challenge-info">
                 <div class="info-card">
                     <i class="fas fa-random"></i>
-                    <h3>Questions Aléatoires</h3>
+                    <h3 data-i18n="challenge.info.random.title">Questions Aléatoires</h3>
                     <p>Sélection aléatoire à chaque tentative</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-stopwatch"></i>
-                    <h3>110 Minutes</h3>
+                    <h3 data-i18n="challenge.info.time.title">110 Minutes</h3>
                     <p>Temps limite recommandé</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Score Détaillé</h3>
+                    <h3 data-i18n="challenge.info.score.title">Score Détaillé</h3>
                     <p>Analyse complète de vos résultats</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-history"></i>
-                    <h3>Historique</h3>
+                    <h3 data-i18n="challenge.info.history.title">Historique</h3>
                     <p>Suivez votre progression</p>
                 </div>
             </div>
 
             <div class="challenge-stats">
-                <h3><i class="fas fa-chart-bar"></i> Vos statistiques de challenge</h3>
+                <h3><i class="fas fa-chart-bar"></i> <span data-i18n="challenge.stats.title">Vos statistiques de challenge</span></h3>
                 <div id="challengeStats">
-                    <p>Connectez-vous ou commencez votre premier challenge pour voir vos statistiques.</p>
+                    <p data-i18n="challenge.stats.empty">Commence ton premier challenge pour voir tes statistiques ici.</p>
                 </div>
             </div>
 
             <div class="start-challenge-container">
                 <button class="btn btn-primary start-challenge-btn" onclick="startChallenge()">
-                    <i class="fas fa-bolt"></i> DÉMARRER LE CHALLENGE
+                    <i class="fas fa-bolt"></i> <span data-i18n="challenge.start_btn">DÉMARRER LE CHALLENGE</span>
                 </button>
                 <p class="challenge-tip">
-                    <i class="fas fa-lightbulb"></i> Conseil : Prévoyez un temps calme de 110 minutes sans interruption.
+                    <i class="fas fa-lightbulb"></i> <span data-i18n="challenge.tip">Conseil : Prévoyez un temps calme de 110 minutes sans interruption.</span>
                 </p>
             </div>
 
             <div class="recent-challenges">
-                <h3><i class="fas fa-history"></i> Derniers challenges</h3>
+                <h3><i class="fas fa-history"></i> <span data-i18n="challenge.recent.title">Derniers challenges</span></h3>
                 <div id="recentChallenges">
                     <!-- Les derniers challenges seront chargés ici -->
-                    <p>Aucun challenge complété pour le moment.</p>
+                    <p data-i18n="challenge.recent.empty">Aucun challenge complété pour le moment.</p>
                 </div>
             </div>
         </div>
@@ -111,20 +115,20 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>AWS CCP Practice</h3>
-                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
-                <p>© 2026 Tous droits réservés</p>
+                <p data-i18n="footer.tagline">Plateforme bilingue de préparation à la certification AWS Certified Cloud Practitioner.</p>
+                <p>© 2026 <span data-i18n="footer.rights">Tous droits réservés</span></p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3 data-i18n="footer.quick_links">Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                    <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                    <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
-                    <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                    <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                    <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                    <li><a href="review.html"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer.contact">Contact</h3>
                 <p>
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
@@ -140,6 +144,7 @@
     </footer>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -154,16 +159,16 @@
             const statsEl = document.getElementById('challengeStats');
             if (statsEl) {
                 if (challenges.length === 0) {
-                    statsEl.innerHTML = '<p>Commence ton premier challenge pour voir tes statistiques ici.</p>';
+                    statsEl.innerHTML = `<p>${t('challenge.stats.empty')}</p>`;
                 } else {
                     const total = challenges.length;
                     const avg = Math.round(challenges.reduce((s, c) => s + c.score, 0) / total);
                     const best = Math.max(...challenges.map(c => c.score));
                     statsEl.innerHTML = `
                         <div class="challenge-info">
-                            <div class="info-card"><h3>${total}</h3><p>Challenges tentés</p></div>
-                            <div class="info-card"><h3>${avg}%</h3><p>Score moyen</p></div>
-                            <div class="info-card"><h3>${best}%</h3><p>Meilleur score</p></div>
+                            <div class="info-card"><h3>${total}</h3><p>${t('challenge.stats.attempted')}</p></div>
+                            <div class="info-card"><h3>${avg}%</h3><p>${t('challenge.stats.avg')}</p></div>
+                            <div class="info-card"><h3>${best}%</h3><p>${t('challenge.stats.best')}</p></div>
                         </div>
                     `;
                 }
@@ -172,7 +177,7 @@
             const recentEl = document.getElementById('recentChallenges');
             if (recentEl) {
                 if (challenges.length === 0) {
-                    recentEl.innerHTML = '<p>Aucun challenge complété pour le moment.</p>';
+                    recentEl.innerHTML = `<p>${t('challenge.recent.empty')}</p>`;
                 } else {
                     const last = challenges.slice(-5).reverse();
                     recentEl.innerHTML = last.map(c => {

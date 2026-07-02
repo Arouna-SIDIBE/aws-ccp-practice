@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="nav.home" data-page-desc-key="home.subtitle">
 
 <head>
     <meta charset="UTF-8">
@@ -37,10 +37,15 @@
                 <span>AWS CCP Practice</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
-                <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                <li><a href="review.html"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                        <span class="lang-current">FR</span>
+                    </button>
+                </li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
                         <i class="fas fa-moon"></i>
@@ -53,111 +58,111 @@
     <!-- Hero Section -->
     <section class="hero" id="main">
         <div class="hero-content">
-            <h1>Préparez-vous à la certification <span>AWS Cloud Practitioner</span></h1>
-            <p>Plateforme complète 100% française avec plus de 1250 questions, examens chronométrés, mode révision et suivi détaillé de progression</p>
+            <h1><span data-i18n="home.title">Préparez-vous à la certification</span> <span data-i18n="home.title_highlight">AWS Cloud Practitioner</span></h1>
+            <p data-i18n="home.subtitle">Plateforme complète bilingue avec plus de 1250 questions, examens chronométrés, mode révision et suivi détaillé de progression.</p>
             <div class="hero-buttons">
                 <a href="challenge.html" class="btn btn-primary">
-                    <i class="fas fa-bolt"></i> Démarrer un Challenge
+                    <i class="fas fa-bolt"></i> <span data-i18n="home.cta_challenge">Démarrer un Challenge</span>
                 </a>
                 <a href="review.html" class="btn btn-secondary">
-                    <i class="fas fa-book"></i> Mode Révision
+                    <i class="fas fa-book"></i> <span data-i18n="home.cta_review">Mode Révision</span>
                 </a>
                 <a href="tests.html" class="btn btn-secondary">
-                    <i class="fas fa-list"></i> Voir les examens
+                    <i class="fas fa-list"></i> <span data-i18n="home.cta_exams">Voir les examens</span>
                 </a>
             </div>
         </div>
         <div class="hero-stats">
             <div class="stat-card">
                 <h3>25</h3>
-                <p>Examens complets</p>
+                <p data-i18n="home.stats.exams">Examens complets</p>
             </div>
             <div class="stat-card">
                 <h3>1257+</h3>
-                <p>Questions disponibles</p>
+                <p data-i18n="home.stats.questions">Questions disponibles</p>
             </div>
             <div class="stat-card">
                 <h3>65</h3>
-                <p>Questions par challenge</p>
+                <p data-i18n="home.stats.per_challenge">Questions par challenge</p>
             </div>
             <div class="stat-card">
-                <h3>100%</h3>
-                <p>En français</p>
+                <h3>FR/EN</h3>
+                <p data-i18n="home.stats.bilingual">Bilingue FR/EN</p>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-        <h2>Pourquoi utiliser notre plateforme ?</h2>
+        <h2 data-i18n="home.features.title">Pourquoi utiliser notre plateforme ?</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-stopwatch"></i>
                 </div>
-                <h3>Chronomètre intelligent</h3>
-                <p>Tests chronométrés avec sauvegarde automatique de votre progression</p>
+                <h3 data-i18n="home.features.timer.title">Chronomètre intelligent</h3>
+                <p data-i18n="home.features.timer.desc">Tests chronométrés avec sauvegarde automatique de votre progression.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-random"></i>
                 </div>
-                <h3>Questions aléatoires</h3>
-                <p>Challenge unique à chaque tentative avec 65 questions sélectionnées aléatoirement parmi 1257+ questions</p>
+                <h3 data-i18n="home.features.random.title">Questions aléatoires</h3>
+                <p data-i18n="home.features.random.desc">Challenge unique à chaque tentative avec 65 questions sélectionnées aléatoirement.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-book"></i>
                 </div>
-                <h3>Mode Révision</h3>
-                <p>Apprenez à votre rythme avec les réponses et explications immédiatement disponibles</p>
+                <h3 data-i18n="home.features.review.title">Mode Révision</h3>
+                <p data-i18n="home.features.review.desc">Apprenez à votre rythme avec les réponses et explications immédiatement disponibles.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-language"></i>
                 </div>
-                <h3>100% Français</h3>
-                <p>Plateforme entièrement en français avec explications détaillées dans votre langue</p>
+                <h3 data-i18n="home.features.bilingual.title">Bilingue</h3>
+                <p data-i18n="home.features.bilingual.desc">Basculez entre français et anglais à tout moment, même en cours de test.</p>
             </div>
         </div>
     </section>
 
     <!-- How it Works -->
     <section class="how-it-works">
-        <h2>Comment ça marche ?</h2>
+        <h2 data-i18n="home.how.title">Comment ça marche ?</h2>
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Choisissez votre mode</h3>
-                <p>Test chronométré, challenge aléatoire ou révision libre selon vos besoins</p>
+                <h3 data-i18n="home.how.step1.title">Choisissez votre mode</h3>
+                <p data-i18n="home.how.step1.desc">Test chronométré, challenge aléatoire ou révision libre.</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Étudiez les questions</h3>
-                <p>Accédez à plus de 1250 questions en français avec corrections détaillées</p>
+                <h3 data-i18n="home.how.step2.title">Étudiez les questions</h3>
+                <p data-i18n="home.how.step2.desc">Accédez à plus de 1250 questions avec corrections détaillées.</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Testez vos connaissances</h3>
-                <p>Passez des examens complets dans des conditions réelles</p>
+                <h3 data-i18n="home.how.step3.title">Testez vos connaissances</h3>
+                <p data-i18n="home.how.step3.desc">Passez des examens complets dans des conditions réelles.</p>
             </div>
             <div class="step">
                 <div class="step-number">4</div>
-                <h3>Améliorez-vous</h3>
-                <p>Utilisez vos statistiques et le mode révision pour cibler vos révisions</p>
+                <h3 data-i18n="home.how.step4.title">Améliorez-vous</h3>
+                <p data-i18n="home.how.step4.desc">Utilisez vos statistiques pour cibler vos révisions.</p>
             </div>
         </div>
     </section>
 
     <!-- Modes Section -->
     <section class="modes">
-        <h2>Trois modes d'apprentissage</h2>
+        <h2 data-i18n="home.modes.title">Trois modes d'apprentissage</h2>
         <div class="modes-container">
             <div class="mode-card test-mode">
                 <div class="mode-icon">
                     <i class="fas fa-clock"></i>
                 </div>
-                <h3>Mode Test</h3>
+                <h3 data-i18n="home.modes.test.title">Mode Test</h3>
                 <ul>
                     <li><i class="fas fa-check"></i> Chronomètre activé</li>
                     <li><i class="fas fa-check"></i> Simulation d'examen réel</li>
@@ -170,7 +175,7 @@
                 <div class="mode-icon">
                     <i class="fas fa-trophy"></i>
                 </div>
-                <h3>Mode Challenge</h3>
+                <h3 data-i18n="home.modes.challenge.title">Mode Challenge</h3>
                 <ul>
                     <li><i class="fas fa-check"></i> 65 questions aléatoires</li>
                     <li><i class="fas fa-check"></i> Sélection parmi 1257+ questions</li>
@@ -183,7 +188,7 @@
                 <div class="mode-icon">
                     <i class="fas fa-book-open"></i>
                 </div>
-                <h3>Mode Révision</h3>
+                <h3 data-i18n="home.modes.review.title">Mode Révision</h3>
                 <ul>
                     <li><i class="fas fa-check"></i> Pas de pression de temps</li>
                     <li><i class="fas fa-check"></i> Réponses immédiatement visibles</li>
@@ -200,21 +205,21 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>AWS CCP Practice</h3>
-                <p>Plateforme 100% française de préparation à la certification AWS Certified Cloud Practitioner</p>
-                <p>Développé dans le cadre de la formation Orange Digital Center Mali</p>
-                <p>© 2026 Tous droits réservés</p>
+                <p data-i18n="footer.tagline">Plateforme bilingue de préparation à la certification AWS Certified Cloud Practitioner.</p>
+                <p data-i18n="footer.developed_by">Développé dans le cadre de la formation Orange Digital Center Mali.</p>
+                <p>© 2026 <span data-i18n="footer.rights">Tous droits réservés</span></p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3 data-i18n="footer.quick_links">Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                    <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                    <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
-                    <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                    <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                    <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                    <li><a href="review.html"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer.contact">Contact</h3>
                 <p>
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
@@ -230,6 +235,7 @@
     </footer>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 

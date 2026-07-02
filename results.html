@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="results.final_score">
 
 <head>
     <meta charset="UTF-8">
@@ -37,9 +37,14 @@
                 <span>Résultats du test</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                        <span class="lang-current">FR</span>
+                    </button>
+                </li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
                         <i class="fas fa-moon"></i>
@@ -63,19 +68,19 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>AWS CCP Practice</h3>
-                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
-                <p>© 2026 Tous droits réservés</p>
+                <p data-i18n="footer.tagline">Plateforme bilingue de préparation à la certification AWS Certified Cloud Practitioner.</p>
+                <p>© 2026 <span data-i18n="footer.rights">Tous droits réservés</span></p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3 data-i18n="footer.quick_links">Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tests.html">Examens</a></li>
-                    <li><a href="challenge.html">Challenge</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="tests.html" data-i18n="nav.exams">Examens</a></li>
+                    <li><a href="challenge.html" data-i18n="nav.challenge">Challenge</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer.contact">Contact</h3>
                 <p>
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
@@ -92,6 +97,7 @@
     </footer>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <script>
         // Afficher les résultats quand la page est chargée

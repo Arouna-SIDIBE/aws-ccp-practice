@@ -7,7 +7,11 @@ let timerInterval = null;
 let timeSpent = 0;
 
 // Utiliser allExams si disponible
-let exams = typeof allExams !== 'undefined' ? allExams : [];
+// Toujours lire depuis la langue courante (via i18n.js)
+function getExamsList() {
+    return (typeof getExams === 'function') ? getExams() :
+           (typeof allExams !== 'undefined' ? allExams : []);
+}
 
 // Échappe le HTML pour empêcher toute injection quand on rend du contenu
 // dans innerHTML (défense en profondeur, même si nos données viennent du repo).
@@ -38,7 +42,7 @@ function saveProgress() {
 
 // Fonction pour démarrer un examen
 function startExam(examId) {
-    const exam = exams.find(e => e.id === examId);
+    const exam = getExamsList().find(e => e.id === examId);
     if (!exam) {
         alert("Examen non trouvé");
         return;
@@ -57,7 +61,7 @@ function startExam(examId) {
 // Fonction pour démarrer un challenge
 function startChallenge() {
     let allQuestions = [];
-    exams.forEach(exam => {
+    getExamsList().forEach(exam => {
         if (exam.questions && exam.questions.length > 0) {
             allQuestions = allQuestions.concat(exam.questions);
         }
@@ -164,13 +168,13 @@ function displayQuestion(index) {
         <div class="question-card">
             <div class="question-header">
                 <span class="question-number">Question ${index + 1}</span>
-                ${isMulti ? `<span class="multiple-choice"><i class="fas fa-check-double"></i> Choix multiple</span>` : ''}
+                ${isMulti ? `<span class="multiple-choice"><i class="fas fa-check-double"></i> ${t('common.multiple_choice')}</span>` : ''}
             </div>
             <div class="question-text">${escapeHtml(question.text)}</div>
             ${isMulti ? `
                 <div class="answer-hint">
                     <i class="fas fa-info-circle"></i>
-                    Sélectionnez ${expectedCount} réponses parmi les options ci-dessous.
+                    ${t('common.select_n', {n: expectedCount})}
                 </div>
             ` : ''}
             <div class="options-container">
@@ -457,51 +461,51 @@ function displayResults() {
                     <div class="score-text">${scorePercentage}%</div>
                 </div>
                 
-                <h1>${passed ? '🎉 Félicitations !' : '📝 Presque !'}</h1>
+                <h1>${passed ? '🎉 ' + t('results.congrats') : '📝 ' + t('results.almost')}</h1>
                 <h2>${result.examName}</h2>
                 <p class="score-status ${passed ? 'passed' : 'failed'}">
-                    ${passed ? 'Vous avez réussi le test !' : 'Continuez à pratiquer !'}
+                    ${passed ? t('results.passed_msg') : t('results.failed_msg')}
                 </p>
-                
+
                 <div class="results-stats">
                     <div class="stat-card">
                         <h3>${result.correctAnswers}/${result.totalQuestions}</h3>
-                        <p>Questions correctes</p>
+                        <p>${t('results.correct')}</p>
                     </div>
                     <div class="stat-card">
                         <h3>${result.timeSpent}</h3>
-                        <p>Temps total</p>
+                        <p>${t('results.time_total')}</p>
                     </div>
                     <div class="stat-card">
                         <h3>${result.score}%</h3>
-                        <p>Score final</p>
+                        <p>${t('results.final_score')}</p>
                     </div>
                     <div class="stat-card">
                         <h3>${new Date(result.date).toLocaleDateString()}</h3>
-                        <p>Date du test</p>
+                        <p>${t('results.date')}</p>
                     </div>
                 </div>
-                
+
                 <div class="action-buttons">
                     <button class="action-btn retry-btn" onclick="retryTest()">
-                        <i class="fas fa-redo"></i> Recommencer
+                        <i class="fas fa-redo"></i> ${t('common.retry')}
                     </button>
                     <button class="action-btn review-btn" onclick="toggleReview()">
-                        <i class="fas fa-list"></i> Voir les détails
+                        <i class="fas fa-list"></i> ${t('results.see_details')}
                     </button>
                     <a href="tests.html" class="action-btn home-btn">
-                        <i class="fas fa-home"></i> Retour aux examens
+                        <i class="fas fa-home"></i> ${t('results.back_to_exams')}
                     </a>
                 </div>
             </div>
-            
+
             <div class="results-details" id="resultsDetails" style="display: none;">
-                <h2><i class="fas fa-chart-bar"></i> Détail des questions</h2>
+                <h2><i class="fas fa-chart-bar"></i> ${t('results.explanation')}</h2>
                 ${generateResultsDetails(result.results)}
             </div>
-            
+
             <div class="recommendations">
-                <h3><i class="fas fa-lightbulb"></i> Recommandations</h3>
+                <h3><i class="fas fa-lightbulb"></i> ${t('results.recommendations')}</h3>
                 <p>${getRecommendations(result.score)}</p>
             </div>
         `;
@@ -551,29 +555,29 @@ function generateResultsDetails(results) {
                     <div class="review-answer user-answer">
                         <div class="answer-header">
                             <i class="fas fa-user-circle"></i>
-                            <strong>Votre réponse:</strong>
+                            <strong>${t('results.your_answer')} :</strong>
                         </div>
                         <div class="answer-content">
-                            ${userAnswerText || '<em>Non répondue</em>'}
+                            ${userAnswerText || `<em>${t('results.not_answered')}</em>`}
                         </div>
                     </div>
-                    
+
                     <div class="review-answer correct-answer">
                         <div class="answer-header">
                             <i class="fas fa-check-circle"></i>
-                            <strong>Réponse correcte:</strong>
+                            <strong>${t('results.correct_answer')} :</strong>
                         </div>
                         <div class="answer-content">
                             ${correctAnswerText}
                         </div>
                     </div>
                 </div>
-                
+
                 ${item.explanation ? `
                     <div class="review-explanation">
                         <div class="explanation-header">
                             <i class="fas fa-info-circle"></i>
-                            <strong>Explication détaillée:</strong>
+                            <strong>${t('results.explanation')} :</strong>
                         </div>
                         <div class="explanation-content">
                             ${item.explanation}
@@ -679,7 +683,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Restaurer exactement les mêmes questions que celles générées au démarrage.
                 const savedIds = testData.challengeQuestionIds || [];
                 const questionsById = new Map();
-                allExams.forEach(exam => {
+                getExamsList().forEach(exam => {
                     (exam.questions || []).forEach(q => questionsById.set(q.id, q));
                 });
                 const restored = savedIds
@@ -702,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     questions: restored
                 };
             } else {
-                const exam = allExams.find(e => e.id === parseInt(examId));
+                const exam = getExamsList().find(e => e.id === parseInt(examId));
                 if (exam) {
                     currentTest = exam;
                 }
@@ -777,6 +781,23 @@ window.retryTest = retryTest;
 window.toggleReview = toggleReview;
 window.generateQuestionGrid = generateQuestionGrid;
 window.goToQuestion = goToQuestion;
+
+// Afficher la langue courante dans le toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const langBtn = document.getElementById('langToggle');
+    if (!langBtn) return;
+    const label = langBtn.querySelector('.lang-current');
+    if (!label) return;
+    // Afficher la langue vers laquelle on va basculer
+    const next = currentLang() === 'fr' ? 'EN' : 'FR';
+    label.textContent = next;
+    langBtn.setAttribute('aria-label',
+        currentLang() === 'fr'
+            ? (translations.fr['lang.toggle_to_en'] || 'Switch to English')
+            : (translations.en['lang.toggle_to_fr'] || 'Passer en français')
+    );
+});
+
 (function initTheme() {
     const stored = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;

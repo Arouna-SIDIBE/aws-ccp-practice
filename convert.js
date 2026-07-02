@@ -2,8 +2,11 @@
 const fs = require('fs');
 const path = require('path');
 
-// Dossier contenant les fichiers MD (français)
-const QUESTIONS_DIR = './questions/fr';
+// Dossiers contenant les fichiers MD par langue
+const QUESTIONS_DIRS = {
+    fr: './questions/fr',
+    en: './questions/en'
+};
 const OUTPUT_FILE = './data.js';
 
 // Fonction pour extraire le numéro de l'examen
@@ -15,14 +18,14 @@ function getExamNumber(filename) {
 // Fonction pour détecter les réponses dans différents formats
 function extractCorrectAnswers(text) {
     const patterns = [
-        /Correct answer:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /Answer:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /Bonne réponse\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /Réponse\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /Réponses?\s*correctes?\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /✅\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i,
-        /Correct\s*:\s*([A-F](?:\s*[,\s]\s*[A-F])*)/i
+        /Correct answer:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /Answer:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /Bonne réponse\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /Réponse\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /Réponses?\s*correctes?\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /✅\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
+        /Correct\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i
     ];
 
     for (const pattern of patterns) {
@@ -345,88 +348,67 @@ function parseExamFile(filePath, examNumber) {
 }
 
 // Fonction principale
-function convertAllExams() {
-    console.log('🚀 DÉBUT DE LA CONVERSION AMÉLIORÉE\n');
-    
-    if (!fs.existsSync(QUESTIONS_DIR)) {
-        console.error(`❌ Dossier non trouvé: ${QUESTIONS_DIR}`);
-        process.exit(1);
+function convertLang(dir, langLabel) {
+    if (!fs.existsSync(dir)) {
+        console.error(`Dossier non trouvé : ${dir}`);
+        return [];
     }
-    
-    const files = fs.readdirSync(QUESTIONS_DIR)
-        .filter(file => file.endsWith('.md'))
-        .sort((a, b) => {
-            const numA = getExamNumber(a) || 0;
-            const numB = getExamNumber(b) || 0;
-            return numA - numB;
-        });
-    
-    console.log(`📂 ${files.length} fichiers trouvés`);
-    
-    const allExams = [];
-    let totalQuestions = 0;
-    
+    const files = fs.readdirSync(dir)
+        .filter(f => f.endsWith('.md'))
+        .sort((a, b) => (getExamNumber(a) || 0) - (getExamNumber(b) || 0));
+
+    console.log(`\n[${langLabel}] ${files.length} fichiers trouvés dans ${dir}`);
+    const exams = [];
+    let total = 0;
     for (const file of files) {
         const examNumber = getExamNumber(file);
         if (!examNumber) continue;
-        
-        const filePath = path.join(QUESTIONS_DIR, file);
-        const exam = parseExamFile(filePath, examNumber);
-        
+        const exam = parseExamFile(path.join(dir, file), examNumber);
         if (exam) {
-            allExams.push(exam);
-            totalQuestions += exam.questions.length;
+            exams.push(exam);
+            total += exam.questions.length;
         }
     }
-    
-    // Statistiques
-    console.log('\n📊 STATISTIQUES FINALES:');
-    console.log('='.repeat(50));
-    console.log(`📁 Examens convertis: ${allExams.length}`);
-    console.log(`❓ Questions totales: ${totalQuestions}`);
-    
-    // Afficher le résumé par examen
-    allExams.sort((a, b) => a.id - b.id);
-    allExams.forEach(exam => {
-        console.log(`  - Examen ${exam.id}: ${exam.questions.length} questions`);
-    });
-    
-    // Générer le fichier data.js
+    exams.sort((a, b) => a.id - b.id);
+    console.log(`[${langLabel}] ${exams.length} examens, ${total} questions.`);
+    return exams;
+}
+
+function convertAllExams() {
+    console.log('DÉBUT DE LA CONVERSION BILINGUE');
+
+    const allExamsData = {
+        fr: convertLang(QUESTIONS_DIRS.fr, 'FR'),
+        en: convertLang(QUESTIONS_DIRS.en, 'EN')
+    };
+
+    const totals = {
+        fr: allExamsData.fr.reduce((s, e) => s + e.questions.length, 0),
+        en: allExamsData.en.reduce((s, e) => s + e.questions.length, 0)
+    };
+
     const jsContent = `// Structure de données générée automatiquement
-// Fichier régénérable via : node convert.js
-// Examens: ${allExams.length}
-// Questions: ${totalQuestions}
+// Examens FR : ${allExamsData.fr.length} (${totals.fr} questions)
+// Examens EN : ${allExamsData.en.length} (${totals.en} questions)
 
-const allExams = ${JSON.stringify(allExams, null, 2)};
+const allExamsData = ${JSON.stringify(allExamsData, null, 2)};
 
-// Exporter pour usage
+// Compatibilité rétro : allExams pointe vers la langue par défaut (fr)
+// pour les usages hérités. La logique i18n dans script.js remplace
+// dynamiquement cette référence.
+const allExams = allExamsData.fr;
+
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { allExams };
+    module.exports = { allExamsData, allExams };
 }`;
-    
+
     fs.writeFileSync(OUTPUT_FILE, jsContent, 'utf8');
-    
-    console.log('\n✅ CONVERSION TERMINÉE !');
-    console.log('='.repeat(50));
-    console.log(`📄 Fichier généré: ${OUTPUT_FILE}`);
-    console.log(`📏 Taille: ${Math.round(jsContent.length / 1024)} KB`);
-    
-    // Tester quelques explications pour vérifier le formatage
-    console.log('\n🔍 Test des explications formatées:');
-    if (allExams.length > 0 && allExams[0].questions.length > 0) {
-        const sampleQuestion = allExams[0].questions[0];
-        console.log('Structure de l\'explication pour la première question:');
-        if (sampleQuestion.explanation) {
-            // Afficher un extrait propre
-            const cleanExcerpt = sampleQuestion.explanation
-                .replace(/<[^>]*>/g, ' ')
-                .replace(/\s+/g, ' ')
-                .substring(0, 200);
-            console.log(`"${cleanExcerpt}..."`);
-        } else {
-            console.log('Pas d\'explication');
-        }
-    }
+
+    console.log('\n=== RÉSUMÉ ===');
+    console.log(`FR : ${allExamsData.fr.length} examens, ${totals.fr} questions`);
+    console.log(`EN : ${allExamsData.en.length} examens, ${totals.en} questions`);
+    console.log(`Taille de data.js : ${Math.round(jsContent.length / 1024)} KB`);
+    console.log(`\nCONVERSION TERMINÉE.`);
 }
 
 // Exécuter

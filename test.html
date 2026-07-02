@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="common.start_exam">
 
 <head>
     <meta charset="UTF-8">
@@ -64,13 +64,13 @@
         <div class="question-navigation">
             <div class="nav-buttons">
                 <button class="nav-btn" onclick="prevQuestion()" id="prevBtn">
-                    <i class="fas fa-arrow-left"></i> Précédent
+                    <i class="fas fa-arrow-left"></i> <span data-i18n="common.previous">Précédent</span>
                 </button>
                 <button class="nav-btn" onclick="nextQuestion()" id="nextBtn">
-                    Suivant <i class="fas fa-arrow-right"></i>
+                    <span data-i18n="common.next">Suivant</span> <i class="fas fa-arrow-right"></i>
                 </button>
                 <button class="nav-btn submit-btn" onclick="showSubmitModal()" id="submitBtn">
-                    <i class="fas fa-paper-plane"></i> Soumettre le test
+                    <i class="fas fa-paper-plane"></i> <span data-i18n="common.submit">Soumettre le test</span>
                 </button>
             </div>
 
@@ -78,21 +78,20 @@
                 <!-- Les numéros de questions seront générés dynamiquement -->
             </div>
             <div class="grid-legend">
-                <span class="grid-legend-item">Non répondue</span>
-                <span class="grid-legend-item answered">Répondue</span>
-                <span class="grid-legend-item current">Actuelle</span>
+                <span class="grid-legend-item" data-i18n="common.not_answered">Non répondue</span>
+                <span class="grid-legend-item answered" data-i18n="common.answered">Répondue</span>
+                <span class="grid-legend-item current" data-i18n="common.current">Actuelle</span>
             </div>
         </div>
 
         <!-- Instructions -->
         <div class="instructions">
-            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <h3><i class="fas fa-info-circle"></i> <span data-i18n="test.instructions.title">Instructions</span></h3>
             <ul>
-                <li>Cliquez sur une réponse pour la sélectionner</li>
-                <li>Utilisez les boutons "Précédent" et "Suivant" pour naviguer</li>
-                <li>Le temps est enregistré automatiquement</li>
-                <li>Vous pouvez revenir à n'importe quelle question avant de soumettre</li>
-                <li>Une fois soumis, vous ne pourrez plus modifier vos réponses</li>
+                <li data-i18n="test.instructions.1">Cliquez sur une réponse pour la sélectionner</li>
+                <li data-i18n="test.instructions.2">Utilisez les boutons "Précédent" et "Suivant" pour naviguer</li>
+                <li data-i18n="test.instructions.3">Le temps est enregistré automatiquement</li>
+                <li data-i18n="test.instructions.4">Vous pouvez revenir à n'importe quelle question avant de soumettre</li>
             </ul>
         </div>
     </div>
@@ -100,18 +99,19 @@
     <!-- Modal de confirmation de soumission -->
     <div class="modal" id="submitModal">
         <div class="modal-content">
-            <h2><i class="fas fa-exclamation-triangle"></i> Confirmer la soumission</h2>
-            <p>Êtes-vous sûr de vouloir soumettre votre test ?</p>
+            <h2><i class="fas fa-exclamation-triangle"></i> <span data-i18n="test.submit_modal.title">Confirmer la soumission</span></h2>
+            <p data-i18n="test.submit_modal.body">Êtes-vous sûr de vouloir soumettre votre test ?</p>
             <p>Vous avez répondu à <span id="answeredCount">0</span> questions sur <span id="totalQuestions">0</span>.
             </p>
             <div class="modal-buttons">
-                <button class="modal-btn cancel-btn" onclick="closeModal()">Annuler</button>
-                <button class="modal-btn confirm-btn" onclick="confirmSubmit()">Confirmer la soumission</button>
+                <button class="modal-btn cancel-btn" onclick="closeModal()"><span data-i18n="common.cancel">Annuler</span></button>
+                <button class="modal-btn confirm-btn" onclick="confirmSubmit()"><span data-i18n="common.confirm">Confirmer</span></button>
             </div>
         </div>
     </div>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <script>
         function showSubmitModal() {
