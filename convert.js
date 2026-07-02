@@ -18,23 +18,25 @@ function getExamNumber(filename) {
 // Fonction pour détecter les réponses dans différents formats
 function extractCorrectAnswers(text) {
     const patterns = [
-        /Correct answer:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /Answer:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /Bonne réponse\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /Réponse\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /Réponses?\s*correctes?\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /✅\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i,
-        /Correct\s*:\s*([A-F](?:(?:[ \t]*,[ \t]*|[ \t]+)[A-F])*)/i
+        /Correct answer:\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /Answer:\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /Bonne réponse\s*:\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /Réponse\s*:\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /Réponses?\s*correctes?\s*:\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /<summary[^>]*>.*?(?:Answer|Réponse)[^<]*<\/summary>\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /✅\s*([A-F](?:[ \t,]*[A-F])*)/i,
+        /Correct\s*:\s*([A-F](?:[ \t,]*[A-F])*)/i
     ];
 
     for (const pattern of patterns) {
         const match = text.match(pattern);
         if (match) {
-            return match[1]
-                .split(/[,\s]+|et/i)
-                .map(a => a.trim().toUpperCase())
-                .filter(a => /^[A-F]$/.test(a));
+            // Extraire toutes les lettres A-F du match, quel que soit le séparateur
+            // (virgule, espace, ou lettres collées comme 'BC' ou 'BCD').
+            const letters = match[1].match(/[A-F]/gi);
+            if (letters && letters.length > 0) {
+                return [...new Set(letters.map(l => l.toUpperCase()))];
+            }
         }
     }
 
@@ -265,14 +267,15 @@ function parseQuestion(questionText, questionNumber, examNumber) {
         
         if (correctAnswers.length === 0) {
             // Essayer de deviner en cherchant des indices
-            const guessMatch = fullText.match(/(?:✅|correcte?|bonne)\s*[:\s]*([A-F])/i);
-            if (guessMatch) {
-                console.log(`  ➤ Deviné pour Q${questionNumber}: ${guessMatch[1]}`);
+            const guessMatch = fullText.match(/(?:✅|correcte?|bonne)\s*[:\s]*([A-F](?:[ \t,]*[A-F])*)/i);
+            const guessedLetters = guessMatch ? guessMatch[1].match(/[A-F]/gi) : null;
+            if (guessedLetters && guessedLetters.length > 0) {
+                console.log(`  ➤ Deviné pour Q${questionNumber}: ${guessedLetters.join(',')}`);
                 return {
                     id: `${examNumber}_${questionNumber}`,
                     text: questionLine,
                     options: options,
-                    correctAnswers: [guessMatch[1]],
+                    correctAnswers: [...new Set(guessedLetters.map(l => l.toUpperCase()))],
                     explanation: explanation || '<div class="basic-explanation"><em>Explication non disponible pour cette question</em></div>'
                 };
             } else {

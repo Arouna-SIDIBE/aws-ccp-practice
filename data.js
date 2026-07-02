@@ -50801,7 +50801,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://aws.amazon.com/sql/></p></div>"
         },
@@ -50883,7 +50884,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -50939,7 +50941,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -50969,7 +50972,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation:</p><ul><li><https://aws.amazon.com/cloudwatch/></li><li>You can also use CloudWatch in hybrid cloud architectures by using the CloudWatch Agent or API to monitor your on-premises resources</li></ul></div>"
         },
@@ -51077,7 +51081,9 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BCD</p><p>Explanation: <https://aws.amazon.com/premiumsupport/knowledge-center/estimating-aws-resource-costs/></p></div>"
         },
@@ -51107,7 +51113,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html></p></div>"
         },
@@ -51371,7 +51378,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/compliance/shared-responsibility-model/></p></div>"
         },
@@ -51453,7 +51461,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "D"
+            "D",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -51483,7 +51492,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -51929,7 +51939,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "D"
+            "D",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -51985,7 +51996,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         }
@@ -52180,7 +52192,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -52236,7 +52249,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BE</p><p>Explanation:</p><ul><li><https://aws.amazon.com/getting-started/tutorials/deliver-content-faster/></li><li><https://aws.amazon.com/cloudfront/></li></ul></div>"
         },
@@ -52370,7 +52384,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation:</p><ul><li>Penetration testing is not correct, because it can be done by customers on their own resources.</li></ul></div>"
         },
@@ -52712,7 +52727,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation:</p><ul><li><https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises.html></li><li><https://aws.amazon.com/blogs/aws/opsworks-on-prem-and-existing-instances/></li></ul></div>"
         },
@@ -52768,7 +52784,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -53006,7 +53023,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -53062,7 +53080,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BE</p><p>Explanation:</p><ul><li>If you decided to create service accounts (that is, accounts used for programmatic access by applications running outside of the AWS environment) and generate access keys for them, you should create a dedicated service account for each use case.</li><li>This will allow you to restrict the associated policy to only the permissions needed for the particular use case, limiting the blast radius if the credentials are compromised.</li><li>For example, if a monitoring tool and a release management tool both require access to your AWS environment, create two separate service accounts with two separate policies that define the minimum set of permissions for each tool.</li></ul><p>Reference: <https://aws.amazon.com/blogs/security/guidelines-for-protecting-your-aws-account-while-using-programmatic-access/></p></div>"
         },
@@ -53305,7 +53324,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CD</p><p>Explanation:</p><ul><li>Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.</li><li>You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.</li><li>You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.</li><li>You can easily customize the network configuration for your Amazon VPC.</li><li>For example, you can create a public-facing subnet for your web servers that has access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access.</li><li>You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.</li></ul><p>Reference: <https://aws.amazon.com/vpc/></p></div>"
         },
@@ -53396,7 +53416,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation:</p><ul><li>AWS offers a solution that uses AWS CloudTrail to log account activity, Amazon Kinesis to compute and stream metrics in real-time, and Amazon DynamoDB to durably store the computed data.</li><li>Metrics are calculated for create, modify, and delete API calls for more than 60 supported AWS services.</li><li>The solution also features a dashboard that visualizes your account activity in real-time.</li></ul><p>Reference: <https://aws.amazon.com/solutions/real-time-insights-account-activity/></p></div>"
         },
@@ -53426,7 +53447,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -53586,7 +53608,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation:</p><ul><li>CloudFront delivers your content through a worldwide network of data centers called edge locations.</li></ul><p>When a user requests content that you're serving with CloudFront, the user is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance.</p><p>Reference: <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html></p></div>"
         },
@@ -53824,7 +53847,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation:</p><ul><li>CloudFront delivers your content through a worldwide network of data centers called edge locations.</li><li>When a user requests content that you're serving with CloudFront, the user is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance.</li></ul><p>Reference: <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html></p></div>"
         },
@@ -53880,7 +53904,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <http://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/></p></div>"
         },
@@ -53936,7 +53961,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/compliance/shared-responsibility-model/></p></div>"
         },
@@ -54018,7 +54044,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -54153,7 +54180,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation:</p><ul><li>Like your customized cloud expert, AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories: cost optimization, performance, security, fault tolerance and service limits.</li></ul><p>Reference: <https://aws.amazon.com/premiumsupport/technology/trusted-advisor/></p></div>"
         },
@@ -54335,7 +54363,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation:</p><ul><li>The most celebrated benefit of AWS cloud is elasticity since you can expand the services when you experience more traffic.</li><li>Agile developments in AWS Cloud through strategies are day by day becoming more established within the enterprises across the world.</li><li>With so much improvement and call for optimization in the cloud, it is necessary that these strategies get established from the ground up within the organizations.</li><li>It is highly important as already enterprises have a lot of bequest, politics and hierarchies which act as barriers in their businesses.</li></ul><p>Reference: <https://www.botmetric.com/blog/evolution-agile-enterprises-aws-cloud/></p></div>"
         },
@@ -54417,7 +54446,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://d0.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Whitepaper.pdf></p></div>"
         },
@@ -54499,7 +54529,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CD</p><p>Explanation: <https://aws.amazon.com/blogs/aws/the-new-aws-tco-calculator/></p></div>"
         },
@@ -54529,7 +54560,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation:</p><ul><li>The hardware related jobs is the prime responsibility of AWS. VPC network access control lists is something a customer has to do himself to secure the applications.</li><li>Encrypting data in transit and at rest is a shared responsibility in which AWS plays a part.</li><li>All hardware related jobs have nothing to do with the customer.</li></ul><p>Reference: <https://dzone.com/articles/aws-shared-responsibility-model-cloud-security></p></div>"
         },
@@ -54559,7 +54591,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://wa.aws.amazon.com/wat.concept.elasticity.en.html></p></div>"
         },
@@ -54615,7 +54648,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -54940,7 +54974,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation:</p><ul><li>Tags are key-value pairs that allow you to organize your AWS resources into groups. You can use tags to:</li><li>Visualize information about tagged resources in one place, in conjunction with Resource Groups.</li><li>View billing information using Cost Explorer and the AWS Cost and Usage report.</li><li>Send notifications about spending limits using AWS Budgets.</li><li>Use logical groupings of your resources that make sense for your infrastructure or business.</li><li>For example, you could organize your resources by:</li><li>Project</li><li>Cost center</li><li>Development environment</li><li>Application</li><li>Department</li></ul><p>Reference: <https://aws.amazon.com/premiumsupport/knowledge-center/tags-billing-cost-center-project/></p></div>"
         },
@@ -55048,7 +55083,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation:</p><ul><li>With the basic Cloud infrastructure secured and maintained by AWS, the responsibility for what goes into the cloud falls on you. This covers both client and server side encryption and network traffic protection, security of the operating system, network, and firewall configuration, followed by application security and identity and access management.</li><li>Firewall configuration remains the responsibility of the end user, which integrates at the platform and application management level. For example, RDS utilizes security groups, which you would be responsible for configuring and implementing.</li></ul><p>Reference: <https://cloudacademy.com/blog/aws-shared-responsibility-model-security/></p></div>"
         },
@@ -55260,7 +55296,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation:</p><ul><li>Your root account should always be protected by Multi-Factor Authentication (MFA).</li><li>This additional layer of security helps protect against unauthorized logins to your account by requiring two factors: something you know (a password) and something you have (for example, an MFA device).</li><li>AWS supports virtual and hardware MFA devices and U2F security keys.</li><li>Cognito can be used as an Identity Provider (IdP), where it stores and maintains users and credentials securely for your applications, or it can be integrated with OpenID Connect, SAML, and other popular web identity providers like Amazon.com.</li><li>Using Amazon Cognito, you can generate temporary access credentials for your clients to access AWS services, eliminating the need to store long-term credentials in client applications.</li></ul><p>Reference: <https://aws.amazon.com/blogs/security/guidelines-for-protecting-your-aws-account-while-using-programmatic-access/></p></div>"
         },
@@ -55706,7 +55743,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BE</p><p>Explanation: <https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf></p></div>"
         },
@@ -55736,7 +55774,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation:</p><ul><li>Elastic Load Balancing supports the following types of load balancers: Application Load Balancers, Network Load Balancers, and Classic Load Balancers.</li><li>Amazon ECS services can use either type of load balancer.</li><li>Application Load Balancers are used to route HTTP/HTTPS (or Layer 7) traffic.</li><li>Network Load Balancers and Classic Load Balancers are used to route TCP (or Layer 4) traffic.</li></ul><p>Reference: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html></p></div>"
         },
@@ -56000,7 +56039,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://aws.amazon.com/shield/></p></div>"
         },
@@ -56034,7 +56074,9 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: ACD</p><p>Explanation:</p><p><https://aws.amazon.com/blogs/aws/the-new-aws-tco-calculator/></p></div>"
         }
@@ -56333,7 +56375,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation:</p><ul><li>EBS -> automates deploying code and provisioning infrastructure</li><li>CloudFormation -> Use templates to deploy code and infrastructure</li></ul></div>"
         },
@@ -56389,7 +56432,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/></p></div>"
         },
@@ -56419,7 +56463,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AE</p><p>Explanation: <https://aws.amazon.com/premiumsupport/knowledge-center/potential-account-compromise/></p></div>"
         },
@@ -56553,7 +56598,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AE</p><p>Explanation: <https://aws.amazon.com/premiumsupport/knowledge-center/ec2-ri-basics/></p></div>"
         },
@@ -56661,7 +56707,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html></p></div>"
         },
@@ -56717,7 +56764,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/hybrid/></p></div>"
         },
@@ -56856,7 +56904,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://aws.amazon.com/partners/aws-marketplace/></p></div>"
         },
@@ -56912,7 +56961,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BE</p><p>Explanation: <https://aws.amazon.com/compliance/shared-responsibility-model/></p></div>"
         },
@@ -57098,7 +57148,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -57232,7 +57283,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation:</p><ul><li><https://aws.amazon.com/cloudfront/></li></ul></div>"
         },
@@ -57479,7 +57531,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation: <https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf></p></div>"
         },
@@ -57587,7 +57640,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/blogs/apn/amazon-vpc-for-on-premises-network-engineers-part-one/></p></div>"
         },
@@ -57799,7 +57853,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -57933,7 +57988,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -58171,7 +58227,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/lambda/pricing/></p></div>"
         },
@@ -58201,7 +58258,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -58283,7 +58341,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation: <https://aws.amazon.com/marketplace></p></div>"
         },
@@ -58417,7 +58476,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation: <https://data-flair.training/blogs/aws-advantages/></p></div>"
         },
@@ -58447,7 +58507,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BC</p><p>Explanation: <https://aws.amazon.com/tco-calculator/></p></div>"
         },
@@ -59006,7 +59067,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf></p></div>"
         },
@@ -59062,7 +59124,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html></p></div>"
         },
@@ -59092,7 +59155,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CD</p><p>Explanation: <https://aws.amazon.com/solutions/aws-landing-zone/></p></div>"
         },
@@ -59278,7 +59342,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/cloudfront/faqs/></p></div>"
         },
@@ -59334,7 +59399,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://subscription.packtpub.com/book/virtualization_and_cloud/9781788293723/3/ch03lvl1sec26/vpc-components></p></div>"
         },
@@ -59390,7 +59456,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation: <https://aws.amazon.com/blogs/security/guidelines-for-protecting-your-aws-account-while-using-programmatic-access/></p></div>"
         },
@@ -59420,7 +59487,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/></p></div>"
         },
@@ -59476,7 +59544,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -59506,7 +59575,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/compliance/data-center/controls/></p></div>"
         },
@@ -59562,7 +59632,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation:</p><ul><li><https://aws.amazon.com/directconnect/></li><li><https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-client-vpn-to-securely-access-aws-and-on-premises-resources/></li></ul></div>"
         },
@@ -59800,7 +59871,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation:</p><ul><li><https://docs.aws.amazon.com/crypto/latest/userguide/awscryp-service-hsm.html></li><li><https://docs.aws.amazon.com/kms/latest/developerguide/overview.html></li></ul></div>"
         },
@@ -59856,7 +59928,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -59912,7 +59985,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BE</p><p>Explanation: <https://www.whizlabs.com/blog/aws-security-shared-responsibility/></p></div>"
         },
@@ -60068,7 +60142,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html></p></div>"
         },
@@ -60289,7 +60364,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html></p></div>"
         },
@@ -60371,7 +60447,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -60453,7 +60530,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://aws.amazon.com/snowball/></p></div>"
         },
@@ -60743,7 +60821,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation: <https://cloudacademy.com/blog/aws-shared-responsibility-model-security/></p></div>"
         },
@@ -60799,7 +60878,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AE</p><p>Explanation:</p><ul><li><https://aws.amazon.com/waf/></li><li><https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html></li></ul></div>"
         },
@@ -60855,7 +60935,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -61041,7 +61122,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AB</p><p>Explanation: <https://aws.amazon.com/autoscaling/faqs/></p></div>"
         },
@@ -61071,7 +61153,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/global-accelerator/faqs/></p></div>"
         },
@@ -61205,7 +61288,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -61530,7 +61614,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "D"
+            "D",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: DE</p><p>Explanation: <https://aws.amazon.com/organizations/></p></div>"
         },
@@ -61638,7 +61723,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/directconnect/faqs/></p></div>"
         },
@@ -61668,7 +61754,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/compliance/shared-responsibility-model/></p></div>"
         },
@@ -62062,7 +62149,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://blog.newrelic.com/engineering/best-cloud-infrastructure-automation-tools/></p></div>"
         },
@@ -62170,7 +62258,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html></p></div>"
         },
@@ -62200,7 +62289,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html></p></div>"
         },
@@ -62516,7 +62606,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "D"
+            "D",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -62728,7 +62819,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -62758,7 +62850,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -62875,7 +62968,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -63139,7 +63233,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -63325,7 +63420,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -63355,7 +63451,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -63459,7 +63556,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/blogs/startups/large-scale-disaster-recovery-using-aws-regions/></p><p>Option D increased complexity and cost.</p></div>"
         },
@@ -63541,7 +63639,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "B"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -63857,7 +63956,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html></p></div>"
         },
@@ -64043,7 +64143,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CD</p><p>Explanation: <https://aws.amazon.com/about-aws/whats-new/2016/06/aws-support-enables-tagging-capabilities-for-trusted-advisor/></p></div>"
         },
@@ -64073,7 +64174,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -64190,7 +64292,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf></p></div>"
         },
@@ -64558,7 +64661,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://aws.amazon.com/shield/></p></div>"
         },
@@ -64614,7 +64718,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "E"
           ],
           "explanation": "<div class=\"basic-explanation\"><em>Explication non disponible pour cette question</em></div>"
         },
@@ -64670,7 +64775,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AD</p><p>Explanation: <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-increase-availability.html></p></div>"
         },
@@ -64908,7 +65014,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AE</p><p>Explanation: <https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-services.html></p></div>"
         },
@@ -65042,7 +65149,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "C"
+            "C",
+            "E"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: CE</p><p>Explanation: <https://wa.aws.amazon.com/wat.pillar.reliability.en.html></p></div>"
         },
@@ -65072,7 +65180,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "B"
+            "B",
+            "D"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: BD</p><p>Explanation: <https://aws.amazon.com/cloudfront/faqs/></p></div>"
         },
@@ -65258,7 +65367,8 @@ const allExamsData = {
             }
           ],
           "correctAnswers": [
-            "A"
+            "A",
+            "C"
           ],
           "explanation": "<div class=\"explanation-content\"><p>Correct Answer: AC</p><p>Explanation: <https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html></p></div>"
         },
