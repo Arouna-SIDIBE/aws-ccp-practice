@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="review.title">
 
 <head>
     <meta charset="UTF-8">
@@ -37,10 +37,15 @@
                 <span>Mode Révision</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="tests.html"><i class="fas fa-file-alt"></i> Examens</a></li>
-                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
-                <li><a href="review.html" class="active"><i class="fas fa-book"></i> Révision</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                <li><a href="tests.html"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                <li><a href="review.html" class="active"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                        <span class="lang-current">FR</span>
+                    </button>
+                </li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
                         <i class="fas fa-moon"></i>
@@ -52,10 +57,9 @@
 
     <div class="test-container" id="main">
         <div class="review-intro">
-            <h1><i class="fas fa-book-open"></i> Mode Révision AWS CCP</h1>
-            <p class="review-description">
-                Étudiez à votre rythme avec accès immédiat aux réponses et explications. Parfait pour apprendre et
-                comprendre les concepts AWS sans pression de temps.
+            <h1><i class="fas fa-book-open"></i> <span data-i18n="review.title">Mode Révision AWS CCP</span></h1>
+            <p class="review-description" data-i18n="review.desc">
+                Étudiez à votre rythme avec accès immédiat aux réponses et explications.
             </p>
 
             <div class="review-info">
@@ -113,20 +117,20 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>AWS CCP Practice</h3>
-                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
-                <p>© 2026 Tous droits réservés</p>
+                <p data-i18n="footer.tagline">Plateforme bilingue de préparation à la certification AWS Certified Cloud Practitioner.</p>
+                <p>© 2026 <span data-i18n="footer.rights">Tous droits réservés</span></p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3 data-i18n="footer.quick_links">Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tests.html">Examens</a></li>
-                    <li><a href="challenge.html">Challenge</a></li>
-                    <li><a href="review.html">Révision</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="tests.html" data-i18n="nav.exams">Examens</a></li>
+                    <li><a href="challenge.html" data-i18n="nav.challenge">Challenge</a></li>
+                    <li><a href="review.html" data-i18n="nav.review">Révision</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer.contact">Contact</h3>
                 <p>
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
@@ -142,17 +146,20 @@
     </footer>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <script>
         // Charger la liste des examens pour la révision
         document.addEventListener('DOMContentLoaded', function () {
             const examsGrid = document.getElementById('examsGrid');
 
-            if (examsGrid && typeof allExams !== 'undefined') {
+            const reviewExams = (typeof getExams === 'function') ? getExams()
+                : (typeof allExams !== 'undefined' ? allExams : []);
+            if (examsGrid && reviewExams.length) {
                 // Trier les examens par numéro
-                const sortedExams = [...allExams].sort((a, b) => a.id - b.id);
+                const sortedExams = [...reviewExams].sort((a, b) => a.id - b.id);
 
-                let html = '<h2>Sélectionnez un examen à réviser</h2><div class="review-exam-grid">';
+                let html = `<h2>${t('review.select_exam')}</h2><div class="review-exam-grid">`;
 
                 sortedExams.forEach(exam => {
                     html += `

@@ -2206,3 +2206,31 @@ body {
 .score-text { position: relative; z-index: 1; font-size: 2.5rem; font-weight: 800; color: var(--text); }
 .score-status.passed { color: var(--success-color); font-weight: 600; }
 .score-status.failed { color: var(--danger-color); font-weight: 600; }
+
+/* Toggle langue */
+.lang-toggle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 40px;
+    padding: 0 0.85rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: all var(--transition);
+}
+.lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+}
+.lang-toggle::before {
+    content: "\f0ac";  /* fa-globe */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.9rem;
+}

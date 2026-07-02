@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-page-title-key="tests.title">
 
 <head>
     <meta charset="UTF-8">
@@ -37,10 +37,15 @@
                 <span>AWS CCP Practice</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="tests.html" class="active"><i class="fas fa-file-alt"></i> Examens</a></li>
-                <li><a href="challenge.html"><i class="fas fa-trophy"></i> Challenge</a></li>
-                <li><a href="review.html"><i class="fas fa-book"></i> Révision</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+                <li><a href="tests.html" class="active"><i class="fas fa-file-alt"></i> <span data-i18n="nav.exams">Examens</span></a></li>
+                <li><a href="challenge.html"><i class="fas fa-trophy"></i> <span data-i18n="nav.challenge">Challenge</span></a></li>
+                <li><a href="review.html"><i class="fas fa-book"></i> <span data-i18n="nav.review">Révision</span></a></li>
+                <li>
+                    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                        <span class="lang-current">FR</span>
+                    </button>
+                </li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
                         <i class="fas fa-moon"></i>
@@ -51,8 +56,8 @@
     </nav>
 
     <div class="test-container" id="main">
-        <h1>Examens Pratiques AWS CCP</h1>
-        <p>Sélectionnez un examen pour commencer votre préparation</p>
+        <h1 data-i18n="tests.title">Examens Pratiques AWS CCP</h1>
+        <p data-i18n="tests.subtitle">Sélectionnez un examen pour commencer votre préparation.</p>
 
         <div class="exam-grid" id="examsGrid">
             <!-- Les examens seront chargés dynamiquement -->
@@ -63,20 +68,20 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>AWS CCP Practice</h3>
-                <p>Plateforme de préparation à la certification AWS Certified Cloud Practitioner</p>
-                <p>© 2026 Tous droits réservés</p>
+                <p data-i18n="footer.tagline">Plateforme bilingue de préparation à la certification AWS Certified Cloud Practitioner.</p>
+                <p>© 2026 <span data-i18n="footer.rights">Tous droits réservés</span></p>
             </div>
             <div class="footer-section">
-                <h3>Liens rapides</h3>
+                <h3 data-i18n="footer.quick_links">Liens rapides</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tests.html">Examens</a></li>
-                    <li><a href="challenge.html">Challenge</a></li>
-                    <li><a href="review.html">Révision</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="tests.html" data-i18n="nav.exams">Examens</a></li>
+                    <li><a href="challenge.html" data-i18n="nav.challenge">Challenge</a></li>
+                    <li><a href="review.html" data-i18n="nav.review">Révision</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer.contact">Contact</h3>
                 <p>
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:arousidibe20@gmail.com">arousidibe20@gmail.com</a>
@@ -93,15 +98,18 @@
     </footer>
 
     <script src="data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <script>
         // Charger la liste des examens
         document.addEventListener('DOMContentLoaded', function () {
             const examsGrid = document.getElementById('examsGrid');
 
-            if (examsGrid && typeof allExams !== 'undefined') {
+            const examsList = (typeof getExams === 'function') ? getExams()
+                : (typeof allExams !== 'undefined' ? allExams : []);
+            if (examsGrid && examsList.length) {
                 // Trier les examens par numéro
-                const sortedExams = [...allExams].sort((a, b) => a.id - b.id);
+                const sortedExams = [...examsList].sort((a, b) => a.id - b.id);
 
                 let html = '';
 
@@ -111,11 +119,11 @@
                             <h3><i class="fas fa-file-alt"></i> ${exam.name}</h3>
                             <p>${exam.description}</p>
                             <div class="exam-info">
-                                <span><i class="fas fa-question-circle"></i> ${exam.questions.length} questions</span>
-                                <span><i class="fas fa-clock"></i> ${exam.duration} minutes</span>
+                                <span><i class="fas fa-question-circle"></i> ${exam.questions.length} ${t('common.questions')}</span>
+                                <span><i class="fas fa-clock"></i> ${exam.duration} ${t('common.minutes')}</span>
                             </div>
                             <button class="start-exam-btn" onclick="startExam(${exam.id})">
-                                <i class="fas fa-play"></i> Commencer l'examen
+                                <i class="fas fa-play"></i> ${t('common.start_exam')}
                             </button>
                         </div>
                     `;
@@ -124,14 +132,14 @@
                 // Ajouter le challenge
                 html += `
                     <div class="exam-card" style="border: 2px solid var(--primary-color);">
-                        <h3><i class="fas fa-trophy"></i> Challenge Aléatoire</h3>
-                        <p>Test de 65 questions sélectionnées aléatoirement parmi tous les examens</p>
+                        <h3><i class="fas fa-trophy"></i> ${t('tests.challenge.title')}</h3>
+                        <p>${t('tests.challenge.desc')}</p>
                         <div class="exam-info">
-                            <span><i class="fas fa-question-circle"></i> 65 questions</span>
-                            <span><i class="fas fa-clock"></i> 110 minutes</span>
+                            <span><i class="fas fa-question-circle"></i> 65 ${t('common.questions')}</span>
+                            <span><i class="fas fa-clock"></i> 110 ${t('common.minutes')}</span>
                         </div>
                         <button class="start-exam-btn" onclick="startChallenge()" style="background-color: var(--primary-color);">
-                            <i class="fas fa-bolt"></i> Démarrer le Challenge
+                            <i class="fas fa-bolt"></i> ${t('home.cta_challenge')}
                         </button>
                     </div>
                 `;
